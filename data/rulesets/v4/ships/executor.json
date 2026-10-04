@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "id": "executor",
+  "display_name": "Суперразрушитель «Палач»",
+  "description": "Флагман Дарта Вейдера. В драфт не входит — босс сценария «Эскадра против флагмана».",
+  "faction": "empire",
+  "era": "galactic_civil_war",
+  "role": "capital",
+  "unique": true,
+  "legacy_v3": false,
+  "draftable": false,
+  "raw_cost": 52,
+  "draft_cost": 21,
+  "max_hp": 14,
+  "max_shield": 3,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    3,
+    2,
+    2,
+    1,
+    2,
+    2
+  ],
+  "weapon": {
+    "max_range": 4,
+    "range_penalty_per_hex": 2,
+    "long_range_arc": "all"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 2,
+    "boost": false
+  },
+  "hyperdrive": {
+    "class": 3,
+    "charge_cost": 3
+  },
+  "abilities": [
+    {
+      "id": "carrier",
+      "enabled": true
+    },
+    {
+      "id": "point_defense",
+      "enabled": true
+    },
+    {
+      "id": "heavy_armor",
+      "enabled": true
+    },
+    {
+      "id": "tractor_beam",
+      "enabled": true
+    }
+  ]
+}

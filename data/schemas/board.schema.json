@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "board.schema.json",
+  "title": "Поле (ruleset v3)",
+  "description": "Гексагональное поле радиуса 4 — 61 гекс (docs/contracts/core-api.md §8).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "radius",
+    "cell_count",
+    "orientation",
+    "coordinate_system"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "radius": {
+      "const": 3
+    },
+    "cell_count": {
+      "const": 37,
+      "description": "1 + 3 * radius * (radius + 1) для radius = 3."
+    },
+    "orientation": {
+      "enum": [
+        "pointy_top"
+      ],
+      "description": "Единственная ориентация проекта (ADR и core-api §1)."
+    },
+    "coordinate_system": {
+      "enum": [
+        "axial_qr"
+      ],
+      "description": "Axial-координаты (q, r), cube-субкоордината s = -q - r."
+    }
+  }
+}

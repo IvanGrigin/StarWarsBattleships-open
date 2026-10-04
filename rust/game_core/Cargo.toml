@@ -1,0 +1,19 @@
+[package]
+name = "game_core"
+version = "0.1.0"
+edition = "2021"
+description = "Star Wars Battleships rules core - single source of rules (MASTER_PLAN 5.1), bit-compatible with the GDScript prototype oracle"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Production RNG mode (ADR rust-core-api 5): versions pinned.
+rand_core = "=0.6.4"
+rand_chacha = "=0.3.1"
+# Server commitment (MASTER_PLAN 7.2).
+sha2 = "=0.10.8"
+
+[dev-dependencies]
+rand_core = "=0.6.4"
+rand_chacha = "=0.3.1"
+sha2 = "=0.10.8"

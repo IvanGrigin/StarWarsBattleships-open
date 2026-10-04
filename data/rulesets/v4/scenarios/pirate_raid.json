@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "scenario_id": "pirate_raid",
+  "display_name": "Налёт пиратов",
+  "note": "Двое игроков и три пиратских корабля поля. Пираты ходят последними и бьют ближайшего.",
+  "seat_order": [
+    "A1",
+    "B1"
+  ],
+  "teams": {
+    "A": [
+      "A1"
+    ],
+    "B": [
+      "B1"
+    ]
+  },
+  "seats": {
+    "A1": {
+      "cells": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          4
+        ]
+      ],
+      "facing": 0
+    },
+    "B1": {
+      "cells": [
+        [
+          0,
+          -4
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          1,
+          -4
+        ]
+      ],
+      "facing": 3
+    }
+  },
+  "era": "any",
+  "draft_budget": 24,
+  "events_enabled": true,
+  "terrain_enabled": true,
+  "pirates": 3,
+  "pirate_ships": [
+    "pirate_marauder",
+    "pirate_corsair",
+    "pirate_skiff"
+  ],
+  "pirate_cells": [
+    [
+      4,
+      -4
+    ],
+    [
+      -4,
+      4
+    ],
+    [
+      4,
+      0
+    ]
+  ]
+}

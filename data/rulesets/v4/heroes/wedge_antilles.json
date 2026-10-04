@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "id": "wedge_antilles",
+  "display_name": "Ведж Антиллес",
+  "description": "Пилот «Разбойной эскадрильи», выживший в обеих атаках на Звезду Смерти.",
+  "faction": "rebels",
+  "era": "galactic_civil_war",
+  "ability": {
+    "id": "stay_on_target",
+    "name": "Держись цели",
+    "text": "Пассивно: ваш корабль, атакующий ту же цель второй раунд подряд, получает +1 к силе атаки.",
+    "kind": "passive",
+    "trigger": "always",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 0,
+    "effect_sequence": [
+      {
+        "op": "focus_target",
+        "params": {
+          "value": 1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "rogue_squadron",
+    "name": "Разбойная эскадрилья",
+    "text": "Если во флоте два и больше истребителя повстанцев (fighter/interceptor), каждый из них получает +1 к защите в секторе F.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "rebels",
+      "min_ships": 2
+    },
+    "effects": [
+      {
+        "op": "role_bonus",
+        "params": {
+          "roles": [
+            "fighter",
+            "interceptor"
+          ],
+          "defense_sector": 0,
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 2
+}

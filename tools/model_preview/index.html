@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Star Wars Battleships — ревью кандидатов моделей</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0e14; color: #d7dee8;
+    font: 13px/1.45 system-ui, sans-serif; overflow: hidden; }
+  #app { display: flex; height: 100%; }
+  #side { width: 340px; min-width: 280px; overflow-y: auto; padding: 12px;
+    background: #11151d; border-right: 1px solid #232a36; box-sizing: border-box; }
+  #side h1 { font-size: 14px; margin: 0 0 8px; }
+  #side p.note { color: #8b96a5; font-size: 11.5px; margin: 4px 0 10px; }
+  #tabs { display: flex; gap: 6px; margin-bottom: 8px; }
+  #tabs button { flex: 1; padding: 8px 6px; font: inherit; font-size: 12px; border-radius: 8px;
+    border: 1px solid #232a36; background: #171d28; color: #9fb4cc; cursor: pointer; }
+  #tabs button.on { background: #1c2942; border-color: #4d8fd6; color: #d7dee8; }
+  #summary { font-size: 12px; color: #9fb4cc; margin-bottom: 10px; }
+  #summary b.good { color: #7ec97e; } #summary b.bad { color: #e08a8a; }
+  #exportBtn { margin: 10px 0; width: 100%; padding: 8px; background: #24344d;
+    color: #d7dee8; border: 1px solid #35507a; border-radius: 7px; cursor: pointer; font: inherit; }
+  #exportBtn:hover { background: #2b405e; }
+  .m { display: block; width: 100%; text-align: left; margin: 3px 0; padding: 7px 9px;
+    background: #171d28; color: #d7dee8; border: 1px solid #232a36; border-radius: 7px;
+    cursor: pointer; font: inherit; }
+  .m:hover { background: #1d2532; }
+  .m.active { border-color: #4d8fd6; background: #1c2942; }
+  .m.v-like { border-left: 3px solid #5cb85c; }
+  .m.v-dislike { border-left: 3px solid #d9534f; }
+  .m .t { display: block; font-weight: 600; }
+  .m .n { display: inline-block; min-width: 38px; margin-right: 4px; padding: 1px 6px;
+    border-radius: 5px; background: #24344d; color: #eaf2fb; font-variant-numeric: tabular-nums;
+    text-align: center; font-weight: 700; }
+  .sep.tier { display: flex; justify-content: space-between; color: #9fb4cc; font-size: 11.5px; }
+  .sep.tier.t0 { color: #7ec97e; } .sep.tier.t3 { color: #e08a8a; } .sep.tier.t4 { color: #6f7b8b; }
+  #labels .lbl .ln { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .m .s { display: block; color: #8b96a5; font-size: 11px; }
+  .m .st { float: right; font-size: 11px; }
+  .m .rv { float: right; font-size: 12px; margin-left: 6px; }
+  .sep { margin: 12px 0 4px; color: #66788e; font-size: 11px; text-transform: uppercase;
+    letter-spacing: 0.06em; border-bottom: 1px solid #232a36; padding-bottom: 3px; }
+  #stage { flex: 1; position: relative; }
+  canvas { display: block; }
+  #embedFrame { position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+    background: #0b0e14; display: none; }
+  #hud { position: absolute; left: 12px; bottom: 10px; right: 12px; color: #8b96a5;
+    font-size: 11.5px; pointer-events: none; }
+  #status { position: absolute; top: 10px; left: 12px; right: 310px; font-size: 12px; color: #9fb4cc; }
+  label.rot { position: absolute; top: 10px; right: 14px; color: #8b96a5; font-size: 12px;
+    background: #11151dcc; padding: 4px 8px; border-radius: 6px; }
+  label.rot.rot2 { top: 40px; }
+  #review { position: absolute; left: 14px; top: 46px; width: 300px; box-sizing: border-box;
+    background: #11151dee; border: 1px solid #232a36; border-radius: 10px; padding: 10px 12px;
+    z-index: 5; }
+  #review h2 { font-size: 12.5px; margin: 0 0 8px; color: #9fb4cc; }
+  #review .shipname { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+  #review .meta { color: #8b96a5; font-size: 11px; margin-bottom: 8px; }
+  #review .btns { display: flex; gap: 8px; margin-bottom: 8px; }
+  #review button.v { flex: 1; padding: 9px 0; font-size: 15px; border-radius: 8px;
+    border: 1px solid #35507a; background: #1a2130; color: #d7dee8; cursor: pointer; }
+  #review button.v:hover { background: #223049; }
+  #review button.v.on-like { background: #23492a; border-color: #5cb85c; }
+  #review button.v.on-dislike { background: #4a2422; border-color: #d9534f; }
+  #tagRow { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+  #tagRow button.tag { padding: 4px 8px; font-size: 11px; border-radius: 12px;
+    border: 1px solid #35507a; background: #1a2130; color: #9fb4cc; cursor: pointer; }
+  #tagRow button.tag:hover { background: #223049; }
+  #tagRow button.tag.on { background: #2b405e; border-color: #4d8fd6; color: #d7dee8; }
+  #rotRow { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+  #rotRow button { padding: 5px 7px; font-size: 11px; border-radius: 7px;
+    border: 1px solid #4a5a74; background: #1c2942; color: #cfe0f2; cursor: pointer; }
+  #rotRow button:hover { background: #27405f; }
+  #review textarea { width: 100%; box-sizing: border-box; min-height: 54px; resize: vertical;
+    background: #0e1219; color: #d7dee8; border: 1px solid #232a36; border-radius: 7px;
+    padding: 7px; font: inherit; font-size: 12px; }
+  #review .saved { color: #7ec97e; font-size: 11px; height: 14px; margin-top: 4px; }
+  #review .hint { color: #8b96a5; font-size: 11px; margin-top: 6px; }
+  /* поиск, галочки и групповой режим */
+  #filter { width: 100%; box-sizing: border-box; margin-bottom: 8px; padding: 8px 10px;
+    border-radius: 8px; border: 1px solid #232a36; background: #0e1219; color: #d7dee8; font: inherit; }
+  #groupBar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px;
+    padding: 8px; border: 1px solid #35507a; border-radius: 8px; background: #141c2a; }
+  #groupBar b { flex: 1 1 100%; font-size: 12px; color: #cfe0f2; }
+  #groupBar b.warn { color: #e0b36a; }
+  #groupBar button { flex: 1; padding: 7px 6px; font: inherit; font-size: 12px; border-radius: 7px;
+    border: 1px solid #4a5a74; background: #1c2942; color: #cfe0f2; cursor: pointer; }
+  #groupBar button#grpShow { background: #24497a; border-color: #4d8fd6; }
+  #groupBar button:disabled { opacity: .45; cursor: default; }
+  #sync { font-size: 11px; color: #7ec97e; margin: -4px 0 8px; min-height: 14px; }
+  #sync.bad { color: #e0b36a; }
+  .row { display: flex; gap: 6px; align-items: center; }
+  .row .m { flex: 1; min-width: 0; }
+  .pick { width: 18px; height: 18px; flex: none; accent-color: #4d8fd6; cursor: pointer; margin: 0; }
+  #labels { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  #labels .lbl { position: absolute; left: 0; top: 0; white-space: nowrap; font-size: 11.5px;
+    padding: 2px 7px; border-radius: 6px; background: #1c2942e6; border: 1px solid #4d8fd6; color: #d7dee8; }
+  #labels .lbl.off { background: #11151dcc; border-color: #3a4352; color: #6f7b8b; text-decoration: line-through; }
+  #labels .lbl.err { border-color: #d9534f; }
+  .only-group { display: none; }
+  /* турнир: эталон, пара моделей, выбор лучшей */
+  #tour { position: absolute; left: 14px; top: 46px; width: 300px; box-sizing: border-box;
+    background: #11151dee; border: 1px solid #232a36; border-radius: 10px; padding: 10px 12px; z-index: 5; }
+  #tour .ref { position: relative; border-radius: 8px; overflow: hidden; background: #0e1219;
+    border: 1px solid #232a36; margin-bottom: 8px; text-align: center; }
+  #tour .ref img { display: block; width: 100%; max-height: 170px; object-fit: contain; }
+  #tour .ref a { position: absolute; right: 6px; bottom: 6px; font-size: 11px; color: #cfe0f2;
+    background: #11151dcc; padding: 2px 7px; border-radius: 6px; text-decoration: none; }
+  #tour .tname { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
+  #tour .tmeta { color: #8b96a5; font-size: 11.5px; margin-bottom: 8px; }
+  #tour .vs { display: flex; gap: 8px; margin-bottom: 8px; }
+  #tour .vs button { flex: 1; padding: 12px 0; font: inherit; font-size: 14px; font-weight: 700;
+    border-radius: 8px; border: 1px solid #4d8fd6; background: #1c2942; color: #eaf2fb; cursor: pointer; }
+  #tour .vs button:hover { background: #24497a; }
+  #tour .vs button:disabled { opacity: .35; cursor: default; }
+  #tour .fix { display: grid; grid-template-columns: auto 1fr; gap: 5px 8px; align-items: center;
+    font-size: 11.5px; color: #8b96a5; margin-bottom: 8px; }
+  #tour .fix select { width: 100%; min-width: 0; font: inherit; font-size: 12px; padding: 5px;
+    border-radius: 6px; border: 1px solid #35507a; background: #1a2130; color: #d7dee8; }
+  #tour .acts { display: flex; gap: 6px; }
+  #tour .acts button { flex: 1; padding: 6px; font: inherit; font-size: 12px; border-radius: 7px;
+    border: 1px solid #4a5a74; background: #1a2130; color: #cfe0f2; cursor: pointer; }
+  #tour .hint { color: #8b96a5; font-size: 11px; margin-top: 6px; }
+  .m .st.win { color: #7ec97e; }
+  @media (pointer: coarse) { #tour .vs button { padding: 16px 0; } }
+  #review.group .only-group { display: inline-block; }
+  #review.group .btns, #review.group #tagRow, #review.group textarea, #review.group .hint.single { display: none; }
+  @media (max-width: 1000px) {
+    #side { width: 280px; min-width: 240px; }
+    #review { width: 262px; }
+    #status { right: 130px; }
+  }
+  @media (pointer: coarse) {
+    #rotRow button { padding: 10px 11px; font-size: 13px; }
+    .pick { width: 24px; height: 24px; }
+    .m { padding: 9px 10px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <nav id="side">
+    <h1>Ревью кандидатов</h1>
+    <p class="note">Вкладка «Скачанные» — локальные файлы карантина. Вкладка «Каталог» —
+    все кандидаты из индекса Sketchfab прямо в 3D (официальный embed; файлы не скачаны).
+    Ставь 👍/👎 и пометки — по ним собирается список на загрузку и поиск замен.
+    Галочки — до 9 моделей в группу: они встают сеткой и поворачиваются вместе.</p>
+    <div id="tabs">
+      <button id="tabLocal" class="on">Скачанные</button>
+      <button id="tabCatalog">Каталог Sketchfab</button>
+      <button id="tabTour" title="Выбрать лучшую модель на каждый корабль игры">Турнир</button>
+      <button id="tabVox" type="button" title="Воксельные модели (demo/assets/models/meshes)" onclick="location.href='voxels.html'">Воксельные</button>
+    </div>
+    <div id="summary"></div>
+    <div id="sync"></div>
+    <input id="filter" type="search" placeholder="Поиск: x-wing, tie… или номер: #37" aria-label="Поиск моделей">
+    <div id="groupBar">
+      <b id="grpCount">Группа: 0 из 9</b>
+      <button id="grpShow" type="button" title="Показать отмеченные модели сеткой и поворачивать их вместе">Показать группу</button>
+      <button id="grpVisible" type="button" title="Отметить найденные поиском, но не больше 9">Отметить найденные</button>
+      <button id="grpClear" type="button">Снять</button>
+    </div>
+    <button id="exportBtn">⬇ Экспорт отзывов (model_reviews.json)</button>
+    <div id="list"></div>
+  </nav>
+  <main id="stage">
+    <div id="status">выберите модель слева</div>
+    <label class="rot"><input type="checkbox" id="full"> оригинал (тяжело)</label>
+    <label class="rot rot2"><input type="checkbox" id="rot" checked> автоповорот</label>
+    <iframe id="embedFrame" title="Sketchfab 3D" allow="autoplay; fullscreen; xr-spatial-tracking"
+      referrerpolicy="origin"></iframe>
+    <div id="tour" style="display:none">
+      <div class="ref"><img id="tourImg" alt="" referrerpolicy="no-referrer">
+        <a id="tourSearch" target="_blank" rel="noopener noreferrer">найти изображение ↗</a></div>
+      <div class="tname" id="tourName">—</div>
+      <div class="tmeta" id="tourMeta"></div>
+      <div class="vs">
+        <button id="pickA" type="button" title="Клавиша ←">◀ Левый лучше</button>
+        <button id="pickB" type="button" title="Клавиша →">Правый лучше ▶</button>
+      </div>
+      <div class="fix">
+        <span id="fixALbl">левый</span><select id="fixA" aria-label="Тип корабля для левой модели"></select>
+        <span id="fixBLbl">правый</span><select id="fixB" aria-label="Тип корабля для правой модели"></select>
+      </div>
+      <div class="acts">
+        <button id="tourUndo" type="button" title="Backspace">↶ отменить выбор</button>
+        <button id="tourReset" type="button">переиграть тип</button>
+      </div>
+      <div class="hint">Модель не того корабля — выберите для неё верный тип или «нет в игре»:
+      она уйдёт из этого турнира. Модели с 👎 в турнир не допускаются.</div>
+    </div>
+    <div id="review" style="display:none">
+      <h2>Оценка модели</h2>
+      <div class="shipname" id="revShip">—</div>
+      <div class="meta" id="revMeta"></div>
+      <div class="btns">
+        <button class="v" id="btnLike" title="Хорошая — годится">👍 Лайк</button>
+        <button class="v" id="btnDislike" title="Не годится — искать замену">👎 Дизлайк</button>
+      </div>
+      <div id="tagRow"></div>
+      <div id="rotRow">
+        <button id="rotRed" title="Крен 90° вокруг красной оси (нос)">⟲ 90° 🔴</button>
+        <button id="rotBlue" title="Разворот 90° вокруг синей оси (вверх)">⟲ 90° 🔵</button>
+        <button id="rotPitch" title="Тангаж 90° вокруг зелёной оси (крылья)">⟲ 90° 🟢</button>
+        <button id="rotFlip" title="Красная смотрит назад? Развернуть нос на 180°">⇄ нос 180°</button>
+        <button id="rotReset" title="Вернуть исходную ориентацию">сброс</button>
+        <button id="grpAll" class="only-group" type="button" title="Все корабли группы — в поворот">все в поворот</button>
+        <button id="grpNone" class="only-group" type="button" title="Исключить всех, затем тапом вернуть нужных">никого</button>
+      </div>
+      <textarea id="revComment" placeholder="комментарий — необязательно (что нравится / почему не годится, что искать взамен)"></textarea>
+      <div class="saved" id="revSaved"></div>
+      <div class="hint single">Дизлайк = модель не годится и по ней будет новый поиск.
+      Лайк = кандидат-approved. Комментарий помогает уточнить поиск.</div>
+    </div>
+    <div id="labels" aria-hidden="true"></div>
+    <div id="hud">ЛКМ / палец — вращение · колесо / щипок — зум · ПКМ — панорама · ↑↓ — выбор модели · 1/2/3 — крен/разв/тангаж · 4 — нос 180° · 0 — сброс · Shift — обратно · в группе: тап по кораблю — исключить из поворота</div>
+  </main>
+</div>
+<script type="importmap">
+{ "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+import { STLLoader } from 'three/addons/loaders/STLLoader.js';
+
+const BASE = '/assets_source/external_models/raw_candidates/';
+const MODELS = [
+  { ship: 'millennium_falcon', label: 'Millennium Falcon (Stym, CC BY-SA)', file: 'millennium_falcon_stym/scene.gltf', kind: 'gltf' },
+  { ship: 'millennium_falcon', label: 'Millennium Falcon (opt, без текстур)', file: 'millennium_falcon_opt.glb', kind: 'gltf' },
+  { ship: 'xwing_t65', label: 'X-wing T-65 (Heataker, CC BY)', file: 'xwing_t65_heataker_objaverse.glb', kind: 'gltf' },
+  { ship: 'xwing_t65', label: 'X-wing T-65 (opt, старая копия)', file: 'xwing_t65_opt.glb', kind: 'gltf' },
+  { ship: 'vulture_droid', label: 'Vulture Droid (Théo A, CC BY-NC, СТОИТ)', file: 'vulture_droid_theo_objaverse.glb', kind: 'gltf' },
+  { ship: 'tie_fighter', label: 'TIE Fighter (Andersson, CC BY)', file: 'tie_fighter_opt.glb', kind: 'gltf' },
+  { ship: 'tie_advanced_x1', label: 'TIE Advanced X1 (Daniel, CC BY, без карт)', file: 'tie_advanced_x1_daniel_objaverse.glb', kind: 'gltf' },
+  { ship: 'eta2_actis', label: 'Eta-2 Actis (maxkamms, CC BY, low-poly)', file: 'eta2_actis_maxkamms_objaverse.glb', kind: 'gltf' },
+  { ship: 'death_star_1', label: 'Death Star 2k (CC BY-NC-ND)', file: 'death_star_1_2k_opt.glb', kind: 'gltf' },
+  { ship: 'death_star_1', label: 'Death Star (Joe Scalise, CC BY)', file: 'death_star_1_joe_scalise.glb', kind: 'gltf' },
+  { ship: 'star_destroyer', label: 'Star Destroyer (rubaun, CC BY)', file: 'star_destroyer_opt.glb', kind: 'gltf' },
+  { ship: 'star_destroyer', label: 'Star Destroyer (старая копия)', file: 'star_destroyer_current.glb', kind: 'gltf' },
+  { ship: 'tie_fighter', label: 'TIE Fighter (старая копия)', file: 'tie_fighter_current.glb', kind: 'gltf' },
+  { ship: 'ghost', label: 'Ghost VCX-100 + Shuttle (STL, без текстур)', file: 'ghost_vcx100_jace1969_thing2663940/Rebells_Ghost__Shuttle_STL.stl', kind: 'stl' },
+  { ship: 'ghost', label: 'Ghost — КОНВЕРТИРОВАН в GLB, ориентация исправлена', file: 'converted_glb/ghost_ship_stl.glb', kind: 'gltf' },
+  { ship: 'ghost', label: 'Ghost (OBJ → GLB, конвертирован)', file: 'converted_glb/ghost_ship_obj.glb', kind: 'gltf' },
+  { ship: 'phantom', label: 'Phantom shuttle из набора Ghost (STL)', file: 'ghost_vcx100_jace1969_thing2663940/Shuttle_STL.stl', kind: 'stl' },
+  { ship: 'phantom', label: 'Phantom I (DanielAlex, Printables, STL)', file: 'phantom_i_danielalex_printables55615.stl', kind: 'stl' },
+  { ship: 'phantom', label: 'Phantom shuttle — КОНВЕРТИРОВАН в GLB', file: 'converted_glb/phantom_shuttle_stl.glb', kind: 'gltf' },
+  { ship: 'phantom', label: 'Phantom I — КОНВЕРТИРОВАН в GLB', file: 'converted_glb/phantom_i_stl.glb', kind: 'gltf' },
+  { ship: 'vulture_droid', label: 'Vulture — кит Legion в полётном крыле (15 деталей, GLB)', file: 'converted_glb/vulture_flight_kit.glb', kind: 'gltf' },
+];
+MODELS.forEach(m => { m.key = 'file:' + m.file; });
+
+// скачанные лайки из пакетного загрузчика (tools/download_selected_models.py)
+try {
+  const manifest = await (await fetch(BASE + 'liked/manifest.json?v=' + Date.now())).json();
+  for (const m of manifest || []) {
+    if (MODELS.some(x => x.file === m.file)) continue;   // уже есть в списке выше
+    MODELS.push({ key: 'file:' + m.file, ship: m.ship,
+      label: `${m.label} (скачано из каталога)` + (m.license ? ` · ${m.license}` : ''),
+      file: m.file, kind: m.kind || 'gltf', uid: m.uid || null });
+  }
+} catch (e) { /* манифеста ещё нет — норма до первого запуска загрузчика */ }
+
+// все модели, реально лежащие на диске (serve.py /api/models): ловит файлы,
+// которых нет ни в списке выше, ни в manifest (разрезанные __s1, конвертации)
+try {
+  const found = await (await fetch('/api/models', { cache: 'no-store' })).json();
+  const onDisk = new Set(found.map(f => f.file));
+  const numOf = new Map(found.map(f => [f.file, f.num]));
+  const info = new Map(found.map(f => [f.file, f]));
+  for (const m of MODELS) {
+    if (!onDisk.has(m.file)) { m.missing = true; m.label += ' — ⚠ файла нет на диске'; }
+    m.num = numOf.get(m.file);
+    const f = info.get(m.file);
+    if (f) { m.preview = f.preview || null; m.bytes = f.bytes; }
+  }
+  const known = new Set(MODELS.map(m => m.file));
+  for (const f of found) {
+    if (known.has(f.file)) continue;
+    MODELS.push({ key: 'file:' + f.file, ship: f.ship, label: f.file.split('/').pop(),
+      file: f.file, kind: f.kind, num: f.num, preview: f.preview || null, bytes: f.bytes });
+  }
+  for (const m of MODELS) {
+    const base = !m.uid && m.file.match(/^(.*)__s\d+(\.glb)$/);
+    const src = base && MODELS.find(x => x.file === base[1] + base[2]);
+    if (src && src.uid) m.uid = src.uid;
+  }
+} catch (e) { /* статический сервер без API — работаем со списком выше */ }
+
+// --- ростер игры, классы моделей, турнир (serve.py /api/roster, /api/doc/*) ----
+let ROSTER = [];
+let CLASSES = {};        // файл → { ship: тип ростера | 'none', source: auto|manual }
+let TOUR = {};           // тип → { picks: { 'a|b': победитель }, winner }
+try {
+  ROSTER = await (await fetch('/api/roster', { cache: 'no-store' })).json();
+  CLASSES = (await (await fetch('/api/doc/classes', { cache: 'no-store' })).json()).classes || {};
+  TOUR = (await (await fetch('/api/doc/tournament', { cache: 'no-store' })).json()).types || {};
+} catch (e) { /* без сервера турнир недоступен */ }
+const ROSTER_BY_ID = new Map(ROSTER.map(r => [r.id, r]));
+function classOf(m) { return (CLASSES[m.file] || {}).ship || null; }
+function className(id) {
+  if (id === 'none') return 'нет в игре';
+  const r = ROSTER_BY_ID.get(id);
+  return r ? r.name : (id || '—');
+}
+async function postDoc(name, changes) {
+  const r = await fetch('/api/doc/' + name, { method: 'POST',
+    headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ changes }) });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+}
+
+// каталог из индекса обкачки
+const CATALOG = [];
+try {
+  const idx = await (await fetch('/assets_source/external_models/sketchfab_candidates.json')).json();
+  const seen = new Set();
+  for (const [query, hits] of Object.entries(idx.queries || {})) {
+    for (const c of hits || []) {
+      if (seen.has(c.uid)) continue;
+      seen.add(c.uid);
+      CATALOG.push({ key: 'sf:' + c.uid, ship: query, label: c.name,
+        meta: `${c.license || 'лицензия?'} · автор ${c.author} · ♥${c.likes ?? '?'}`, url: c.url, uid: c.uid });
+    }
+  }
+} catch (e) {
+  console.error('index load failed', e);
+}
+// сортировка: сначала по запросу (алфавит), внутри — по лайкам
+CATALOG.sort((a, b) => a.ship.localeCompare(b.ship) || (b.label || '').localeCompare(a.label || ''));
+
+// --- отзывы ------------------------------------------------------------------
+const STORE_KEY = 'swb_model_reviews_v1';
+const TAGS = ['Нет текстур', 'Размытые текстуры', 'Неверная ориентация',
+  'Не та поза (стоит/шагает)', 'Low-poly / грубая', 'Не тот корабль'];
+const reviews = JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+// миграция старых ключей (пути без префикса) -> 'file:'
+{
+  let migrated = false;
+  for (const k of Object.keys(reviews)) {
+    if (!k.startsWith('file:') && !k.startsWith('sf:')) {
+      reviews['file:' + k] = reviews[k];
+      delete reviews[k];
+      migrated = true;
+    }
+  }
+  if (migrated) localStorage.setItem(STORE_KEY, JSON.stringify(reviews));
+}
+
+// --- синхронизация с Маком (serve.py): отзывы и повороты пишутся в
+// tools/model_preview/model_reviews.json, а не только в память этого браузера
+let serverOk = false;
+const pending = new Map();
+let syncTimer = null;
+function setSyncState(text, bad = false) {
+  const el = document.getElementById('sync');
+  el.textContent = text; el.classList.toggle('bad', bad);
+}
+function queueSync(key) {
+  if (!serverOk) return;
+  pending.set(key, reviews[key] || null);
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(flushSync, 400);
+}
+async function flushSync() {
+  if (!pending.size) return;
+  const changes = Object.fromEntries(pending);
+  pending.clear();
+  try {
+    const r = await fetch('/api/reviews', { method: 'POST',
+      headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ changes }) });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const n = Object.keys(changes).length;
+    setSyncState(`✓ сохранено на Маке (${n} ${n === 1 ? 'запись' : 'записей'})`);
+  } catch (e) {
+    for (const [k, v] of Object.entries(changes)) if (!pending.has(k)) pending.set(k, v);
+    setSyncState('нет связи с Маком — повторю через 3 с…', true);
+    syncTimer = setTimeout(flushSync, 3000);
+  }
+}
+try {
+  const res = await fetch('/api/reviews', { cache: 'no-store' });
+  if (res.ok) {
+    const srv = (await res.json()).reviews || {};
+    serverOk = true;
+    for (const [k, v] of Object.entries(srv)) {
+      const loc = reviews[k];
+      if (!loc || (v.updatedAt || '') >= (loc.updatedAt || '')) reviews[k] = v;
+    }
+    for (const [k, v] of Object.entries(reviews)) {
+      if (!srv[k] || (v.updatedAt || '') > (srv[k].updatedAt || '')) pending.set(k, v);
+    }
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(reviews)); } catch (e) {}
+    setSyncState('✓ связь с Маком: повороты сохраняются в model_reviews.json');
+    if (pending.size) flushSync();
+  }
+} catch (e) {
+  setSyncState('нет сервера — повороты только в этом браузере (кнопка «Экспорт»)', true);
+}
+function saveStore() { localStorage.setItem(STORE_KEY, JSON.stringify(reviews)); }
+function reviewOf(key) {
+  return reviews[key] || { verdict: null, comment: '', tags: [], orientation: null };
+}
+function setReview(key, patch) {
+  const r = { ...reviewOf(key), ...patch };
+  const hasOrient = Array.isArray(r.orientation) && r.orientation.some((v, i) => i < 3 && v !== 0);
+  if (!r.verdict && !r.comment && !(r.tags || []).length && !hasOrient) delete reviews[key];
+  else reviews[key] = { verdict: r.verdict || null, comment: r.comment || '',
+    tags: r.tags || [], orientation: r.orientation || null, updatedAt: new Date().toISOString() };
+  saveStore();
+  queueSync(key);
+  refreshMarkers();
+  refreshSummary();
+}
+
+const listEl = document.getElementById('list');
+const status = document.getElementById('status');
+let mode = 'local';
+let activeKey = null;
+let currentIdx = -1; // для local
+
+function numText(m) { return m.num ? '#' + m.num : '#—'; }
+function itemButton(key, title, sub, num) {
+  const b = document.createElement('button');
+  b.className = 'm'; b.dataset.key = key;
+  b.innerHTML = `<span class="st">·</span><span class="rv"></span><span class="t"></span><span class="s"></span>`;
+  const t = b.querySelector('.t');
+  if (num) {
+    const n = document.createElement('span');
+    n.className = 'n'; n.textContent = num;
+    t.append(n, document.createTextNode(title));
+  } else {
+    t.textContent = title;
+  }
+  b.querySelector('.s').textContent = sub;
+  return b;
+}
+
+// Качество модели для сортировки: чем меньше, тем лучше.
+//   0 — 👍 без комментариев и пометок (годится как есть)
+//   1 — 👍, но с замечаниями (чем больше пометок, тем ниже)
+//   2 — без оценки
+//   3 — 👎 (тоже по числу пометок)
+//   4 — файла нет на диске
+const TIER_NAMES = ['👍 без замечаний', '👍 с замечаниями', 'без оценки', '👎 не годятся', 'файла нет на диске'];
+function effectiveReview(m) {
+  const own = reviewOf(m.key);
+  if (own.verdict || !m.uid) return { r: own, inherited: false };
+  const cat = reviewOf('sf:' + m.uid);
+  return cat.verdict ? { r: cat, inherited: true } : { r: own, inherited: false };
+}
+function qualityOf(m) {
+  if (m.missing) return [4, 0];
+  const { r } = effectiveReview(m);
+  const remarks = (r.tags || []).length + ((r.comment || '').trim() ? 1 : 0);
+  if (r.verdict === 'like') return [remarks ? 1 : 0, remarks];
+  if (r.verdict === 'dislike') return [3, remarks];
+  return [2, remarks];
+}
+let listOrder = [];   // индексы MODELS в том порядке, как они показаны
+
+function renderList() {
+  listEl.innerHTML = '';
+  if (mode === 'tour') { renderTourList(); return; }
+  const match = (...parts) => !filterText || parts.join(' ').toLowerCase().includes(filterText);
+  if (mode === 'local') {
+    // «#37» — точный поиск по номеру; просто текст — по названию и файлу
+    const byNum = /^#\d+$/.test(filterText) ? parseInt(filterText.slice(1), 10) : null;
+    const shown = MODELS.map((m, i) => ({ m, i, q: qualityOf(m) }))
+      .filter(({ m }) => byNum !== null ? m.num === byNum : match(m.ship, m.label, m.file))
+      .sort((a, b) => a.q[0] - b.q[0] || a.q[1] - b.q[1] || (a.m.num || 1e9) - (b.m.num || 1e9));
+    listOrder = shown.map(x => x.i);
+    const perTier = [0, 0, 0, 0, 0];
+    shown.forEach(({ q }) => perTier[q[0]]++);
+    let lastTier = -1;
+    shown.forEach(({ m, i, q }) => {
+      if (q[0] !== lastTier) {
+        const sep = document.createElement('div');
+        sep.className = 'sep tier t' + q[0];
+        sep.innerHTML = '<span></span><span></span>';
+        sep.children[0].textContent = TIER_NAMES[q[0]];
+        sep.children[1].textContent = perTier[q[0]];
+        listEl.appendChild(sep);
+        lastTier = q[0];
+      }
+      const row = document.createElement('div');
+      row.className = 'row';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox'; cb.className = 'pick'; cb.dataset.key = m.key;
+      cb.checked = selected.has(m.key);
+      cb.title = 'В группу (до 9)';
+      cb.setAttribute('aria-label', 'В группу: ' + m.label);
+      cb.addEventListener('change', () => toggleSelect(m.key, cb));
+      const cls = classOf(m);
+      const b = itemButton(m.key, m.ship, m.label + (cls ? ' · → ' + className(cls) : ''), numText(m));
+      b.addEventListener('click', () => loadLocal(i));
+      row.append(cb, b);
+      listEl.appendChild(row);
+    });
+  } else {
+    let lastShip = null;
+    CATALOG.forEach(c => {
+      if (!match(c.ship, c.label)) return;
+      if (c.ship !== lastShip) {
+        const s = document.createElement('div');
+        s.className = 'sep'; s.textContent = c.ship;
+        listEl.appendChild(s);
+        lastShip = c.ship;
+      }
+      const b = itemButton(c.key, c.label, c.meta);
+      b.addEventListener('click', () => openCatalog(c));
+      listEl.appendChild(b);
+    });
+  }
+  refreshMarkers();
+}
+
+function refreshMarkers() {
+  document.querySelectorAll('#list .m').forEach(b => {
+    const key = b.dataset.key;
+    const lm = mode === 'local' && MODELS.find(x => x.key === key);
+    const { r, inherited } = lm ? effectiveReview(lm) : { r: reviewOf(key), inherited: false };
+    b.classList.toggle('v-like', r.verdict === 'like');
+    b.classList.toggle('v-dislike', r.verdict === 'dislike');
+    let rv = r.verdict === 'like' ? '👍' : r.verdict === 'dislike' ? '👎' : '';
+    if ((r.comment || '').trim()) rv += '💬';
+    if ((r.tags || []).length) rv += '🏷' + r.tags.length;
+    if (inherited && rv) rv += ' (каталог)';
+    b.querySelector('.rv').textContent = rv;
+    b.title = inherited ? 'Оценка и комментарии — с карточки каталога Sketchfab, откуда модель скачана' : '';
+  });
+}
+function refreshSummary() {
+  if (mode === 'tour') {
+    const withModels = ROSTER.filter(r => candidatesOf(r.id).length > 0).length;
+    const decided = ROSTER.filter(r => bracketOf(r.id).winner).length;
+    document.getElementById('summary').innerHTML =
+      `Турнир: у ${withModels} из ${ROSTER.length} кораблей игры есть модели · ` +
+      `выбрано лучших: <b class="good">${decided}</b>`;
+    return;
+  }
+  const vals = mode === 'local'
+    ? MODELS.map(m => effectiveReview(m).r.verdict)
+    : CATALOG.map(c => reviewOf(c.key).verdict);
+  const like = vals.filter(v => v === 'like').length;
+  const dislike = vals.filter(v => v === 'dislike').length;
+  const none = vals.length - like - dislike;
+  document.getElementById('summary').innerHTML =
+    `${mode === 'local' ? 'Скачанные' : 'Каталог'}: ${vals.length} · 👍 <b class="good">${like}</b> · ` +
+    `👎 <b class="bad">${dislike}</b> · без оценки: ${none}`;
+}
+
+// --- панель ревью ------------------------------------------------------------
+const reviewBox = document.getElementById('review');
+const btnLike = document.getElementById('btnLike');
+const btnDislike = document.getElementById('btnDislike');
+const revComment = document.getElementById('revComment');
+const revSaved = document.getElementById('revSaved');
+const revShip = document.getElementById('revShip');
+const revMeta = document.getElementById('revMeta');
+
+function refreshPanel() {
+  if (groupMode) { reviewBox.style.display = mode === 'tour' ? 'none' : 'block'; return; }
+  if (!activeKey) { reviewBox.style.display = 'none'; return; }
+  const r = reviewOf(activeKey);
+  reviewBox.style.display = 'block';
+  btnLike.classList.toggle('on-like', r.verdict === 'like');
+  btnDislike.classList.toggle('on-dislike', r.verdict === 'dislike');
+  if (revComment.value !== (r.comment || '')) revComment.value = r.comment || '';
+  document.querySelectorAll('#tagRow .tag').forEach(ch => {
+    ch.classList.toggle('on', (r.tags || []).includes(ch.dataset.tag));
+  });
+}
+const tagRow = document.getElementById('tagRow');
+TAGS.forEach(tag => {
+  const ch = document.createElement('button');
+  ch.className = 'tag'; ch.dataset.tag = tag; ch.textContent = tag;
+  ch.title = 'Быстрая пометка: ' + tag;
+  ch.addEventListener('click', () => {
+    if (!activeKey) return;
+    const r = reviewOf(activeKey);
+    const tags = (r.tags || []).includes(tag) ? r.tags.filter(t => t !== tag) : [...(r.tags || []), tag];
+    setReview(activeKey, { tags });
+    refreshPanel(); flashSaved('сохранено');
+  });
+  tagRow.appendChild(ch);
+});
+btnLike.addEventListener('click', () => {
+  const r = reviewOf(activeKey);
+  setReview(activeKey, { verdict: r.verdict === 'like' ? null : 'like' });
+  refreshPanel(); flashSaved('сохранено');
+});
+btnDislike.addEventListener('click', () => {
+  const r = reviewOf(activeKey);
+  setReview(activeKey, { verdict: r.verdict === 'dislike' ? null : 'dislike' });
+  refreshPanel(); flashSaved('сохранено');
+});
+let saveTimer = null;
+revComment.addEventListener('input', () => {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => {
+    setReview(activeKey, { comment: revComment.value });
+    refreshPanel(); flashSaved('сохранено');
+  }, 400);
+});
+function flashSaved(text) {
+  revSaved.textContent = text;
+  setTimeout(() => { revSaved.textContent = ''; }, 1500);
+}
+// пользовательские повороты модели вокруг мировых осей (накапливаются кватернионом)
+function applyUserRot(axis, angleDeg) {
+  if (groupMode) { rotateGroup(axis, angleDeg); return; }
+  if (mode !== 'local' || currentIdx < 0 || !current || loadedKey !== activeKey) {
+    flashSaved('модель ещё загружается…'); return;
+  }
+  const q = new THREE.Quaternion().setFromAxisAngle(
+    new THREE.Vector3(axis[0], axis[1], axis[2]), THREE.MathUtils.degToRad(angleDeg));
+  current.quaternion.premultiply(q);
+  fit(current);
+  setReview(MODELS[currentIdx].key, { orientation: current.quaternion.toArray() });
+  refreshPanel(); flashSaved('поворот применён');
+}
+document.getElementById('rotRed').addEventListener('click', () => applyUserRot([0, 0, -1], 90));
+document.getElementById('rotBlue').addEventListener('click', () => applyUserRot([0, 1, 0], 90));
+document.getElementById('rotPitch').addEventListener('click', () => applyUserRot([1, 0, 0], 90));
+document.getElementById('rotFlip').addEventListener('click', () => applyUserRot([0, 1, 0], 180));
+document.getElementById('rotReset').addEventListener('click', () => {
+  if (groupMode) { resetGroup(); return; }
+  if (currentIdx < 0 || !current || loadedKey !== activeKey) return;
+  current.quaternion.identity();
+  setReview(MODELS[currentIdx].key, { orientation: null });
+  fit(current); refreshPanel(); flashSaved('сброшено');
+});
+document.getElementById('exportBtn').addEventListener('click', () => {
+  const payload = { exportedAt: new Date().toISOString(), reviews: [] };
+  for (const m of MODELS) {
+    const r = reviewOf(m.key);
+    payload.reviews.push({ source: 'downloaded', ship: m.ship, file: m.file,
+      verdict: r.verdict, tags: r.tags || [], comment: r.comment || '',
+      orientation: r.orientation || null });
+  }
+  for (const c of CATALOG) {
+    const r = reviewOf(c.key);
+    payload.reviews.push({ source: 'sketchfab_index', ship: c.ship, uid: c.uid,
+      name: c.label, url: c.url, verdict: r.verdict, tags: r.tags || [], comment: r.comment || '' });
+  }
+  const blob = new Blob([JSON.stringify(payload, null, 1)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'model_reviews.json';
+  a.click();
+});
+
+// --- 3D (локальные файлы) ----------------------------------------------------
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b0e14);
+const camera = new THREE.PerspectiveCamera(50, 1, 0.01, 100000);
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+document.getElementById('stage').appendChild(renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.autoRotateSpeed = 1.6;
+// Кадр рисуется только когда что-то изменилось (камера, модель, поворот,
+// размер окна). Раньше сцена перерисовывалась 60 раз в секунду всегда — даже
+// когда на неё никто не смотрит, — и держала видеокарту под нагрузкой.
+let needsRender = true;
+function invalidate() { needsRender = true; }
+controls.addEventListener('change', invalidate);
+// Автоповорот = непрерывная перерисовка, поэтому по умолчанию выключен;
+// выбор запоминается в этом браузере.
+const AUTOROT_KEY = 'swb_model_autorotate_v1';
+try { controls.autoRotate = localStorage.getItem(AUTOROT_KEY) === '1'; } catch (e) { controls.autoRotate = false; }
+document.getElementById('rot').checked = controls.autoRotate;
+document.getElementById('rot').addEventListener('change', e => {
+  controls.autoRotate = e.target.checked;
+  try { localStorage.setItem(AUTOROT_KEY, e.target.checked ? '1' : '0'); } catch (err) {}
+  invalidate();
+});
+scene.add(new THREE.HemisphereLight(0xbfd4ff, 0x20242c, 1.1));
+const sun = new THREE.DirectionalLight(0xffffff, 1.6);
+sun.position.set(3, 5, 4);
+scene.add(sun);
+const grid = new THREE.GridHelper(10, 10, 0x2a3446, 0x1a2130);
+scene.add(grid);
+
+let current = null;
+let axesGroup = null;
+let loadedKey = null; // ключ модели, которая РЕАЛЬНО загружена (защита от гонок)
+// оси конвенции от центра модели: вперёд (нос, -Z) — тонкая красная, вверх (+Y) — синяя
+function drawAxes(size) {
+  if (axesGroup) { scene.remove(axesGroup); disposeObject(axesGroup); }
+  invalidate();
+  axesGroup = new THREE.Group();
+  const L = size * 0.6;
+  const fwd = new THREE.Line(
+    new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 0, -L)]),
+    new THREE.LineBasicMaterial({ color: 0xff2222 }));
+  const up = new THREE.Line(
+    new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, L, 0)]),
+    new THREE.LineBasicMaterial({ color: 0x2266ff }));
+  const span = new THREE.Line(
+    new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, 0), new THREE.Vector3(L, 0, 0)]),
+    new THREE.LineBasicMaterial({ color: 0x22cc66 }));
+  axesGroup.add(fwd, up, span);
+  scene.add(axesGroup);
+}
+const embedFrame = document.getElementById('embedFrame');
+function showCanvas(v) {
+  invalidate();
+  renderer.domElement.style.display = v ? 'block' : 'none';
+  embedFrame.style.display = v ? 'none' : 'block';
+  if (axesGroup) axesGroup.visible = v;
+}
+function fit(obj) {
+  invalidate();
+  const box = new THREE.Box3().setFromObject(obj);
+  if (box.isEmpty()) return;
+  const size = box.getSize(new THREE.Vector3()).length();
+  const center = box.getCenter(new THREE.Vector3());
+  obj.position.sub(center);
+  grid.scale.setScalar(size / 6);
+  const dist = size / (2 * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))) * 1.35;
+  camera.near = Math.max(dist / 1000, 0.001);
+  camera.far = dist * 100;
+  // вид спереди-сверху: нос (красная ось, −Z) направлен на зрителя
+  camera.position.set(dist * 0.55, dist * 0.45, -dist);
+  camera.updateProjectionMatrix();
+  controls.target.set(0, 0, 0);
+  controls.update();
+  drawAxes(size);
+}
+function clearLocal() {
+  // раньше модель только убиралась со сцены, а геометрия и текстуры оставались
+  // в памяти видеокарты: 12 просмотренных моделей = 12 моделей в памяти
+  if (current) { scene.remove(current); disposeObject(current); current = null; }
+  loadedKey = null;
+  invalidate();
+}
+function mark(key, st) {
+  const el = document.querySelector(`#list .m[data-key="${CSS.escape(key)}"] .st`);
+  if (el) el.textContent = st;
+}
+
+const draco = new DRACOLoader().setDecoderPath('https://unpkg.com/three@0.160.0/examples/jsm/libs/draco/');
+const gltfLoader = new GLTFLoader().setDRACOLoader(draco).setMeshoptDecoder(MeshoptDecoder);
+const objLoader = new OBJLoader();
+const stlLoader = new STLLoader();
+
+// Облегчённая копия (текстуры ≤512 px, меши слиты, геометрия упрощена) —
+// по умолчанию; галочка «оригинал» грузит полный файл. Ориентация у них общая.
+const fullBox = document.getElementById('full');
+function sourceOf(m) {
+  const usePreview = m.preview && !fullBox.checked;
+  return { path: usePreview ? m.preview : m.file, preview: !!usePreview };
+}
+async function loadModelObject(m) {
+  const src = sourceOf(m);
+  const url = BASE + src.path.split('/').map(encodeURIComponent).join('/');
+  if (m.kind === 'gltf' || src.preview) return (await gltfLoader.loadAsync(url)).scene;
+  if (m.kind === 'obj') {
+    const o = await objLoader.loadAsync(url);
+    o.traverse(x => { if (x.isMesh) x.material = new THREE.MeshStandardMaterial({ color: 0x9fb4cc, metalness: 0.35, roughness: 0.6 }); });
+    return o;
+  }
+  const geo = await stlLoader.loadAsync(url);
+  geo.computeVertexNormals();
+  return new THREE.Group().add(new THREE.Mesh(geo,
+    new THREE.MeshStandardMaterial({ color: 0x9fb4cc, metalness: 0.3, roughness: 0.65 })));
+}
+function disposeObject(obj) {
+  // Освобождает всё, что модель держит в видеопамяти и в памяти вкладки:
+  // геометрию, материалы, текстуры и декодированные картинки текстур.
+  obj.traverse(o => {
+    if (o.geometry) o.geometry.dispose();
+    // у скелетных мешей своя служебная текстура костей — её освобождает скелет
+    if (o.isSkinnedMesh && o.skeleton) o.skeleton.dispose();
+    for (const mat of [].concat(o.material || [])) {
+      for (const v of Object.values(mat)) {
+        if (!v || !v.isTexture) continue;
+        const img = v.source && v.source.data;
+        if (img && typeof img.close === 'function') img.close();   // ImageBitmap
+        v.dispose();
+      }
+      mat.dispose();
+    }
+  });
+}
+
+async function loadLocal(i) {
+  if (groupMode) exitGroup();
+  const m = MODELS[i];
+  activeKey = m.key; currentIdx = i;
+  revShip.textContent = `${numText(m)} · ${m.ship}`;
+  revMeta.textContent = m.label;
+  showCanvas(true);
+  document.querySelectorAll('#list .m').forEach(b => b.classList.toggle('active', b.dataset.key === m.key));
+  status.textContent = 'загрузка: ' + m.file;
+  clearLocal();
+  refreshPanel();
+  try {
+    const obj = await loadModelObject(m);
+    if (activeKey !== m.key || groupMode) { disposeObject(obj); return; } // уже выбрали другое
+    current = obj;
+    scene.add(current);
+    // восстановить сохранённые пользователем повороты до подгонки камеры
+    const stored = reviewOf(m.key).orientation;
+    if (Array.isArray(stored) && stored.length === 4) {
+      current.quaternion.fromArray(stored);
+    }
+    loadedKey = m.key;
+    fit(current);
+    const mb = m.bytes ? ` · ${(m.bytes / 1e6).toFixed(1)} МБ` : '';
+    status.textContent = numText(m) + ' · ' + m.label + ' — ' +
+      (sourceOf(m).preview ? 'облегчённая копия' : 'оригинал' + mb);
+    mark(m.key, '✓');
+  } catch (e) {
+    status.textContent = 'ОШИБКА загрузки ' + m.file + ': ' + (e && e.message ? e.message : e);
+    mark(m.key, '✗');
+  }
+}
+
+function openCatalog(c) {
+  activeKey = c.key; currentIdx = -1;
+  clearLocal();
+  showCanvas(false);
+  embedFrame.src = `https://sketchfab.com/models/${c.uid}/embed?autostart=1&ui_theme=dark&dnt=1`;
+  document.querySelectorAll('#list .m').forEach(b => b.classList.toggle('active', b.dataset.key === c.key));
+  status.innerHTML = `Каталог: ${c.label} — <a href="${c.url}" target="_blank" style="color:#7fb0e8">страница модели</a> (файл не скачан)`;
+  revShip.textContent = c.label;
+  revMeta.textContent = `${c.ship} · ${c.meta}`;
+  refreshPanel();
+}
+
+// --- групповой режим: до 9 моделей сеткой 3×3, поворот сразу всех ------------
+// Каждая модель нормирована в ячейку одного размера, над ней подпись, под ней
+// синее кольцо «в повороте». Тап по кораблю исключает его из поворота —
+// удобно, когда из девяти неправильно лежат восемь.
+const MAX_GROUP = 9;
+const SEL_KEY = 'swb_model_group_v1';
+const GAP = 1.3;
+let selected = new Set();
+try { selected = new Set(JSON.parse(localStorage.getItem(SEL_KEY) || '[]')); } catch (e) {}
+let groupMode = false;
+let tiles = [];
+let prevAutoRotate = true;
+let filterText = '';
+const groupRoot = new THREE.Group();
+scene.add(groupRoot);
+const labelsEl = document.getElementById('labels');
+const rotBox = document.getElementById('rot');
+const grpCount = document.getElementById('grpCount');
+
+function persistSel() { try { localStorage.setItem(SEL_KEY, JSON.stringify([...selected])); } catch (e) {} }
+function refreshGroupBar(warn) {
+  grpCount.textContent = warn || `Группа: ${selected.size} из ${MAX_GROUP}`;
+  grpCount.classList.toggle('warn', !!warn);
+  document.getElementById('grpShow').disabled = selected.size === 0;
+}
+function toggleSelect(key, cb) {
+  if (cb.checked && selected.size >= MAX_GROUP) {
+    cb.checked = false;
+    refreshGroupBar(`В группе уже ${MAX_GROUP} — снимите галочку с другой модели`);
+    return;
+  }
+  if (cb.checked) selected.add(key); else selected.delete(key);
+  persistSel(); refreshGroupBar();
+}
+document.getElementById('filter').addEventListener('input', (e) => {
+  filterText = e.target.value.trim().toLowerCase();
+  renderList();
+});
+document.getElementById('grpVisible').addEventListener('click', () => {
+  for (const cb of document.querySelectorAll('#list .pick')) {
+    if (selected.size >= MAX_GROUP) break;
+    selected.add(cb.dataset.key);
+  }
+  persistSel(); renderList(); refreshGroupBar();
+});
+document.getElementById('grpClear').addEventListener('click', () => {
+  selected.clear(); persistSel(); renderList(); refreshGroupBar();
+});
+document.getElementById('grpShow').addEventListener('click', () => enterGroup());
+document.getElementById('grpAll').addEventListener('click', () => tiles.forEach(t => setTileEnabled(t, true)));
+document.getElementById('grpNone').addEventListener('click', () => tiles.forEach(t => setTileEnabled(t, false)));
+
+function normalizeTile(t) {
+  // вписать модель в ячейку: центр — в центр ячейки, наибольший габарит — 0.82
+  t.model.position.set(0, 0, 0);
+  t.holder.scale.setScalar(1);
+  t.pivot.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(t.model);
+  if (box.isEmpty()) return;
+  const size = box.getSize(new THREE.Vector3());
+  const local = box.getCenter(new THREE.Vector3()).sub(t.pivot.position);
+  t.model.position.copy(local).multiplyScalar(-1);
+  t.holder.scale.setScalar(0.82 / Math.max(size.x, size.y, size.z));
+  invalidate();
+}
+function tileAxes() {
+  const g = new THREE.Group();
+  const L = 0.5;
+  const line = (to, color) => new THREE.Line(
+    new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), to]),
+    new THREE.LineBasicMaterial({ color }));
+  g.add(line(new THREE.Vector3(0, 0, -L), 0xff2222),   // нос
+        line(new THREE.Vector3(0, L, 0), 0x2266ff),    // верх
+        line(new THREE.Vector3(L, 0, 0), 0x22cc66));   // крыло
+  return g;
+}
+function setTileEnabled(t, on) {
+  t.enabled = on;
+  t.ring.visible = on;
+  t.axes.visible = on;
+  t.label.classList.toggle('off', !on);
+  invalidate();
+}
+async function enterGroup(keysArg) {
+  const keys = (keysArg || [...selected]).filter(k => MODELS.some(m => m.key === k)).slice(0, MAX_GROUP);
+  if (!keys.length) { refreshGroupBar('Отметьте галочками до 9 моделей'); return; }
+  if (!keysArg && mode !== 'local') setMode('local');
+  exitGroup();
+  clearLocal();
+  if (axesGroup) axesGroup.visible = false;
+  groupMode = true; activeKey = null; currentIdx = -1;
+  prevAutoRotate = controls.autoRotate;
+  controls.autoRotate = false; rotBox.checked = false;
+  document.querySelectorAll('#list .m').forEach(b => b.classList.remove('active'));
+  reviewBox.classList.add('group');
+  revShip.textContent = `Группа из ${keys.length}`;
+  revMeta.textContent = 'Повороты применяются ко всем кораблям с синим кольцом. Тап по кораблю — исключить или вернуть.';
+  refreshPanel();
+
+  const n = keys.length, cols = Math.min(3, n), rows = Math.ceil(n / 3);
+  tiles = keys.map((key, i) => {
+    const m = MODELS.find(x => x.key === key);
+    const pivot = new THREE.Group();
+    pivot.position.set(((cols - 1) / 2 - (i % 3)) * GAP, 0, ((rows - 1) / 2 - Math.floor(i / 3)) * GAP);
+    const holder = new THREE.Group();
+    const axes = tileAxes();
+    const ring = new THREE.Mesh(new THREE.RingGeometry(0.5, 0.535, 48),
+      new THREE.MeshBasicMaterial({ color: 0x4d8fd6, side: THREE.DoubleSide }));
+    ring.rotation.x = -Math.PI / 2; ring.position.y = -0.47;
+    const pick = new THREE.Mesh(new THREE.BoxGeometry(1.05, 1.05, 1.05),
+      new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false, colorWrite: false }));
+    pivot.add(holder, axes, ring, pick);
+    groupRoot.add(pivot);
+    const label = document.createElement('div');
+    label.className = 'lbl';
+    const ln = document.createElement('span');
+    ln.className = 'ln'; ln.textContent = numText(m);
+    label.append(ln);
+    label.title = `${numText(m)} · ${m.ship} · ${m.label}`;
+    labelsEl.appendChild(label);
+    return { key, m, pivot, holder, axes, ring, pick, label, model: null, enabled: true };
+  });
+
+  const span = Math.max(cols, rows) * GAP;
+  grid.scale.setScalar(span * 1.6 / 10);
+  grid.position.y = -0.47;
+  camera.near = 0.01; camera.far = 1000;
+  // панель оценки занимает левый верх экрана — сдвигаем сетку вправо
+  // (при взгляде спереди экранное «право» — это −X, поэтому цель смещена в +X)
+  const shiftX = span * 0.12;
+  camera.position.set(span * 0.4 + shiftX, span * 1.3, -span * 1.55);
+  camera.updateProjectionMatrix();
+  controls.target.set(shiftX, 0, 0);
+  controls.update();
+
+  const batch = tiles;
+  let done = 0;
+  status.textContent = `группа: загрузка 0 из ${n}…`;
+  for (const t of batch) {                    // по одной — бережём память планшета
+    try {
+      const obj = await loadModelObject(t.m);
+      if (tiles !== batch) { disposeObject(obj); return; }   // группу уже закрыли
+      const stored = reviewOf(t.key).orientation;
+      if (Array.isArray(stored) && stored.length === 4) obj.quaternion.fromArray(stored);
+      t.model = obj;
+      t.holder.add(obj);
+      normalizeTile(t);
+    } catch (e) {
+      t.label.classList.add('err');
+      t.label.textContent += ' — не загрузилась';
+    }
+    if (tiles !== batch) return;
+    status.textContent = `группа: загружено ${++done} из ${n}…`;
+  }
+  status.textContent = `Группа из ${n}. Нос — красная ось, верх — синяя. 1/2/3/4 или кнопки — повернуть все с кольцом.`;
+}
+function exitGroup() {
+  if (!groupMode && !tiles.length) return;
+  groupMode = false;
+  for (const t of tiles) {
+    groupRoot.remove(t.pivot);
+    disposeObject(t.pivot);
+    t.label.remove();
+  }
+  tiles = [];
+  grid.position.y = 0;
+  invalidate();
+  reviewBox.classList.remove('group');
+  controls.autoRotate = prevAutoRotate; rotBox.checked = prevAutoRotate;
+}
+function rotateGroup(axis, angleDeg) {
+  const on = tiles.filter(t => t.enabled && t.model);
+  if (!on.length) { flashSaved('никто не отмечен кольцом'); return; }
+  const q = new THREE.Quaternion().setFromAxisAngle(
+    new THREE.Vector3(axis[0], axis[1], axis[2]), THREE.MathUtils.degToRad(angleDeg));
+  for (const t of on) {
+    t.model.quaternion.premultiply(q);
+    normalizeTile(t);
+    setReview(t.key, { orientation: t.model.quaternion.toArray() });
+  }
+  flashSaved(`повёрнуто: ${on.length}`);
+}
+function resetGroup() {
+  const on = tiles.filter(t => t.enabled && t.model);
+  for (const t of on) {
+    t.model.quaternion.identity();
+    normalizeTile(t);
+    setReview(t.key, { orientation: null });
+  }
+  flashSaved(`сброшено: ${on.length}`);
+}
+const labelPos = new THREE.Vector3();
+function updateLabels() {
+  if (!groupMode) return;
+  const w = renderer.domElement.clientWidth, h = renderer.domElement.clientHeight;
+  for (const t of tiles) {
+    labelPos.copy(t.pivot.position); labelPos.y += 0.6;
+    labelPos.project(camera);
+    t.label.hidden = labelPos.z > 1;
+    t.label.style.transform =
+      `translate(${((labelPos.x + 1) / 2) * w}px, ${((1 - labelPos.y) / 2) * h}px) translate(-50%, -100%)`;
+  }
+}
+// тап (без перетаскивания) по кораблю — включить/исключить его из поворота
+const raycaster = new THREE.Raycaster();
+let downAt = null;
+renderer.domElement.addEventListener('pointerdown', (e) => { downAt = [e.clientX, e.clientY]; });
+renderer.domElement.addEventListener('pointerup', (e) => {
+  if (!groupMode || !downAt || mode === 'tour') return;
+  if (Math.hypot(e.clientX - downAt[0], e.clientY - downAt[1]) > 8) return;
+  const r = renderer.domElement.getBoundingClientRect();
+  raycaster.setFromCamera(new THREE.Vector2(
+    ((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1), camera);
+  const hit = raycaster.intersectObjects(tiles.map(t => t.pick), false)[0];
+  if (!hit) return;
+  const t = tiles.find(x => x.pick === hit.object);
+  setTileEnabled(t, !t.enabled);
+});
+
+// --- турнир на выбывание: лучшая модель на каждый корабль игры ----------------
+// Кандидаты типа — модели этого класса, кроме 👎 и отсутствующих файлов,
+// посеяны по качеству (как в списке «Скачанные»). Круг за кругом соседние
+// кандидаты играют парами, победитель проходит дальше; при нечётном числе
+// первый посеянный проходит без игры. Всего матчей = кандидатов − 1, а не
+// полный граф. Выборы хранятся как «пара → победитель», поэтому сетка
+// пересчитывается сама, если кандидатов стало больше или меньше.
+const tourBox = document.getElementById('tour');
+let tourType = null;
+const tourUndo = [];
+function candidatesOf(type) {
+  return MODELS.filter(m => classOf(m) === type && !m.missing &&
+      effectiveReview(m).r.verdict !== 'dislike')
+    .map(m => ({ m, q: qualityOf(m) }))
+    .sort((a, b) => a.q[0] - b.q[0] || a.q[1] - b.q[1] || (a.m.num || 1e9) - (b.m.num || 1e9))
+    .map(x => x.m.file);
+}
+const pairKey = (a, b) => [a, b].sort().join('|');
+function bracketOf(type) {
+  const picks = (TOUR[type] || {}).picks || {};
+  let round = candidatesOf(type);
+  const total = Math.max(0, round.length - 1);
+  let done = 0, roundNo = 1;
+  while (round.length > 1) {
+    const list = round.slice(), next = [];
+    if (list.length % 2) next.push(list.shift());          // первый посеянный — без игры
+    for (let i = 0; i < list.length; i += 2) {
+      const a = list[i], b = list[i + 1], w = picks[pairKey(a, b)];
+      if (w !== a && w !== b) return { current: { a, b }, winner: null, done, total, roundNo };
+      done++; next.push(w);
+    }
+    round = next; roundNo++;
+  }
+  return { current: null, winner: round[0] || null, done, total, roundNo };
+}
+function modelByFile(f) { return MODELS.find(m => m.file === f); }
+function tourStatus(type) {
+  const n = candidatesOf(type).length;
+  if (!n) return { text: 'нет моделей', rank: 3 };
+  const b = bracketOf(type);
+  if (b.winner) return { text: `лучшая ${numText(modelByFile(b.winner))}` + (n > 1 ? ` из ${n}` : ' (единственная)'), rank: 2, win: true };
+  return { text: `матч ${b.done + 1} из ${b.total} · моделей ${n}`, rank: b.done ? 0 : 1 };
+}
+function renderTourList() {
+  // сначала начатые, потом не начатые, потом решённые, в конце — без моделей
+  const rows = ROSTER.map(r => ({ r, st: tourStatus(r.id) }))
+    .sort((a, b) => a.st.rank - b.st.rank || a.r.name.localeCompare(b.r.name, 'ru'));
+  const titles = ['в процессе', 'не начато', 'выбрана лучшая', 'нет моделей в наборе'];
+  let last = -1;
+  for (const { r, st } of rows) {
+    if (st.rank !== last) {
+      const sep = document.createElement('div');
+      sep.className = 'sep'; sep.textContent = titles[st.rank];
+      listEl.appendChild(sep); last = st.rank;
+    }
+    const b = itemButton('tour:' + r.id, r.name, st.text);
+    if (st.win) b.querySelector('.st').classList.add('win');
+    b.querySelector('.st').textContent = st.win ? '✓' : '·';
+    if (r.id === tourType) b.classList.add('active');
+    b.addEventListener('click', () => openTour(r.id));
+    listEl.appendChild(b);
+  }
+}
+function fillFixSelect(sel, file) {
+  sel.innerHTML = '';
+  const cur = (CLASSES[file] || {}).ship;
+  const opts = [['none', '— нет в игре / не корабль —'],
+    ...ROSTER.map(r => [r.id, r.name]).sort((a, b) => a[1].localeCompare(b[1], 'ru'))];
+  for (const [id, name] of opts) {
+    const o = document.createElement('option');
+    o.value = id; o.textContent = (id === cur ? '✓ ' : '') + name;
+    if (id === cur) o.selected = true;
+    sel.appendChild(o);
+  }
+  sel.dataset.file = file;
+}
+async function saveTour(type) {
+  const b = bracketOf(type);
+  const entry = { picks: (TOUR[type] || {}).picks || {}, winner: b.winner || null };
+  TOUR[type] = entry;
+  try { await postDoc('tournament', { [type]: entry }); setSyncState('✓ выбор сохранён на Маке'); }
+  catch (e) { setSyncState('не удалось сохранить выбор — проверьте, что serve.py запущен', true); }
+}
+async function openTour(type) {
+  tourType = type;
+  const r = ROSTER_BY_ID.get(type);
+  const b = bracketOf(type);
+  const n = candidatesOf(type).length;
+  tourBox.style.display = 'block';
+  const img = document.getElementById('tourImg');
+  // у заглушек (крошечная картинка) берём оригинал по ссылке-источнику из манифеста
+  img.onerror = () => { if (r.art && img.src !== location.origin + r.art) img.src = r.art; };
+  img.src = (r.art_placeholder && r.art_url) ? r.art_url : (r.art || '');
+  img.alt = r.art_title || r.name;
+  document.getElementById('tourSearch').href =
+    'https://duckduckgo.com/?iax=images&ia=images&q=' + encodeURIComponent((r.art_title || r.name) + ' star wars');
+  document.getElementById('tourName').textContent = r.name;
+  const pa = document.getElementById('pickA'), pb = document.getElementById('pickB');
+  const fixA = document.getElementById('fixA'), fixB = document.getElementById('fixB');
+  renderList(); refreshSummary();
+  if (!n) {
+    document.getElementById('tourMeta').textContent = 'В наборе нет ни одной модели этого корабля.';
+    pa.disabled = pb.disabled = true; fixA.parentElement.style.display = 'none';
+    exitGroup(); clearLocal();
+    status.textContent = `${r.name}: моделей нет — нужно искать и скачивать`;
+    return;
+  }
+  if (b.current) {
+    const A = modelByFile(b.current.a), B = modelByFile(b.current.b);
+    document.getElementById('tourMeta').textContent =
+      `Круг ${b.roundNo} · матч ${b.done + 1} из ${b.total} · слева ${numText(A)}, справа ${numText(B)}`;
+    pa.disabled = pb.disabled = false;
+    fixA.parentElement.style.display = '';
+    document.getElementById('fixALbl').textContent = 'левый ' + numText(A);
+    document.getElementById('fixBLbl').textContent = 'правый ' + numText(B);
+    fillFixSelect(fixA, A.file); fillFixSelect(fixB, B.file);
+    await enterGroup([A.key, B.key]);
+    if (tourType === type) status.textContent = `${r.name}: какая модель лучше? ← левая ${numText(A)} · правая ${numText(B)} →`;
+  } else {
+    const W = modelByFile(b.winner);
+    document.getElementById('tourMeta').textContent = n > 1
+      ? `Лучшая модель: ${numText(W)} — выбрана из ${n} за ${b.total} сравнений.`
+      : `Единственная модель: ${numText(W)} — сравнивать не с чем.`;
+    pa.disabled = pb.disabled = true;
+    fixA.parentElement.style.display = '';
+    document.getElementById('fixALbl').textContent = 'лучшая ' + numText(W);
+    fillFixSelect(fixA, W.file);
+    fixB.parentElement.querySelectorAll('#fixB, #fixBLbl').forEach(el => { el.style.display = 'none'; });
+    await enterGroup([W.key]);
+    if (tourType === type) status.textContent = `${r.name}: лучшая модель ${numText(W)} · ${W.label}`;
+    if ((TOUR[type] || {}).winner !== b.winner) saveTour(type);
+    return;
+  }
+  document.querySelectorAll('#fixB, #fixBLbl').forEach(el => { el.style.display = ''; });
+}
+async function pick(side) {
+  if (mode !== 'tour' || !tourType) return;
+  const b = bracketOf(tourType);
+  if (!b.current) return;
+  const winner = side === 'a' ? b.current.a : b.current.b;
+  const key = pairKey(b.current.a, b.current.b);
+  TOUR[tourType] = TOUR[tourType] || { picks: {}, winner: null };
+  TOUR[tourType].picks = { ...(TOUR[tourType].picks || {}), [key]: winner };
+  tourUndo.push([tourType, key]);
+  await saveTour(tourType);
+  openTour(tourType);
+}
+document.getElementById('pickA').addEventListener('click', () => pick('a'));
+document.getElementById('pickB').addEventListener('click', () => pick('b'));
+document.getElementById('tourUndo').addEventListener('click', async () => {
+  const last = tourUndo.pop();
+  if (!last) { setSyncState('отменять нечего — в этой сессии выборов не было', true); return; }
+  const [type, key] = last;
+  delete (TOUR[type].picks || {})[key];
+  await saveTour(type);
+  openTour(type);
+});
+document.getElementById('tourReset').addEventListener('click', async () => {
+  if (!tourType || !confirm('Сбросить все выборы по этому кораблю и сыграть заново?')) return;
+  TOUR[tourType] = { picks: {}, winner: null };
+  await saveTour(tourType);
+  openTour(tourType);
+});
+for (const id of ['fixA', 'fixB']) {
+  document.getElementById(id).addEventListener('change', async (e) => {
+    const file = e.target.dataset.file, ship = e.target.value;
+    const m = modelByFile(file);
+    CLASSES[file] = { ship, source: 'manual', num: m ? m.num : null };
+    try { await postDoc('classes', { [file]: CLASSES[file] });
+      setSyncState(`✓ ${m ? numText(m) : ''} → ${className(ship)}`); }
+    catch (err) { setSyncState('не удалось сохранить тип модели', true); }
+    openTour(tourType);                        // модель ушла — сетка пересчитается
+  });
+}
+
+// вкладки
+const tabLocal = document.getElementById('tabLocal');
+const tabCatalog = document.getElementById('tabCatalog');
+const tabTour = document.getElementById('tabTour');
+function setMode(m) {
+  if (groupMode) exitGroup();
+  mode = m;
+  tabLocal.classList.toggle('on', m === 'local');
+  tabCatalog.classList.toggle('on', m === 'catalog');
+  tabTour.classList.toggle('on', m === 'tour');
+  tourBox.style.display = 'none';
+  if (m !== 'tour') tourType = null;
+  renderList();
+  refreshSummary();
+  if (m === 'local') { activeKey = null; embedFrame.src = 'about:blank'; showCanvas(true); refreshPanel(); }
+  else if (m === 'tour') {
+    activeKey = null; currentIdx = -1; clearLocal();
+    embedFrame.src = 'about:blank'; showCanvas(true); refreshPanel();
+    // победители, известные без сравнений (единственная модель), — сразу в tournament.json
+    const changes = {};
+    for (const r of ROSTER) {
+      const w = bracketOf(r.id).winner || null;
+      if (((TOUR[r.id] || {}).winner || null) !== w) {
+        TOUR[r.id] = { picks: (TOUR[r.id] || {}).picks || {}, winner: w };
+        changes[r.id] = TOUR[r.id];
+      }
+    }
+    if (Object.keys(changes).length) postDoc('tournament', changes).catch(() => {});
+    status.textContent = ROSTER.length
+      ? 'Турнир: выберите корабль игры слева — модели пойдут парами, вы выбираете лучшую'
+      : 'Турнир недоступен: страница открыта без сервера serve.py';
+  }
+  else { status.textContent = 'выберите модель каталога слева — откроется официальный 3D-embed Sketchfab'; }
+}
+tabTour.addEventListener('click', () => setMode('tour'));
+tabLocal.addEventListener('click', () => setMode('local'));
+tabCatalog.addEventListener('click', () => setMode('catalog'));
+
+function resize() {
+  const st = document.getElementById('stage');
+  camera.aspect = st.clientWidth / st.clientHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(st.clientWidth, st.clientHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+  invalidate();
+}
+window.addEventListener('resize', resize);
+resize();
+renderer.setAnimationLoop(() => {
+  const moved = controls.update();            // true, если камера сдвинулась (в т.ч. автоповорот)
+  if (!moved && !needsRender) return;         // ничего не изменилось — кадр не рисуем
+  needsRender = false;
+  updateLabels();
+  renderer.render(scene, camera);
+});
+
+setMode('local');
+refreshGroupBar();
+const hashIdx = parseInt((location.hash || '').replace('#/', ''), 10);
+loadLocal(Number.isInteger(hashIdx) && hashIdx >= 0 && hashIdx < MODELS.length ? hashIdx : 0);
+fullBox.addEventListener('change', () => {
+  if (groupMode) enterGroup();
+  else if (currentIdx >= 0) loadLocal(currentIdx);
+});
+window.__loadModel = loadLocal;
+window.__gpu = () => ({ ...renderer.info.memory, programs: renderer.info.programs.length, frame: renderer.info.render.frame });
+window.__getReviews = () => JSON.parse(localStorage.getItem(STORE_KEY) || '{}');
+window.__setMode = setMode;
+window.__catalogSize = CATALOG.length;
+window.__viewSide = (d = 1) => {
+  // d=0 лоб, 1 чистый бок; камера в плоскости XZ чуть сверху
+  const dist = camera.position.length();
+  const yaw = d * Math.PI / 2;
+  camera.position.set(dist * Math.sin(yaw) * 0.95, dist * 0.33, -dist * Math.cos(yaw) * 0.95);
+  controls.update();
+};
+window.__viewThreeQuarter = () => {
+  const dist = camera.position.length();
+  camera.position.set(dist * 0.62, dist * 0.42, -dist * 0.78);
+  controls.update();
+};
+
+// --- клавиатура: ↑↓ выбор модели, 1/2/3/4/0 повороты, Shift — обратно --------
+window.addEventListener('keydown', (e) => {
+  const tag = (e.target && e.target.tagName) || '';
+  if (tag === 'TEXTAREA' || tag === 'INPUT' || tag === 'SELECT') return;
+  if (mode === 'tour') {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); pick('a'); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); pick('b'); }
+    else if (e.key === 'Backspace') { e.preventDefault(); document.getElementById('tourUndo').click(); }
+    return;
+  }
+  if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+    e.preventDefault();
+    if (groupMode) return;
+    const delta = e.key === 'ArrowUp' ? -1 : 1;
+    if (mode === 'local') {
+      if (!listOrder.length) return;
+      const pos = listOrder.indexOf(currentIdx);
+      const next = pos < 0 ? 0 : (pos + delta + listOrder.length) % listOrder.length;
+      loadLocal(listOrder[next]);
+    } else {
+      const ci = CATALOG.findIndex(c => c.key === activeKey);
+      const ni = ((ci < 0 ? 0 : ci + delta) + CATALOG.length) % CATALOG.length;
+      openCatalog(CATALOG[ni]);
+    }
+    return;
+  }
+  if (mode !== 'local') return;
+  if (e.key === '4') { e.preventDefault(); document.getElementById('rotFlip').click(); return; }
+  if (e.key === '0') { e.preventDefault(); document.getElementById('rotReset').click(); return; }
+  const axes = { '1': [0, 0, -1], '2': [0, 1, 0], '3': [1, 0, 0] };
+  if (axes[e.key]) {
+    e.preventDefault();
+    applyUserRot(axes[e.key], e.shiftKey ? -90 : 90);
+  }
+});
+</script>
+</body>
+</html>

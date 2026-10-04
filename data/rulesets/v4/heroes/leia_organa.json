@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "id": "leia_organa",
+  "display_name": "Лея Органа",
+  "description": "Принцесса Альдераана, лидер Альянса повстанцев, сестра Люка.",
+  "faction": "rebels",
+  "era": "galactic_civil_war",
+  "ability": {
+    "id": "rebel_briefing",
+    "name": "Инструктаж",
+    "text": "1 раз в игру в начале раунда: все ваши корабли получают по 1 заряду.",
+    "kind": "active",
+    "trigger": "round_start",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "grant_charges",
+        "params": {
+          "value": 1,
+          "scope": "own_fleet"
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "alliance_command",
+    "name": "Командование Альянса",
+    "text": "Если все три ваших корабля — повстанцы, каждый из них получает +1 к силе атаки в секторах BL, B, BR (удар в хвост).",
+    "scope": "fleet",
+    "condition": {
+      "faction": "rebels",
+      "min_ships": 3
+    },
+    "effects": [
+      {
+        "op": "arc_bonus",
+        "params": {
+          "sector": [
+            2,
+            3,
+            4
+          ],
+          "role": "attacker",
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 7
+}

@@ -1,0 +1,30 @@
+{
+  "base_seed": 1000,
+  "commands": {
+    "avg": 1493.29,
+    "max": 2129,
+    "min": 785,
+    "p50": 1502,
+    "p95": 1853
+  },
+  "count": 200,
+  "results": {
+    "draws": 172,
+    "end_reasons": {
+      "elimination": 28,
+      "round_limit": 172
+    },
+    "wins_a": 14,
+    "wins_b": 14
+  },
+  "round_limit": 60,
+  "rounds": {
+    "avg": 58.2,
+    "max": 60,
+    "min": 29,
+    "p50": 60,
+    "p95": 60
+  },
+  "ruleset_hash": "A76A0C893AC2FB7D",
+  "seed_formula": "match_seed = base_seed + i; bot Rng = match_seed * 7919 + 13 (one RandomLegal instance per match)"
+}

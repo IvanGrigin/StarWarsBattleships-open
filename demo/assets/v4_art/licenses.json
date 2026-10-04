@@ -1,0 +1,1537 @@
+{
+ "_readme": [
+  "Лицензионный статус всех скачанных артов (проверено по категориям файлов Wookieepedia).",
+  "ВСЕ файлы — non-free (официальный арт/кадры/промо): права Lucasfilm Ltd. или авторов.",
+  "Для ЧАСТНОГО прототипа — использование допустимо как у вики (fair use, не публикуем).",
+  "Для ПУБЛИКАЦИИ игры эти файлы использовать НЕЛЬЗЯ без разрешения — заменить на",
+  "свободные (Wikimedia Commons с фильтром по лицензии, OpenGameArt CC0/CC-BY, Kenney CC0)",
+  "или получить разрешение авторов построек/арта."
+ ],
+ "verdict": "non-free: 102 из 102 · открытых лицензий: 0",
+ "files": [
+  {
+   "id": "arc170",
+   "kind": "ships",
+   "file": "File:ARC170starfighter.jpg",
+   "page": "https://starwars.fandom.com/wiki/File:ARC170starfighter.jpg",
+   "cats": [
+    "Images from Star Wars: Card Trader: Build",
+    "Images from Star Wars Facebook",
+    "Images from Star Wars Helmet Collection 33",
+    "Images from Starships of the Galaxy (Saga Edition)",
+    "Images from The StarWars.com 10: Best Starfighters",
+    "Images from the Encyclopedia",
+    "Images of ARC-170 starfighters",
+    "Images of Phase II clone trooper armor",
+    "Images of clone trooper pilots",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode III Revenge of the Sith",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "arc170",
+   "kind": "characters",
+   "file": "File:CloneTrooperPilots.png",
+   "page": "https://starwars.fandom.com/wiki/File:CloneTrooperPilots.png",
+   "cats": [
+    "Fair use images",
+    "Images from Every Stormtrooper in Star Wars Explained By Lucasfilm",
+    "Images from Sideshow Collectibles",
+    "Images from Star Wars: Battles for the Galaxy",
+    "Images from Star Wars: Character Encyclopedia, Updated and Expanded Edition",
+    "Images from Star Wars Chronicles: The Prequels",
+    "Images from the Encyclopedia",
+    "Images of Phase II clone trooper armor",
+    "Images of Phase I clone trooper armor",
+    "Images of Warthog",
+    "Images of clone trooper pilots",
+    "Promotional images from Star Wars: Episode III Revenge of the Sith",
+    "Promotional images of clone troopers",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "awing_rz1",
+   "kind": "ships",
+   "file": "File:A-wing_DICE.png",
+   "page": "https://starwars.fandom.com/wiki/File:A-wing_DICE.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images by Joel Dabrosin",
+    "Images from Star Wars Battlefront",
+    "Images from Star Wars Battlefront Strategy Guide",
+    "Images of RZ-1 A-wing interceptors",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "awing_rz1",
+   "kind": "characters",
+   "file": "File:Arvel-crynyd.jpg",
+   "page": "https://starwars.fandom.com/wiki/File:Arvel-crynyd.jpg",
+   "cats": [
+    "Images from Death Star II Limited",
+    "Images from Star Wars: Episode VI Return of the Jedi",
+    "Images from The Complete Star Wars Encyclopedia",
+    "Images of Arvel Crynyd",
+    "Images of R-series astromech droids",
+    "Images of RZ-1 A-wing interceptors",
+    "Images of flight helmets",
+    "Images of the Battle of Endor",
+    "Live-action images",
+    "Model and miniature images",
+    "Screenshots of films"
+   ]
+  },
+  {
+   "id": "bwing",
+   "kind": "ships",
+   "file": "File:BwingStarfighter-CGSWG.png",
+   "page": "https://starwars.fandom.com/wiki/File:BwingStarfighter-CGSWG.png",
+   "cats": [
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images of B-wing starfighters",
+    "Model and miniature images",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VI Return of the Jedi"
+   ]
+  },
+  {
+   "id": "bwing",
+   "kind": "characters",
+   "file": "File:Quarrie_SWCT.png",
+   "page": "https://starwars.fandom.com/wiki/File:Quarrie_SWCT.png",
+   "cats": [
+    "3D CGI animation images",
+    "Filenames with spaces",
+    "Images from Star Wars: Card Trader: Base Series 3",
+    "Images from Star Wars: Card Trader: Star Wars Rebels: Retro",
+    "Images from Star Wars: Rebel Heroes",
+    "Images from Star Wars Rebels Season Two",
+    "Images of Quarrie",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "death_star_1",
+   "kind": "ships",
+   "file": "File:DeathStar1-SWE.png",
+   "page": "https://starwars.fandom.com/wiki/File:DeathStar1-SWE.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: Base Series 4",
+    "Images from Star Wars: The Galactic Explorer's Guide",
+    "Images from The Moviemaking Magic of Star Wars: Ships & Battles",
+    "Images from the Databank (original)",
+    "Images from the Encyclopedia",
+    "Images of Death Star I",
+    "Images of stars",
+    "Promotional images",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "death_star_1",
+   "kind": "characters",
+   "file": "File:Tarkininfobox.jpg",
+   "page": "https://starwars.fandom.com/wiki/File:Tarkininfobox.jpg",
+   "cats": [
+    "Images from Official Pix",
+    "Images from Star Wars: Episode IV A New Hope",
+    "Images from Star Wars: The Galaxy's Greatest Villains",
+    "Images from Star Wars: The Rise and Fall of the Galactic Empire",
+    "Images from The Complete Star Wars Encyclopedia",
+    "Images of Death Star I",
+    "Live-action images",
+    "Promotional images",
+    "Promotional images of Wilhuff Tarkin"
+   ]
+  },
+  {
+   "id": "delta7_aethersprite",
+   "kind": "ships",
+   "file": "File:OWKDelta7Starfighter-Platinum2022.png",
+   "page": "https://starwars.fandom.com/wiki/File:OWKDelta7Starfighter-Platinum2022.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: Platinum - 2022",
+    "Images from Star Wars: Card Trader: Ships & Vehicles: Age of Republic",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images from Ultimate Star Wars, New Edition",
+    "Images of Delta-7 Aethersprite-class light interceptors",
+    "Images of R4-P17",
+    "Promotional images",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "delta7_aethersprite",
+   "kind": "characters",
+   "file": "File:ObiWanHS-SWE.jpg",
+   "page": "https://starwars.fandom.com/wiki/File:ObiWanHS-SWE.jpg",
+   "cats": [
+    "Images from Star Wars: Card Trader: A Long Time Ago",
+    "Images from the Encyclopedia",
+    "Promotional images",
+    "Promotional images of Obi-Wan Kenobi",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "eta2_actis",
+   "kind": "ships",
+   "file": "File:Eta-2JediInterceptor-USC.png",
+   "page": "https://starwars.fandom.com/wiki/File:Eta-2JediInterceptor-USC.png",
+   "cats": [
+    "Fair use images",
+    "Images from Star Wars Helmet Collection 33",
+    "Images from Ultimate Sticker Collection: Star Wars (2018)",
+    "Images of Eta-2 Actis-class interceptors",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "eta2_actis",
+   "kind": "characters",
+   "file": "File:Anakin_Skywalker_RotS.png",
+   "page": "https://starwars.fandom.com/wiki/File:Anakin_Skywalker_RotS.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars: Card Trader",
+    "Images of the Skywalker lightsaber",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode III Revenge of the Sith",
+    "Promotional images of Anakin Skywalker",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "executor",
+   "kind": "ships",
+   "file": "File:Executor2_BF2.png",
+   "page": "https://starwars.fandom.com/wiki/File:Executor2_BF2.png",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images by Taylor Kingston",
+    "Images from Star Wars Battlefront II",
+    "Images of the Executor",
+    "Video game CGI images"
+   ]
+  },
+  {
+   "id": "executor",
+   "kind": "characters",
+   "file": "File:FirusPiett-CGSWG.png",
+   "page": "https://starwars.fandom.com/wiki/File:FirusPiett-CGSWG.png",
+   "cats": [
+    "Fair use images",
+    "Images from Star Wars: Behind the Magic",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Characters and Creatures",
+    "Images from The Official Star Wars Fact File 4",
+    "Images from The Official Star Wars Fact File 70",
+    "Images from The Official Star Wars Fact File Part 16",
+    "Images of Firmus Piett",
+    "Live-action images"
+   ]
+  },
+  {
+   "id": "firespray_patrol",
+   "kind": "ships",
+   "file": "File:Slave_I_DICE.png",
+   "page": "https://starwars.fandom.com/wiki/File:Slave_I_DICE.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars Battlefront",
+    "Images of Slave I",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "firespray_patrol",
+   "kind": "characters",
+   "file": "File:JangoFett-SWBC20.png",
+   "page": "https://starwars.fandom.com/wiki/File:JangoFett-SWBC20.png",
+   "cats": [
+    "Images from Star Wars Bust Collection 20",
+    "Images of Jango Fett's armor",
+    "Promotional images",
+    "Promotional images of Jango Fett",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "ghost",
+   "kind": "ships",
+   "file": "File:VCX-350.jpg",
+   "page": "https://starwars.fandom.com/wiki/File:VCX-350.jpg",
+   "cats": [
+    "Artistic images",
+    "Fair use images",
+    "Images by Jeffery Carlisle",
+    "Images from Star Wars Gamer 2",
+    "Images of Corellian Engineering Corporation products",
+    "Images of freighters"
+   ]
+  },
+  {
+   "id": "ghost",
+   "kind": "characters",
+   "file": "File:Kanan-JediNight.png",
+   "page": "https://starwars.fandom.com/wiki/File:Kanan-JediNight.png",
+   "cats": [
+    "3D CGI animation images",
+    "Images from Jedi Night",
+    "Images of Kanan Jarrus",
+    "Screenshots of television programs"
+   ]
+  },
+  {
+   "id": "gr75_transport",
+   "kind": "ships",
+   "file": "File:RebelTransport-CGSWG.png",
+   "page": "https://starwars.fandom.com/wiki/File:RebelTransport-CGSWG.png",
+   "cats": [
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images of GR-75 medium transports",
+    "Model and miniature images",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "gr75_transport",
+   "kind": "characters",
+   "file": "File:Forged_in_Battle_FC_character_art_David_Auden_Nash.png",
+   "page": "https://starwars.fandom.com/wiki/File:Forged_in_Battle_FC_character_art_David_Auden_Nash.png",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images by David Auden Nash",
+    "Images from Forged in Battle",
+    "Images of Rebel Alliance military personnel",
+    "Reference book illustrations"
+   ]
+  },
+  {
+   "id": "hounds_tooth",
+   "kind": "ships",
+   "file": "File:HoundsTooth_3quarters_view-SWE.png",
+   "page": "https://starwars.fandom.com/wiki/File:HoundsTooth_3quarters_view-SWE.png",
+   "cats": [
+    "3D CGI animation images",
+    "Filenames with spaces",
+    "Images from Star Wars Encyclopedia of Starfighters and Other Vehicles",
+    "Images from Star Wars Helmet Collection 24",
+    "Images from The Official Star Wars Fact File Part 69",
+    "Images from the Databank",
+    "Images from the Encyclopedia",
+    "Images of Hound's Tooth",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "hounds_tooth",
+   "kind": "characters",
+   "file": "File:Bossk.png",
+   "page": "https://starwars.fandom.com/wiki/File:Bossk.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: 2020 Base Series",
+    "Images from Star Wars: Card Trader: Base Series 5",
+    "Images from Star Wars: Episode V The Empire Strikes Back",
+    "Images of Bossk",
+    "Images of the Executor",
+    "Promotional set photographs",
+    "Screenshots of films"
+   ]
+  },
+  {
+   "id": "hyena_bomber",
+   "kind": "ships",
+   "file": "File:HyenaBomber-SWE.png",
+   "page": "https://starwars.fandom.com/wiki/File:HyenaBomber-SWE.png",
+   "cats": [
+    "3D CGI animation images",
+    "Images from Star Wars: Build Your Own R2-D2 59",
+    "Images from Star Wars: Build the Millennium Falcon 81",
+    "Images from Star Wars: Millennium Falcon 81",
+    "Images from Star Wars Encyclopedia of Starfighters and Other Vehicles (second edition)",
+    "Images from the Encyclopedia",
+    "Images of Hyena-class Droid Fighter/Bombers",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "hyena_bomber",
+   "kind": "characters",
+   "file": "File:TA175-MF54.png",
+   "page": "https://starwars.fandom.com/wiki/File:TA175-MF54.png",
+   "cats": [
+    "3D CGI animation images",
+    "Fair use images",
+    "Images from Star Wars: Build the Millennium Falcon 54",
+    "Images from Star Wars: Millennium Falcon 54",
+    "Images from The Clone Wars: Season One",
+    "Images of TA-175"
+   ]
+  },
+  {
+   "id": "interdictor",
+   "kind": "ships",
+   "file": "File:InterdictorClassSD-EGTW.png",
+   "page": "https://starwars.fandom.com/wiki/File:InterdictorClassSD-EGTW.png",
+   "cats": [
+    "3D CGI animation images",
+    "Fair use images",
+    "Images by Ansel Hsiao",
+    "Images from Starships of the Empire and the Rebellion",
+    "Images from The Essential Guide to Warfare",
+    "Images of Interdictor-class Star Destroyers"
+   ]
+  },
+  {
+   "id": "interdictor",
+   "kind": "characters",
+   "file": "File:MytusAdema-CGSWG-Photoroom.png",
+   "page": "https://starwars.fandom.com/wiki/File:MytusAdema-CGSWG-Photoroom.png",
+   "cats": [
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Characters and Creatures",
+    "Images of Mytus Adema",
+    "Promotional images",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "laat_gunship",
+   "kind": "ships",
+   "file": "File:LAATGunship-Convergence.png",
+   "page": "https://starwars.fandom.com/wiki/File:LAATGunship-Convergence.png",
+   "cats": [
+    "Fair use images",
+    "Images by Madeline Boni",
+    "Images from Convergence (Star Wars: Destiny)",
+    "Images from Rise of the Separatists",
+    "Images from Star Wars: The Clone Wars (board game)",
+    "Images from the LAAT/i Gunship Expansion Pack",
+    "Images from the TIE/rb Heavy Expansion Pack",
+    "Images of Low Altitude Assault Transports",
+    "Trading card illustrations",
+    "Unrecognized URL listings found in image sources"
+   ]
+  },
+  {
+   "id": "laat_gunship",
+   "kind": "characters",
+   "file": "File:PhaseICloneTrooper2-Fathead.png",
+   "page": "https://starwars.fandom.com/wiki/File:PhaseICloneTrooper2-Fathead.png",
+   "cats": [
+    "Images from Fathead",
+    "Images from Star Wars: Battles for the Galaxy",
+    "Images from Star Wars: Head-to-Head",
+    "Images from Star Wars: The Complete Visual Dictionary",
+    "Images from Star Wars Helmet Collection 20",
+    "Images from The Official Star Wars Fact File 38",
+    "Images of DC-15A blaster rifles",
+    "Images of Phase I clone trooper armor",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode II Attack of the Clones",
+    "Promotional images of clone troopers",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "lambda_shuttle",
+   "kind": "ships",
+   "file": "File:LambdaShuttle-Fathead.png",
+   "page": "https://starwars.fandom.com/wiki/File:LambdaShuttle-Fathead.png",
+   "cats": [
+    "Fair use images",
+    "Images from Fathead",
+    "Images of Lambda-class T-4a shuttles"
+   ]
+  },
+  {
+   "id": "lambda_shuttle",
+   "kind": "characters",
+   "file": "File:TIEPilot-AdvancedGraphics.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIEPilot-AdvancedGraphics.png",
+   "cats": [
+    "Images from Advanced Graphics",
+    "Images of Imperial pilots",
+    "Images of flight helmets",
+    "Promotional images",
+    "Promotional images from Rogue One: A Star Wars Story",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "mc80_home_one",
+   "kind": "ships",
+   "file": "File:HomeOne-Chron.png",
+   "page": "https://starwars.fandom.com/wiki/File:HomeOne-Chron.png",
+   "cats": [
+    "Images from Star Wars: Build the Millennium Falcon 24",
+    "Images from Star Wars: Millennium Falcon 24",
+    "Images from Star Wars Chronicles",
+    "Images from Star Wars Helmet Collection 39",
+    "Images from The Complete Star Wars Encyclopedia",
+    "Images from The Official Star Wars Fact File Part 35",
+    "Images of Home One",
+    "Model and miniature images",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VI Return of the Jedi"
+   ]
+  },
+  {
+   "id": "mc80_home_one",
+   "kind": "characters",
+   "file": "File:Admiral_Ackbar_RH.png",
+   "page": "https://starwars.fandom.com/wiki/File:Admiral_Ackbar_RH.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Rey to the Rescue!",
+    "Images from Star Wars: Card Trader: Tales of the Outer Rim",
+    "Images from Star Wars: Rebel Heroes",
+    "Images from Star Wars Bust Collection 36",
+    "Live-action images",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional images of Gial Ackbar"
+   ]
+  },
+  {
+   "id": "mg100_bomber",
+   "kind": "ships",
+   "file": "File:MG-100_Starfortress.png",
+   "page": "https://starwars.fandom.com/wiki/File:MG-100_Starfortress.png",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images from Star Wars: The Last Jedi – The Official Collector's Edition",
+    "Images of MG-100 StarFortress SF-17s",
+    "Promotional images from Star Wars: Episode VIII The Last Jedi"
+   ]
+  },
+  {
+   "id": "mg100_bomber",
+   "kind": "characters",
+   "file": "File:PoeDameron1-Fathead.png",
+   "page": "https://starwars.fandom.com/wiki/File:PoeDameron1-Fathead.png",
+   "cats": [
+    "Images from Fathead",
+    "Images from Star Wars: Build the Millennium Falcon 84",
+    "Images from Star Wars: Build the Millennium Falcon 93",
+    "Images from Star Wars: Millennium Falcon 84",
+    "Images from Star Wars: Millennium Falcon 93",
+    "Images from Star Wars Bust Collection 41",
+    "Images from Star Wars Character Encyclopedia: Updated and Expanded",
+    "Images from Star Wars Helmet Collection 31",
+    "Images from Star Wars Helmet Collection 46",
+    "Images of Aurebesh",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional images of Poe Dameron",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "millennium_falcon",
+   "kind": "ships",
+   "file": "File:Millennium_Falcon_Fathead_TROS.png",
+   "page": "https://starwars.fandom.com/wiki/File:Millennium_Falcon_Fathead_TROS.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Fathead",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode IX The Rise of Skywalker",
+    "Promotional images of the Millennium Falcon"
+   ]
+  },
+  {
+   "id": "millennium_falcon",
+   "kind": "characters",
+   "file": "File:TFAHanSolo.png",
+   "page": "https://starwars.fandom.com/wiki/File:TFAHanSolo.png",
+   "cats": [
+    "Images of Takodana",
+    "Live-action images",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional images of Han Solo",
+    "Unrecognized URL listings found in image sources"
+   ]
+  },
+  {
+   "id": "munificent",
+   "kind": "ships",
+   "file": "File:CISMunificent-TCW.png",
+   "page": "https://starwars.fandom.com/wiki/File:CISMunificent-TCW.png",
+   "cats": [
+    "3D CGI animation images",
+    "Files with bare URL source",
+    "Images from Star Wars: The Clone Wars",
+    "Images from The Clone Wars: Forces of Darkness",
+    "Images of Munificent-class star frigates",
+    "Promotional images",
+    "Unrecognized URL listings found in image sources"
+   ]
+  },
+  {
+   "id": "munificent",
+   "kind": "characters",
+   "file": "File:TA175-MF54.png",
+   "page": "https://starwars.fandom.com/wiki/File:TA175-MF54.png",
+   "cats": [
+    "3D CGI animation images",
+    "Fair use images",
+    "Images from Star Wars: Build the Millennium Falcon 54",
+    "Images from Star Wars: Millennium Falcon 54",
+    "Images from The Clone Wars: Season One",
+    "Images of TA-175"
+   ]
+  },
+  {
+   "id": "naboo_n1",
+   "kind": "ships",
+   "file": "File:N-1_BF2.png",
+   "page": "https://starwars.fandom.com/wiki/File:N-1_BF2.png",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images from Star Wars Battlefront II",
+    "Images of N-1 starfighters",
+    "Video game CGI images"
+   ]
+  },
+  {
+   "id": "naboo_n1",
+   "kind": "characters",
+   "file": "File:RicOlie-2024SWHyperspace.png",
+   "page": "https://starwars.fandom.com/wiki/File:RicOlie-2024SWHyperspace.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: 2024 Topps Star Wars Hyperspace",
+    "Images from Star Wars: Card Trader: 2024 Topps Star Wars Masterwork",
+    "Images from Star Wars: Episode I The Phantom Menace",
+    "Images of Ric Olié",
+    "Live-action images",
+    "Screenshots of films"
+   ]
+  },
+  {
+   "id": "naboo_royal_cruiser",
+   "kind": "ships",
+   "file": "File:Naboo_Royal_Starship_SWE.png",
+   "page": "https://starwars.fandom.com/wiki/File:Naboo_Royal_Starship_SWE.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars: Build the Millennium Falcon 47",
+    "Images from Star Wars: Card Trader: Build",
+    "Images from Star Wars: Millennium Falcon 47",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images from the Encyclopedia",
+    "Images of J-Type 327 Nubian royal starships",
+    "Model and miniature images",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "naboo_royal_cruiser",
+   "kind": "characters",
+   "file": "File:Padmegreenscrshot.jpg",
+   "page": "https://starwars.fandom.com/wiki/File:Padmegreenscrshot.jpg",
+   "cats": [
+    "Images from Official Pix",
+    "Images from Star Wars: Card Trader: A Long Time Ago",
+    "Images from Star Wars: Card Trader: Base Series 1",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode III Revenge of the Sith",
+    "Promotional images of Padmé Amidala",
+    "Promotional set photographs"
+   ]
+  },
+  {
+   "id": "nantex_fighter",
+   "kind": "ships",
+   "file": "File:Nantex-class_fighters.png",
+   "page": "https://starwars.fandom.com/wiki/File:Nantex-class_fighters.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Every Starfighter in Star Wars Explained By Lucasfilm",
+    "Images from ScreenThemes",
+    "Images from StarWars.com",
+    "Images from Star Wars Chronicles: The Prequels",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images from Star Wars Encyclopedia of Starfighters and Other Vehicles (second edition)",
+    "Images from The Complete Star Wars Encyclopedia",
+    "Images from The Moviemaking Magic of Star Wars: Ships & Battles",
+    "Images from The Official Star Wars Fact File 64",
+    "Images from The Official Star Wars Fact File Part 63",
+    "Images of Nantex-class territorial defense starfighters",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode II Attack of the Clones",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "nantex_fighter",
+   "kind": "characters",
+   "file": "File:CIS_roundel.svg",
+   "page": "https://starwars.fandom.com/wiki/File:CIS_roundel.svg",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images of government symbols",
+    "Vector graphics"
+   ]
+  },
+  {
+   "id": "phantom",
+   "kind": "ships",
+   "file": "File:Sheathipede-SWE.png",
+   "page": "https://starwars.fandom.com/wiki/File:Sheathipede-SWE.png",
+   "cats": [
+    "Images from Star Wars: Build the Millennium Falcon 54",
+    "Images from Star Wars: Millennium Falcon 54",
+    "Images from Star Wars Encyclopedia of Starfighters and Other Vehicles",
+    "Images from The Official Star Wars Fact File Part 14",
+    "Images from the Databank (original)",
+    "Images from the Encyclopedia",
+    "Images of Sheathipede-class transport shuttles",
+    "Model and miniature images",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "phantom",
+   "kind": "characters",
+   "file": "File:Ezra_Bridger_character_poster.png",
+   "page": "https://starwars.fandom.com/wiki/File:Ezra_Bridger_character_poster.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Characters and Creatures",
+    "Promotional images",
+    "Promotional images from Star Wars: Ahsoka",
+    "Promotional images of Ezra Bridger",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "pirate_corsair",
+   "kind": "ships",
+   "file": "File:Bantha-II_Cargo_Skiff_BG.png",
+   "page": "https://starwars.fandom.com/wiki/File:Bantha-II_Cargo_Skiff_BG.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars Battlefront",
+    "Images of Bantha-II cargo skiffs",
+    "Promotional images",
+    "Video game CGI images"
+   ]
+  },
+  {
+   "id": "pirate_corsair",
+   "kind": "characters",
+   "file": "File:Pirates-SWGoH.png",
+   "page": "https://starwars.fandom.com/wiki/File:Pirates-SWGoH.png",
+   "cats": [
+    "Images from Star Wars: Galaxy of Heroes",
+    "Images of Brutus",
+    "Images of Hondo Ohnaka",
+    "Images of Jod Na Nawood",
+    "Images of Kix",
+    "Images of Phase I clone trooper armor",
+    "Images of Pilf Mukmuk",
+    "Images of Quiggold",
+    "Images of Sidon Ithano",
+    "Images of Vane",
+    "Images of helmets",
+    "Screenshots of video games"
+   ]
+  },
+  {
+   "id": "pirate_marauder",
+   "kind": "ships",
+   "file": "File:MarauderclassCorvette-SofG2007.png",
+   "page": "https://starwars.fandom.com/wiki/File:MarauderclassCorvette-SofG2007.png",
+   "cats": [
+    "Fair use images",
+    "Images by Jeffery Carlisle",
+    "Images from Starships of the Galaxy (Saga Edition)",
+    "Images of Marauder-class corvettes",
+    "Reference book illustrations"
+   ]
+  },
+  {
+   "id": "pirate_marauder",
+   "kind": "characters",
+   "file": "File:HondoOhnaka-TGTB.png",
+   "page": "https://starwars.fandom.com/wiki/File:HondoOhnaka-TGTB.png",
+   "cats": [
+    "Fair use images",
+    "Images from Star Wars: Galaxy's Edge: Traveler's Guide to Batuu",
+    "Images of Black Spire Outpost",
+    "Images of Hondo Ohnaka",
+    "Live-action images"
+   ]
+  },
+  {
+   "id": "pirate_skiff",
+   "kind": "ships",
+   "file": "File:BanthaIICargoSkiff-CGSWG.png",
+   "page": "https://starwars.fandom.com/wiki/File:BanthaIICargoSkiff-CGSWG.png",
+   "cats": [
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images of Bantha-II cargo skiffs",
+    "Promotional images",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "pirate_skiff",
+   "kind": "characters",
+   "file": "File:PagettiRook-RotJAVA.png",
+   "page": "https://starwars.fandom.com/wiki/File:PagettiRook-RotJAVA.png",
+   "cats": [
+    "Images from Star Wars: Return of the Jedi: A Visual Archive",
+    "Images from The Official Star Wars Fact File 27",
+    "Images from The Official Star Wars Fact File 5",
+    "Images of Pagetti Rook",
+    "Images of clothing",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VI Return of the Jedi",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "providence",
+   "kind": "ships",
+   "file": "File:Invincible-TCWs2BR3.png",
+   "page": "https://starwars.fandom.com/wiki/File:Invincible-TCWs2BR3.png",
+   "cats": [
+    "3D CGI animation images",
+    "Images from The Clone Wars: Season Two",
+    "Images of Invincible",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "providence",
+   "kind": "characters",
+   "file": "File:Dooku-SWBC61.png",
+   "page": "https://starwars.fandom.com/wiki/File:Dooku-SWBC61.png",
+   "cats": [
+    "Images from Star Wars Bust Collection 61",
+    "Promotional images",
+    "Promotional images of Dooku",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "punishing_one",
+   "kind": "ships",
+   "file": "File:JM-5K.png",
+   "page": "https://starwars.fandom.com/wiki/File:JM-5K.png",
+   "cats": [
+    "Fair use images",
+    "Images by Mariusz Gandzel",
+    "Images from Convergence (Star Wars: Destiny)",
+    "Images from the Punishing One Expansion Pack",
+    "Images from the Punishing One Expansion Pack (Second Edition)",
+    "Images of Punishing One",
+    "Trading card illustrations"
+   ]
+  },
+  {
+   "id": "punishing_one",
+   "kind": "characters",
+   "file": "File:Dengar-2025ChromeSapphire.png",
+   "page": "https://starwars.fandom.com/wiki/File:Dengar-2025ChromeSapphire.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: 2025 Star Wars Chrome Sapphire",
+    "Images of Dengar",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode V The Empire Strikes Back",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "raddus_cruiser",
+   "kind": "ships",
+   "file": "File:MC85-Star-Cruiser-Front.png",
+   "page": "https://starwars.fandom.com/wiki/File:MC85-Star-Cruiser-Front.png",
+   "cats": [
+    "Fair use images",
+    "Images from Star Wars: Battles that Changed the Galaxy",
+    "Images of the Raddus"
+   ]
+  },
+  {
+   "id": "raddus_cruiser",
+   "kind": "characters",
+   "file": "File:Holdo-Portfolio.png",
+   "page": "https://starwars.fandom.com/wiki/File:Holdo-Portfolio.png",
+   "cats": [
+    "Images of Amilyn Holdo",
+    "Photography by Ed Miller",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VIII The Last Jedi",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "resistance_transport",
+   "kind": "ships",
+   "file": "File:ResistanceTransport-MF92.png",
+   "page": "https://starwars.fandom.com/wiki/File:ResistanceTransport-MF92.png",
+   "cats": [
+    "CGI images",
+    "Images from Star Wars: Build the Millennium Falcon 92",
+    "Images from Star Wars: Millennium Falcon 92",
+    "Images of Resistance transports",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens"
+   ]
+  },
+  {
+   "id": "resistance_transport",
+   "kind": "characters",
+   "file": "File:AdmiralAckbarResistance-SWBC36.png",
+   "page": "https://starwars.fandom.com/wiki/File:AdmiralAckbarResistance-SWBC36.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: Chrome Black - 2022",
+    "Images from Star Wars: Card Trader: Tales of the Outer Rim",
+    "Images from Star Wars Bust Collection 36",
+    "Images from Star Wars Helmet Collection 31",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional images of Gial Ackbar",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "resurgent_destroyer",
+   "kind": "ships",
+   "file": "File:TheFinalizer-TLJVehiclesShips.png",
+   "page": "https://starwars.fandom.com/wiki/File:TheFinalizer-TLJVehiclesShips.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: Star Wars: The Last Jedi - Physical Base",
+    "Images from Star Wars: The Last Jedi - The Official Guide",
+    "Images from Star Wars: The Last Jedi – The Official Collector's Edition",
+    "Images of Finalizer",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional prop photographs"
+   ]
+  },
+  {
+   "id": "resurgent_destroyer",
+   "kind": "characters",
+   "file": "File:HuxTLJPromo.png",
+   "page": "https://starwars.fandom.com/wiki/File:HuxTLJPromo.png",
+   "cats": [
+    "Images of Armitage Hux",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VIII The Last Jedi",
+    "Unrecognized URL listings found in image sources"
+   ]
+  },
+  {
+   "id": "rz2_awing",
+   "kind": "ships",
+   "file": "File:RZ2Awing-TLJTOG.png",
+   "page": "https://starwars.fandom.com/wiki/File:RZ2Awing-TLJTOG.png",
+   "cats": [
+    "Images from Star Wars: The Last Jedi - The Official Guide",
+    "Images of RZ-2 A-wing interceptors",
+    "Promotional images",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "rz2_awing",
+   "kind": "characters",
+   "file": "File:TallissanLintra.png",
+   "page": "https://starwars.fandom.com/wiki/File:TallissanLintra.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: 2020 Base Series",
+    "Images from Star Wars: Card Trader: 2024 Topps Star Wars Masterwork",
+    "Images from Star Wars: Card Trader: Masterwork 2018",
+    "Images from Star Wars: Card Trader: Signature Series - 2022",
+    "Images from Star Wars: Card Trader: Signature Series - 2023",
+    "Images from Star Wars: Card Trader: Star Wars: The Last Jedi",
+    "Images from Star Wars: Character Encyclopedia, Updated and Expanded Edition",
+    "Images from Star Wars: The Last Jedi: Heroes of the Galaxy",
+    "Images from Star Wars: The Last Jedi: The Visual Dictionary",
+    "Images of Tallissan Lintra",
+    "Promotional images",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "slave_1",
+   "kind": "ships",
+   "file": "File:BobaFettsStarship-CGSWG.png",
+   "page": "https://starwars.fandom.com/wiki/File:BobaFettsStarship-CGSWG.png",
+   "cats": [
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images of Slave I",
+    "Model and miniature images",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "slave_1",
+   "kind": "characters",
+   "file": "File:BobaFettHS-SWI213.png",
+   "page": "https://starwars.fandom.com/wiki/File:BobaFettHS-SWI213.png",
+   "cats": [
+    "Images from Star Wars Insider 213",
+    "Images of Boba Fett's armor",
+    "Images of Temuera Morrison",
+    "Promotional images",
+    "Promotional images from Star Wars: The Book of Boba Fett",
+    "Promotional images of Boba Fett",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "soulless_one",
+   "kind": "ships",
+   "file": "File:SoullessOne-MF40.png",
+   "page": "https://starwars.fandom.com/wiki/File:SoullessOne-MF40.png",
+   "cats": [
+    "3D CGI animation images",
+    "Images from Star Wars: Build the Millennium Falcon 40",
+    "Images from Star Wars: Millennium Falcon 40",
+    "Images from Star Wars: The Clone Wars",
+    "Images of Soulless One",
+    "Promotional images",
+    "Promotional images of Grievous"
+   ]
+  },
+  {
+   "id": "soulless_one",
+   "kind": "characters",
+   "file": "File:GrievousStand-SWHC821.png",
+   "page": "https://starwars.fandom.com/wiki/File:GrievousStand-SWHC821.png",
+   "cats": [
+    "Images from Star Wars: Build the Millennium Falcon 40",
+    "Images from Star Wars: Millennium Falcon 40",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Characters and Creatures",
+    "Images from Star Wars Helmet Collection 21",
+    "Images from Star Wars Helmet Collection 8",
+    "Promotional images",
+    "Promotional images of Grievous",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "star_destroyer",
+   "kind": "ships",
+   "file": "File:ISD1-SWSVguide.png",
+   "page": "https://starwars.fandom.com/wiki/File:ISD1-SWSVguide.png",
+   "cats": [
+    "CGI images",
+    "Fair use images",
+    "Images from Star Wars Starships & Vehicles",
+    "Promotional images of Imperial-class Star Destroyers"
+   ]
+  },
+  {
+   "id": "star_destroyer",
+   "kind": "characters",
+   "file": "File:GiladPellaeon-CardTrader.png",
+   "page": "https://starwars.fandom.com/wiki/File:GiladPellaeon-CardTrader.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: Platinum 2024",
+    "Images from Star Wars: Card Trader: Radiant - 2024",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Characters and Creatures",
+    "Images of Galactic Empire rank badges",
+    "Images of Gilad Pellaeon",
+    "Images of code cylinders",
+    "Images of hats",
+    "Promotional images",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "tie_advanced_x1",
+   "kind": "ships",
+   "file": "File:TIEAdvancedx1-MF78.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIEAdvancedx1-MF78.png",
+   "cats": [
+    "CGI images",
+    "Images from Star Wars: Build the Millennium Falcon 78",
+    "Images from Star Wars: Millennium Falcon 78",
+    "Images of TIE Advanced x1s",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "tie_advanced_x1",
+   "kind": "characters",
+   "file": "File:Anakin_Skywalker_RotS.png",
+   "page": "https://starwars.fandom.com/wiki/File:Anakin_Skywalker_RotS.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars: Card Trader",
+    "Images of the Skywalker lightsaber",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode III Revenge of the Sith",
+    "Promotional images of Anakin Skywalker",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "tie_bomber",
+   "kind": "ships",
+   "file": "File:TIEbomber-CGSWG.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIEbomber-CGSWG.png",
+   "cats": [
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images of TIE/sa bombers",
+    "Promotional images",
+    "Promotional prop photographs"
+   ]
+  },
+  {
+   "id": "tie_bomber",
+   "kind": "characters",
+   "file": "File:TIEPilot-AdvancedGraphics.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIEPilot-AdvancedGraphics.png",
+   "cats": [
+    "Images from Advanced Graphics",
+    "Images of Imperial pilots",
+    "Images of flight helmets",
+    "Promotional images",
+    "Promotional images from Rogue One: A Star Wars Story",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "tie_fighter",
+   "kind": "ships",
+   "file": "File:TIE_Fighter_DICE.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIE_Fighter_DICE.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars Battlefront",
+    "Images from Star Wars Battlefront Strategy Guide",
+    "Images of TIE/LN starfighters",
+    "Promotional images",
+    "Video game CGI images"
+   ]
+  },
+  {
+   "id": "tie_fighter",
+   "kind": "characters",
+   "file": "File:TIEPilot-AdvancedGraphics.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIEPilot-AdvancedGraphics.png",
+   "cats": [
+    "Images from Advanced Graphics",
+    "Images of Imperial pilots",
+    "Images of flight helmets",
+    "Promotional images",
+    "Promotional images from Rogue One: A Star Wars Story",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "tie_fo",
+   "kind": "ships",
+   "file": "File:TIEFOfighter-Fathead.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIEFOfighter-Fathead.png",
+   "cats": [
+    "Images from Fathead",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images of L-s9.6 laser cannons",
+    "Images of TIE/fo space superiority fighters",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "tie_fo",
+   "kind": "characters",
+   "file": "File:TIE_Pilot_Sideshow.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIE_Pilot_Sideshow.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Sideshow Collectibles",
+    "Images of Imperial pilots",
+    "Images of flight helmets",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "tie_interceptor",
+   "kind": "ships",
+   "file": "File:TIE_Interceptor_BF.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIE_Interceptor_BF.png",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images from Star Wars Battlefront",
+    "Images of TIE/In interceptors",
+    "Video game CGI images"
+   ]
+  },
+  {
+   "id": "tie_interceptor",
+   "kind": "characters",
+   "file": "File:SoontirFel-SWZ99.png",
+   "page": "https://starwars.fandom.com/wiki/File:SoontirFel-SWZ99.png",
+   "cats": [
+    "Fair use images",
+    "Images from the Battle Over Endor Scenario Pack",
+    "Images of TIE/In interceptors",
+    "Images of TIE/LN starfighters",
+    "Images of TIE/sa bombers",
+    "Images of the Battle of Endor",
+    "Trading card illustrations"
+   ]
+  },
+  {
+   "id": "tie_sf",
+   "kind": "ships",
+   "file": "File:FOSpecForcesTIE1-Fathead.png",
+   "page": "https://starwars.fandom.com/wiki/File:FOSpecForcesTIE1-Fathead.png",
+   "cats": [
+    "Images from Fathead",
+    "Images from Star Wars: Build the Millennium Falcon 73",
+    "Images from Star Wars: Millennium Falcon 73",
+    "Images of TIE/sf space superiority fighters",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "tie_sf",
+   "kind": "characters",
+   "file": "File:FO_TIE_Fighter_Pilot.png",
+   "page": "https://starwars.fandom.com/wiki/File:FO_TIE_Fighter_Pilot.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars: Card Trader: Star Wars: The Force Awakens - Parallax",
+    "Images from Star Wars: The Force Awakens: The Visual Dictionary",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Characters and Creatures",
+    "Images of First Order pilots",
+    "Images of flight helmets",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "tie_silencer",
+   "kind": "ships",
+   "file": "File:TIE_Silencer_TFOWM.png",
+   "page": "https://starwars.fandom.com/wiki/File:TIE_Silencer_TFOWM.png",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images from Star Wars: The Last Jedi: Heroes of the Galaxy",
+    "Images from Star Wars: The Last Jedi: Ultimate Sticker Collection",
+    "Images from Star Wars: Timelines",
+    "Images from TIE Fighter Owners' Workshop Manual",
+    "Images of TIE/vn space superiority fighters"
+   ]
+  },
+  {
+   "id": "tie_silencer",
+   "kind": "characters",
+   "file": "File:KyloRenVFcover-TROS.png",
+   "page": "https://starwars.fandom.com/wiki/File:KyloRenVFcover-TROS.png",
+   "cats": [
+    "Photography by Annie Leibovitz",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode IX The Rise of Skywalker",
+    "Promotional images of Ben Solo",
+    "Promotional photographs",
+    "Unrecognized URL listings found in image sources"
+   ]
+  },
+  {
+   "id": "tri_fighter",
+   "kind": "ships",
+   "file": "File:DroidTrifighter-MF53.png",
+   "page": "https://starwars.fandom.com/wiki/File:DroidTrifighter-MF53.png",
+   "cats": [
+    "Images from Star Wars: Build the Millennium Falcon 53",
+    "Images from Star Wars: Build the Millennium Falcon 77",
+    "Images from Star Wars: Millennium Falcon 53",
+    "Images from Star Wars: Millennium Falcon 77",
+    "Images from Star Wars Starships & Vehicles 54",
+    "Images of droid tri-fighters",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode III Revenge of the Sith",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "tri_fighter",
+   "kind": "characters",
+   "file": "File:CIS_roundel.svg",
+   "page": "https://starwars.fandom.com/wiki/File:CIS_roundel.svg",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images of government symbols",
+    "Vector graphics"
+   ]
+  },
+  {
+   "id": "upsilon_shuttle",
+   "kind": "ships",
+   "file": "File:KyloRenCommandShuttle-Fathead.png",
+   "page": "https://starwars.fandom.com/wiki/File:KyloRenCommandShuttle-Fathead.png",
+   "cats": [
+    "Images from Fathead",
+    "Images from Star Wars Encyclopedia of Starfighters and Other Vehicles",
+    "Images of Upsilon-class command shuttles",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VII The Force Awakens",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "upsilon_shuttle",
+   "kind": "characters",
+   "file": "File:FirstOrderCommander-TROSGG.png",
+   "page": "https://starwars.fandom.com/wiki/File:FirstOrderCommander-TROSGG.png",
+   "cats": [
+    "Images from Star Wars: The Rise of Skywalker: The Galactic Guide",
+    "Images of First Order officers",
+    "Promotional images",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "v19_torrent",
+   "kind": "ships",
+   "file": "File:V-19Torrent-TCW.png",
+   "page": "https://starwars.fandom.com/wiki/File:V-19Torrent-TCW.png",
+   "cats": [
+    "3D CGI animation images",
+    "Images from Star Wars: Build the Millennium Falcon 77",
+    "Images from Star Wars: Card Trader: Guardians of the Republic",
+    "Images from Star Wars: Millennium Falcon 77",
+    "Images from Star Wars: The Clone Wars",
+    "Images from Star Wars Encyclopedia: The Comprehensive Guide to the Star Wars Galaxy/Vehicles",
+    "Images from Star Wars Encyclopedia of Starfighters and Other Vehicles",
+    "Images from Star Wars Helmet Collection 33",
+    "Images from Star Wars Helmet Collection 45",
+    "Images from The Clone Wars: Hunting the Hunters (Part III)",
+    "Images from The Official Star Wars Fact File Part 17",
+    "Images from Ultimate Star Wars",
+    "Images from Ultimate Star Wars, New Edition",
+    "Images of V-19 Torrent starfighters",
+    "Promotional images",
+    "Unrecognized URL listings found in image sources"
+   ]
+  },
+  {
+   "id": "v19_torrent",
+   "kind": "characters",
+   "file": "File:CloneTrooperPilots.png",
+   "page": "https://starwars.fandom.com/wiki/File:CloneTrooperPilots.png",
+   "cats": [
+    "Fair use images",
+    "Images from Every Stormtrooper in Star Wars Explained By Lucasfilm",
+    "Images from Sideshow Collectibles",
+    "Images from Star Wars: Battles for the Galaxy",
+    "Images from Star Wars: Character Encyclopedia, Updated and Expanded Edition",
+    "Images from Star Wars Chronicles: The Prequels",
+    "Images from the Encyclopedia",
+    "Images of Phase II clone trooper armor",
+    "Images of Phase I clone trooper armor",
+    "Images of Warthog",
+    "Images of clone trooper pilots",
+    "Promotional images from Star Wars: Episode III Revenge of the Sith",
+    "Promotional images of clone troopers",
+    "Realistic CGI images"
+   ]
+  },
+  {
+   "id": "venator",
+   "kind": "ships",
+   "file": "File:Imperialattackcruisers.png",
+   "page": "https://starwars.fandom.com/wiki/File:Imperialattackcruisers.png",
+   "cats": [
+    "Images from Star Wars: Episode III Revenge of the Sith",
+    "Images of DBY-827 heavy turbolaser turrets",
+    "Images of Venator-class Star Destroyers",
+    "Images of unidentified Venator-class Star Destroyer (Death Star)",
+    "Realistic CGI images",
+    "Screenshots of films"
+   ]
+  },
+  {
+   "id": "venator",
+   "kind": "characters",
+   "file": "File:Captain_Rex_old.png",
+   "page": "https://starwars.fandom.com/wiki/File:Captain_Rex_old.png",
+   "cats": [
+    "3D CGI animation images",
+    "Filenames with spaces",
+    "Images from StarWars.com",
+    "Images from The Lost Commanders",
+    "Images of Phase II clone trooper armor",
+    "Images of Rex",
+    "Screenshots of television programs"
+   ]
+  },
+  {
+   "id": "vulture_droid",
+   "kind": "ships",
+   "file": "File:CISVultureDroidWalk-TCW.png",
+   "page": "https://starwars.fandom.com/wiki/File:CISVultureDroidWalk-TCW.png",
+   "cats": [
+    "3D CGI animation images",
+    "Images from Star Wars: Build Your Own R2-D2 59",
+    "Images from Star Wars: Build the Millennium Falcon 45",
+    "Images from Star Wars: Card Trader: Smugglers Outpost 2025",
+    "Images from Star Wars: Millennium Falcon 45",
+    "Images from Star Wars: The Clone Wars",
+    "Images from Star Wars Encyclopedia of Starfighters and Other Vehicles",
+    "Images from The Clone Wars: Forces of Darkness",
+    "Images from the Encyclopedia",
+    "Images of Vulture droid starfighters",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "vulture_droid",
+   "kind": "characters",
+   "file": "File:Battle_Droid.png",
+   "page": "https://starwars.fandom.com/wiki/File:Battle_Droid.png",
+   "cats": [
+    "Filenames with spaces",
+    "Images from Star Wars: Card Trader: 2020 Base Series",
+    "Images from Star Wars: Character Encyclopedia, Updated and Expanded Edition",
+    "Images from Star Wars Character Encyclopedia: Updated and Expanded",
+    "Images from the Encyclopedia",
+    "Model and miniature images",
+    "Promotional images",
+    "Promotional images of B1 battle droids"
+   ]
+  },
+  {
+   "id": "xwing_t65",
+   "kind": "ships",
+   "file": "File:X-wing_SWB.png",
+   "page": "https://starwars.fandom.com/wiki/File:X-wing_SWB.png",
+   "cats": [
+    "Fair use images",
+    "Filenames with spaces",
+    "Images from Star Wars Battlefront",
+    "Images of Hoth",
+    "Images of T-65 X-wing starfighters",
+    "Video game CGI images"
+   ]
+  },
+  {
+   "id": "xwing_t65",
+   "kind": "characters",
+   "file": "File:LukeSkywalker.png",
+   "page": "https://starwars.fandom.com/wiki/File:LukeSkywalker.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: Masterwork 2018",
+    "Images from Star Wars: The Last Jedi: Ultimate Sticker Collection",
+    "Images from Star Wars Bust Collection 43",
+    "Images from Ultimate Sticker Collection: Star Wars (2018)",
+    "Promotional images",
+    "Promotional images from Star Wars: Episode VIII The Last Jedi",
+    "Promotional images of Luke Skywalker",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "xwing_t70",
+   "kind": "ships",
+   "file": "File:T70XwingStarfighter-SWBC41.png",
+   "page": "https://starwars.fandom.com/wiki/File:T70XwingStarfighter-SWBC41.png",
+   "cats": [
+    "Images from Star Wars Bust Collection 41",
+    "Images from Star Wars Bust Collection 62",
+    "Images from Star Wars Helmet Collection 31",
+    "Images of T-70 X-wing fighters",
+    "Model and miniature images",
+    "Promotional images"
+   ]
+  },
+  {
+   "id": "xwing_t70",
+   "kind": "characters",
+   "file": "File:PoeDameron-Heroes2023.png",
+   "page": "https://starwars.fandom.com/wiki/File:PoeDameron-Heroes2023.png",
+   "cats": [
+    "Images from Star Wars: Card Trader: Heroes 2023",
+    "Images from Star Wars: Card Trader: Topps Star Wars Masterwork 2022",
+    "Promotional images",
+    "Promotional images of Poe Dameron",
+    "Promotional posed photographs"
+   ]
+  },
+  {
+   "id": "ywing_btla4",
+   "kind": "ships",
+   "file": "File:Y-wing.png",
+   "page": "https://starwars.fandom.com/wiki/File:Y-wing.png",
+   "cats": [
+    "Images from Fathead",
+    "Images from The Official Star Wars Fact File Part 13",
+    "Images of BTL Y-wing starfighters",
+    "Promotional images",
+    "Unrecognized URL listings found in image sources"
+   ]
+  },
+  {
+   "id": "ywing_btla4",
+   "kind": "characters",
+   "file": "File:JonVander-ANH.png",
+   "page": "https://starwars.fandom.com/wiki/File:JonVander-ANH.png",
+   "cats": [
+    "Images from Star Wars: Episode IV A New Hope",
+    "Images from The Complete Star Wars Encyclopedia",
+    "Images of Jon Vander",
+    "Live-action images",
+    "Screenshots of films"
+   ]
+  },
+  {
+   "id": "z95_headhunter",
+   "kind": "ships",
+   "file": "File:BanditSquadronPilot-XWM.png",
+   "page": "https://starwars.fandom.com/wiki/File:BanditSquadronPilot-XWM.png",
+   "cats": [
+    "Fair use images",
+    "Images by Mariusz Gandzel",
+    "Images from Star Wars: X-Wing Miniatures Game",
+    "Images from Starships and Speeders",
+    "Images of Z-95-AF4 Headhunters",
+    "Trading card illustrations",
+    "Unrecognized URL listings found in image sources"
+   ]
+  },
+  {
+   "id": "z95_headhunter",
+   "kind": "characters",
+   "file": "File:BanditSquadronPilot-XWM.png",
+   "page": "https://starwars.fandom.com/wiki/File:BanditSquadronPilot-XWM.png",
+   "cats": [
+    "Fair use images",
+    "Images by Mariusz Gandzel",
+    "Images from Star Wars: X-Wing Miniatures Game",
+    "Images from Starships and Speeders",
+    "Images of Z-95-AF4 Headhunters",
+    "Trading card illustrations",
+    "Unrecognized URL listings found in image sources"
+   ]
+  }
+ ],
+ "_related": {
+  "3d_models": "docs/rules/MODEL_LICENSES.md — лицензии Minecraft-построек (все: права у авторов, приватно)",
+  "rules_doc": "docs/rules/ART_LICENSES.md — сводка поартам арта"
+ }
+}

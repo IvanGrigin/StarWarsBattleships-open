@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "id": "padme_amidala",
+  "display_name": "Падме Амидала",
+  "description": "Королева, а затем сенатор Набу; голос Республики в Сенате и мать Люка и Леи.",
+  "faction": "republic",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "diplomatic_immunity",
+    "name": "Дипломатическая неприкосновенность",
+    "text": "1 раз в игру: до конца раунда по одному вашему кораблю нельзя атаковать на дистанции больше 1.",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 1,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "grant_status",
+        "params": {
+          "status": "diplomatic_shield",
+          "duration_rounds": 1,
+          "target": "own_ship"
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "unity_force",
+    "name": "Сила единства",
+    "text": "За каждый республиканский корабль в вашем флоте все ваши республиканские корабли получают +1 к силе атаки (максимум +3). Если все три корабля флота республиканские, каждый из них дополнительно получает +1 максимального HP и +1 щита.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "republic",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "strength_per_faction_ship",
+        "params": {
+          "faction": "republic",
+          "value": 1,
+          "max": 3
+        }
+      },
+      {
+        "op": "full_faction_bonus",
+        "params": {
+          "faction": "republic",
+          "min_ships": 3,
+          "max_hp": 1,
+          "max_shield": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 8
+}

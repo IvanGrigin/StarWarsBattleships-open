@@ -1,0 +1,1322 @@
+{
+ "heroes/admiral_ackbar": {
+  "file": "heroes/admiral_ackbar.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_ackbar_01_169_55137220.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "admiral-ackbar",
+  "page_url": "https://www.starwars.com/databank/admiral-ackbar",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/admiral_piett": {
+  "file": "heroes/admiral_piett.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_admiralpiett_01_169_18014135.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "admiral-piett",
+  "page_url": "https://www.starwars.com/databank/admiral-piett",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/anakin": {
+  "file": "heroes/anakin.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/anakin-skywalker-main_23e5105b.jpeg",
+  "original_size": [
+   1920,
+   804
+  ],
+  "page": "anakin-skywalker",
+  "page_url": "https://www.starwars.com/databank/anakin-skywalker",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   377
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/boba_fett": {
+  "file": "heroes/boba_fett.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/boba-fett-main_a8fade4d.jpeg",
+  "original_size": [
+   1280,
+   853
+  ],
+  "page": "boba-fett",
+  "page_url": "https://www.starwars.com/databank/boba-fett",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   600
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/chewbacca": {
+  "file": "heroes/chewbacca.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/chewie-main_e1968a8a.jpeg",
+  "original_size": [
+   1280,
+   536
+  ],
+  "page": "chewbacca",
+  "page_url": "https://www.starwars.com/databank/chewbacca",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   377
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/count_dooku": {
+  "file": "heroes/count_dooku.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/Count-Dooku_4f552149.jpeg",
+  "original_size": [
+   1436,
+   808
+  ],
+  "page": "count-dooku",
+  "page_url": "https://www.starwars.com/databank/count-dooku",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/darth_maul": {
+  "file": "heroes/darth_maul.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/maul-main_4520a060.jpeg",
+  "original_size": [
+   1920,
+   812
+  ],
+  "page": "darth-maul",
+  "page_url": "https://www.starwars.com/databank/darth-maul",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   381
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/darth_vader": {
+  "file": "heroes/darth_vader.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/maul-shadow-lord-season-1-finale-darth-vader_9d1e251b.jpeg",
+  "original_size": [
+   1920,
+   812
+  ],
+  "page": "darth-vader",
+  "page_url": "https://www.starwars.com/databank/darth-vader",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   381
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/emperor_palpatine": {
+  "file": "heroes/emperor_palpatine.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/emperor-palpatine_9a0e992d.jpeg",
+  "original_size": [
+   1280,
+   853
+  ],
+  "page": "darth-sidious",
+  "page_url": "https://www.starwars.com/databank/darth-sidious",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   600
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/finn": {
+  "file": "heroes/finn.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/finn-main_ad2b705b.jpeg",
+  "original_size": [
+   1280,
+   854
+  ],
+  "page": "finn",
+  "page_url": "https://www.starwars.com/databank/finn",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   600
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/general_grievous": {
+  "file": "heroes/general_grievous.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/General-Grievous_c9df9cb5.jpeg",
+  "original_size": [
+   1200,
+   675
+  ],
+  "page": "general-grievous",
+  "page_url": "https://www.starwars.com/databank/general-grievous",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/general_hux": {
+  "file": "heroes/general_hux.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/general-hux-main_9dbfab69.jpeg",
+  "original_size": [
+   1280,
+   854
+  ],
+  "page": "general-hux",
+  "page_url": "https://www.starwars.com/databank/general-hux",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   600
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/grand_moff_tarkin": {
+  "file": "heroes/grand_moff_tarkin.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/grand-moff-tarkin-main_10a4c888.jpeg",
+  "original_size": [
+   1920,
+   789
+  ],
+  "page": "grand-moff-tarkin",
+  "page_url": "https://www.starwars.com/databank/grand-moff-tarkin",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   370
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/han_solo": {
+  "file": "heroes/han_solo.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/han-solo-main_a4c8ff79.jpeg",
+  "original_size": [
+   1920,
+   1080
+  ],
+  "page": "han-solo",
+  "page_url": "https://www.starwars.com/databank/han-solo",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/jango_fett": {
+  "file": "heroes/jango_fett.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_jangofett_01_169_884cefab.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "jango-fett",
+  "page_url": "https://www.starwars.com/databank/jango-fett",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/kylo_ren": {
+  "file": "heroes/kylo_ren.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/kylo-ren-main-tros-a_6d77fd1e.jpeg",
+  "original_size": [
+   1280,
+   720
+  ],
+  "page": "kylo-ren",
+  "page_url": "https://www.starwars.com/databank/kylo-ren",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/lando_calrissian": {
+  "file": "heroes/lando_calrissian.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/lando-main_a207290e.jpeg",
+  "original_size": [
+   1280,
+   536
+  ],
+  "page": "lando-calrissian",
+  "page_url": "https://www.starwars.com/databank/lando-calrissian",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   377
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/leia_organa": {
+  "file": "heroes/leia_organa.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/leia-organa-main_9af6ff81.jpeg",
+  "original_size": [
+   1920,
+   1080
+  ],
+  "page": "princess-leia-organa",
+  "page_url": "https://www.starwars.com/databank/princess-leia-organa",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/luke": {
+  "file": "heroes/luke.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/luke-skywalker-main_7ffe21c7.jpeg",
+  "original_size": [
+   1920,
+   1080
+  ],
+  "page": "luke-skywalker",
+  "page_url": "https://www.starwars.com/databank/luke-skywalker",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/mace_windu": {
+  "file": "heroes/mace_windu.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/Mace-Windu_b35242e5.jpeg",
+  "original_size": [
+   1638,
+   921
+  ],
+  "page": "mace-windu",
+  "page_url": "https://www.starwars.com/databank/mace-windu",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/nute_gunray": {
+  "file": "heroes/nute_gunray.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_nutegunray_01_169_9d66ded2.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "nute-gunray",
+  "page_url": "https://www.starwars.com/databank/nute-gunray",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/obi_wan": {
+  "file": "heroes/obi_wan.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/obi-wan-kenobi-main_3286c63c.jpeg",
+  "original_size": [
+   1280,
+   853
+  ],
+  "page": "obi-wan-kenobi",
+  "page_url": "https://www.starwars.com/databank/obi-wan-kenobi",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   600
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/padme_amidala": {
+  "file": "heroes/padme_amidala.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/Padme-Amidala_05d50c8a.jpeg",
+  "original_size": [
+   1536,
+   864
+  ],
+  "page": "padme-amidala",
+  "page_url": "https://www.starwars.com/databank/padme-amidala",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/phasma": {
+  "file": "heroes/phasma.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/captain-phasma_8f4ea1d7.jpeg",
+  "original_size": [
+   1560,
+   1040
+  ],
+  "page": "captain-phasma",
+  "page_url": "https://www.starwars.com/databank/captain-phasma",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   600
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/poe_dameron": {
+  "file": "heroes/poe_dameron.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/poe-main_611e1021.jpeg",
+  "original_size": [
+   1280,
+   720
+  ],
+  "page": "poe-dameron",
+  "page_url": "https://www.starwars.com/databank/poe-dameron",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/qui_gon_jinn": {
+  "file": "heroes/qui_gon_jinn.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/qui-gon-jinn-main_3386f119.jpeg",
+  "original_size": [
+   1280,
+   530
+  ],
+  "page": "qui-gon-jinn",
+  "page_url": "https://www.starwars.com/databank/qui-gon-jinn",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   373
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/r2_d2": {
+  "file": "heroes/r2_d2.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/r2-d2-main_f315b094.jpeg",
+  "original_size": [
+   1280,
+   536
+  ],
+  "page": "r2-d2",
+  "page_url": "https://www.starwars.com/databank/r2-d2",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   377
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/rey": {
+  "file": "heroes/rey.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/rey-main_ca4bb0d7.jpeg",
+  "original_size": [
+   1280,
+   536
+  ],
+  "page": "rey",
+  "page_url": "https://www.starwars.com/databank/rey",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   377
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/snoke": {
+  "file": "heroes/snoke.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/ep8-ff-006360_c95dace6.jpeg",
+  "original_size": [
+   1280,
+   720
+  ],
+  "page": "supreme-leader-snoke",
+  "page_url": "https://www.starwars.com/databank/supreme-leader-snoke",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/vice_admiral_holdo": {
+  "file": "heroes/vice_admiral_holdo.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/ep8-ff-004349_fd1e44fa.jpeg",
+  "original_size": [
+   1280,
+   720
+  ],
+  "page": "vice-admiral-holdo",
+  "page_url": "https://www.starwars.com/databank/vice-admiral-holdo",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/wedge_antilles": {
+  "file": "heroes/wedge_antilles.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_wedgeantilles_01_169_b8185dce.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "wedge-antilles",
+  "page_url": "https://www.starwars.com/databank/wedge-antilles",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "heroes/yoda": {
+  "file": "heroes/yoda.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/Yoda-Retina_2a7ecc26.jpeg",
+  "original_size": [
+   1536,
+   864
+  ],
+  "page": "yoda",
+  "page_url": "https://www.starwars.com/databank/yoda",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/arc170": {
+  "file": "ships/arc170.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_arc170starfighter_01_169_f932abcb.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "arc-170-starfighter",
+  "page_url": "https://www.starwars.com/databank/arc-170-starfighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/awing_rz1": {
+  "file": "ships/awing_rz1.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/screen_shot_2015-05-26_at_5_16a39e17.png",
+  "original_size": [
+   812,
+   598
+  ],
+  "page": "a-wing-fighter",
+  "page_url": "https://www.starwars.com/databank/a-wing-fighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   812,
+   598
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/bwing": {
+  "file": "ships/bwing.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_bwingfighter_01_169_460cc528.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "b-wing-fighter",
+  "page_url": "https://www.starwars.com/databank/b-wing-fighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/death_star_1": {
+  "file": "ships/death_star_1.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/Death-Star-I-copy_36ad2500.jpeg",
+  "original_size": [
+   1600,
+   900
+  ],
+  "page": "death-star",
+  "page_url": "https://www.starwars.com/databank/death-star",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/delta7_aethersprite": {
+  "file": "ships/delta7_aethersprite.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/delta-7-starfighter_fe9a59bc.jpeg",
+  "original_size": [
+   1560,
+   1387
+  ],
+  "page": "jedi-starfighter",
+  "page_url": "https://www.starwars.com/databank/jedi-starfighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   800
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/eta2_actis": {
+  "file": "ships/eta2_actis.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/ETA-2-starfighter-main-image_bedd3aaa.jpeg",
+  "original_size": [
+   1915,
+   816
+  ],
+  "page": "eta-2-jedi-starfighter",
+  "page_url": "https://www.starwars.com/databank/eta-2-jedi-starfighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   383
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/executor": {
+  "file": "ships/executor.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_executor_01_169_8157df82.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "executor",
+  "page_url": "https://www.starwars.com/databank/executor",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/ghost": {
+  "file": "ships/ghost.webp",
+  "image_url": "https://static.wikia.nocookie.net/starwars/images/f/f7/Ghost-RO.png/revision/latest?cb=20220430183550",
+  "original_size": [
+   1146,
+   567
+  ],
+  "page": "VCX-100 light freighter",
+  "page_url": "https://starwars.fandom.com/wiki/VCX-100_light_freighter",
+  "rights": "© Lucasfilm Ltd. / авторы; через Wookieepedia",
+  "saved_size": [
+   900,
+   445
+  ]
+ },
+ "ships/gr75_transport": {
+  "file": "ships/gr75_transport.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/gr-75-medium-transport_cd04862d.jpeg",
+  "original_size": [
+   800,
+   433
+  ],
+  "page": "gr-75-medium-transport",
+  "page_url": "https://www.starwars.com/databank/gr-75-medium-transport",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   800,
+   433
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/hounds_tooth": {
+  "file": "ships/hounds_tooth.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/houndstooth_f22beddc.jpeg",
+  "original_size": [
+   1389,
+   804
+  ],
+  "page": "hounds-tooth",
+  "page_url": "https://www.starwars.com/databank/hounds-tooth",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   521
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/hyena_bomber": {
+  "file": "ships/hyena_bomber.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_hyenabomberdroid_01_169_38b46a66.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "hyena-bomber-droid",
+  "page_url": "https://www.starwars.com/databank/hyena-bomber-droid",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/interdictor": {
+  "file": "ships/interdictor.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/imperial-interdictor_f797f8ad.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "imperial-interdictor",
+  "page_url": "https://www.starwars.com/databank/imperial-interdictor",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/laat_gunship": {
+  "file": "ships/laat_gunship.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/republic-attack-gunship-main_6dc2f24e.jpeg",
+  "original_size": [
+   1920,
+   813
+  ],
+  "page": "republic-attack-gunship",
+  "page_url": "https://www.starwars.com/databank/republic-attack-gunship",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   381
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/lambda_shuttle": {
+  "file": "ships/lambda_shuttle.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/veh_ia_1752_040381b2.jpeg",
+  "original_size": [
+   1280,
+   981
+  ],
+  "page": "imperial-shuttle",
+  "page_url": "https://www.starwars.com/databank/imperial-shuttle",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   690
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/mc80_home_one": {
+  "file": "ships/mc80_home_one.webp",
+  "image_url": "https://static.wikia.nocookie.net/starwars/images/c/c0/HomeOneEngines-Chron.png/revision/latest?cb=20230830232659",
+  "original_size": [
+   2500,
+   900
+  ],
+  "page": "Home One",
+  "page_url": "https://starwars.fandom.com/wiki/Home_One",
+  "rights": "© Lucasfilm Ltd. / авторы; через Wookieepedia",
+  "saved_size": [
+   900,
+   324
+  ]
+ },
+ "ships/mg100_bomber": {
+  "file": "ships/mg100_bomber.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/resistance-bomber_a2df9e03.jpeg",
+  "original_size": [
+   768,
+   432
+  ],
+  "page": "resistance-bomber",
+  "page_url": "https://www.starwars.com/databank/resistance-bomber",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   768,
+   432
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/millennium_falcon": {
+  "file": "ships/millennium_falcon.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/millennium-falcon-main-tlj-a_7cf89d3a.jpeg",
+  "original_size": [
+   1280,
+   720
+  ],
+  "page": "millennium-falcon",
+  "page_url": "https://www.starwars.com/databank/millennium-falcon",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/naboo_n1": {
+  "file": "ships/naboo_n1.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_naboon1starfighter_01_169_26691adf.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "naboo-n-1-starfighter",
+  "page_url": "https://www.starwars.com/databank/naboo-n-1-starfighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/naboo_royal_cruiser": {
+  "file": "ships/naboo_royal_cruiser.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_nabooroyalstarship_01_169_e61f677e.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "naboo-royal-starship",
+  "page_url": "https://www.starwars.com/databank/naboo-royal-starship",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/nantex_fighter": {
+  "file": "ships/nantex_fighter.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/geonosian-fighter_119560e5.jpeg",
+  "original_size": [
+   1560,
+   1040
+  ],
+  "page": "geonosian-fighter",
+  "page_url": "https://www.starwars.com/databank/geonosian-fighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   600
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/phantom": {
+  "file": "ships/phantom.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/image_e61296b4.jpeg",
+  "original_size": [
+   1920,
+   1079
+  ],
+  "page": "the-phantom",
+  "page_url": "https://www.starwars.com/databank/the-phantom",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/pirate_corsair": {
+  "file": "ships/pirate_corsair.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/resistance-db-g-class-freighter-main-image_19642498.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "darius-g-class-freighter",
+  "page_url": "https://www.starwars.com/databank/darius-g-class-freighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/pirate_marauder": {
+  "file": "ships/pirate_marauder.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/pirate-frigate-main_e169866f.jpeg",
+  "original_size": [
+   1920,
+   786
+  ],
+  "page": "pirate-frigate",
+  "page_url": "https://www.starwars.com/databank/pirate-frigate",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   368
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/pirate_skiff": {
+  "file": "ships/pirate_skiff.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/shydopp-pirate-skiff-main_09a4b426.jpeg",
+  "original_size": [
+   1280,
+   537
+  ],
+  "page": "shydopp-pirate-skiff",
+  "page_url": "https://www.starwars.com/databank/shydopp-pirate-skiff",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   378
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/providence": {
+  "file": "ships/providence.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/ep3_ia_92707_3bbabe59.jpeg",
+  "original_size": [
+   1920,
+   818
+  ],
+  "page": "invisible-hand",
+  "page_url": "https://www.starwars.com/databank/invisible-hand",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   383
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/raddus_cruiser": {
+  "file": "ships/raddus_cruiser.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/last-jedi-databank-raddus-main-image_73540454.jpeg",
+  "original_size": [
+   1280,
+   721
+  ],
+  "page": "the-raddus",
+  "page_url": "https://www.starwars.com/databank/the-raddus",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/resistance_transport": {
+  "file": "ships/resistance_transport.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/ep8-ff-004996_8ab70142.jpeg",
+  "original_size": [
+   1280,
+   720
+  ],
+  "page": "resistance-transport",
+  "page_url": "https://www.starwars.com/databank/resistance-transport",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/resurgent_destroyer": {
+  "file": "ships/resurgent_destroyer.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/tlj-db-first-order-star-destroyer-main-image-2_99142f23.jpeg",
+  "original_size": [
+   768,
+   432
+  ],
+  "page": "first-order-star-destroyer",
+  "page_url": "https://www.starwars.com/databank/first-order-star-destroyer",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   768,
+   432
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/slave_1": {
+  "file": "ships/slave_1.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/slave-1-main_81d5c1c7.jpeg",
+  "original_size": [
+   1280,
+   540
+  ],
+  "page": "slave-i",
+  "page_url": "https://www.starwars.com/databank/slave-i",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   380
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/soulless_one": {
+  "file": "ships/soulless_one.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_soullessone_01_169_08305d9b.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "soulless-one",
+  "page_url": "https://www.starwars.com/databank/soulless-one",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/star_destroyer": {
+  "file": "ships/star_destroyer.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/Star-Destroyer_ab6b94bb.jpeg",
+  "original_size": [
+   1600,
+   900
+  ],
+  "page": "imperial-star-destroyer",
+  "page_url": "https://www.starwars.com/databank/imperial-star-destroyer",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/tie_advanced_x1": {
+  "file": "ships/tie_advanced_x1.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/vaders-tie-fighter_8bcb92e1.jpeg",
+  "original_size": [
+   1560,
+   1172
+  ],
+  "page": "darth-vader-s-tie-fighter",
+  "page_url": "https://www.starwars.com/databank/darth-vader-s-tie-fighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   676
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/tie_bomber": {
+  "file": "ships/tie_bomber.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/tie-bomber-main_d4d9b979.jpeg",
+  "original_size": [
+   1280,
+   536
+  ],
+  "page": "tie-bomber",
+  "page_url": "https://www.starwars.com/databank/tie-bomber",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   377
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/tie_fighter": {
+  "file": "ships/tie_fighter.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/TIE-Fighter_25397c64.jpeg",
+  "original_size": [
+   2048,
+   1153
+  ],
+  "page": "tie-fighter",
+  "page_url": "https://www.starwars.com/databank/tie-fighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/tie_fo": {
+  "file": "ships/tie_fo.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/first-order-tie-fighter_a795ceaf.jpeg",
+  "original_size": [
+   2048,
+   858
+  ],
+  "page": "first-order-tie-fighter",
+  "page_url": "https://www.starwars.com/databank/first-order-tie-fighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   377
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/tie_interceptor": {
+  "file": "ships/tie_interceptor.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/tie-interceptor-2_b2250e79.jpeg",
+  "original_size": [
+   1560,
+   1040
+  ],
+  "page": "tie-interceptor",
+  "page_url": "https://www.starwars.com/databank/tie-interceptor",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   600
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/tie_sf": {
+  "file": "ships/tie_sf.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/first-order-special-forces-tie-fighter_544db559.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "first-order-special-forces-tie-fighter",
+  "page_url": "https://www.starwars.com/databank/first-order-special-forces-tie-fighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/tie_silencer": {
+  "file": "ships/tie_silencer.webp",
+  "image_url": "https://static.wikia.nocookie.net/starwars/images/e/ef/TIE_Silencer_TFOWM.png/revision/latest?cb=20190629200209",
+  "original_size": [
+   3535,
+   2270
+  ],
+  "page": "TIE/vn space superiority fighter",
+  "page_url": "https://starwars.fandom.com/wiki/TIE/vn_space_superiority_fighter",
+  "rights": "© Lucasfilm Ltd. / авторы; через Wookieepedia",
+  "saved_size": [
+   900,
+   578
+  ]
+ },
+ "ships/upsilon_shuttle": {
+  "file": "ships/upsilon_shuttle.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/kylo-ren_s-command-shuttle_0b43b874.jpeg",
+  "original_size": [
+   2096,
+   878
+  ],
+  "page": "kylo-rens-command-shuttle",
+  "page_url": "https://www.starwars.com/databank/kylo-rens-command-shuttle",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   377
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/v19_torrent": {
+  "file": "ships/v19_torrent.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/v-19-torrent-16-9_06db5db0.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "v-19-torrent",
+  "page_url": "https://www.starwars.com/databank/v-19-torrent",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/venator": {
+  "file": "ships/venator.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_republicattackcruiser_01_169_812f153d.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "republic-attack-cruiser",
+  "page_url": "https://www.starwars.com/databank/republic-attack-cruiser",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/vulture_droid": {
+  "file": "ships/vulture_droid.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/databank_vulturedroid_01_169_6ef9fd50.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "vulture-droid",
+  "page_url": "https://www.starwars.com/databank/vulture-droid",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/xwing_t65": {
+  "file": "ships/xwing_t65.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/x-wing-main_9416f762.jpeg",
+  "original_size": [
+   1545,
+   1080
+  ],
+  "page": "x-wing-starfighter",
+  "page_url": "https://www.starwars.com/databank/x-wing-starfighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   629
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/xwing_t70": {
+  "file": "ships/xwing_t70.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/resistance-x-wing_9433981f.jpeg",
+  "original_size": [
+   1560,
+   878
+  ],
+  "page": "resistance-x-wing",
+  "page_url": "https://www.starwars.com/databank/resistance-x-wing",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   507
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/ywing_btla4": {
+  "file": "ships/ywing_btla4.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/y-wing-main_1eac4125.jpeg",
+  "original_size": [
+   1920,
+   1343
+  ],
+  "page": "y-wing-starfighter",
+  "page_url": "https://www.starwars.com/databank/y-wing-starfighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   630
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ },
+ "ships/z95_headhunter": {
+  "file": "ships/z95_headhunter.webp",
+  "image_url": "https://lumiere-a.akamaihd.net/v1/images/Z-95-starfighter_95f8ed4b.jpeg",
+  "original_size": [
+   1289,
+   725
+  ],
+  "page": "clone-z-95-starfighter",
+  "page_url": "https://www.starwars.com/databank/clone-z-95-starfighter",
+  "rights": "© Lucasfilm Ltd.; через starwars.com databank",
+  "saved_size": [
+   900,
+   506
+  ],
+  "source": "starwars.com databank",
+  "transparent": false
+ }
+}

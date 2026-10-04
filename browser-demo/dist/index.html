@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03070b">
+  <title>Fleet Command — тактический прототип</title>
+  <link rel="preload" href="assets/environment/deep_space.jpg" as="image">
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="layout-fix.css?v=2">
+  <link rel="stylesheet" href="scene3d.css?v=1">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<div id="mock-banner" class="hidden">ДЕМО-МОК</div>
+<main id="app">
+  <section id="battlefield" aria-label="Тактическое поле">
+    <header id="battle-topbar">
+      <div class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div><div class="eyebrow">FLEET COMMAND // TACTICAL LINK</div><h1>Операция «Ночной рубеж»</h1></div>
+      <div class="connection"><span></span> СЕТЬ СТАБИЛЬНА</div>
+    </header>
+    <div id="board-wrap">
+      <div id="board3d" aria-label="Гексагональное поле космического боя"></div>
+      <canvas id="board" width="900" height="900" class="hidden" aria-hidden="true"></canvas>
+      <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+      <div id="asset-status">ЗАГРУЗКА ТАКТИЧЕСКИХ ДАННЫХ</div>
+      <div class="board-help">ЛКМ — выбрать / атаковать <b>•</b> курс задаётся стрелкой корабля</div>
+      <div id="overlay" class="hidden"><div class="overlay-card">
+        <div class="eyebrow">БОЕВОЙ ПРОТОКОЛ ЗАВЕРШЁН</div><h1 id="overlay-title">—</h1>
+        <p id="overlay-reason">—</p><button id="overlay-again" class="btn btn-new">НОВАЯ ОПЕРАЦИЯ</button>
+      </div></div>
+    </div>
+  </section>
+  <aside id="panel">
+    <header class="card head">
+      <div class="eyebrow">БОЕВОЙ КАНАЛ // 3 × 3</div>
+      <div class="mission-line"><span id="round-info">—</span><span class="timer">LIVE</span></div>
+      <div id="turn-info">—</div>
+      <div class="faction-score"><span class="ally">АЛЬЯНС <b id="score-a">03</b></span><i></i><span class="enemy"><b id="score-b">03</b> СОПЕРНИК</span></div>
+    </header>
+    <section class="card ship-card">
+      <div class="section-head"><h2>АКТИВНЫЙ КОРАБЛЬ</h2><span>LIVE TELEMETRY</span></div>
+      <div id="ship-info" class="dim">—</div>
+    </section>
+    <section class="card command-card">
+      <div class="section-head"><h2>КОМАНДЫ</h2><span>1 ЗАРЯД / МАНЁВР</span></div>
+      <p id="hint" class="dim"></p><div id="action-buttons"></div>
+    </section>
+    <section class="card radar-card">
+      <div class="section-head"><h2>ТАКТИЧЕСКИЙ РАДАР</h2><span>СЕКТОР 07</span></div>
+      <canvas id="radar" width="640" height="170" aria-label="Мини-карта боя"></canvas>
+    </section>
+    <section class="card log-card">
+      <div class="section-head"><h2>ЖУРНАЛ БОЯ</h2><span>AUTO-SCROLL</span></div><ul id="log"></ul>
+    </section>
+    <footer class="panel-footer">
+      <div class="legend"><span class="lg lg-sel">свой</span><span class="lg lg-move">ход</span><span class="lg lg-target">цель</span><span class="lg lg-active">активен</span></div>
+      <a class="asset-credits" href="orientation_test.html" target="_blank" rel="noopener">АРСЕНАЛ · 11 ИГРОВЫХ + 26 MINECRAFT</a>
+      <a class="asset-credits" href="assets/models/README.md" target="_blank" rel="noopener">3D-АССЕТЫ · АВТОРЫ И ЛИЦЕНЗИИ</a>
+      <button id="new-game" class="btn btn-new">↻ ПЕРЕЗАПУСТИТЬ БОЙ</button>
+    </footer>
+  </aside>
+</main>
+<script src="assets.js?v=2"></script><script src="ships.js"></script><script src="ships3d.js"></script>
+<script src="components/ship-hex-token.js?v=1"></script>
+<script src="bot.js?v=5"></script><script src="pkg-loader.js"></script><script src="main.js?v=6"></script>
+</body>
+</html>

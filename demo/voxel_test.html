@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>SWB — воксельные модели кораблей</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #10141d; font-family: system-ui, sans-serif; }
+  #scene { width: 100%; height: 100%; }
+  .label { position: absolute; transform: translate(-50%, -100%); color: #cfd8e6; font-size: 12px;
+           text-shadow: 0 1px 3px #000; pointer-events: none; white-space: nowrap; }
+  #hint { position: fixed; left: 12px; bottom: 10px; color: #8fa0b8; font-size: 12px; }
+</style>
+</head>
+<body>
+<div id="scene"></div>
+<div id="hint">Перетаскивание — орбита · колесо — зум</div>
+<script type="module">
+import * as THREE from './vendor/three.module.js';
+import { createShipModel, SHIP_MODEL_TYPES } from './voxel_ships.js';
+
+const container = document.getElementById('scene');
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+container.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x10141d);
+scene.fog = new THREE.Fog(0x10141d, 24, 60);
+
+const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 200);
+
+scene.add(new THREE.HemisphereLight(0xbfd4ee, 0x2a2438, 0.9));
+const sun = new THREE.DirectionalLight(0xfff2dd, 1.4);
+sun.position.set(6, 12, 5);
+sun.castShadow = true;
+sun.shadow.mapSize.set(2048, 2048);
+Object.assign(sun.shadow.camera, { left: -14, right: 14, top: 14, bottom: -14, far: 40 });
+scene.add(sun);
+
+const ground = new THREE.Mesh(
+  new THREE.CylinderGeometry(20, 20, 0.4, 64),
+  new THREE.MeshStandardMaterial({ color: 0x1a2130, roughness: 0.95 })
+);
+ground.position.y = -0.2;
+ground.receiveShadow = true;
+scene.add(ground);
+
+const types = SHIP_MODEL_TYPES;
+const spacing = 3.2;
+const startX = -((types.length - 1) * spacing) / 2;
+const labels = [];
+types.forEach((typeId, i) => {
+  const model = createShipModel(typeId, { size: 1.7 });
+  if (!model) return;
+  model.position.set(startX + i * spacing, 0.05, 0);
+  model.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+  // лёгкий поворот, чтобы был виден ракурс 3/4
+  model.rotation.y = THREE.MathUtils.degToRad(30 - 60 * 4); // как на доске при facing=4
+  scene.add(model);
+  const div = document.createElement('div');
+  div.className = 'label';
+  div.textContent = typeId;
+  container.appendChild(div);
+  labels.push({ div, obj: model });
+});
+
+// орбитальная камера
+const orbit = { theta: Math.PI / 2.6, phi: Math.PI / 3.4, dist: 16, target: new THREE.Vector3(0, 0.7, 0) };
+function applyCamera() {
+  camera.position.set(
+    orbit.target.x + orbit.dist * Math.sin(orbit.phi) * Math.sin(orbit.theta),
+    orbit.target.y + orbit.dist * Math.cos(orbit.phi),
+    orbit.target.z + orbit.dist * Math.sin(orbit.phi) * Math.cos(orbit.theta)
+  );
+  camera.lookAt(orbit.target);
+}
+applyCamera();
+
+let drag = null;
+renderer.domElement.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, y: e.clientY }; });
+addEventListener('pointerup', () => { drag = null; });
+addEventListener('pointermove', (e) => {
+  if (!drag) return;
+  orbit.theta -= (e.clientX - drag.x) * 0.006;
+  orbit.phi = Math.min(Math.PI / 2.05, Math.max(0.25, orbit.phi - (e.clientY - drag.y) * 0.005));
+  drag = { x: e.clientX, y: e.clientY };
+  applyCamera();
+});
+addEventListener('wheel', (e) => {
+  orbit.dist = Math.min(40, Math.max(5, orbit.dist * (1 + Math.sign(e.deltaY) * 0.1)));
+  applyCamera();
+}, { passive: true });
+
+const proj = new THREE.Vector3();
+function tick() {
+  requestAnimationFrame(tick);
+  for (const { div, obj } of labels) {
+    proj.copy(obj.position); proj.y += 2.1; proj.project(camera);
+    div.style.left = ((proj.x * 0.5 + 0.5) * innerWidth) + 'px';
+    div.style.top = ((-proj.y * 0.5 + 0.5) * innerHeight) + 'px';
+    div.style.display = proj.z < 1 ? '' : 'none';
+  }
+  renderer.render(scene, camera);
+}
+tick();
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>
+</body>
+</html>

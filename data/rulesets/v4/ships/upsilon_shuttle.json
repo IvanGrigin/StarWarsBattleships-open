@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "id": "upsilon_shuttle",
+  "display_name": "Шаттл класса «Ипсилон»",
+  "description": "Командный шаттл с огромными крыльями-сенсорами и абордажной командой штурмовиков.",
+  "faction": "first_order",
+  "era": "new_order",
+  "role": "support",
+  "unique": false,
+  "legacy_v3": false,
+  "draftable": true,
+  "raw_cost": 23,
+  "draft_cost": 9,
+  "max_hp": 7,
+  "max_shield": 1,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "weapon": {
+    "max_range": 2,
+    "range_penalty_per_hex": 2,
+    "long_range_arc": "front"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 1,
+    "boost": true
+  },
+  "hyperdrive": {
+    "class": 1,
+    "charge_cost": 1
+  },
+  "abilities": [
+    {
+      "id": "boarding_pods",
+      "enabled": true
+    },
+    {
+      "id": "point_defense",
+      "enabled": true
+    }
+  ]
+}

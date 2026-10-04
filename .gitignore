@@ -1,0 +1,69 @@
+# Godot
+.godot/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+export_presets.cfg.secrets
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Large generated outputs (reports are committed intentionally)
+artifacts/
+*.log
+
+# Rust build
+rust/target/
+assets_source/schematics/*.zip
+assets_source/schematics/*.schem
+assets_source/schematics/*_unz/
+assets_source/schematics/*.bin
+
+# Сырые загрузки 3D-моделей (≈6.5 ГБ): в git не помещаются. Каталоги-описания
+# кандидатов (*.md, *.json рядом) коммитятся, сами модели — нет.
+assets_source/external_models/raw_candidates/
+# Исходники декораций (текстуры планет 4K/8K, картинки) — сотни МБ; в игру идут уменьшенные копии из tools/play_v4/assets
+assets_source/planets/**
+!assets_source/planets/**/
+!assets_source/planets/**/SOURCES.md
+assets_source/decor/**
+!assets_source/decor/**/
+!assets_source/decor/**/SOURCES.md
+
+# Снимки 3D-моделей для карточек (render_cards.py): на карточки не пошли — владелец
+# выбрал иллюстрации; хранятся только локально.
+demo/assets/card_renders/
+
+# GIF повторов партий (tools/play_v4/server.py → «Повтор партии»): личные записи, в git не входят
+tools/play_v4/replays/
+
+# Ассеты (картинки, 3D-модели, текстуры) в открытый репозиторий не входят: их передаёт владелец
+# архивом data.zip (docs/ASSETS.md). В git остаются только текстовые описания — index.json, manifest.json, README.
+/data.zip
+demo/assets/**
+!demo/assets/**/
+!demo/assets/**/index.json
+!demo/assets/**/manifest.json
+!demo/assets/**/licenses.json
+!demo/assets/**/README.md
+demo/assets/models/meshes/
+tools/play_v4/assets/**
+!tools/play_v4/assets/**/
+!tools/play_v4/assets/**/README.md
+browser-demo/dist/assets/**
+!browser-demo/dist/assets/**/
+!browser-demo/dist/assets/**/index.json
+!browser-demo/dist/assets/**/README.md
+concept-art/
+docs/design/**/*.png
+*.pdf
+# Сборка ядра Rust в WebAssembly для старого демо v3.5 — артефакт; есть в data.zip, пересобирается из rust/game_core
+demo/pkg/*.wasm
+browser-demo/dist/pkg/*.wasm

@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "id": "ywing_btla4",
+  "display_name": "Y-wing BTL-A4",
+  "description": "Рабочая лошадь Альянса: медленный, но с ионной пушкой и бомбами.",
+  "faction": "rebels",
+  "era": "galactic_civil_war",
+  "role": "bomber",
+  "unique": false,
+  "legacy_v3": false,
+  "draftable": true,
+  "raw_cost": 22,
+  "draft_cost": 9,
+  "max_hp": 4,
+  "max_shield": 1,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    2,
+    1,
+    0,
+    1,
+    0,
+    1
+  ],
+  "weapon": {
+    "max_range": 2,
+    "range_penalty_per_hex": 2,
+    "long_range_arc": "front_flank"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 1,
+    "boost": true
+  },
+  "hyperdrive": {
+    "class": 2,
+    "charge_cost": 2
+  },
+  "abilities": [
+    {
+      "id": "ion_cannon",
+      "enabled": true
+    },
+    {
+      "id": "bomb_rack",
+      "enabled": true
+    }
+  ],
+  "cost_adjust": 0,
+  "balance_patch": {
+    "before": {
+      "arc_modifiers": [
+        2,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "max_hp": 5,
+      "max_shield": 1,
+      "draft_cost": 9
+    },
+    "delta": {
+      "hp": -1
+    },
+    "source": "final.json: ML-оптимизация 2026-09-19: три эпохи, подстраивающийся бот за обе стороны, драфт «как у человека», новые способности кораблей"
+  }
+}

@@ -1,0 +1,872 @@
+{
+ "arc170": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Aggressive ReConnaissance-170 starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/ba/ARC170starfighter.jpg/revision/latest?cb=20111112062600",
+   "file": "ships/arc170.jpg",
+   "bytes": 5829,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Clone trooper pilot",
+   "url": "https://static.wikia.nocookie.net/starwars/images/6/6d/CloneTrooperPilots.png/revision/latest?cb=20240329050546",
+   "file": "characters/arc170.jpg",
+   "bytes": 130376
+  }
+ },
+ "awing_rz1": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "RZ-1 A-wing interceptor",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/8d/A-wing_DICE.png/revision/latest?cb=20161021230115",
+   "file": "ships/awing_rz1.jpg",
+   "bytes": 236564
+  },
+  "characters": {
+   "title": "Arvel Crynyd",
+   "url": "https://static.wikia.nocookie.net/starwars/images/d/de/Arvel-crynyd.jpg/revision/latest?cb=20120113223349",
+   "file": "characters/awing_rz1.jpg",
+   "bytes": 5793,
+   "placeholder": true
+  }
+ },
+ "bwing": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "A/SF-01 B-wing starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/85/BwingStarfighter-CGSWG.png/revision/latest?cb=20250210071035",
+   "file": "ships/bwing.jpg",
+   "bytes": 5823,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Quarrie",
+   "url": "https://static.wikia.nocookie.net/starwars/images/4/4e/Quarrie_SWCT.png/revision/latest?cb=20251110031725",
+   "file": "characters/bwing.jpg",
+   "bytes": 5793,
+   "placeholder": true
+  }
+ },
+ "death_star_1": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "DS-1 Orbital Battle Station",
+   "url": "https://static.wikia.nocookie.net/starwars/images/7/72/DeathStar1-SWE.png/revision/latest?cb=20150121020639",
+   "file": "ships/death_star_1.jpg",
+   "bytes": 155516
+  },
+  "characters": {
+   "title": "Wilhuff Tarkin",
+   "url": "https://static.wikia.nocookie.net/starwars/images/c/c1/Tarkininfobox.jpg/revision/latest?cb=20100620213033",
+   "file": "characters/death_star_1.jpg",
+   "bytes": 5796,
+   "placeholder": true
+  }
+ },
+ "delta7_aethersprite": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Delta-7 Aethersprite-class light interceptor",
+   "url": "https://static.wikia.nocookie.net/starwars/images/c/c1/OWKDelta7Starfighter-Platinum2022.png/revision/latest?cb=20241019013821",
+   "file": "ships/delta7_aethersprite.jpg",
+   "bytes": 5877,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Obi-Wan Kenobi",
+   "url": "https://static.wikia.nocookie.net/starwars/images/4/4e/ObiWanHS-SWE.jpg/revision/latest?cb=20111115052816",
+   "file": "characters/delta7_aethersprite.jpg",
+   "bytes": 77494
+  }
+ },
+ "eta2_actis": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Eta-2 Actis-class light interceptor",
+   "url": "https://static.wikia.nocookie.net/starwars/images/0/04/Eta-2JediInterceptor-USC.png/revision/latest?cb=20231105182911",
+   "file": "ships/eta2_actis.jpg",
+   "bytes": 116380
+  },
+  "characters": {
+   "title": "Anakin Skywalker",
+   "url": "https://static.wikia.nocookie.net/starwars/images/6/6f/Anakin_Skywalker_RotS.png/revision/latest?cb=20130621175844",
+   "file": "characters/eta2_actis.jpg",
+   "bytes": 5820,
+   "placeholder": true
+  }
+ },
+ "executor": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Executor-class Star Dreadnought",
+   "url": "https://static.wikia.nocookie.net/starwars/images/a/a1/Executor2_BF2.png/revision/latest?cb=20180903231538",
+   "file": "ships/executor.jpg",
+   "bytes": 5796,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Firmus Piett",
+   "url": "https://static.wikia.nocookie.net/starwars/images/1/13/FirusPiett-CGSWG.png/revision/latest?cb=20241127051016",
+   "file": "characters/executor.jpg",
+   "bytes": 5805,
+   "placeholder": true
+  }
+ },
+ "firespray_patrol": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Firespray-31-class patrol and attack craft",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/ba/Slave_I_DICE.png/revision/latest?cb=20230723041624",
+   "file": "ships/firespray_patrol.jpg",
+   "bytes": 5793,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Jango Fett",
+   "url": "https://static.wikia.nocookie.net/starwars/images/a/ad/JangoFett-SWBC20.png/revision/latest?cb=20231230051139",
+   "file": "characters/firespray_patrol.jpg",
+   "bytes": 137452
+  }
+ },
+ "ghost": {
+  "ship": {},
+  "character": {},
+  "characters": {
+   "title": "Kanan Jarrus",
+   "url": "https://static.wikia.nocookie.net/starwars/images/f/f6/Kanan-JediNight.png/revision/latest?cb=20241231035454",
+   "file": "characters/ghost.jpg",
+   "bytes": 5802,
+   "placeholder": true
+  },
+  "ships": {
+   "title": "VCX-350 light freighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/d/de/VCX-350.jpg/revision/latest?cb=20080330144156",
+   "file": "ships/ghost.jpg",
+   "bytes": 86814
+  }
+ },
+ "gr75_transport": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "GR-75 medium transport",
+   "url": "https://static.wikia.nocookie.net/starwars/images/4/44/RebelTransport-CGSWG.png/revision/latest?cb=20250407140245",
+   "file": "ships/gr75_transport.jpg",
+   "bytes": 151326
+  },
+  "characters": {
+   "title": "Rebel trooper",
+   "url": "https://static.wikia.nocookie.net/starwars/images/c/c9/Forged_in_Battle_FC_character_art_David_Auden_Nash.png/revision/latest?cb=20230103145521",
+   "file": "characters/gr75_transport.jpg",
+   "bytes": 406520
+  }
+ },
+ "hounds_tooth": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Hound's Tooth",
+   "url": "https://static.wikia.nocookie.net/starwars/images/0/07/HoundsTooth_3quarters_view-SWE.png/revision/latest?cb=20240917035507",
+   "file": "ships/hounds_tooth.jpg",
+   "bytes": 5868,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Bossk'wassak'Cradossk",
+   "url": "https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png/revision/latest?cb=20130219044712",
+   "file": "characters/hounds_tooth.jpg",
+   "bytes": 5750,
+   "placeholder": true
+  }
+ },
+ "hyena_bomber": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Hyena-class Droid Fighter/Bomber",
+   "url": "https://static.wikia.nocookie.net/starwars/images/9/9b/HyenaBomber-SWE.png/revision/latest?cb=20260301053253",
+   "file": "ships/hyena_bomber.jpg",
+   "bytes": 446398
+  },
+  "characters": {
+   "title": "T-series military strategic analysis and tactics droid",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/e8/TA175-MF54.png/revision/latest?cb=20260224145041",
+   "file": "characters/hyena_bomber.jpg",
+   "bytes": 432504
+  }
+ },
+ "interdictor": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Interdictor-class Star Destroyer",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/e2/InterdictorClassSD-EGTW.png/revision/latest?cb=20211203104222",
+   "file": "ships/interdictor.jpg",
+   "bytes": 227250
+  },
+  "characters": {
+   "title": "Imperial officer",
+   "url": "https://static.wikia.nocookie.net/starwars/images/5/58/MytusAdema-CGSWG-Photoroom.png/revision/latest?cb=20241124042650",
+   "file": "characters/interdictor.jpg",
+   "bytes": 117966
+  }
+ },
+ "laat_gunship": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Low Altitude Assault Transport",
+   "url": "https://static.wikia.nocookie.net/starwars/images/4/49/LAATGunship-Convergence.png/revision/latest?cb=20190616225054",
+   "file": "ships/laat_gunship.jpg",
+   "bytes": 979036
+  },
+  "characters": {
+   "title": "Clone trooper",
+   "url": "https://static.wikia.nocookie.net/starwars/images/7/71/PhaseICloneTrooper2-Fathead.png/revision/latest?cb=20240907151152",
+   "file": "characters/laat_gunship.jpg",
+   "bytes": 281814
+  }
+ },
+ "lambda_shuttle": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Lambda-class T-4a shuttle",
+   "url": "https://static.wikia.nocookie.net/starwars/images/6/6d/LambdaShuttle-Fathead.png/revision/latest?cb=20230802043430",
+   "file": "ships/lambda_shuttle.jpg",
+   "bytes": 5820,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Imperial Starfighter Pilot",
+   "url": "https://static.wikia.nocookie.net/starwars/images/0/02/TIEPilot-AdvancedGraphics.png/revision/latest?cb=20260118182649",
+   "file": "characters/lambda_shuttle.jpg",
+   "bytes": 141402
+  }
+ },
+ "mc80_home_one": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "MC80A Home One Type Heavy Star Cruiser/Legends",
+   "url": "https://static.wikia.nocookie.net/starwars/images/4/42/HomeOne-Chron.png/revision/latest?cb=20240908183802",
+   "file": "ships/mc80_home_one.jpg",
+   "bytes": 5796,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Gial Ackbar",
+   "url": "https://static.wikia.nocookie.net/starwars/images/2/29/Admiral_Ackbar_RH.png/revision/latest?cb=20221224032123",
+   "file": "characters/mc80_home_one.jpg",
+   "bytes": 428216
+  }
+ },
+ "mg100_bomber": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "MG-100 StarFortress SF-17 heavy bomber",
+   "url": "https://static.wikia.nocookie.net/starwars/images/5/5a/MG-100_Starfortress.png/revision/latest?cb=20230813062536",
+   "file": "ships/mg100_bomber.jpg",
+   "bytes": 5814,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Resistance pilot",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/8e/PoeDameron1-Fathead.png/revision/latest?cb=20260301171454",
+   "file": "characters/mg100_bomber.jpg",
+   "bytes": 5814,
+   "placeholder": true
+  }
+ },
+ "millennium_falcon": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Millennium Falcon",
+   "url": "https://static.wikia.nocookie.net/starwars/images/5/52/Millennium_Falcon_Fathead_TROS.png/revision/latest?cb=20221029015218",
+   "file": "ships/millennium_falcon.jpg",
+   "bytes": 421386
+  },
+  "characters": {
+   "title": "Han Solo",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/e2/TFAHanSolo.png/revision/latest?cb=20160208055002",
+   "file": "characters/millennium_falcon.jpg",
+   "bytes": 885824
+  }
+ },
+ "munificent": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Munificent-class star frigate",
+   "url": "https://static.wikia.nocookie.net/starwars/images/a/a7/CISMunificent-TCW.png/revision/latest?cb=20231010233644",
+   "file": "ships/munificent.jpg",
+   "bytes": 5808,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "T-series military strategic analysis and tactics droid",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/e8/TA175-MF54.png/revision/latest?cb=20260224145041",
+   "file": "characters/munificent.jpg",
+   "bytes": 5787,
+   "placeholder": true
+  }
+ },
+ "naboo_n1": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "N-1 starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/d/d3/N-1_BF2.png/revision/latest?cb=20170825000654",
+   "file": "ships/naboo_n1.jpg",
+   "bytes": 5756,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Ric Olié",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/e0/RicOlie-2024SWHyperspace.png/revision/latest?cb=20251121055104",
+   "file": "characters/naboo_n1.jpg",
+   "bytes": 5829,
+   "placeholder": true
+  }
+ },
+ "naboo_royal_cruiser": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "J-type 327 Nubian royal starship",
+   "url": "https://static.wikia.nocookie.net/starwars/images/9/9a/Naboo_Royal_Starship_SWE.png/revision/latest?cb=20260223073019",
+   "file": "ships/naboo_royal_cruiser.jpg",
+   "bytes": 282736
+  },
+  "characters": {
+   "title": "Padmé Amidala Naberrie",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/b2/Padmegreenscrshot.jpg/revision/latest?cb=20100423143631",
+   "file": "characters/naboo_royal_cruiser.jpg",
+   "bytes": 52162
+  }
+ },
+ "nantex_fighter": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Nantex-class territorial defense starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/82/Nantex-class_fighters.png/revision/latest?cb=20200120054757",
+   "file": "ships/nantex_fighter.jpg",
+   "bytes": 178878
+  },
+  "characters": {
+   "title": "Confederacy of Independent Systems",
+   "url": "https://static.wikia.nocookie.net/starwars/images/3/34/CIS_roundel.svg/revision/latest?cb=20240821212021",
+   "file": "characters/nantex_fighter.jpg",
+   "bytes": 5768,
+   "placeholder": true
+  }
+ },
+ "phantom": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Sheathipede-class transport shuttle",
+   "url": "https://static.wikia.nocookie.net/starwars/images/1/1c/Sheathipede-SWE.png/revision/latest?cb=20260307195259",
+   "file": "ships/phantom.jpg",
+   "bytes": 364596
+  },
+  "characters": {
+   "title": "Ezra Bridger",
+   "url": "https://static.wikia.nocookie.net/starwars/images/a/ad/Ezra_Bridger_character_poster.png/revision/latest?cb=20260201003755",
+   "file": "characters/phantom.jpg",
+   "bytes": 5865,
+   "placeholder": true
+  }
+ },
+ "pirate_corsair": {
+  "ship": {},
+  "character": {},
+  "characters": {
+   "title": "Pirate",
+   "url": "https://static.wikia.nocookie.net/starwars/images/9/97/Pirates-SWGoH.png/revision/latest?cb=20250629013952",
+   "file": "characters/pirate_corsair.jpg",
+   "bytes": 211234
+  },
+  "ships": {
+   "title": "Skiff",
+   "url": "https://static.wikia.nocookie.net/starwars/images/c/cc/Bantha-II_Cargo_Skiff_BG.png/revision/latest?cb=20220911001931",
+   "file": "ships/pirate_corsair.jpg",
+   "bytes": 95268
+  }
+ },
+ "pirate_marauder": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Marauder-class Assault Corvette/Legends",
+   "url": "https://static.wikia.nocookie.net/starwars/images/f/fa/MarauderclassCorvette-SofG2007.png/revision/latest?cb=20221218062103",
+   "file": "ships/pirate_marauder.jpg",
+   "bytes": 52182
+  },
+  "characters": {
+   "title": "Hondo Ohnaka",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/b8/HondoOhnaka-TGTB.png/revision/latest?cb=20251217184604",
+   "file": "characters/pirate_marauder.jpg",
+   "bytes": 5805,
+   "placeholder": true
+  }
+ },
+ "pirate_skiff": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Bantha-II cargo skiff",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/84/BanthaIICargoSkiff-CGSWG.png/revision/latest?cb=20241213010601",
+   "file": "ships/pirate_skiff.jpg",
+   "bytes": 5829,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Weequay",
+   "url": "https://static.wikia.nocookie.net/starwars/images/5/54/PagettiRook-RotJAVA.png/revision/latest?cb=20260302055353",
+   "file": "characters/pirate_skiff.jpg",
+   "bytes": 66556
+  }
+ },
+ "providence": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Providence-class Dreadnought",
+   "url": "https://static.wikia.nocookie.net/starwars/images/f/f1/Invincible-TCWs2BR3.png/revision/latest?cb=20250404002141",
+   "file": "ships/providence.jpg",
+   "bytes": 69358
+  },
+  "characters": {
+   "title": "Dooku",
+   "url": "https://static.wikia.nocookie.net/starwars/images/5/5f/Dooku-SWBC61.png/revision/latest?cb=20241118020049",
+   "file": "characters/providence.jpg",
+   "bytes": 279290
+  }
+ },
+ "punishing_one": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Punishing One",
+   "url": "https://static.wikia.nocookie.net/starwars/images/7/7c/JM-5K.png/revision/latest?cb=20190119020609",
+   "file": "ships/punishing_one.jpg",
+   "bytes": 5750,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Dengar",
+   "url": "https://static.wikia.nocookie.net/starwars/images/3/3f/Dengar-2025ChromeSapphire.png/revision/latest?cb=20251221205047",
+   "file": "characters/punishing_one.jpg",
+   "bytes": 95762
+  }
+ },
+ "raddus_cruiser": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Raddus (MC85 Star Cruiser)",
+   "url": "https://static.wikia.nocookie.net/starwars/images/c/ca/MC85-Star-Cruiser-Front.png/revision/latest?cb=20211112011146",
+   "file": "ships/raddus_cruiser.jpg",
+   "bytes": 141026
+  },
+  "characters": {
+   "title": "Amilyn Holdo",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/83/Holdo-Portfolio.png/revision/latest?cb=20260125001223",
+   "file": "characters/raddus_cruiser.jpg",
+   "bytes": 5802,
+   "placeholder": true
+  }
+ },
+ "resistance_transport": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Resistance transport",
+   "url": "https://static.wikia.nocookie.net/starwars/images/1/1e/ResistanceTransport-MF92.png/revision/latest?cb=20260312044046",
+   "file": "ships/resistance_transport.jpg",
+   "bytes": 496758
+  },
+  "characters": {
+   "title": "Resistance officer",
+   "url": "https://static.wikia.nocookie.net/starwars/images/1/19/AdmiralAckbarResistance-SWBC36.png/revision/latest?cb=20240330043813",
+   "file": "characters/resistance_transport.jpg",
+   "bytes": 207138
+  }
+ },
+ "resurgent_destroyer": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Resurgent-class Star Destroyer",
+   "url": "https://static.wikia.nocookie.net/starwars/images/7/76/TheFinalizer-TLJVehiclesShips.png/revision/latest?cb=20240401044947",
+   "file": "ships/resurgent_destroyer.jpg",
+   "bytes": 5865,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Armitage Hux",
+   "url": "https://static.wikia.nocookie.net/starwars/images/d/d0/HuxTLJPromo.png/revision/latest?cb=20250815234411",
+   "file": "characters/resurgent_destroyer.jpg",
+   "bytes": 5768,
+   "placeholder": true
+  }
+ },
+ "rz2_awing": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "RZ-2 A-wing interceptor",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/b8/RZ2Awing-TLJTOG.png/revision/latest?cb=20240327185029",
+   "file": "ships/rz2_awing.jpg",
+   "bytes": 5802,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Tallissan Lintra",
+   "url": "https://static.wikia.nocookie.net/starwars/images/a/a6/TallissanLintra.png/revision/latest?cb=20251130061633",
+   "file": "characters/rz2_awing.jpg",
+   "bytes": 73824
+  }
+ },
+ "slave_1": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Slave I",
+   "url": "https://static.wikia.nocookie.net/starwars/images/2/21/BobaFettsStarship-CGSWG.png/revision/latest?cb=20241226014039",
+   "file": "ships/slave_1.jpg",
+   "bytes": 5826,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Boba Fett",
+   "url": "https://static.wikia.nocookie.net/starwars/images/6/62/BobaFettHS-SWI213.png/revision/latest?cb=20250317160100",
+   "file": "characters/slave_1.jpg",
+   "bytes": 132898
+  }
+ },
+ "soulless_one": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Soulless One",
+   "url": "https://static.wikia.nocookie.net/starwars/images/7/7a/SoullessOne-MF40.png/revision/latest?cb=20260307021123",
+   "file": "ships/soulless_one.jpg",
+   "bytes": 350152
+  },
+  "characters": {
+   "title": "Grievous",
+   "url": "https://static.wikia.nocookie.net/starwars/images/4/45/GrievousStand-SWHC821.png/revision/latest?cb=20241118020627",
+   "file": "characters/soulless_one.jpg",
+   "bytes": 401410
+  }
+ },
+ "star_destroyer": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Imperial-class Star Destroyer",
+   "url": "https://static.wikia.nocookie.net/starwars/images/3/3e/ISD1-SWSVguide.png/revision/latest?cb=20240602042313",
+   "file": "ships/star_destroyer.jpg",
+   "bytes": 1208760
+  },
+  "characters": {
+   "title": "Gilad Pellaeon",
+   "url": "https://static.wikia.nocookie.net/starwars/images/4/43/GiladPellaeon-CardTrader.png/revision/latest?cb=20241122043640",
+   "file": "characters/star_destroyer.jpg",
+   "bytes": 210190
+  }
+ },
+ "tie_advanced_x1": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "TIE Advanced x1",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/e4/TIEAdvancedx1-MF78.png/revision/latest?cb=20260312035020",
+   "file": "ships/tie_advanced_x1.jpg",
+   "bytes": 5811,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Anakin Skywalker",
+   "url": "https://static.wikia.nocookie.net/starwars/images/6/6f/Anakin_Skywalker_RotS.png/revision/latest?cb=20130621175844",
+   "file": "characters/tie_advanced_x1.jpg",
+   "bytes": 5841,
+   "placeholder": true
+  }
+ },
+ "tie_bomber": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "TIE/sa tactical bomber",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/b3/TIEbomber-CGSWG.png/revision/latest?cb=20250421044843",
+   "file": "ships/tie_bomber.jpg",
+   "bytes": 5802,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Imperial Starfighter Pilot",
+   "url": "https://static.wikia.nocookie.net/starwars/images/0/02/TIEPilot-AdvancedGraphics.png/revision/latest?cb=20260118182649",
+   "file": "characters/tie_bomber.jpg",
+   "bytes": 5832,
+   "placeholder": true
+  }
+ },
+ "tie_fighter": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "TIE/ln space superiority starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/d/d1/TIE_Fighter_DICE.png/revision/latest?cb=20161021230639",
+   "file": "ships/tie_fighter.jpg",
+   "bytes": 5805,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Imperial Starfighter Pilot",
+   "url": "https://static.wikia.nocookie.net/starwars/images/0/02/TIEPilot-AdvancedGraphics.png/revision/latest?cb=20260118182649",
+   "file": "characters/tie_fighter.jpg",
+   "bytes": 5832,
+   "placeholder": true
+  }
+ },
+ "tie_fo": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "TIE/fo space superiority fighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/9/97/TIEFOfighter-Fathead.png/revision/latest?cb=20241226051011",
+   "file": "ships/tie_fo.jpg",
+   "bytes": 5817,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "TIE pilot",
+   "url": "https://static.wikia.nocookie.net/starwars/images/4/43/TIE_Pilot_Sideshow.png/revision/latest?cb=20160809030125",
+   "file": "characters/tie_fo.jpg",
+   "bytes": 109590
+  }
+ },
+ "tie_interceptor": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "TIE/IN interceptor",
+   "url": "https://static.wikia.nocookie.net/starwars/images/f/f5/TIE_Interceptor_BF.png/revision/latest?cb=20170501054325",
+   "file": "ships/tie_interceptor.jpg",
+   "bytes": 5811,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Soontir Fel",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/ef/SoontirFel-SWZ99.png/revision/latest?cb=20240814232155",
+   "file": "characters/tie_interceptor.jpg",
+   "bytes": 71912
+  }
+ },
+ "tie_sf": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "TIE/sf space superiority fighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/0/09/FOSpecForcesTIE1-Fathead.png/revision/latest?cb=20161109002850",
+   "file": "ships/tie_sf.jpg",
+   "bytes": 5829,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "First Order Special Forces",
+   "url": "https://static.wikia.nocookie.net/starwars/images/7/78/FO_TIE_Fighter_Pilot.png/revision/latest?cb=20241127045348",
+   "file": "characters/tie_sf.jpg",
+   "bytes": 5817,
+   "placeholder": true
+  }
+ },
+ "tie_silencer": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "TIE/vn space superiority fighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/ef/TIE_Silencer_TFOWM.png/revision/latest?cb=20190629200209",
+   "file": "ships/tie_silencer.jpg",
+   "bytes": 482476
+  },
+  "characters": {
+   "title": "Ben Solo",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/bc/KyloRenVFcover-TROS.png/revision/latest?cb=20250126000852",
+   "file": "characters/tie_silencer.jpg",
+   "bytes": 5814,
+   "placeholder": true
+  }
+ },
+ "tri_fighter": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Droid tri-fighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/b8/DroidTrifighter-MF53.png/revision/latest?cb=20260224061221",
+   "file": "ships/tri_fighter.jpg",
+   "bytes": 5817,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Separatist Droid Army",
+   "url": "https://static.wikia.nocookie.net/starwars/images/3/34/CIS_roundel.svg/revision/latest?cb=20240821212021",
+   "file": "characters/tri_fighter.jpg",
+   "bytes": 853,
+   "placeholder": true
+  }
+ },
+ "upsilon_shuttle": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Upsilon-class command shuttle",
+   "url": "https://static.wikia.nocookie.net/starwars/images/d/d7/KyloRenCommandShuttle-Fathead.png/revision/latest?cb=20161109013933",
+   "file": "ships/upsilon_shuttle.jpg",
+   "bytes": 535994
+  },
+  "characters": {
+   "title": "First Order officer",
+   "url": "https://static.wikia.nocookie.net/starwars/images/b/bf/FirstOrderCommander-TROSGG.png/revision/latest?cb=20230725023943",
+   "file": "characters/upsilon_shuttle.jpg",
+   "bytes": 132650
+  }
+ },
+ "v19_torrent": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "V-19 Torrent starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/5/57/V-19Torrent-TCW.png/revision/latest?cb=20241230003503",
+   "file": "ships/v19_torrent.jpg",
+   "bytes": 5802,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Clone trooper pilot",
+   "url": "https://static.wikia.nocookie.net/starwars/images/6/6d/CloneTrooperPilots.png/revision/latest?cb=20240329050546",
+   "file": "characters/v19_torrent.jpg",
+   "bytes": 5811,
+   "placeholder": true
+  }
+ },
+ "venator": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Venator-class Star Destroyer",
+   "url": "https://static.wikia.nocookie.net/starwars/images/c/c8/Imperialattackcruisers.png/revision/latest?cb=20140317112248",
+   "file": "ships/venator.jpg",
+   "bytes": 268614
+  },
+  "characters": {
+   "title": "Rex",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/89/Captain_Rex_old.png/revision/latest?cb=20250413205834",
+   "file": "characters/venator.jpg",
+   "bytes": 5802,
+   "placeholder": true
+  }
+ },
+ "vulture_droid": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Vulture-class starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/a/a4/CISVultureDroidWalk-TCW.png/revision/latest?cb=20231010234254",
+   "file": "ships/vulture_droid.jpg",
+   "bytes": 5826,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "B1-series battle droid",
+   "url": "https://static.wikia.nocookie.net/starwars/images/c/cd/Battle_Droid.png/revision/latest?cb=20160910192832",
+   "file": "characters/vulture_droid.jpg",
+   "bytes": 5793,
+   "placeholder": true
+  }
+ },
+ "xwing_t65": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "T-65 X-wing starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/87/X-wing_SWB.png/revision/latest?cb=20160704070054",
+   "file": "ships/xwing_t65.jpg",
+   "bytes": 588960
+  },
+  "characters": {
+   "title": "Luke Skywalker",
+   "url": "https://static.wikia.nocookie.net/starwars/images/3/3d/LukeSkywalker.png/revision/latest?cb=20241221010122",
+   "file": "characters/xwing_t65.jpg",
+   "bytes": 1318454
+  }
+ },
+ "xwing_t70": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "T-70 X-wing starfighter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/e/ee/T70XwingStarfighter-SWBC41.png/revision/latest?cb=20241013174128",
+   "file": "ships/xwing_t70.jpg",
+   "bytes": 5835,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Poe Dameron",
+   "url": "https://static.wikia.nocookie.net/starwars/images/6/6b/PoeDameron-Heroes2023.png/revision/latest?cb=20251128064305",
+   "file": "characters/xwing_t70.jpg",
+   "bytes": 5841,
+   "placeholder": true
+  }
+ },
+ "ywing_btla4": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "BTL-A4 Y-wing assault starfighter/bomber",
+   "url": "https://static.wikia.nocookie.net/starwars/images/8/81/Y-wing.png/revision/latest?cb=20161110013308",
+   "file": "ships/ywing_btla4.jpg",
+   "bytes": 5753,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Jon Vander",
+   "url": "https://static.wikia.nocookie.net/starwars/images/2/22/JonVander-ANH.png/revision/latest?cb=20130303150104",
+   "file": "characters/ywing_btla4.jpg",
+   "bytes": 5796,
+   "placeholder": true
+  }
+ },
+ "z95_headhunter": {
+  "ship": {},
+  "character": {},
+  "ships": {
+   "title": "Z-95 Headhunter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/f/f7/BanditSquadronPilot-XWM.png/revision/latest?cb=20190418031535",
+   "file": "ships/z95_headhunter.jpg",
+   "bytes": 5826,
+   "placeholder": true
+  },
+  "characters": {
+   "title": "Z-95 Headhunter",
+   "url": "https://static.wikia.nocookie.net/starwars/images/f/f7/BanditSquadronPilot-XWM.png/revision/latest?cb=20190418031535",
+   "file": "characters/z95_headhunter.jpg",
+   "bytes": 351780
+  }
+ }
+}

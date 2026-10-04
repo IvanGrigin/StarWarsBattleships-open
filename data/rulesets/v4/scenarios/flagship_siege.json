@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "scenario_id": "flagship_siege",
+  "display_name": "Осада флагмана",
+  "note": "Асимметрия: игрок A защищает станцию (Звезда Смерти I или «Палач»), игрок B получает увеличенный бюджет.",
+  "seat_order": [
+    "A1",
+    "B1"
+  ],
+  "teams": {
+    "A": [
+      "A1"
+    ],
+    "B": [
+      "B1"
+    ]
+  },
+  "seats": {
+    "A1": {
+      "cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "facing": 0
+    },
+    "B1": {
+      "cells": [
+        [
+          0,
+          -4
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          1,
+          -4
+        ]
+      ],
+      "facing": 3
+    }
+  },
+  "era": "any",
+  "draft_budget": 24,
+  "seat_overrides": {
+    "A1": {
+      "draft_budget": 30,
+      "stations_draftable": true,
+      "max_capital_per_seat": 2
+    },
+    "B1": {
+      "draft_budget": 34,
+      "fleet_size": 4
+    }
+  },
+  "victory": "A выигрывает, если станция цела к концу раунда 20; B — если станция уничтожена.",
+  "events_enabled": true,
+  "terrain_enabled": true,
+  "pirates": 0
+}

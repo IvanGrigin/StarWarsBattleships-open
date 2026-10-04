@@ -1,0 +1,72 @@
+{
+ "ships": {
+  "awing_rz1": {
+   "sides": 2
+  },
+  "bwing": {
+   "F": -2,
+   "sides": -2,
+   "rear": -1,
+   "B": -2,
+   "cost": -3
+  },
+  "executor": {
+   "cost": 3
+  },
+  "ghost": {
+   "F": -2,
+   "sides": -2,
+   "rear": -1,
+   "B": -2
+  },
+  "gr75_transport": {
+   "sides": 1
+  },
+  "hounds_tooth": {
+   "F": -1
+  },
+  "interdictor": {
+   "F": -1
+  },
+  "mc80_home_one": {
+   "F": -2,
+   "sides": -2,
+   "rear": -1
+  },
+  "millennium_falcon": {
+   "F": -2
+  },
+  "punishing_one": {
+   "F": -1
+  },
+  "slave_1": {
+   "F": -2
+  },
+  "star_destroyer": {
+   "F": -2,
+   "sides": -1
+  },
+  "tie_advanced_x1": {
+   "F": -2,
+   "rear": -1
+  },
+  "tie_bomber": {
+   "F": -1
+  },
+  "tie_fighter": {
+   "sides": -1
+  },
+  "xwing_t65": {
+   "sides": 1
+  },
+  "ywing_btla4": {
+   "F": -1,
+   "sides": 1
+  }
+ },
+ "heroes": {
+  "darth_vader": 8,
+  "leia_organa": 6,
+  "luke": 0
+ }
+}

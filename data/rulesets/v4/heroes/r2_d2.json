@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "id": "r2_d2",
+  "display_name": "R2-D2",
+  "description": "Астромеханический дроид, прошедший все девять эпизодов.",
+  "faction": "resistance",
+  "era": "any",
+  "ability": {
+    "id": "astromech_patch",
+    "name": "Латка астромеха",
+    "text": "Пассивно: в фазе восстановления ваш корабль с дроидом восстанавливает 1 щит раз в два раунда.",
+    "kind": "passive",
+    "trigger": "recovery_phase",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 0,
+    "effect_sequence": [
+      {
+        "op": "shield_regen",
+        "params": {
+          "value": 1,
+          "every_rounds": 2
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "astromech_everywhere",
+    "name": "Астромех в каждом крыле",
+    "text": "Раз за матч каждый ваш истребитель Сопротивления (fighter/interceptor) отменяет по себе атаку ионной пушкой.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "resistance",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "immune_once",
+        "params": {
+          "to": "ion_cannon",
+          "roles": [
+            "fighter",
+            "interceptor"
+          ]
+        }
+      }
+    ]
+  },
+  "draft_cost": 2
+}

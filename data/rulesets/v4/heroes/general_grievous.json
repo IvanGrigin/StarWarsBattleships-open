@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "id": "general_grievous",
+  "display_name": "Генерал Гривус",
+  "description": "Киборг-командующий армиями дроидов, коллекционер световых мечей.",
+  "faction": "separatists",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "four_blades",
+    "name": "Четыре клинка",
+    "text": "1 раз в игру: ваш корабль атакует в этой активации дважды, второй раз — с −1 к силе.",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 2,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "extra_attack",
+        "params": {
+          "count": 1,
+          "strength_modifier": -1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "jedi_hunter",
+    "name": "Охотник на джедаев",
+    "text": "Корабли сепаратистов получают +1 к силе атаки по кораблям Республики.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "separatists",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "faction_hatred",
+        "params": {
+          "targets": [
+            "republic"
+          ],
+          "strength": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 4
+}

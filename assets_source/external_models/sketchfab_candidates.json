@@ -1,0 +1,3271 @@
+{
+ "generated_by": "Index downloadable Sketchfab candidates for the ship expansion catalog.",
+ "queries": {
+  "vulture droid starfighter": [
+   {
+    "uid": "88139b67d5174829bd9942d26ce6d5af",
+    "name": "Vulture Droid",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 96,
+    "vertices": 7696,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/88139b67d5174829bd9942d26ce6d5af"
+   },
+   {
+    "uid": "5542f951834e4032b229ebdee12d3310",
+    "name": "Vulture Droid",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 86,
+    "vertices": 11442,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5542f951834e4032b229ebdee12d3310"
+   },
+   {
+    "uid": "32962e67d052475c9f764ff729aab4ef",
+    "name": "Vulture droid starfighter",
+    "author": "richardas.rac",
+    "license": "CC Attribution",
+    "likes": 4,
+    "vertices": 1422,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/32962e67d052475c9f764ff729aab4ef"
+   },
+   {
+    "uid": "ed3931b2f8924245a7c3237b69e7f7b1",
+    "name": "Lego Star Wars Vulture Droid",
+    "author": "egni",
+    "license": "CC Attribution",
+    "likes": 31,
+    "vertices": 49782,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/ed3931b2f8924245a7c3237b69e7f7b1"
+   }
+  ],
+  "ghost vcx-100": [
+   {
+    "uid": "8740b94179ba43a7ac6476973ca0c577",
+    "name": "Star Wars Rebels: Ghost: VCX-100 (8K Textures)",
+    "author": "cgitutorials",
+    "license": "CC Attribution",
+    "likes": 202,
+    "vertices": 57102,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8740b94179ba43a7ac6476973ca0c577"
+   },
+   {
+    "uid": "fc54544abbd2405f9a1ad2c48640d5c2",
+    "name": "Phantom",
+    "author": "klgaming",
+    "license": "CC Attribution",
+    "likes": 24,
+    "vertices": 8612,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/fc54544abbd2405f9a1ad2c48640d5c2"
+   },
+   {
+    "uid": "53ff865f97894102944488033af18c2a",
+    "name": "Mini The Ghost",
+    "author": "jalanmccarthy13",
+    "license": "CC Attribution",
+    "likes": 0,
+    "vertices": 16701,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/53ff865f97894102944488033af18c2a"
+   }
+  ],
+  "eta-2 actis": [
+   {
+    "uid": "b76f59276bc444458d5faaa9e6321cfc",
+    "name": "SWBF2(Custom) - Anakin's Eta-2 Actis Interceptor",
+    "author": "4130ff15fe394c239cc064b5286c43",
+    "license": "CC Attribution",
+    "likes": 159,
+    "vertices": 36163,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b76f59276bc444458d5faaa9e6321cfc"
+   },
+   {
+    "uid": "00f12d7a839842c783bb745d39302308",
+    "name": "Eta-2 Actis (Jedi Starfighter) - Star Wars",
+    "author": "quiznos323",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 135,
+    "vertices": 14497,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/00f12d7a839842c783bb745d39302308"
+   },
+   {
+    "uid": "e3694d8502dc412ea7e1decd42d948c4",
+    "name": "Star Wars Galaxies - Eta-2 Actis Interceptor",
+    "author": "4130ff15fe394c239cc064b5286c43",
+    "license": "CC Attribution",
+    "likes": 145,
+    "vertices": 6516,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/e3694d8502dc412ea7e1decd42d948c4"
+   },
+   {
+    "uid": "178f0e05ba64420485e7319c6a9ee6c6",
+    "name": "Eta-2 Actis-class Light Interceptor",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 43,
+    "vertices": 11178,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/178f0e05ba64420485e7319c6a9ee6c6"
+   }
+  ],
+  "tie advanced x1": [
+   {
+    "uid": "83654f360e1e4c72b716a2a60ed09031",
+    "name": "Darth Vader's TIE Advanced x1",
+    "author": "mariusaskvik",
+    "license": "CC Attribution",
+    "likes": 71,
+    "vertices": 46300,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/83654f360e1e4c72b716a2a60ed09031"
+   },
+   {
+    "uid": "98f1decbda5c48aea22a11c7ddd62a7b",
+    "name": "TIE Advanced x1 (Vader's TIE) - Star Wars",
+    "author": "quiznos323",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 70,
+    "vertices": 13286,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/98f1decbda5c48aea22a11c7ddd62a7b"
+   },
+   {
+    "uid": "0b3825de4fa542a893c9f9344b7e5f31",
+    "name": "Star Wars: TIE/x1 Advanced x1",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 196,
+    "vertices": 11630,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/0b3825de4fa542a893c9f9344b7e5f31"
+   },
+   {
+    "uid": "a3a01470d6794792892dff5c15c7a267",
+    "name": "Star Wars: TIE/x1 Advanced x1",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 100,
+    "vertices": 80431,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/a3a01470d6794792892dff5c15c7a267"
+   }
+  ],
+  "slave 1 firespray": [
+   {
+    "uid": "709235d3ffa54e90b378740d474e4a7b",
+    "name": "Slave1",
+    "author": "SWU",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 309,
+    "vertices": 68974,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/709235d3ffa54e90b378740d474e4a7b"
+   }
+  ],
+  "y-wing starfighter": [
+   {
+    "uid": "50f7cebe61044d21801a301162212be2",
+    "name": "Y-wing Starfighter - Star Wars",
+    "author": "quiznos323",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 88,
+    "vertices": 29355,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/50f7cebe61044d21801a301162212be2"
+   },
+   {
+    "uid": "102aab8967174476b264d69e979f9d70",
+    "name": "BTL-B Y-Wing",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 60,
+    "vertices": 16256,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/102aab8967174476b264d69e979f9d70"
+   },
+   {
+    "uid": "62134c970d3c4abea173339b802ce666",
+    "name": "Y-wing starfighter",
+    "author": "KimMurzin",
+    "license": "CC Attribution",
+    "likes": 21,
+    "vertices": 6500,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/62134c970d3c4abea173339b802ce666"
+   },
+   {
+    "uid": "371f3a340c644ca6a3d437344e05ed83",
+    "name": "Star Wars; Y-wing Fighter/Bomber",
+    "author": "Heataker",
+    "license": "CC Attribution",
+    "likes": 46,
+    "vertices": 63854,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/371f3a340c644ca6a3d437344e05ed83"
+   }
+  ],
+  "a-wing interceptor": [
+   {
+    "uid": "33a3e25abcb74e389c34c49fbeeef19a",
+    "name": "T-WING Star Wars inspired interceptor - FREE",
+    "author": "NETRUNNER_pl",
+    "license": "CC Attribution",
+    "likes": 78,
+    "vertices": 22030,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/33a3e25abcb74e389c34c49fbeeef19a"
+   },
+   {
+    "uid": "b9e7a67cf726485da1493545fccce557",
+    "name": "TU-148 Long Range Interceptor",
+    "author": "citizensnip",
+    "license": "CC Attribution",
+    "likes": 640,
+    "vertices": 16807,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b9e7a67cf726485da1493545fccce557"
+   },
+   {
+    "uid": "b13126de57c44f5388e80b411f47078e",
+    "name": "A-wing",
+    "author": "SWU",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 290,
+    "vertices": 35577,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b13126de57c44f5388e80b411f47078e"
+   },
+   {
+    "uid": "2ec794d32f57492c98566d6536295b1a",
+    "name": "Supremacy (Astro Interceptor)",
+    "author": "rendysix",
+    "license": "CC Attribution",
+    "likes": 96,
+    "vertices": 1719,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/2ec794d32f57492c98566d6536295b1a"
+   }
+  ],
+  "b-wing starfighter": [
+   {
+    "uid": "af8de96df4424197aad06e6e0d25e22e",
+    "name": "A/SF-01 B-wing starfighter",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 48,
+    "vertices": 14095,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/af8de96df4424197aad06e6e0d25e22e"
+   },
+   {
+    "uid": "d83fb5eb8fb542789e751c05a542f5bc",
+    "name": "B-Wing ( W I P )",
+    "author": "Nekodemo",
+    "license": "CC Attribution",
+    "likes": 218,
+    "vertices": 19562,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d83fb5eb8fb542789e751c05a542f5bc"
+   },
+   {
+    "uid": "102aab8967174476b264d69e979f9d70",
+    "name": "BTL-B Y-Wing",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 60,
+    "vertices": 16256,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/102aab8967174476b264d69e979f9d70"
+   },
+   {
+    "uid": "679fbe1689834748bd8dfd781542b95b",
+    "name": "A/SF-01 B-wing starfighter",
+    "author": "N.S-STUDIOS",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 4,
+    "vertices": 22099,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/679fbe1689834748bd8dfd781542b95b"
+   }
+  ],
+  "u-wing": [
+   {
+    "uid": "33a3e25abcb74e389c34c49fbeeef19a",
+    "name": "T-WING Star Wars inspired interceptor - FREE",
+    "author": "NETRUNNER_pl",
+    "license": "CC Attribution",
+    "likes": 78,
+    "vertices": 22030,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/33a3e25abcb74e389c34c49fbeeef19a"
+   },
+   {
+    "uid": "8d7539ceba7142c2ab5ce296659c026d",
+    "name": "Star Wars U-Wing UT-60d",
+    "author": "LarsH.",
+    "license": "CC Attribution",
+    "likes": 91,
+    "vertices": 18615,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8d7539ceba7142c2ab5ce296659c026d"
+   },
+   {
+    "uid": "dfcebbe398ad439e84c32cdc4925b249",
+    "name": "UT-60D U-wing starfighter",
+    "author": "N.S-STUDIOS",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 6,
+    "vertices": 11850,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/dfcebbe398ad439e84c32cdc4925b249"
+   },
+   {
+    "uid": "fba55b1beebf494b885caf2dc873edff",
+    "name": "futuristic sci-fi spaceship",
+    "author": "Schwaeli",
+    "license": "CC Attribution",
+    "likes": 163,
+    "vertices": 42830,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/fba55b1beebf494b885caf2dc873edff"
+   }
+  ],
+  "z-95 headhunter": [
+   {
+    "uid": "5a6781752e03414f8041fd672807e25c",
+    "name": "Incom Z-95-AF4 Headhunter",
+    "author": "Warhammer_81",
+    "license": "CC Attribution",
+    "likes": 86,
+    "vertices": 2065,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5a6781752e03414f8041fd672807e25c"
+   },
+   {
+    "uid": "9b1fe5c56ca44d3da632235f7599abc5",
+    "name": "Z-95 Headhunter",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 57,
+    "vertices": 3160,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9b1fe5c56ca44d3da632235f7599abc5"
+   },
+   {
+    "uid": "d2a5c2dfccbd445e8ec9bbee3e216b33",
+    "name": "Star Wars: Z-95 Headhunter",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 98,
+    "vertices": 12344,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d2a5c2dfccbd445e8ec9bbee3e216b33"
+   },
+   {
+    "uid": "791c1bddd3344ddca1391f34b306f398",
+    "name": "Z-95 Headhunter",
+    "author": "welormit",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 3464,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/791c1bddd3344ddca1391f34b306f398"
+   }
+  ],
+  "arc-170": [
+   {
+    "uid": "d2b9834148e84c86a2423148db1f6705",
+    "name": "ARC-170 Fighter",
+    "author": "SWU",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 352,
+    "vertices": 28896,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d2b9834148e84c86a2423148db1f6705"
+   },
+   {
+    "uid": "b9407262cdf34d37b0720ca6b70469be",
+    "name": "ARC-170 Starfighter",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 100,
+    "vertices": 23082,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b9407262cdf34d37b0720ca6b70469be"
+   },
+   {
+    "uid": "94c16ec8088545e9ae924f0a94b30968",
+    "name": "ARC-170 Starfighter and Clone Pilot",
+    "author": "allanromanreyes",
+    "license": "Free Standard",
+    "likes": 36,
+    "vertices": 981,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/94c16ec8088545e9ae924f0a94b30968"
+   },
+   {
+    "uid": "1adcaa3ce9cb44168f7141bd357c1e78",
+    "name": "ARC 170 Starfighter, Pathfinder Modification",
+    "author": "Leytra",
+    "license": "Free Standard",
+    "likes": 26,
+    "vertices": 49804,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1adcaa3ce9cb44168f7141bd357c1e78"
+   }
+  ],
+  "v-wing starfighter": [
+   {
+    "uid": "0289dfef03054f099643150678ec830e",
+    "name": "Republic V-wing Starfighter",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 104,
+    "vertices": 11805,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/0289dfef03054f099643150678ec830e"
+   },
+   {
+    "uid": "67804739c036405faea16120d31bc65a",
+    "name": "V-19 Torrent Starfighter",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 61,
+    "vertices": 4522,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/67804739c036405faea16120d31bc65a"
+   },
+   {
+    "uid": "0e159e5844fa4df29605d2c7c5e8719e",
+    "name": "Republic V-wing starfighter",
+    "author": "megamanzx1.2.spsi",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 11805,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/0e159e5844fa4df29605d2c7c5e8719e"
+   },
+   {
+    "uid": "d8496e6544254b5692b9182240e83416",
+    "name": "V19 Torrent Starfighter",
+    "author": "Leytra",
+    "license": "CC Attribution",
+    "likes": 29,
+    "vertices": 24246,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d8496e6544254b5692b9182240e83416"
+   }
+  ],
+  "delta-7 aethersprite": [
+   {
+    "uid": "16d9c29231b24df0ab92376eb39930d8",
+    "name": "Delta-7 Aethersprite-Class Light Interceptor",
+    "author": "joaocarlos98",
+    "license": "CC Attribution",
+    "likes": 13,
+    "vertices": 20103,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/16d9c29231b24df0ab92376eb39930d8"
+   },
+   {
+    "uid": "b4a8ad8a1e8b4e5b961cf4726d8a8646",
+    "name": "Delta-7 Aethersprite-class Light Interceptor",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 33,
+    "vertices": 17324,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b4a8ad8a1e8b4e5b961cf4726d8a8646"
+   },
+   {
+    "uid": "5533beb5c09c41438b2c8f54ea670a8e",
+    "name": "Delta-7B Aethersprite-Class Light Interceptor",
+    "author": "joaocarlos98",
+    "license": "CC Attribution",
+    "likes": 16,
+    "vertices": 26770,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5533beb5c09c41438b2c8f54ea670a8e"
+   },
+   {
+    "uid": "b76f59276bc444458d5faaa9e6321cfc",
+    "name": "SWBF2(Custom) - Anakin's Eta-2 Actis Interceptor",
+    "author": "4130ff15fe394c239cc064b5286c43",
+    "license": "CC Attribution",
+    "likes": 159,
+    "vertices": 36163,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b76f59276bc444458d5faaa9e6321cfc"
+   }
+  ],
+  "t-6 jedi shuttle": [
+   {
+    "uid": "f3a1d27293e14616b22e9c55a365bc80",
+    "name": "T-6 Shuttle",
+    "author": "joaocarlos98",
+    "license": "CC Attribution",
+    "likes": 18,
+    "vertices": 4788,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f3a1d27293e14616b22e9c55a365bc80"
+   }
+  ],
+  "n-1 starfighter": [
+   {
+    "uid": "7681f18c7a6a4e5b860ece879bcb612c",
+    "name": "The Mandalorian - LEGO N 1 Starfighter",
+    "author": "chrisleeX",
+    "license": "CC Attribution",
+    "likes": 258,
+    "vertices": 493711,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/7681f18c7a6a4e5b860ece879bcb612c"
+   },
+   {
+    "uid": "3cf69f6c85234aac8844e845e74ac75b",
+    "name": "Naboo N-1 Starfighter - Star Wars",
+    "author": "quiznos323",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 38,
+    "vertices": 17508,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3cf69f6c85234aac8844e845e74ac75b"
+   },
+   {
+    "uid": "6756a00af35e4ea7b34231726fbf8e8c",
+    "name": "Naboo N1 Starfighter",
+    "author": "Zack_Hawley",
+    "license": "CC Attribution",
+    "likes": 23,
+    "vertices": 2815635,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/6756a00af35e4ea7b34231726fbf8e8c"
+   },
+   {
+    "uid": "dd9799a6627d4cf8ae6b4b7c913f8f97",
+    "name": "Naboo N-4 Heavy Starfighter",
+    "author": "Planetrix23",
+    "license": "CC Attribution",
+    "likes": 7,
+    "vertices": 81143,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/dd9799a6627d4cf8ae6b4b7c913f8f97"
+   }
+  ],
+  "v-19 torrent": [
+   {
+    "uid": "d10a382ebe764df5afa5ad87ad12ebde",
+    "name": "V-19 Torrent - Star Wars - Clone Wars",
+    "author": "airstudios3d",
+    "license": "CC Attribution",
+    "likes": 110,
+    "vertices": 69634,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d10a382ebe764df5afa5ad87ad12ebde"
+   },
+   {
+    "uid": "2a9045dac44b4f3a8c1c77b905aaa844",
+    "name": "Star Wars V-19 Torrent",
+    "author": "archfan",
+    "license": "CC Attribution",
+    "likes": 146,
+    "vertices": 4281,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/2a9045dac44b4f3a8c1c77b905aaa844"
+   },
+   {
+    "uid": "67804739c036405faea16120d31bc65a",
+    "name": "V-19 Torrent Starfighter",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 61,
+    "vertices": 4522,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/67804739c036405faea16120d31bc65a"
+   },
+   {
+    "uid": "7525e51ae1fe4f6c8c1e13940d6ee7d9",
+    "name": "V-19 Torrent Starfighter - Prototype Variant",
+    "author": "jcarpenter48",
+    "license": "CC Attribution",
+    "likes": 81,
+    "vertices": 1023,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/7525e51ae1fe4f6c8c1e13940d6ee7d9"
+   }
+  ],
+  "droid tri-fighter": [
+   {
+    "uid": "2517de834ad7418ea367ecdacd13524c",
+    "name": "Droid Tri Fighter",
+    "author": "steventa3d",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 713,
+    "vertices": 21136,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/2517de834ad7418ea367ecdacd13524c"
+   },
+   {
+    "uid": "9c06ba9b24144221aa80f56192f485b6",
+    "name": "Trade Federation Droid Tri-Fighter",
+    "author": "scarlequin",
+    "license": "CC Attribution",
+    "likes": 70,
+    "vertices": 10110,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9c06ba9b24144221aa80f56192f485b6"
+   },
+   {
+    "uid": "e4ffa6cae3dc4da7ad6acda50b889f3d",
+    "name": "tri fighter droid",
+    "author": "cashlb08",
+    "license": "CC Attribution",
+    "likes": 0,
+    "vertices": 1015544,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/e4ffa6cae3dc4da7ad6acda50b889f3d"
+   }
+  ],
+  "hyena bomber": [
+   {
+    "uid": "738ab8a1279740b48d88b960459c41a8",
+    "name": "Hyena Bomber",
+    "author": "Dakata_123",
+    "license": "CC Attribution",
+    "likes": 32,
+    "vertices": 28162,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/738ab8a1279740b48d88b960459c41a8"
+   }
+  ],
+  "belbullab-22": [
+   {
+    "uid": "864b0b3c9fe7459eabff1c8823c736fa",
+    "name": "Star Wars Galaxies - Belbullab-22",
+    "author": "4130ff15fe394c239cc064b5286c43",
+    "license": "CC Attribution",
+    "likes": 62,
+    "vertices": 4991,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/864b0b3c9fe7459eabff1c8823c736fa"
+   },
+   {
+    "uid": "2785243f8c8944c788cb0cbab3100cb4",
+    "name": "Belbullab-22 Starfighter (Soulless One)",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 69,
+    "vertices": 12169,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/2785243f8c8944c788cb0cbab3100cb4"
+   }
+  ],
+  "soulless one": [
+   {
+    "uid": "25fe21477d814e4aa123ea131381acc1",
+    "name": "Soulless One starfighter",
+    "author": "alexsanrpg",
+    "license": "CC Attribution",
+    "likes": 25,
+    "vertices": 250331,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/25fe21477d814e4aa123ea131381acc1"
+   },
+   {
+    "uid": "2785243f8c8944c788cb0cbab3100cb4",
+    "name": "Belbullab-22 Starfighter (Soulless One)",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 69,
+    "vertices": 12169,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/2785243f8c8944c788cb0cbab3100cb4"
+   },
+   {
+    "uid": "cd6969e3938845a4a7e256f5cadd3f1c",
+    "name": "Soulless One",
+    "author": "Porg123",
+    "license": "CC Attribution",
+    "likes": 2,
+    "vertices": 218,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/cd6969e3938845a4a7e256f5cadd3f1c"
+   },
+   {
+    "uid": "864b0b3c9fe7459eabff1c8823c736fa",
+    "name": "Star Wars Galaxies - Belbullab-22",
+    "author": "4130ff15fe394c239cc064b5286c43",
+    "license": "CC Attribution",
+    "likes": 62,
+    "vertices": 4991,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/864b0b3c9fe7459eabff1c8823c736fa"
+   }
+  ],
+  "sith infiltrator scimitar": [
+   {
+    "uid": "4d59a2ee3f6f4c9c9894d97ac34bcf36",
+    "name": "Darth Maul's Sith Infiltrator (Scimitar)",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 42,
+    "vertices": 11661,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4d59a2ee3f6f4c9c9894d97ac34bcf36"
+   }
+  ],
+  "fang fighter": [
+   {
+    "uid": "932d0a7bb69f41b0a5a37bbf3a194bd7",
+    "name": "Bladeless Stealth Fighter",
+    "author": "_kii",
+    "license": "CC Attribution",
+    "likes": 96,
+    "vertices": 1588,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/932d0a7bb69f41b0a5a37bbf3a194bd7"
+   },
+   {
+    "uid": "90cc8920a1e849c5a6694ee859314f35",
+    "name": "Street fighter Elena fan art",
+    "author": "rodesqa",
+    "license": "CC Attribution",
+    "likes": 329,
+    "vertices": 303797,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/90cc8920a1e849c5a6694ee859314f35"
+   },
+   {
+    "uid": "f2170d4a3ee04e8588c0ad29d4f91767",
+    "name": "High Poly X-Wing Fighter",
+    "author": "charles.woods",
+    "license": "CC Attribution",
+    "likes": 435,
+    "vertices": 531376,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f2170d4a3ee04e8588c0ad29d4f91767"
+   },
+   {
+    "uid": "9f22cfc0912e41e9b31ac1a7ab26ddb0",
+    "name": "Star Wars Tie Fighter",
+    "author": "LarsH.",
+    "license": "CC Attribution",
+    "likes": 31,
+    "vertices": 6729,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9f22cfc0912e41e9b31ac1a7ab26ddb0"
+   }
+  ],
+  "e-wing": [
+   {
+    "uid": "926acd7aed8a47779685bf3058128b47",
+    "name": "attractor/8 Wang-Sun (stop_motion2)",
+    "author": "n-",
+    "license": "CC Attribution",
+    "likes": 292,
+    "vertices": 24592,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/926acd7aed8a47779685bf3058128b47"
+   },
+   {
+    "uid": "166bcb0a842e451b9e81f96f7b2adea7",
+    "name": "E-Wing Cockpit Version 1",
+    "author": "MichaelEGA",
+    "license": "CC Attribution",
+    "likes": 22,
+    "vertices": 4085,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/166bcb0a842e451b9e81f96f7b2adea7"
+   },
+   {
+    "uid": "8fe0b8ca71e8404d8ba3a0c65c64315b",
+    "name": "Orion E Fixed-wing Male UAV by Kronstadt",
+    "author": "flightclubua",
+    "license": "CC Attribution",
+    "likes": 9,
+    "vertices": 19599,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8fe0b8ca71e8404d8ba3a0c65c64315b"
+   },
+   {
+    "uid": "fc9c7a44588144808b12c1cf8b02419a",
+    "name": "Dental Intra Oral X-ray Positioner, Bite-wing",
+    "author": "eLearningUMCG",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 13,
+    "vertices": 72909,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/fc9c7a44588144808b12c1cf8b02419a"
+   }
+  ],
+  "rz-2 a-wing": [
+   {
+    "uid": "91a9de06514042f485dd96e5d488c383",
+    "name": "Resistance RZ-2 A- Wing Fighter",
+    "author": "Blue-Six6",
+    "license": "CC Attribution",
+    "likes": 0,
+    "vertices": 26244,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/91a9de06514042f485dd96e5d488c383"
+   }
+  ],
+  "tie silencer": [
+   {
+    "uid": "4d6d3793ce7f432c9141b14cb7d7c512",
+    "name": "TIE/vn Silencer",
+    "author": "WobblyG",
+    "license": "CC Attribution-NonCommercial-NoDerivs",
+    "likes": 81,
+    "vertices": 4252,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4d6d3793ce7f432c9141b14cb7d7c512"
+   },
+   {
+    "uid": "9f19cd3ebbe5438f950aa22bde5136ea",
+    "name": "Tie Silencer",
+    "author": "jcreadingtutor",
+    "license": "CC Attribution",
+    "likes": 15,
+    "vertices": 54969,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9f19cd3ebbe5438f950aa22bde5136ea"
+   },
+   {
+    "uid": "c89014c4229641109576ef81d3256074",
+    "name": "TIE Silencer First Order",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 13,
+    "vertices": 13877,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c89014c4229641109576ef81d3256074"
+   },
+   {
+    "uid": "417e1c4012d546daad8cab468b2f6a7e",
+    "name": "Tie Silencer",
+    "author": "jcreadingtutor",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 1174,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/417e1c4012d546daad8cab468b2f6a7e"
+   }
+  ],
+  "tie interceptor": [
+   {
+    "uid": "80171ec2930b4949836bcf24d9694c41",
+    "name": "Star Wars: TIE/in Interceptor",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 618,
+    "vertices": 12559,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/80171ec2930b4949836bcf24d9694c41"
+   },
+   {
+    "uid": "92a477bf7373414bbbce3b75e6ebb1b8",
+    "name": "Star Wars: TIE/in Interceptor",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 170,
+    "vertices": 75769,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/92a477bf7373414bbbce3b75e6ebb1b8"
+   },
+   {
+    "uid": "27af6a0dbbec45fc8c497aa691f3042a",
+    "name": "Star Wars Tie Interceptor",
+    "author": "LarsH.",
+    "license": "CC Attribution",
+    "likes": 133,
+    "vertices": 9563,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/27af6a0dbbec45fc8c497aa691f3042a"
+   },
+   {
+    "uid": "1baec82df8ca4a108547828463d7f2d2",
+    "name": "Tie-Interceptor - by Tommaso Incecchi",
+    "author": "aiv",
+    "license": "CC Attribution",
+    "likes": 124,
+    "vertices": 8552,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1baec82df8ca4a108547828463d7f2d2"
+   }
+  ],
+  "tie bomber": [
+   {
+    "uid": "dab029b751bd4cc293b66e3cc013e3a0",
+    "name": "TIE bomber",
+    "author": "SWU",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 316,
+    "vertices": 20283,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/dab029b751bd4cc293b66e3cc013e3a0"
+   },
+   {
+    "uid": "f7047bcf9c464236b315a4daea9d8c31",
+    "name": "Star Wars: TIE/sa Bomber",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 138,
+    "vertices": 55255,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f7047bcf9c464236b315a4daea9d8c31"
+   },
+   {
+    "uid": "3a953f309c584e269eda1a40955c04bc",
+    "name": "Star Wars Tie Bomber",
+    "author": "LarsH.",
+    "license": "CC Attribution",
+    "likes": 80,
+    "vertices": 9980,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3a953f309c584e269eda1a40955c04bc"
+   },
+   {
+    "uid": "8951f092e9f5413e88408e3b3e4c40f0",
+    "name": "TIE Bomber",
+    "author": "jay2307",
+    "license": "CC Attribution",
+    "likes": 17,
+    "vertices": 489,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8951f092e9f5413e88408e3b3e4c40f0"
+   }
+  ],
+  "tie defender": [
+   {
+    "uid": "22bc65f9eb4640b6ae58b1b5e184e80e",
+    "name": "Star Wars: TIE/d Defender",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 286,
+    "vertices": 12109,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/22bc65f9eb4640b6ae58b1b5e184e80e"
+   },
+   {
+    "uid": "3d8d49802bea484bbd5040c68a1aa022",
+    "name": "STAR WARS Tie Defender",
+    "author": "damian_oo",
+    "license": "CC Attribution",
+    "likes": 25,
+    "vertices": 12306,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3d8d49802bea484bbd5040c68a1aa022"
+   },
+   {
+    "uid": "f9e1f3d51e21439d8ac22e3e0adc1345",
+    "name": "Tie-Defender - by Leonardo Russo",
+    "author": "aiv",
+    "license": "CC Attribution",
+    "likes": 74,
+    "vertices": 9079,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f9e1f3d51e21439d8ac22e3e0adc1345"
+   },
+   {
+    "uid": "1c007fe6562848c4b38e4897e08c638a",
+    "name": "Tie-Defender - by Gianmarco Falerni",
+    "author": "aiv",
+    "license": "CC Attribution",
+    "likes": 66,
+    "vertices": 13243,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1c007fe6562848c4b38e4897e08c638a"
+   }
+  ],
+  "tie striker": [
+   {
+    "uid": "4813cb9c259040e08c7ee3aa6ee5bf92",
+    "name": "Tie-Striker",
+    "author": "Mannerberg",
+    "license": "CC Attribution",
+    "likes": 8,
+    "vertices": 23126,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4813cb9c259040e08c7ee3aa6ee5bf92"
+   },
+   {
+    "uid": "780119f074ed43afbe28b5df3fde84b8",
+    "name": "TIE STRICKER",
+    "author": "darthkedar",
+    "license": "CC Attribution",
+    "likes": 44,
+    "vertices": 6846,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/780119f074ed43afbe28b5df3fde84b8"
+   },
+   {
+    "uid": "3a87de2b79a14f8b8c2ab88916b32576",
+    "name": "TIE/sa Bomber",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 13,
+    "vertices": 12720,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3a87de2b79a14f8b8c2ab88916b32576"
+   },
+   {
+    "uid": "c213282dd8504730a48b7e13f9c4e08d",
+    "name": "Tie Cockpit Version 1",
+    "author": "MichaelEGA",
+    "license": "CC Attribution",
+    "likes": 28,
+    "vertices": 4749,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c213282dd8504730a48b7e13f9c4e08d"
+   }
+  ],
+  "tie reaper": [
+   {
+    "uid": "89f0c947fd3c415faea9b883bfd871d0",
+    "name": "TIE Reaper",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 13,
+    "vertices": 148740,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/89f0c947fd3c415faea9b883bfd871d0"
+   },
+   {
+    "uid": "42099d76950743be87ac5ceced33649f",
+    "name": "TIE/rlg Reaper ground attack lander",
+    "author": "Rebus2077",
+    "license": "CC Attribution",
+    "likes": 9,
+    "vertices": 188885,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/42099d76950743be87ac5ceced33649f"
+   },
+   {
+    "uid": "d5b4e79acd684d52a1f3303edf22039b",
+    "name": "Ghostly Reaper",
+    "author": "kalebiscoolio78",
+    "license": "CC Attribution",
+    "likes": 56,
+    "vertices": 15299,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d5b4e79acd684d52a1f3303edf22039b"
+   },
+   {
+    "uid": "12bf05c7f55040d7bc11b38a2b620735",
+    "name": "TIE/C2",
+    "author": "corelliastarshipyards",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 50575,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/12bf05c7f55040d7bc11b38a2b620735"
+   }
+  ],
+  "lambda shuttle": [
+   {
+    "uid": "9d160e16845a4b518a2d30a7c716f20d",
+    "name": "Star Wars: Lambda Shuttle",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 305,
+    "vertices": 19776,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/9d160e16845a4b518a2d30a7c716f20d"
+   },
+   {
+    "uid": "3cfcf3b6012a42d6a19e42388e54cd9b",
+    "name": "3D Imperial Lambda Shuttle - Star Wars model",
+    "author": "boittemike1",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 295,
+    "vertices": 62003,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3cfcf3b6012a42d6a19e42388e54cd9b"
+   },
+   {
+    "uid": "ba88e6e431974dc2b920d43dccc750c6",
+    "name": "Star Wars Lambda Shuttle",
+    "author": "LarsH.",
+    "license": "CC Attribution",
+    "likes": 105,
+    "vertices": 9913,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/ba88e6e431974dc2b920d43dccc750c6"
+   },
+   {
+    "uid": "5b570acb31e04d80adf970bac2c4f661",
+    "name": "Lambda T-A Shuttle",
+    "author": "KasraHomayoniAfshar",
+    "license": "CC Attribution",
+    "likes": 246,
+    "vertices": 97692,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/5b570acb31e04d80adf970bac2c4f661"
+   }
+  ],
+  "sentinel landing craft": [
+   {
+    "uid": "12ded72169eb492fa32db0e054686727",
+    "name": "Sentinel class landing craft",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 2,
+    "vertices": 3921,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/12ded72169eb492fa32db0e054686727"
+   }
+  ],
+  "gozanti cruiser": [
+   {
+    "uid": "6a587e545b1c48bea95480b49458ac63",
+    "name": "Star Wars: Gozanti-Class Cruiser",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 446,
+    "vertices": 34876,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/6a587e545b1c48bea95480b49458ac63"
+   },
+   {
+    "uid": "4effca46a3ab4893aab2dadd941c5d47",
+    "name": "Gozanti Light Cruiser",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 6,
+    "vertices": 433188,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4effca46a3ab4893aab2dadd941c5d47"
+   },
+   {
+    "uid": "351316a020f64fb2b22d768c5019d608",
+    "name": "Golden Axe Gozanti-class cruiser",
+    "author": "Rebus2077",
+    "license": "CC Attribution",
+    "likes": 6,
+    "vertices": 51724,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/351316a020f64fb2b22d768c5019d608"
+   },
+   {
+    "uid": "114e538d4b054d2fb098929ac33426db",
+    "name": "Imperial Gozanti Class Cruiser",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 19,
+    "vertices": 22578,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/114e538d4b054d2fb098929ac33426db"
+   }
+  ],
+  "interdictor cruiser": [
+   {
+    "uid": "dc96265da5b743e3b5892ef4eb11f3a6",
+    "name": "Vindicator-Class Heavy Cruiser",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 20,
+    "vertices": 114277,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/dc96265da5b743e3b5892ef4eb11f3a6"
+   },
+   {
+    "uid": "ccc05006281b4dedb52ef47d64dd4b60",
+    "name": "Star Wars The Old Republic Leviathan interdictor",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 19075,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/ccc05006281b4dedb52ef47d64dd4b60"
+   },
+   {
+    "uid": "204c992ab27c4c1cad6a60b7c20b8c01",
+    "name": "Russian X-555 air-launched cruise missile",
+    "author": "LtxxwSibeRia",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 210,
+    "vertices": 10428,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/204c992ab27c4c1cad6a60b7c20b8c01"
+   }
+  ],
+  "quasar fire carrier": [
+   {
+    "uid": "88b4304c517b4b1ea94dcfc48dd398f9",
+    "name": "Quasar Fire Class Imperial Light Carrier",
+    "author": "YeaBoiiiiiiiii",
+    "license": "CC Attribution",
+    "likes": 17,
+    "vertices": 52074,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/88b4304c517b4b1ea94dcfc48dd398f9"
+   },
+   {
+    "uid": "fdb88c34f5fd48f1988c732c9ce93f3e",
+    "name": "Quasar- Fire Cruiser- Carrier",
+    "author": "Konraad",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 2149,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/fdb88c34f5fd48f1988c732c9ce93f3e"
+   },
+   {
+    "uid": "8377fa6caf07412eab8d30ab7eabba04",
+    "name": "TIE Carrier (Fan-made Star Wars ship)",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 11,
+    "vertices": 4943,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8377fa6caf07412eab8d30ab7eabba04"
+   }
+  ],
+  "yt-2400 freighter": [
+   {
+    "uid": "ccd2749df33641fba7a5326500abdbfb",
+    "name": "Star Wars: YT-2400 Light Freighter",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 245,
+    "vertices": 22900,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/ccd2749df33641fba7a5326500abdbfb"
+   },
+   {
+    "uid": "bc68504e220f47269e508f6777df2c18",
+    "name": "YT-2442",
+    "author": "nekiv",
+    "license": "CC Attribution",
+    "likes": 96,
+    "vertices": 208670,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/bc68504e220f47269e508f6777df2c18"
+   },
+   {
+    "uid": "de1d5faa9f704cfa8095b41d243e252a",
+    "name": "YT-1850",
+    "author": "corelliastarshipyards",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 420625,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/de1d5faa9f704cfa8095b41d243e252a"
+   }
+  ],
+  "gr-75 transport": [
+   {
+    "uid": "071b158d02c044ee9b431aeb28b85b6a",
+    "name": "Star Wars: GR-75 Medium Transport",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 414,
+    "vertices": 31501,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/071b158d02c044ee9b431aeb28b85b6a"
+   }
+  ],
+  "laat gunship": [
+   {
+    "uid": "0910b83410c14f9695eeb8722f78c8ed",
+    "name": "LAAT Gunship and Shock Trooper",
+    "author": "allanromanreyes",
+    "license": "Free Standard",
+    "likes": 25,
+    "vertices": 1038,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/0910b83410c14f9695eeb8722f78c8ed"
+   },
+   {
+    "uid": "74e86b3a3f5340d5a9154197866df6af",
+    "name": "LAAT Gunship Devil's Chariot [Star Wars] ZEO",
+    "author": "ZEOCMF",
+    "license": "CC Attribution-NonCommercial-NoDerivs",
+    "likes": 136,
+    "vertices": 590183,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/74e86b3a3f5340d5a9154197866df6af"
+   },
+   {
+    "uid": "74dcce4616614706a5a14cc18f9e051f",
+    "name": "LAAT/i Gunship",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 152,
+    "vertices": 21183,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/74dcce4616614706a5a14cc18f9e051f"
+   },
+   {
+    "uid": "77e5a30af490488c8019dcb3780ec847",
+    "name": "Star Wars LAAT/i Gunship",
+    "author": "smithson17",
+    "license": "CC Attribution",
+    "likes": 255,
+    "vertices": 175085,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/77e5a30af490488c8019dcb3780ec847"
+   }
+  ],
+  "nu-class shuttle": [
+   {
+    "uid": "acef1a618d36439397c9408cf33d7230",
+    "name": "Nu-Class Shuttle | Starwars CW",
+    "author": "EmilSc",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 107,
+    "vertices": 29400,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/acef1a618d36439397c9408cf33d7230"
+   },
+   {
+    "uid": "d018191fddfe480daa1a95160cbe4763",
+    "name": "Nu-Class Shuttle",
+    "author": "joaocarlos98",
+    "license": "CC Attribution",
+    "likes": 27,
+    "vertices": 22450,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d018191fddfe480daa1a95160cbe4763"
+   },
+   {
+    "uid": "b7964fd1493d4c148a906e0df7049b73",
+    "name": "Rho-Class Transport Shuttle",
+    "author": "heresylordcz",
+    "license": "CC Attribution",
+    "likes": 28,
+    "vertices": 26097,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b7964fd1493d4c148a906e0df7049b73"
+   },
+   {
+    "uid": "d8a033a4b16744aca9edf9275b8f655b",
+    "name": "Star Wars Nu Class Attack Shuttle",
+    "author": "bennyboiyt",
+    "license": "CC Attribution",
+    "likes": 46,
+    "vertices": 12720,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d8a033a4b16744aca9edf9275b8f655b"
+   }
+  ],
+  "cr90 corvette": [
+   {
+    "uid": "6356d19e87494ad8b6f55d0f0e9ec8a7",
+    "name": "Star Wars; CR90 Corvette",
+    "author": "Heataker",
+    "license": "Free Standard",
+    "likes": 157,
+    "vertices": 295449,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/6356d19e87494ad8b6f55d0f0e9ec8a7"
+   },
+   {
+    "uid": "cffeaec6b1d34db587a7f8c2f9c51915",
+    "name": "Star Wars CR90 Corvette_interior",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 54,
+    "vertices": 132188,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/cffeaec6b1d34db587a7f8c2f9c51915"
+   },
+   {
+    "uid": "3d7120a5875646bba8a0830a6ecd933c",
+    "name": "Lego Star Wars CR90 Corvette",
+    "author": "Yanez-Designs",
+    "license": "CC Attribution",
+    "likes": 26,
+    "vertices": 28283,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3d7120a5875646bba8a0830a6ecd933c"
+   },
+   {
+    "uid": "4b63a4e5c33e47e1a7a6ed141a8ef56e",
+    "name": "CR120 Assault Corvette",
+    "author": "nestor_d",
+    "license": "CC Attribution",
+    "likes": 34,
+    "vertices": 186286,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4b63a4e5c33e47e1a7a6ed141a8ef56e"
+   }
+  ],
+  "nebulon-b frigate": [
+   {
+    "uid": "4025afe48e2f4291aadfd70a42f4e3e0",
+    "name": "Frigata Nebulon B/ Frigate Nebulon B",
+    "author": "doclusifer2",
+    "license": "CC Attribution",
+    "likes": 78,
+    "vertices": 48760,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4025afe48e2f4291aadfd70a42f4e3e0"
+   },
+   {
+    "uid": "19b1b0126f8248c28ce38863413c30b8",
+    "name": "Star Wars: Nebulon B Frigate",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 140,
+    "vertices": 185621,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/19b1b0126f8248c28ce38863413c30b8"
+   },
+   {
+    "uid": "1986f7b0dee647b3b2374eb80dbd1faf",
+    "name": "Star Wars: Nebulon B Frigate",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 336,
+    "vertices": 37674,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1986f7b0dee647b3b2374eb80dbd1faf"
+   },
+   {
+    "uid": "174740e01bf04cf69a0af16b32dd6068",
+    "name": "Nebulon-B Frigate",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 2639,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/174740e01bf04cf69a0af16b32dd6068"
+   }
+  ],
+  "hammerhead corvette": [
+   {
+    "uid": "8ca35cee5f614c289a1ff069556fef98",
+    "name": "Hammerhead Corvette",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 7,
+    "vertices": 24958,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8ca35cee5f614c289a1ff069556fef98"
+   },
+   {
+    "uid": "f885869eb13c4a83b5c2f1b26a9900cb",
+    "name": "Homework",
+    "author": "almeanay",
+    "license": "CC Attribution",
+    "likes": 15,
+    "vertices": 49460,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f885869eb13c4a83b5c2f1b26a9900cb"
+   },
+   {
+    "uid": "1f732c70bb5e46ac91a01112844a5350",
+    "name": "Homework v2",
+    "author": "almeanay",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 72741,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1f732c70bb5e46ac91a01112844a5350"
+   }
+  ],
+  "mc75 star cruiser": [
+   {
+    "uid": "c12520600eb141d1a7b691e5d95c7227",
+    "name": "Raddus. MC85 star cruiser (FOC Alliance)",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 33517,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c12520600eb141d1a7b691e5d95c7227"
+   }
+  ],
+  "mc80 mon calamari cruiser": [
+   {
+    "uid": "e08e911d18344d3480439b387fc2ee3f",
+    "name": "Mon Calamari",
+    "author": "SWU",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 89,
+    "vertices": 28377,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/e08e911d18344d3480439b387fc2ee3f"
+   },
+   {
+    "uid": "9b5e5e5192f64a7faad93a3bfd2efaf2",
+    "name": "Star Wars: MC80 Home One Type Star Cruiser",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 181,
+    "vertices": 105639,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9b5e5e5192f64a7faad93a3bfd2efaf2"
+   },
+   {
+    "uid": "c237a094d67f44678aa023a4219e50b8",
+    "name": "mc80 liberty class star cruiser",
+    "author": "the-holy-usurper",
+    "license": "CC Attribution",
+    "likes": 17,
+    "vertices": 18247,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c237a094d67f44678aa023a4219e50b8"
+   }
+  ],
+  "venator star destroyer": [
+   {
+    "uid": "8a1e1760391c4ac6a50373c2bf5efa2e",
+    "name": "Star Wars: The Clone Wars: Venator Prefab",
+    "author": "ShineyFX",
+    "license": "CC Attribution",
+    "likes": 2778,
+    "vertices": 152048,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8a1e1760391c4ac6a50373c2bf5efa2e"
+   },
+   {
+    "uid": "ff65cd3c27234615a3b68088f67e99e4",
+    "name": "Venator Class Star Destroyer",
+    "author": "ForkyForklift",
+    "license": "CC Attribution",
+    "likes": 386,
+    "vertices": 241547,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/ff65cd3c27234615a3b68088f67e99e4"
+   },
+   {
+    "uid": "8709051658be46f2ac2a747c782febda",
+    "name": "Star Wars Republic Venator Star Destroyer",
+    "author": "AndrewDeltoro",
+    "license": "CC Attribution",
+    "likes": 95,
+    "vertices": 283732,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8709051658be46f2ac2a747c782febda"
+   },
+   {
+    "uid": "1e4aaa57565d4f098d01cf9c89e4e1e6",
+    "name": "Republic Venator Star Destroyer",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 41,
+    "vertices": 38687,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1e4aaa57565d4f098d01cf9c89e4e1e6"
+   }
+  ],
+  "acclamator": [
+   {
+    "uid": "7e926c8bcaa44d82a84aac7b6244551d",
+    "name": "Acclamator Class Star Destroyer",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 44,
+    "vertices": 46658,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/7e926c8bcaa44d82a84aac7b6244551d"
+   },
+   {
+    "uid": "e6a2171be5c34bb68a05aba657fd8fa8",
+    "name": "Acclamator-Class Assault Ship",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 46,
+    "vertices": 52057,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/e6a2171be5c34bb68a05aba657fd8fa8"
+   },
+   {
+    "uid": "c14d9e6c15d44cbbb41dad0e98f0a16a",
+    "name": "Simple Acclamator",
+    "author": "vinyl_115",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 690,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c14d9e6c15d44cbbb41dad0e98f0a16a"
+   },
+   {
+    "uid": "45a2a54cabcc4936b4839074c6a047c0",
+    "name": "Imperial Acclamator-Class Assault Ship",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 10,
+    "vertices": 51841,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/45a2a54cabcc4936b4839074c6a047c0"
+   }
+  ],
+  "arquitens cruiser": [
+   {
+    "uid": "802fa70fb8cd46f5b741cb6b99f66229",
+    "name": "Arquitens-Class Light Cruiser",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 95,
+    "vertices": 45947,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/802fa70fb8cd46f5b741cb6b99f66229"
+   },
+   {
+    "uid": "5a5d6adf2e0444d5be94323938f6d329",
+    "name": "Crucero Ligero Imperial Arquitens",
+    "author": "doclusifer2",
+    "license": "CC Attribution",
+    "likes": 84,
+    "vertices": 2838,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5a5d6adf2e0444d5be94323938f6d329"
+   },
+   {
+    "uid": "105763d2e9a34bd2866785d19f5315a7",
+    "name": "Arquitens-Class Light Cruiser",
+    "author": "joaocarlos98",
+    "license": "CC Attribution",
+    "likes": 24,
+    "vertices": 30500,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/105763d2e9a34bd2866785d19f5315a7"
+   },
+   {
+    "uid": "6b3a978684df450f8d90afc62beab319",
+    "name": "Arquitens-Class Light Cruiser",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 29,
+    "vertices": 19679,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/6b3a978684df450f8d90afc62beab319"
+   }
+  ],
+  "pelta frigate": [
+   {
+    "uid": "3d69bfae76234847976e7d5d20585723",
+    "name": "Pelta-Class Medical Frigate",
+    "author": "sabinoplane",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 110,
+    "vertices": 29929,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3d69bfae76234847976e7d5d20585723"
+   }
+  ],
+  "executor super star destroyer": [
+   {
+    "uid": "df018bc2cecc4a5182fde06ddc9b1496",
+    "name": "Star Wars - Executor Super Star Destroyer",
+    "author": "Admiral_Forever",
+    "license": "CC Attribution",
+    "likes": 186,
+    "vertices": 111839,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/df018bc2cecc4a5182fde06ddc9b1496"
+   },
+   {
+    "uid": "0e4cbb98a2ba43f2a11498061b3f21d8",
+    "name": "Star Wars: Executor Class Star Destroyer",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 323,
+    "vertices": 535312,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/0e4cbb98a2ba43f2a11498061b3f21d8"
+   },
+   {
+    "uid": "1eb28d4940ab4ce9863f7e3b51d9b22d",
+    "name": "Executor Class Super Star Destroyer",
+    "author": "NathanielLDEutc",
+    "license": "CC Attribution",
+    "likes": 24,
+    "vertices": 70492,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1eb28d4940ab4ce9863f7e3b51d9b22d"
+   },
+   {
+    "uid": "1555e5602ac446a592881283888fbb2e",
+    "name": "Old Executor",
+    "author": "Admiral_Forever",
+    "license": "CC Attribution",
+    "likes": 47,
+    "vertices": 41684,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1555e5602ac446a592881283888fbb2e"
+   }
+  ],
+  "resurgent star destroyer": [
+   {
+    "uid": "576ef2806fc145d7bd811ce1790ee5d4",
+    "name": "Low poly Resurgent Star Destroyer",
+    "author": "dennispersecond",
+    "license": "CC Attribution",
+    "likes": 49,
+    "vertices": 3382,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/576ef2806fc145d7bd811ce1790ee5d4"
+   },
+   {
+    "uid": "83a4fbc4bf604b7fb25c122cb972bacd",
+    "name": "Resurgent Star Destroyer",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 7,
+    "vertices": 245186,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/83a4fbc4bf604b7fb25c122cb972bacd"
+   },
+   {
+    "uid": "85ad1f2c09a84dd6b6afd6c373433910",
+    "name": "Resurgent-class-star-destroyer-low-poly",
+    "author": "lampotstreams",
+    "license": "CC Attribution",
+    "likes": 11,
+    "vertices": 1860,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/85ad1f2c09a84dd6b6afd6c373433910"
+   },
+   {
+    "uid": "b0b146acde014ea0bf51ed572a500982",
+    "name": "Resurgent-class Star Destroyer First Order",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 7844,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b0b146acde014ea0bf51ed572a500982"
+   }
+  ],
+  "lucrehulk battleship": [
+   {
+    "uid": "39bbd96e87ea47f68b80d4336259137d",
+    "name": "Lucrehulk-class Battleship (Unfinished/WIP)",
+    "author": "DrEgguin",
+    "license": "CC Attribution",
+    "likes": 50,
+    "vertices": 55582,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/39bbd96e87ea47f68b80d4336259137d"
+   },
+   {
+    "uid": "db79c93b024c4082a053f03f9cce2edc",
+    "name": "Trade Federation Lucrehulk-class battleship",
+    "author": "FascinationKR7X",
+    "license": "CC Attribution",
+    "likes": 2,
+    "vertices": 2703,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/db79c93b024c4082a053f03f9cce2edc"
+   }
+  ],
+  "munificent frigate": [
+   {
+    "uid": "966265e37e61433b919ba640a12a33f5",
+    "name": "Munificent Class Star Frigate",
+    "author": "SomeGuyUsingBlender",
+    "license": "CC Attribution",
+    "likes": 198,
+    "vertices": 120436,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/966265e37e61433b919ba640a12a33f5"
+   },
+   {
+    "uid": "44d5db77bb1342e5a6e58c24a0dcb256",
+    "name": "Munificent-Class Star Frigate",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 123,
+    "vertices": 42401,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/44d5db77bb1342e5a6e58c24a0dcb256"
+   },
+   {
+    "uid": "23a208ebd31e4e9a89fc3826e02c47d9",
+    "name": "Star Wars The Clone Wars Munificent (S5-7 Style)",
+    "author": "lolqeeeeeeeeee",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 111,
+    "vertices": 40660,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/23a208ebd31e4e9a89fc3826e02c47d9"
+   },
+   {
+    "uid": "558ee974a1884ad09ef4c6b3fcb41c17",
+    "name": "Fully Armed Munificent Star Frigate",
+    "author": "rebelriot",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 58397,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/558ee974a1884ad09ef4c6b3fcb41c17"
+   }
+  ],
+  "recusant destroyer": [
+   {
+    "uid": "73185a19bcf64def984007427ce1d336",
+    "name": "Recursant Class Destroyer",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 11,
+    "vertices": 9848,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/73185a19bcf64def984007427ce1d336"
+   }
+  ],
+  "malevolence": [
+   {
+    "uid": "d48949c425704a8dafbe7e65d6dcd8c1",
+    "name": "The Malevolence die-cast",
+    "author": "dandruffkielbasa",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 42,
+    "vertices": 437337,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d48949c425704a8dafbe7e65d6dcd8c1"
+   },
+   {
+    "uid": "1de80cd0587542adba4dad5a96ec602b",
+    "name": "Orchid Malevolence",
+    "author": "ilinskiyoleg69",
+    "license": "CC Attribution",
+    "likes": 15,
+    "vertices": 2926,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1de80cd0587542adba4dad5a96ec602b"
+   },
+   {
+    "uid": "750fdbb97e3e4d10a7472e79c6c84540",
+    "name": "The Malevolence",
+    "author": "Griemikk321",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 163840,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/750fdbb97e3e4d10a7472e79c6c84540"
+   },
+   {
+    "uid": "67804739c036405faea16120d31bc65a",
+    "name": "V-19 Torrent Starfighter",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 61,
+    "vertices": 4522,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/67804739c036405faea16120d31bc65a"
+   }
+  ],
+  "xyston star destroyer": [
+   {
+    "uid": "7c5f9d41b52941ccabe3ae7f673f5b9d",
+    "name": "Xyston Star Destroyer Redesign",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 7,
+    "vertices": 259244,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/7c5f9d41b52941ccabe3ae7f673f5b9d"
+   },
+   {
+    "uid": "dcec7fe734e441dfafdc03ea0bb58d4a",
+    "name": "Old Xyston",
+    "author": "Admiral_Forever",
+    "license": "CC Attribution",
+    "likes": 21,
+    "vertices": 15877,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/dcec7fe734e441dfafdc03ea0bb58d4a"
+   },
+   {
+    "uid": "8fe215c3b4154320b89ec60e6d0cd5ec",
+    "name": "Xyston Overhaul",
+    "author": "Admiral_Forever",
+    "license": "CC Attribution",
+    "likes": 20,
+    "vertices": 15848,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8fe215c3b4154320b89ec60e6d0cd5ec"
+   },
+   {
+    "uid": "822c8b4550ce4222a2e4a548873b547b",
+    "name": "Xyston-class Star Destroyer (EaW Remake)",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 7,
+    "vertices": 61808,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/822c8b4550ce4222a2e4a548873b547b"
+   }
+  ],
+  "fulminatrix dreadnought": [
+   {
+    "uid": "1ed4046fcad74f4d88defd3d01c646b9",
+    "name": "First Order Dreadnought",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 26,
+    "vertices": 14211,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1ed4046fcad74f4d88defd3d01c646b9"
+   }
+  ],
+  "consular class cruiser": [
+   {
+    "uid": "b53f3436fa114d7b939789c24c92b9de",
+    "name": "Star Wars Republic Frigate",
+    "author": "iedalton",
+    "license": "CC Attribution",
+    "likes": 65,
+    "vertices": 7598,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b53f3436fa114d7b939789c24c92b9de"
+   }
+  ],
+  "nubian royal starship": [
+   {
+    "uid": "f72431e7a97e4bf994dd8b1f3f288d7c",
+    "name": "Nubian Royal Starship",
+    "author": "boyle.kj",
+    "license": "CC Attribution",
+    "likes": 37,
+    "vertices": 5887,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f72431e7a97e4bf994dd8b1f3f288d7c"
+   },
+   {
+    "uid": "f631077977754b5591298ecfa201380b",
+    "name": "Naboo Royal Starship (J-type 327 Nubian)",
+    "author": "hobbit84",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 102,
+    "vertices": 175256,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f631077977754b5591298ecfa201380b"
+   },
+   {
+    "uid": "b2499f64dca6428ab5e812f3709ca706",
+    "name": "Naboo Royal cruiser",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 19,
+    "vertices": 7389,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b2499f64dca6428ab5e812f3709ca706"
+   },
+   {
+    "uid": "5f1211d2ef064deb870712b52c0e63a3",
+    "name": "Naboo Cruiser",
+    "author": "SWU",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 147,
+    "vertices": 16781,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5f1211d2ef064deb870712b52c0e63a3"
+   }
+  ],
+  "h-type nubian yacht": [
+   {
+    "uid": "2a5b040487014397929f401517157c34",
+    "name": "H Type Nubian Yacht",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 139952,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/2a5b040487014397929f401517157c34"
+   }
+  ],
+  "delta-7b aethersprite": [
+   {
+    "uid": "5533beb5c09c41438b2c8f54ea670a8e",
+    "name": "Delta-7B Aethersprite-Class Light Interceptor",
+    "author": "joaocarlos98",
+    "license": "CC Attribution",
+    "likes": 16,
+    "vertices": 26770,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5533beb5c09c41438b2c8f54ea670a8e"
+   },
+   {
+    "uid": "10876c0d9585401898d5f78d29f42f14",
+    "name": "Delta 7 jedi interceptor",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 8,
+    "vertices": 238557,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/10876c0d9585401898d5f78d29f42f14"
+   }
+  ],
+  "rho class shuttle": [
+   {
+    "uid": "b7964fd1493d4c148a906e0df7049b73",
+    "name": "Rho-Class Transport Shuttle",
+    "author": "heresylordcz",
+    "license": "CC Attribution",
+    "likes": 28,
+    "vertices": 26097,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b7964fd1493d4c148a906e0df7049b73"
+   }
+  ],
+  "twilight g9 rigger": [
+   {
+    "uid": "796a76a4c30b49fbba94ae7be7cc1cb8",
+    "name": "Twilight",
+    "author": "A308",
+    "license": "CC Attribution",
+    "likes": 78,
+    "vertices": 7801,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/796a76a4c30b49fbba94ae7be7cc1cb8"
+   },
+   {
+    "uid": "0bc502e4c5c84d1da5ac1962654639a8",
+    "name": "G9 Rigger Freighter",
+    "author": "tobard",
+    "license": "CC Attribution",
+    "likes": 15,
+    "vertices": 6904,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/0bc502e4c5c84d1da5ac1962654639a8"
+   }
+  ],
+  "c-9979 landing craft": [
+   {
+    "uid": "65850006f9d14e36b2a416c026c3b74b",
+    "name": "C-9979 landing craft",
+    "author": "bruhepic925",
+    "license": "CC Attribution",
+    "likes": 12,
+    "vertices": 27265,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/65850006f9d14e36b2a416c026c3b74b"
+   },
+   {
+    "uid": "5ca9a2c89480421592cd65b82d2a028b",
+    "name": "Trade Federation Landing Craft",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 25,
+    "vertices": 5669,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5ca9a2c89480421592cd65b82d2a028b"
+   }
+  ],
+  "core ship separatist": [
+   {
+    "uid": "0d829115bb4d472da5d05cdf529b6694",
+    "name": "Star Wars Separatist Core Ship",
+    "author": "ThrillDaWill",
+    "license": "CC Attribution",
+    "likes": 126,
+    "vertices": 20137,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/0d829115bb4d472da5d05cdf529b6694"
+   }
+  ],
+  "solar sailer dooku": [
+   {
+    "uid": "d572f763ba5c4a70a88aa9c680bd549b",
+    "name": "Dooku's Solar Saier",
+    "author": "turbopurr",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 51327,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d572f763ba5c4a70a88aa9c680bd549b"
+   }
+  ],
+  "imperial class star destroyer": [
+   {
+    "uid": "fa18d537db4d4020a443c1802ec0f88e",
+    "name": "Star Wars; Imperial-Class Star Destroyer",
+    "author": "Heataker",
+    "license": "Free Standard",
+    "likes": 463,
+    "vertices": 819165,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/fa18d537db4d4020a443c1802ec0f88e"
+   },
+   {
+    "uid": "12f5007af9ed4186aec9932a8a29b4d9",
+    "name": "Metther-class Star Destroyer",
+    "author": "Rebus2077",
+    "license": "CC Attribution",
+    "likes": 23,
+    "vertices": 4268812,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/12f5007af9ed4186aec9932a8a29b4d9"
+   },
+   {
+    "uid": "aee7185dc9224aa0b424c657f7b9b093",
+    "name": "Eclipse Class Star Destroyer",
+    "author": "risto296",
+    "license": "CC Attribution",
+    "likes": 249,
+    "vertices": 5271,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/aee7185dc9224aa0b424c657f7b9b093"
+   },
+   {
+    "uid": "8bf93a1cf76047c0b23cbd7a31c0fef3",
+    "name": "Imperial-Class Star Destroyer (Star Wars)",
+    "author": "demonslayersrr",
+    "license": "CC Attribution",
+    "likes": 14,
+    "vertices": 285532,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/8bf93a1cf76047c0b23cbd7a31c0fef3"
+   }
+  ],
+  "imperial arquitens command cruiser": [
+   {
+    "uid": "e727eda4a34f46ca9555f080a2a1f462",
+    "name": "Arquitens-class 546 Cruiser [Star Wars] ZEO",
+    "author": "ZEOCMF",
+    "license": "CC Attribution-NonCommercial-NoDerivs",
+    "likes": 85,
+    "vertices": 2116856,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/e727eda4a34f46ca9555f080a2a1f462"
+   }
+  ],
+  "class 546 cruiser gideon": [
+   {
+    "uid": "e727eda4a34f46ca9555f080a2a1f462",
+    "name": "Arquitens-class 546 Cruiser [Star Wars] ZEO",
+    "author": "ZEOCMF",
+    "license": "CC Attribution-NonCommercial-NoDerivs",
+    "likes": 85,
+    "vertices": 2116856,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/e727eda4a34f46ca9555f080a2a1f462"
+   },
+   {
+    "uid": "6b3a978684df450f8d90afc62beab319",
+    "name": "Arquitens-Class Light Cruiser",
+    "author": "KuatEntralla3D",
+    "license": "CC Attribution",
+    "likes": 29,
+    "vertices": 19679,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/6b3a978684df450f8d90afc62beab319"
+   }
+  ],
+  "cantwell arrestor cruiser": [
+   {
+    "uid": "a8fb9ecdf203401794d495b63b17eb5a",
+    "name": "Cantwell-class Arrestor Cruiser [Star Wars] ZEO",
+    "author": "ZEOCMF",
+    "license": "CC Attribution-NonCommercial-NoDerivs",
+    "likes": 66,
+    "vertices": 1253037,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/a8fb9ecdf203401794d495b63b17eb5a"
+   }
+  ],
+  "tie fighter imperial": [
+   {
+    "uid": "5375de94c2484ab0b2a2bd75aa63c2b4",
+    "name": "3D T.I.E Fighter - Star Wars model",
+    "author": "boittemike1",
+    "license": "CC Attribution",
+    "likes": 1148,
+    "vertices": 10044,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5375de94c2484ab0b2a2bd75aa63c2b4"
+   },
+   {
+    "uid": "c306f5183f364176912d782b19474781",
+    "name": "TIE Fighter",
+    "author": "SWU",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 351,
+    "vertices": 184370,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c306f5183f364176912d782b19474781"
+   },
+   {
+    "uid": "5bcaa60ed5ce4a51b4233aed418f2280",
+    "name": "TIE",
+    "author": "metalmorag",
+    "license": "CC Attribution",
+    "likes": 230,
+    "vertices": 917,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5bcaa60ed5ce4a51b4233aed418f2280"
+   },
+   {
+    "uid": "be87d79b75be4c06bf7b70f477fceb44",
+    "name": "TIE Fighter",
+    "author": "nekiv",
+    "license": "CC Attribution",
+    "likes": 60,
+    "vertices": 65928,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/be87d79b75be4c06bf7b70f477fceb44"
+   }
+  ],
+  "tie defender elite": [
+   {
+    "uid": "d0d042b12b8c4a2993bfe7bee78c5953",
+    "name": "Star Wars: TIE/d Defender Elite",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 75,
+    "vertices": 74844,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d0d042b12b8c4a2993bfe7bee78c5953"
+   },
+   {
+    "uid": "be2eaed4a2e04019a2bbf1ebf178f5d1",
+    "name": "Tyrant Sculpt (Doom Eternal Fanart)",
+    "author": "Sigil0fSaturn",
+    "license": "CC Attribution",
+    "likes": 28,
+    "vertices": 250000,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/be2eaed4a2e04019a2bbf1ebf178f5d1"
+   },
+   {
+    "uid": "3ee6175431394dad9cd7020c823a336f",
+    "name": "Melihace T. Redej'gina (GDA)",
+    "author": "Rebus2077",
+    "license": "CC Attribution",
+    "likes": 7,
+    "vertices": 11929,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3ee6175431394dad9cd7020c823a336f"
+   }
+  ],
+  "tie rb brute": [
+   {
+    "uid": "66c12bf19188468883ba268fd45a7d6d",
+    "name": "Star Wars: TIE/rb Brute",
+    "author": "DanielAndersson",
+    "license": "CC Attribution",
+    "likes": 99,
+    "vertices": 79486,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/66c12bf19188468883ba268fd45a7d6d"
+   }
+  ],
+  "tie avenger andor": [
+   {
+    "uid": "9fe8f1d0ef8e41f4a85d3fb0cdfdfebf",
+    "name": "9 Coblentz Ave (Demolished)",
+    "author": "joshlu",
+    "license": "CC Attribution",
+    "likes": 2,
+    "vertices": 2900408,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9fe8f1d0ef8e41f4a85d3fb0cdfdfebf"
+   }
+  ],
+  "x-wing t-65 starfighter": [
+   {
+    "uid": "993d2920342f46f7b92baf3aea1c3cf3",
+    "name": "T-65 X-wing Starfighter - Star Wars",
+    "author": "quiznos323",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 109,
+    "vertices": 39639,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/993d2920342f46f7b92baf3aea1c3cf3"
+   },
+   {
+    "uid": "e8c3ca18d21745e9a0f805b05924dae9",
+    "name": "X-Wing T-65",
+    "author": "jcwiki",
+    "license": "CC Attribution",
+    "likes": 27,
+    "vertices": 21039,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/e8c3ca18d21745e9a0f805b05924dae9"
+   },
+   {
+    "uid": "fb0e5c0c512a43b98f0a6aec15aa696a",
+    "name": "X-Wing T-65",
+    "author": "Lopiv2",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 14,
+    "vertices": 46119,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/fb0e5c0c512a43b98f0a6aec15aa696a"
+   },
+   {
+    "uid": "e6b85951f85940c1b26505eda7d73ef9",
+    "name": "Star Wars; X-wing Fighter",
+    "author": "Heataker",
+    "license": "CC Attribution",
+    "likes": 38,
+    "vertices": 87113,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/e6b85951f85940c1b26505eda7d73ef9"
+   }
+  ],
+  "millennium falcon yt-1300": [
+   {
+    "uid": "135f13a14efa41ccbec056a8b3ac616b",
+    "name": "Millennium Falcon YT-1300 2nd Attempt",
+    "author": "JamesNeal",
+    "license": "CC Attribution",
+    "likes": 11,
+    "vertices": 715673,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/135f13a14efa41ccbec056a8b3ac616b"
+   },
+   {
+    "uid": "ed6dc932c3ce407dbe4b903c73595030",
+    "name": "Millennium Falcon - Star Wars",
+    "author": "quiznos323",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 70,
+    "vertices": 23159,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/ed6dc932c3ce407dbe4b903c73595030"
+   },
+   {
+    "uid": "400abf08c94e4b4e809fca0aa51a5e00",
+    "name": "Star Wars Galaxies - YT1300 (Inside)",
+    "author": "4130ff15fe394c239cc064b5286c43",
+    "license": "CC Attribution",
+    "likes": 284,
+    "vertices": 30353,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/400abf08c94e4b4e809fca0aa51a5e00"
+   },
+   {
+    "uid": "26d0f09e4ae64c41ad0119caa30d8058",
+    "name": "Star Wars Galaxies - YT1300 (Outside)",
+    "author": "4130ff15fe394c239cc064b5286c43",
+    "license": "CC Attribution",
+    "likes": 74,
+    "vertices": 9989,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/26d0f09e4ae64c41ad0119caa30d8058"
+   }
+  ],
+  "blade wing prototype": [
+   {
+    "uid": "5f892f207edf4456bdc4ac1a14a1a85e",
+    "name": "X Cube- Flying-Test Low Poly",
+    "author": "TG13730",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 51892,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/5f892f207edf4456bdc4ac1a14a1a85e"
+   },
+   {
+    "uid": "a59d744ee05e4664b023153137a5f8e4",
+    "name": "Dh106",
+    "author": "manilov.ap",
+    "license": "CC Attribution",
+    "likes": 17,
+    "vertices": 11880,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/a59d744ee05e4664b023153137a5f8e4"
+   },
+   {
+    "uid": "206b8061e5554ea5b224ec95089f181d",
+    "name": "Fallen Angel Sword (Stylized / Game-Ready)",
+    "author": "Pheroks8686",
+    "license": "CC Attribution",
+    "likes": 0,
+    "vertices": 1455,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/206b8061e5554ea5b224ec95089f181d"
+   }
+  ],
+  "mc80 liberty cruiser": [
+   {
+    "uid": "c237a094d67f44678aa023a4219e50b8",
+    "name": "mc80 liberty class star cruiser",
+    "author": "the-holy-usurper",
+    "license": "CC Attribution",
+    "likes": 17,
+    "vertices": 18247,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c237a094d67f44678aa023a4219e50b8"
+   },
+   {
+    "uid": "4753499e947949fcafb6cd5d2511c885",
+    "name": "MC80 Liberty Type Heavy Star Cruiser",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 4,
+    "vertices": 5845,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4753499e947949fcafb6cd5d2511c885"
+   },
+   {
+    "uid": "39723cb22c944a32b218b966e9eec3a3",
+    "name": "Tarayu-class Battlecruiser",
+    "author": "Kupariparta",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 5,
+    "vertices": 27179,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/39723cb22c944a32b218b966e9eec3a3"
+   }
+  ],
+  "fondor haulcraft": [
+   {
+    "uid": "70f4ebcc3bae403abf7c2a012b0ca159",
+    "name": "Fondor Haulcraft | Star Wars Fan Art",
+    "author": "eliottlh3D",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 22,
+    "vertices": 81125,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/70f4ebcc3bae403abf7c2a012b0ca159"
+   }
+  ],
+  "t-70 x-wing": [
+   {
+    "uid": "a0e8486c603343c3a8cd06a5e3cb21c2",
+    "name": "STAR WARS - INCOM T-70 X-WING FIGHTER",
+    "author": "frankybelis",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 258,
+    "vertices": 100443,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/a0e8486c603343c3a8cd06a5e3cb21c2"
+   },
+   {
+    "uid": "9e47fbf0b28e40b692198ee7441d99f8",
+    "name": "Incom-FreiTek T-70 X-wing - \"Black One\"",
+    "author": "WobblyG",
+    "license": "CC Attribution-NonCommercial-NoDerivs",
+    "likes": 117,
+    "vertices": 2783,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9e47fbf0b28e40b692198ee7441d99f8"
+   },
+   {
+    "uid": "fe8271ee4ec6492abfe2a4476f11ad19",
+    "name": "Incom T-70 X-Wing - Wings Open",
+    "author": "StratoArtStudios",
+    "license": "CC Attribution",
+    "likes": 97,
+    "vertices": 469708,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/fe8271ee4ec6492abfe2a4476f11ad19"
+   },
+   {
+    "uid": "0c4da7c7c3104fcf9a59a5d9497335e8",
+    "name": "Incom T-70 X-Wing - Wings Closed",
+    "author": "StratoArtStudios",
+    "license": "CC Attribution",
+    "likes": 37,
+    "vertices": 469644,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/0c4da7c7c3104fcf9a59a5d9497335e8"
+   }
+  ],
+  "t-85 x-wing": [
+   {
+    "uid": "9e47fbf0b28e40b692198ee7441d99f8",
+    "name": "Incom-FreiTek T-70 X-wing - \"Black One\"",
+    "author": "WobblyG",
+    "license": "CC Attribution-NonCommercial-NoDerivs",
+    "likes": 117,
+    "vertices": 2783,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9e47fbf0b28e40b692198ee7441d99f8"
+   },
+   {
+    "uid": "82f44fdf444f4646ba7945371f15a38e",
+    "name": "RZ-3 A-Wing",
+    "author": "nestor_d",
+    "license": "CC Attribution",
+    "likes": 17,
+    "vertices": 4605,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/82f44fdf444f4646ba7945371f15a38e"
+   },
+   {
+    "uid": "638f449449e54e5787d2ba9537b1f0a1",
+    "name": "Project #1",
+    "author": "Battata",
+    "license": "CC Attribution",
+    "likes": 0,
+    "vertices": 88535,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/638f449449e54e5787d2ba9537b1f0a1"
+   }
+  ],
+  "resistance transport": [
+   {
+    "uid": "a2ba853ccabc45418a5f213c5b4b6516",
+    "name": "U-55 Loadlifter TLJ Resistance Transport",
+    "author": "Blue-Six6",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 30268,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/a2ba853ccabc45418a5f213c5b4b6516"
+   },
+   {
+    "uid": "86ad9b1e39a54d6eb73c4107c08a1467",
+    "name": "Westland LYSANDER",
+    "author": "TG13730",
+    "license": "CC Attribution",
+    "likes": 18,
+    "vertices": 21836,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/86ad9b1e39a54d6eb73c4107c08a1467"
+   },
+   {
+    "uid": "383789880b6640ffb307a0e81b9d7798",
+    "name": "Boat",
+    "author": "OmarFarukJabed",
+    "license": "CC Attribution",
+    "likes": 8,
+    "vertices": 8080,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/383789880b6640ffb307a0e81b9d7798"
+   },
+   {
+    "uid": "c58ab9de1c424c02b9840030b49c4445",
+    "name": "Sculpting Possibilities: The 3D Container",
+    "author": "rustamq865",
+    "license": "CC Attribution",
+    "likes": 16,
+    "vertices": 21988,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c58ab9de1c424c02b9840030b49c4445"
+   }
+  ],
+  "u-55 orbital loadlifter": [
+   {
+    "uid": "a2ba853ccabc45418a5f213c5b4b6516",
+    "name": "U-55 Loadlifter TLJ Resistance Transport",
+    "author": "Blue-Six6",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 30268,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/a2ba853ccabc45418a5f213c5b4b6516"
+   }
+  ],
+  "mc85 raddus": [
+   {
+    "uid": "c12520600eb141d1a7b691e5d95c7227",
+    "name": "Raddus. MC85 star cruiser (FOC Alliance)",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 33517,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c12520600eb141d1a7b691e5d95c7227"
+   }
+  ],
+  "supremacy mega star destroyer": [
+   {
+    "uid": "6643d349670e44fba653ca6960ede289",
+    "name": "Low Poly Supremacy Star Destroyer",
+    "author": "Admiral_Forever",
+    "license": "CC Attribution",
+    "likes": 11,
+    "vertices": 6357,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/6643d349670e44fba653ca6960ede289"
+   }
+  ],
+  "tie sf special forces": [
+   {
+    "uid": "6687ac94f30d4d8abd0fb3df6924c650",
+    "name": "Low-Poly FN SCAR-H, SF inspired attachments",
+    "author": "notcplkerry",
+    "license": "CC Attribution",
+    "likes": 170,
+    "vertices": 8128,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/6687ac94f30d4d8abd0fb3df6924c650"
+   }
+  ],
+  "tie whisper": [
+   {
+    "uid": "d14eb14d83bd4e7ba7cbe443d76a10fd",
+    "name": "⛨ The Forgotten Knight ⛨",
+    "author": "dark_igorek",
+    "license": "CC Attribution",
+    "likes": 2491,
+    "vertices": 135405,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d14eb14d83bd4e7ba7cbe443d76a10fd"
+   },
+   {
+    "uid": "5cc750a5fb2546c8a1bf97373bee0cb8",
+    "name": "Whispering Crown - coral",
+    "author": "CMBC",
+    "license": "CC Attribution",
+    "likes": 16,
+    "vertices": 466733,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5cc750a5fb2546c8a1bf97373bee0cb8"
+   },
+   {
+    "uid": "1395ceb2daf542db9deb4c7efe881ac9",
+    "name": "First whispers of love /Secrets of love",
+    "author": "WirtualneMuzeaMalopolski",
+    "license": "CC Attribution",
+    "likes": 90,
+    "vertices": 204452,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/1395ceb2daf542db9deb4c7efe881ac9"
+   },
+   {
+    "uid": "fe43576b3b9a4bf19fc1455f4c6923e2",
+    "name": "Whisper Cradle - punishment",
+    "author": "CMBC",
+    "license": "CC Attribution",
+    "likes": 4,
+    "vertices": 259267,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/fe43576b3b9a4bf19fc1455f4c6923e2"
+   }
+  ],
+  "tie dagger": [
+   {
+    "uid": "7927b89d39a24104838bfc863d335b32",
+    "name": "Tie Dagger",
+    "author": "jcreadingtutor",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 1739,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/7927b89d39a24104838bfc863d335b32"
+   },
+   {
+    "uid": "06c7d3d7aaa94986aa4b0b37d5a868bb",
+    "name": "TIE/sg2 Starfighter",
+    "author": "Rebus2077",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 38359,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/06c7d3d7aaa94986aa4b0b37d5a868bb"
+   },
+   {
+    "uid": "c01b5e43490c4e63acf1f2821505e26b",
+    "name": "Imperial TIE Fighter",
+    "author": "jmd.personal1447",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 1993,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c01b5e43490c4e63acf1f2821505e26b"
+   },
+   {
+    "uid": "6025ff516d4f4145958870d7c7702727",
+    "name": "Keris - Javanese Dagger",
+    "author": "JosevanD2",
+    "license": "CC Attribution",
+    "likes": 2,
+    "vertices": 10918,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/6025ff516d4f4145958870d7c7702727"
+   }
+  ],
+  "aal 1971 troop transport": [
+   {
+    "uid": "172e790b08ec436da02b0816cd0a09e1",
+    "name": "Blackhawk helicopter",
+    "author": "Tankboi2468",
+    "license": "CC Attribution",
+    "likes": 25,
+    "vertices": 22509,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/172e790b08ec436da02b0816cd0a09e1"
+   }
+  ],
+  "death star ii": [
+   {
+    "uid": "17ccca0dbb6b4e338fa999202f9e6685",
+    "name": "Death Star II",
+    "author": "nathanmlange",
+    "license": "CC Attribution",
+    "likes": 822,
+    "vertices": 10347,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/17ccca0dbb6b4e338fa999202f9e6685"
+   },
+   {
+    "uid": "3d5f01485e9e4e8b9d995d7764341afe",
+    "name": "Death Star - Star Wars",
+    "author": "SebastianSosnowski",
+    "license": "CC Attribution-NonCommercial-NoDerivs",
+    "likes": 409,
+    "vertices": 17082,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3d5f01485e9e4e8b9d995d7764341afe"
+   },
+   {
+    "uid": "2d1bf74e06a347449a20c8f2181aac78",
+    "name": "R5-J2 Imperial Astromech Droid",
+    "author": "hunterwiltse",
+    "license": "CC Attribution",
+    "likes": 235,
+    "vertices": 56875,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/2d1bf74e06a347449a20c8f2181aac78"
+   },
+   {
+    "uid": "d9e91c978a514ae3b44719eedfa990a2",
+    "name": "GEM: SF-1 \"Shooting Star II\"",
+    "author": "2theMAX_the_Stair_Fax",
+    "license": "CC Attribution",
+    "likes": 2,
+    "vertices": 3626,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d9e91c978a514ae3b44719eedfa990a2"
+   }
+  ],
+  "sheathipede shuttle": [],
+  "nantex starfighter": [],
+  "rogue class porax-38": [],
+  "fireball resistance": [],
+  "outland tie fighter": [],
+  "upsilon shuttle": [],
+  "razer crest": [],
+  "komrk gauntlet": [],
+  "hondo shuttle ss-54": [],
+  "providence destroyer invisible hand": [],
+  "polan 717 transport": [],
+  "charger c70 retrofit": [],
+  "nubian diplomatic barge": [],
+  "naboo star skiff": [],
+  "theta class shuttle": [],
+  "eta class supply barge": [],
+  "ipv-2c stealth corvette": [],
+  "paladin class crucible": [],
+  "havoc marauder shuttle": [],
+  "justifier cad bane ship": [],
+  "silver angel ship": [],
+  "hardcell class transport": [],
+  "dh-omni support vessel": [],
+  "trident class assault ship": [],
+  "droch class boarding ship": [],
+  "ginivex fanblade starfighter": [],
+  "tie advanced v1 inquisitor": [],
+  "mining guild tie": [],
+  "zeta class cargo shuttle": [],
+  "delta class t-3c shuttle": [],
+  "scythe transport inquisitor": [],
+  "dornean gunship brahatok": [],
+  "auzituck gunship": [],
+  "lancer class shadow caster": [],
+  "c-roc gozanti cruiser": [],
+  "ss-54 assault ship": [],
+  "first light dryden yacht": [],
+  "pirate corsair gore": [],
+  "onyx cinder": [],
+  "bta-nr2 y-wing": [],
+  "mg-100 starfortress bomber": [],
+  "ninka bunkerbuster": [],
+  "nebulon-c frigate": [],
+  "vakbeor cargo frigate": [],
+  "fireball racing starfighter": [],
+  "maxima-a heavy cruiser": [],
+  "tie fo first order": [],
+  "xi class light shuttle": [],
+  "first order landing craft": [],
+  "bestoon legacy": [],
+  "night buzzard": [],
+  "libertine yacht": [],
+  "eye of sion": [],
+  "chimaera star destroyer": [],
+  "razor crest": [
+   {
+    "uid": "ee72226c953c414ca0b7ab5780fe400a",
+    "name": "The Mandalorian, Razor Crest, Full Interior",
+    "author": "Binkley-Piratepants",
+    "license": "CC Attribution",
+    "likes": 461,
+    "vertices": 160925,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/ee72226c953c414ca0b7ab5780fe400a"
+   },
+   {
+    "uid": "2fab090e8d064cc2ba1516987f9fc373",
+    "name": "Razor Crest (Textured and animated)",
+    "author": "ElinHohler",
+    "license": "CC Attribution",
+    "likes": 786,
+    "vertices": 131427,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/2fab090e8d064cc2ba1516987f9fc373"
+   },
+   {
+    "uid": "172cb62cc1e141cfae4c48440c348de0",
+    "name": "Razor Crest - Star Wars",
+    "author": "quiznos323",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 204,
+    "vertices": 22329,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/172cb62cc1e141cfae4c48440c348de0"
+   },
+   {
+    "uid": "38175e3e033249f1a65430bb49610ee6",
+    "name": "Razor Crest (Snow/Ice Textured)",
+    "author": "ElinHohler",
+    "license": "CC Attribution",
+    "likes": 150,
+    "vertices": 131427,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/38175e3e033249f1a65430bb49610ee6"
+   }
+  ],
+  "invisible hand star wars": [
+   {
+    "uid": "d83350882d0246d8a1233b748e3c0b09",
+    "name": "Decorative composition - Vargov LC0141",
+    "author": "vargov",
+    "license": "CC Attribution",
+    "likes": 0,
+    "vertices": 130842,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d83350882d0246d8a1233b748e3c0b09"
+   }
+  ],
+  "providence class destroyer": [],
+  "sheathipede": [],
+  "upsilon class command shuttle": [],
+  "kom'rk gauntlet": [],
+  "gauntlet starfighter mandalorian": [
+   {
+    "uid": "0061ff00a6654020bcbf3b2be53affca",
+    "name": "Mandalorian Gauntlet fighter",
+    "author": "caeruleumamy",
+    "license": "CC Attribution",
+    "likes": 39,
+    "vertices": 471957,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/0061ff00a6654020bcbf3b2be53affca"
+   }
+  ],
+  "outland tie moff gideon": [],
+  "mining guild tie fighter": [],
+  "first order tie fighter": [
+   {
+    "uid": "3b42b8e1a0bf4ab38b2adf36b940223e",
+    "name": "First Order Tie Fighter",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 6,
+    "vertices": 659576,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3b42b8e1a0bf4ab38b2adf36b940223e"
+   },
+   {
+    "uid": "a6f29bb8f80149c5a83ca1341fc10093",
+    "name": "First Order Tie Fighter",
+    "author": "jcreadingtutor",
+    "license": "CC Attribution",
+    "likes": 8,
+    "vertices": 26627,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/a6f29bb8f80149c5a83ca1341fc10093"
+   },
+   {
+    "uid": "4ea4a492c3b447ea9391e5dbbf68f40b",
+    "name": "First Order Tie Fighter",
+    "author": "SammuelProductions",
+    "license": "CC Attribution",
+    "likes": 4,
+    "vertices": 5530,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4ea4a492c3b447ea9391e5dbbf68f40b"
+   },
+   {
+    "uid": "b38237445cfe4fb690ab47581b861498",
+    "name": "TIE/sgf Starfighter Ground Force",
+    "author": "Rebus2077",
+    "license": "CC Attribution",
+    "likes": 4,
+    "vertices": 37998,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b38237445cfe4fb690ab47581b861498"
+   }
+  ],
+  "resistance bomber": [
+   {
+    "uid": "826a509909f944aaa19b3f4f0c6263ff",
+    "name": "Suicide Bomber Drone",
+    "author": "ahmedhaboush19992",
+    "license": "CC Attribution",
+    "likes": 22,
+    "vertices": 49339,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/826a509909f944aaa19b3f4f0c6263ff"
+   },
+   {
+    "uid": "5d9f47f1e46b426daad6c692ecdf1024",
+    "name": "Erosion différentielle mini cheminée de basalte",
+    "author": "lepere.svt.limoges",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 180225,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5d9f47f1e46b426daad6c692ecdf1024"
+   }
+  ],
+  "nantex": [],
+  "fanblade starfighter": [],
+  "krennic shuttle": [],
+  "zeta class shuttle": [
+   {
+    "uid": "2960ce19665b4dd788930c45a88455f9",
+    "name": "Zetta Class Shuttle (low Poly)",
+    "author": "Relaykiller",
+    "license": "CC Attribution-ShareAlike",
+    "likes": 0,
+    "vertices": 676,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/2960ce19665b4dd788930c45a88455f9"
+   }
+  ],
+  "tie v1 inquisitor": [],
+  "nebulon c": [
+   {
+    "uid": "5d3c94af529544fd8062813a1d958fd1",
+    "name": "Nebulon C",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 3335,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5d3c94af529544fd8062813a1d958fd1"
+   }
+  ],
+  "padme star skiff": [],
+  "naboo royal starship": [
+   {
+    "uid": "f72431e7a97e4bf994dd8b1f3f288d7c",
+    "name": "Nubian Royal Starship",
+    "author": "boyle.kj",
+    "license": "CC Attribution",
+    "likes": 37,
+    "vertices": 5887,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f72431e7a97e4bf994dd8b1f3f288d7c"
+   },
+   {
+    "uid": "f631077977754b5591298ecfa201380b",
+    "name": "Naboo Royal Starship (J-type 327 Nubian)",
+    "author": "hobbit84",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 102,
+    "vertices": 175256,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f631077977754b5591298ecfa201380b"
+   },
+   {
+    "uid": "c7e6688d5b6542cf804d74bda07cd793",
+    "name": "Naboo Starfighter_01",
+    "author": "rodrigoscar",
+    "license": "CC Attribution",
+    "likes": 187,
+    "vertices": 93561,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c7e6688d5b6542cf804d74bda07cd793"
+   },
+   {
+    "uid": "5f1211d2ef064deb870712b52c0e63a3",
+    "name": "Naboo Cruiser",
+    "author": "SWU",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 147,
+    "vertices": 16781,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5f1211d2ef064deb870712b52c0e63a3"
+   }
+  ],
+  "dornean gunship": [],
+  "shadow caster ketsu": [],
+  "havoc marauder bad batch": [],
+  "chimera thrawn": [],
+  "c-roc": [
+   {
+    "uid": "077def5acbb848f7bf110b75e35ebd96",
+    "name": "Roc relief with a boat and the inscription",
+    "author": "tdr125",
+    "license": "CC Attribution",
+    "likes": 4,
+    "vertices": 387436,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/077def5acbb848f7bf110b75e35ebd96"
+   }
+  ],
+  "republic cruiser consular": [
+   {
+    "uid": "5906f0b5065947ac8addb622240c7589",
+    "name": "Consular cruiser",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 24,
+    "vertices": 5511,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5906f0b5065947ac8addb622240c7589"
+   },
+   {
+    "uid": "cd717b3b9108462d9f17bb2ab036957e",
+    "name": "Republic Consular Cruiser",
+    "author": "CaptainJamesKirk",
+    "license": "CC Attribution",
+    "likes": 11,
+    "vertices": 48995,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/cd717b3b9108462d9f17bb2ab036957e"
+   },
+   {
+    "uid": "b53f3436fa114d7b939789c24c92b9de",
+    "name": "Star Wars Republic Frigate",
+    "author": "iedalton",
+    "license": "CC Attribution",
+    "likes": 65,
+    "vertices": 7598,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b53f3436fa114d7b939789c24c92b9de"
+   }
+  ],
+  "v4:providence": [
+   {
+    "uid": "936e41cb4e304d71adb98776625fe38c",
+    "name": "providence-class-cruiser",
+    "author": "simonyanedvard403",
+    "license": "CC Attribution",
+    "likes": 0,
+    "vertices": 5824,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/936e41cb4e304d71adb98776625fe38c"
+   }
+  ],
+  "v4:interdictor": [
+   {
+    "uid": "bac66b2e6edd4bc0aee8e8ceb3cefda8",
+    "name": "Star Wars: Immobilizer 418",
+    "author": "Daniel",
+    "license": "CC Attribution",
+    "likes": 221,
+    "vertices": 100471,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/bac66b2e6edd4bc0aee8e8ceb3cefda8"
+   },
+   {
+    "uid": "452cab004f024c01969b2111fbdd55b8",
+    "name": "Interdictor Star Destroyer (Immobilizer 418)",
+    "author": "Kuat-Entralla 3D Engineering",
+    "license": "CC Attribution",
+    "likes": 12,
+    "vertices": 194967,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/452cab004f024c01969b2111fbdd55b8"
+   },
+   {
+    "uid": "5b913cccc7a94e82abd31a32136bb7b3",
+    "name": "interdictor_class_star_destroyer_canon",
+    "author": "vvmilleriii",
+    "license": "CC Attribution",
+    "likes": 0,
+    "vertices": 43659,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/5b913cccc7a94e82abd31a32136bb7b3"
+   }
+  ],
+  "v4:raddus_cruiser": [
+   {
+    "uid": "c12520600eb141d1a7b691e5d95c7227",
+    "name": "Raddus. MC85 star cruiser (FOC Alliance)",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 33517,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/c12520600eb141d1a7b691e5d95c7227"
+   },
+   {
+    "uid": "555ca4b594f549b98e7fabfb7a26dc7c",
+    "name": "MC85",
+    "author": "seankellydk",
+    "license": "CC Attribution-NonCommercial-ShareAlike",
+    "likes": 0,
+    "vertices": 57706,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/555ca4b594f549b98e7fabfb7a26dc7c"
+   }
+  ],
+  "v4:tie_sf": [
+   {
+    "uid": "a5c2fb3305c44355ab76fb224c41b3ee",
+    "name": "Special Forces Tie Fighter",
+    "author": "SpringSociety",
+    "license": "CC Attribution",
+    "likes": 11,
+    "vertices": 1077,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/a5c2fb3305c44355ab76fb224c41b3ee"
+   },
+   {
+    "uid": "6b19471c7dc74bf192e7a858065fcc1d",
+    "name": "TIE/sf space superiority fighter",
+    "author": "dmitrtihom",
+    "license": "CC Attribution",
+    "likes": 2,
+    "vertices": 4444,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/6b19471c7dc74bf192e7a858065fcc1d"
+   }
+  ],
+  "v4:upsilon_shuttle": [
+   {
+    "uid": "4260195777e649dda2019f40035b52b8",
+    "name": "Kylo Ren Command Shuttle",
+    "author": "SpringSociety",
+    "license": "CC Attribution",
+    "likes": 5,
+    "vertices": 894,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/4260195777e649dda2019f40035b52b8"
+   }
+  ],
+  "v4:hounds_tooth": [
+   {
+    "uid": "d0a6ab89711a40749953d4c305d4e343",
+    "name": "Hound's Tooth CT4012",
+    "author": "s4207063",
+    "license": "CC Attribution",
+    "likes": 1,
+    "vertices": 7787,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/d0a6ab89711a40749953d4c305d4e343"
+   }
+  ],
+  "v4:pirate_corsair": [
+   {
+    "uid": "3e187fed67034c488a0a9e41eae36628",
+    "name": "YTS-27 light freighter \"The Kowakian Corsair\"",
+    "author": "JP_2793",
+    "license": "CC Attribution-NonCommercial",
+    "likes": 366,
+    "vertices": 1721368,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/3e187fed67034c488a0a9e41eae36628"
+   },
+   {
+    "uid": "ccd2749df33641fba7a5326500abdbfb",
+    "name": "Star Wars: YT-2400 Light Freighter",
+    "author": "Daniel",
+    "license": "CC Attribution",
+    "likes": 245,
+    "vertices": 22900,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/ccd2749df33641fba7a5326500abdbfb"
+   },
+   {
+    "uid": "2131f750afff479588a46321d17ee25f",
+    "name": "Star Wars: BFF-1 Bulk Freighter",
+    "author": "Daniel",
+    "license": "CC Attribution",
+    "likes": 118,
+    "vertices": 35076,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/2131f750afff479588a46321d17ee25f"
+   },
+   {
+    "uid": "20f6028d590b4e43a69ce15ec138b6d1",
+    "name": "Star Wars: Lethisk-class Armored Freighter",
+    "author": "Daniel",
+    "license": "CC Attribution",
+    "likes": 105,
+    "vertices": 105285,
+    "animated": true,
+    "url": "https://sketchfab.com/3d-models/20f6028d590b4e43a69ce15ec138b6d1"
+   },
+   {
+    "uid": "578f25a5c48c40369491d507f3930501",
+    "name": "Aril Freighter",
+    "author": "mohamedhussien",
+    "license": "CC Attribution",
+    "likes": 20,
+    "vertices": 22760,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/578f25a5c48c40369491d507f3930501"
+   },
+   {
+    "uid": "9165c79602d549e6bb304ca03eaa033b",
+    "name": "[-]X[-]StarFreighter[-]'OnE'[-]",
+    "author": "-X-ScornGames",
+    "license": "CC Attribution",
+    "likes": 13,
+    "vertices": 4377,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/9165c79602d549e6bb304ca03eaa033b"
+   },
+   {
+    "uid": "f5ad676f934d42e1aceed476955356ae",
+    "name": "Merchant Haul 7  LT-900-CXX Freighter Class",
+    "author": "Cpt.Kirk",
+    "license": "CC Attribution",
+    "likes": 12,
+    "vertices": 404350,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/f5ad676f934d42e1aceed476955356ae"
+   }
+  ],
+  "v4:pirate_marauder": [
+   {
+    "uid": "b3a5c7c7d60c4bcfb74f54794c803645",
+    "name": "Star Wars: Corellian Gunship",
+    "author": "Daniel",
+    "license": "CC Attribution",
+    "likes": 85,
+    "vertices": 113182,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/b3a5c7c7d60c4bcfb74f54794c803645"
+   },
+   {
+    "uid": "12acc2a9ba2142468e3b47b84e929a48",
+    "name": "Star Wars: Marauder-class Corvette",
+    "author": "Daniel",
+    "license": "CC Attribution",
+    "likes": 73,
+    "vertices": 178144,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/12acc2a9ba2142468e3b47b84e929a48"
+   },
+   {
+    "uid": "567a3d650f1540d0b0abfe46623f677a",
+    "name": "DP-20 Corellian Gunship",
+    "author": "Khvostik",
+    "license": "CC Attribution",
+    "likes": 3,
+    "vertices": 787,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/567a3d650f1540d0b0abfe46623f677a"
+   }
+  ],
+  "v4:pirate_skiff": [
+   {
+    "uid": "17ee6513410b44038e6ba5228d68281c",
+    "name": "Sorosuub Preybird Heavy Assault Fighter",
+    "author": "resurrected",
+    "license": "CC Attribution",
+    "likes": 34,
+    "vertices": 20834,
+    "animated": false,
+    "url": "https://sketchfab.com/3d-models/17ee6513410b44038e6ba5228d68281c"
+   }
+  ]
+ },
+ "failures": []
+}

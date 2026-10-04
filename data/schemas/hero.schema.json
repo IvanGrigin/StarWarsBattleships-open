@@ -1,0 +1,391 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hero.schema.json",
+  "title": "Карточка героя (ruleset v3) — контракт способности",
+  "description": "Контракт способности по MASTER_PLAN_RU §4.9 (trigger, condition, target_filter, cost, uses_per_match, effect_sequence, priority, friendly_fire, expires_at, события, план тестов). Данные полные, но движком спринта 1 не используются (ADR-011); окно реакций и способности зарезервированы в M2 (docs/rules/timing.md §9). Набор ключей ability един для всех 8 героев; неприменимые поля — явный null или пустой массив. Значения, которых нет в исходных правилах, запинены как proposal_v3 (см. proposal_v3 и design_notes). Только целые/строки/bool/массивы/объекты/null — float запрещён (core-api §0).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "display_name",
+    "description",
+    "ability"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Стабильный ASCII snake_case идентификатор героя; совпадает с именем файла."
+    },
+    "display_name": { "type": "string", "minLength": 1 },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Дословное описание героя из исходных правил; не переписывается."
+    },
+    "ability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "text",
+        "kind",
+        "trigger",
+        "condition",
+        "target_filter",
+        "cost",
+        "uses_per_match",
+        "effect_sequence",
+        "priority",
+        "friendly_fire",
+        "expires_at",
+        "events",
+        "test_plan",
+        "design_notes",
+        "proposal_v3"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "Идентификатор способности (стабильный, из исходных данных v3)."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Отображаемое название способности (ru)."
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Дословный текст способности из исходных правил («Правила Игры.txt»); не переписывается."
+        },
+        "kind": {
+          "enum": ["active", "reaction", "passive"],
+          "description": "Класс способности: active — вручную в свою активацию; reaction — окно реакции в бою; passive — постоянный эффект без расхода использований."
+        },
+        "trigger": {
+          "enum": [
+            "manual_during_activation",
+            "after_dice_revealed",
+            "on_attack_declared",
+            "on_activation_start",
+            "on_ship_enter_cell",
+            "on_owner_activation_start",
+            "passive_always"
+          ],
+          "description": "Момент открытия окна способности. on_attack_declared, on_activation_start, on_ship_enter_cell, on_owner_activation_start — зарезервированы (создаваемые сущности: мина/бомба); соответствие kind↔trigger проверяет валидатор."
+        },
+        "condition": {
+          "type": "array",
+          "description": "Все предикаты должны быть истинны в момент применения; пустой массив = всегда истинно (пассивка).",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["fact", "op", "value"],
+            "properties": {
+              "fact": {
+                "enum": [
+                  "phase",
+                  "die_owner",
+                  "activation_seat_is_owner",
+                  "selected_ship_min_charges"
+                ],
+                "description": "phase: combat_reaction — окно реакции боя, activation — активация; die_owner: enemy|own — чей кубик в окне реакции; activation_seat_is_owner: bool; selected_ship_min_charges: минимум зарядов целевого своего корабля."
+              },
+              "op": { "enum": ["eq", "ne", "gte", "lte"] },
+              "value": {
+                "type": ["integer", "string", "boolean", "null"],
+                "description": "Правый операнд предиката; тип зависит от fact."
+              }
+            }
+          }
+        },
+        "target_filter": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["target_kind", "min_distance", "max_distance", "destination", "count"],
+          "description": "null — цель не выбирается (модификация кубика, пассивка). min/max_distance — гекс-расстояние от действующего корабля владельца (для han_solo — не применимо, null).",
+          "properties": {
+            "target_kind": {
+              "enum": ["enemy_ship", "any_ship", "own_ship", "board_cell"]
+            },
+            "min_distance": {
+              "type": ["integer", "null"],
+              "minimum": 0,
+              "maximum": 4
+            },
+            "max_distance": {
+              "type": ["integer", "null"],
+              "minimum": 0,
+              "maximum": 4
+            },
+            "destination": {
+              "enum": [
+                "none",
+                "adjacent_free_cell",
+                "any_free_cell_not_adjacent_to_ships",
+                null
+              ],
+              "description": "Куда помещается цель (anakin/han_solo); none/null — перемещения цели нет."
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1,
+              "description": "Число целей; в v3 всегда 1."
+            }
+          }
+        },
+        "cost": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["charges_mode", "charges", "consumes_ship_attack"],
+          "properties": {
+            "charges_mode": {
+              "enum": ["fixed", "all"],
+              "description": "fixed — списать charges зарядов; all — обнулить все заряды корабля (han_solo), тогда charges игнорируется и равен 0."
+            },
+            "charges": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "consumes_ship_attack": {
+              "type": "boolean",
+              "description": "true — способность расходует обычную атаку корабля этой активации (attack_used)."
+            }
+          }
+        },
+        "uses_per_match": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Число использований за матч; 0 — пассивная способность без расхода использований."
+        },
+        "effect_sequence": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Упорядоченный список операций; применяется последовательно, атомарно одной командой (core-api §0).",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["op", "params"],
+            "properties": {
+              "op": {
+                "enum": [
+                  "set_die_face",
+                  "ability_attack",
+                  "move_ship",
+                  "teleport_ship",
+                  "apply_passive_bonus",
+                  "place_mine",
+                  "launch_bomb"
+                ]
+              },
+              "params": {
+                "type": "object",
+                "additionalProperties": false,
+                "description": "Значимые параметры зависят от op; весь словарь параметров — общая типизированная лексика (см. properties).",
+                "properties": {
+                  "die_owner": {
+                    "enum": ["enemy", "own"],
+                    "description": "op=set_die_face: чей кубик меняется."
+                  },
+                  "forbid_from_face": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 6,
+                    "description": "op=set_die_face: запрещённый исходный грань-переход (obi_wan: 6)."
+                  },
+                  "forbid_to_face": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 6,
+                    "description": "op=set_die_face: запрещённая новая грань перехода (obi_wan: 1; luke: 6 при from 1)."
+                  },
+                  "range": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4,
+                    "description": "op=ability_attack: требуемое гекс-расстояние до цели."
+                  },
+                  "range_penalty": {
+                    "type": "integer",
+                    "minimum": -4,
+                    "maximum": 0,
+                    "description": "op=ability_attack: слагаемое range формулы core-api §4.4 (вейдер: 0 — штрафа нет)."
+                  },
+                  "line_of_sight": {
+                    "enum": ["intermediate_cells_free"],
+                    "description": "op=ability_attack: промежуточные клетки прямой должны быть свободны от кораблей."
+                  },
+                  "sector_rule": {
+                    "enum": ["standard_direction"],
+                    "description": "op=ability_attack: сектора по стандартным direction_from (core-api §1)."
+                  },
+                  "destination": {
+                    "enum": ["adjacent_free_cell", "any_free_cell_not_adjacent_to_ships"]
+                  },
+                  "keep_facing": {
+                    "type": "boolean",
+                    "description": "Перемещение/телепорт без смены ориентации."
+                  },
+                  "set_charges": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 5,
+                    "description": "op=teleport_ship: установить заряды корабля в значение (han_solo: 0)."
+                  },
+                  "bonus": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "op=apply_passive_bonus: величина бонуса (слагаемое permanent passives формулы core-api §4.4)."
+                  },
+                  "scope": {
+                    "enum": ["attack_rolls_of_owner_ships"],
+                    "description": "op=apply_passive_bonus: область действия бонуса."
+                  },
+                  "placement": {
+                    "enum": ["free_cell"],
+                    "description": "op=place_mine: только свободная клетка."
+                  },
+                  "placement_max_distance": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 2,
+                    "description": "op=place_mine: максимальное гекс-расстояние установки от действующего корабля (jango: 2)."
+                  },
+                  "trigger_radius": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 2,
+                    "description": "Радиус срабатывания в гексах от клетки объекта (мина jango: 1 — своя клетка + соседние)."
+                  },
+                  "trigger_on": {
+                    "enum": ["ship_enter"],
+                    "description": "Срабатывание при входе живого корабля в радиус после установки; стоящие в радиусе на момент установки не взводят."
+                  },
+                  "damage_dice": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["count", "sides"],
+                    "description": "Урон объекта (мина/бомба): 1d4 у обоих; щит → корпус (rules-v3 §7).",
+                    "properties": {
+                      "count": { "type": "integer", "minimum": 1, "maximum": 4 },
+                      "sides": { "type": "integer", "minimum": 2, "maximum": 12 }
+                    }
+                  },
+                  "lifetime": {
+                    "enum": ["until_triggered_or_match_end", "match_end"],
+                    "description": "Срок жизни созданного объекта."
+                  },
+                  "removal": {
+                    "enum": ["on_trigger", "on_expire"],
+                    "description": "Когда объект снимается с доски."
+                  },
+                  "direction": {
+                    "enum": ["chosen_0_to_5"],
+                    "description": "op=launch_bomb: направление выбирается игроком 0..5 (core-api §1) при запуске и не меняется."
+                  },
+                  "initial_cell": {
+                    "enum": ["adjacent_in_direction"],
+                    "description": "op=launch_bomb: старт — соседняя клетка по направлению (свободная, в поле)."
+                  },
+                  "cells_per_advance": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1,
+                    "description": "op=launch_bomb: клеток за одно продвижение (boba: 1, «одна клетка в твой ход»)."
+                  },
+                  "advance_timing": {
+                    "enum": ["owner_activation_start", "owner_activation_end"],
+                    "description": "op=launch_bomb: момент продвижения; boba — начало активации владельца."
+                  },
+                  "max_cells": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4,
+                    "description": "op=launch_bomb: суммарный путь бомбы в клетках (boba: 3, «от 1 до 3»)."
+                  },
+                  "explode_on": {
+                    "enum": ["occupied_cell"],
+                    "description": "op=launch_bomb/ place_mine: взрыв при входе в клетку с кораблём."
+                  },
+                  "expire_behavior": {
+                    "enum": ["despawn", "explode_in_place"],
+                    "description": "Поведение по исчерпании срока без попадания; boba — despawn без урона."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 99,
+          "description": "Порядок разрешений: меньше — раньше. Конвенция v3: 0 — пассивки (слагаемые формулы до реакций), 1–19 — реакции в окне после открытия бросков, 20–29 — активные (разрешаются в момент объявления). При равенстве — порядок сидов A1→B1→A2→B2."
+        },
+        "friendly_fire": {
+          "type": "boolean",
+          "description": "true — эффект может затронуть свои/союзные корабли (перемещение любого корабля; урон мины/бомбы без исключений)."
+        },
+        "expires_at": {
+          "enum": ["immediate", "activation_end", "match_end", "after_max_distance"],
+          "description": "immediate — эффект разрешается мгновенно (расход использования фиксируется на матч); match_end — эффект/созданный объект живут до конца матча; after_max_distance — объект снимается по исчерпании пути (бомба)."
+        },
+        "events": {
+          "type": "array",
+          "description": "Полный список событий, которые способность может создать за матч (план для M2; имена — из MASTER_PLAN_RU §6.5 + proposal BombPlaced).",
+          "items": {
+            "enum": [
+              "AbilityUsed",
+              "DieModified",
+              "AttackDeclared",
+              "DieRolled",
+              "StrengthCalculated",
+              "DamageApplied",
+              "ShipDestroyed",
+              "ShipMoved",
+              "MinePlaced",
+              "MineTriggered",
+              "BombPlaced",
+              "BombAdvanced"
+            ]
+          }
+        },
+        "test_plan": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["positive", "negative"],
+          "description": "Планы позитивного и негативного тестов; сами тесты — задачи EPIC C012–C019 (M2).",
+          "properties": {
+            "positive": {
+              "type": "string",
+              "minLength": 10,
+              "description": "Позитивный тест: ожидаемое применение способности и результат."
+            },
+            "negative": {
+              "type": "string",
+              "minLength": 10,
+              "description": "Негативный тест: запрещённые применения должны отклоняться без изменения состояния."
+            }
+          }
+        },
+        "design_notes": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Обоснование пинов и решения открытых вопросов rules-v3 §9.6."
+        },
+        "proposal_v3": {
+          "type": "array",
+          "description": "Перечень значений, предложенных сверх исходных правил (не в тексте карточки); каждое — строка с пометкой proposal_v3-статуса.",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

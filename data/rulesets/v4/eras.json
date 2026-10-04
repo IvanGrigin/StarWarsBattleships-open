@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "eras": [
+    {
+      "id": "fall_of_republic",
+      "display_name": "Закат Республики",
+      "episodes": [
+        1,
+        2,
+        3
+      ],
+      "years": "32–19 ДБЯ",
+      "note": "Войны клонов: Республика против Конфедерации независимых систем."
+    },
+    {
+      "id": "galactic_civil_war",
+      "display_name": "Гражданская война",
+      "episodes": [
+        4,
+        5,
+        6
+      ],
+      "years": "0–4 ПБЯ",
+      "note": "Галактическая Империя против Альянса повстанцев."
+    },
+    {
+      "id": "new_order",
+      "display_name": "Новый порядок",
+      "episodes": [
+        7,
+        8,
+        9
+      ],
+      "years": "34–35 ПБЯ",
+      "note": "Первый Орден против Сопротивления."
+    },
+    {
+      "id": "any",
+      "display_name": "Вне эпохи",
+      "episodes": [],
+      "years": "—",
+      "note": "Наёмники, пираты и корабли, встречающиеся во всех трилогиях."
+    }
+  ],
+  "matchups": {
+    "fall_of_republic": [
+      "republic",
+      "separatists"
+    ],
+    "galactic_civil_war": [
+      "empire",
+      "rebels"
+    ],
+    "new_order": [
+      "first_order",
+      "resistance"
+    ]
+  }
+}

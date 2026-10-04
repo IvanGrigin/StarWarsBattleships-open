@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Воксельные модели</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; background: #0b111c; color: #d7dee8; font: 14px/1.4 system-ui, -apple-system, sans-serif; }
+  #app { display: grid; grid-template-columns: 320px 1fr; height: 100%; }
+  @media (max-width: 800px) { #app { grid-template-columns: 1fr; grid-template-rows: 44vh 1fr; } }
+  nav { border-right: 1px solid #22314f; padding: 12px; overflow: auto; display: flex; flex-direction: column; gap: 8px; }
+  h1 { font-size: 16px; margin: 0; }
+  .note { color: #8394b5; font-size: 12px; margin: 0; }
+  #tabs { display: flex; gap: 6px; }
+  #tabs a, #tabs button { flex: 1; padding: 8px 6px; font: inherit; font-size: 12px; border-radius: 8px; border: 1px solid #2a3a5a;
+    background: #111a2b; color: #8fa3c0; text-align: center; text-decoration: none; cursor: pointer; }
+  #tabs .on { background: #1c2942; border-color: #4d8fd6; color: #d7dee8; }
+  input[type=search] { width: 100%; padding: 8px; border-radius: 8px; border: 1px solid #2a3a5a; background: #111a2b; color: inherit; font: inherit; }
+  #list { display: grid; gap: 4px; }
+  #list button { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; text-align: left; padding: 8px 10px; border-radius: 8px;
+    border: 1px solid #1d2a44; background: #0f1726; color: inherit; font: inherit; cursor: pointer; }
+  #list button:hover { border-color: #35558f; }
+  #list button.on { background: #1b2b55; border-color: #4d8fd6; }
+  #list .nm { font-weight: 600; }
+  #list .sz { color: #8394b5; font-size: 12px; font-variant-numeric: tabular-nums; }
+  #list .sub { grid-column: 1 / -1; color: #8394b5; font-size: 11.5px; }
+  .tag { display: inline-block; padding: 0 6px; border-radius: 999px; font-size: 11px; background: #22314f; color: #b9c7de; margin-left: 4px; }
+  .tag.new { background: #2d4a2b; color: #a8e6a1; }
+  main { position: relative; min-height: 0; }
+  canvas { display: block; width: 100%; height: 100%; }
+  #hud { position: absolute; left: 12px; top: 10px; right: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; pointer-events: none; }
+  #hud > * { pointer-events: auto; }
+  #info { background: rgba(11,17,28,.8); padding: 6px 10px; border-radius: 8px; font-size: 13px; }
+  label.t { background: rgba(11,17,28,.8); padding: 6px 10px; border-radius: 8px; font-size: 13px; cursor: pointer; }
+  #empty { position: absolute; inset: 0; display: grid; place-items: center; color: #8394b5; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="app">
+  <nav>
+    <h1>Воксельные модели</h1>
+    <div id="tabs">
+      <a href="index.html">Скачанные</a>
+      <a href="index.html#catalog">Каталог</a>
+      <a href="index.html#tour">Турнир</a>
+      <button class="on" type="button">Воксельные</button>
+    </div>
+    <p class="note">Файлы <code>demo/assets/models/meshes/*.json</code> — их делает вокселизация
+    (tools/model_to_voxels.py, tools/schem_to_mesh.py). Список обновляется сам раз в 20 секунд;
+    «новая» — изменена за последний час. Красная стрелка — нос (−Z), как на поле игры.</p>
+    <input id="filter" type="search" placeholder="Поиск по файлу или кораблю" aria-label="Поиск моделей">
+    <div id="list"></div>
+  </nav>
+  <main>
+    <canvas id="view"></canvas>
+    <div id="hud">
+      <span id="info">Выберите модель слева</span>
+      <label class="t"><input type="checkbox" id="useCfg" checked> настройки демо (поворот, масштаб)</label>
+      <label class="t"><input type="checkbox" id="spin"> вращать</label>
+    </div>
+  </main>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { createSchemGroup, buildGeometry } from '/demo/schem_models.js';
+
+const canvas = document.getElementById('view');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b111c);
+scene.add(new THREE.HemisphereLight(0xdfe8ff, 0x1a2233, 1.1));
+const sun = new THREE.DirectionalLight(0xffffff, 1.6); sun.position.set(3, 5, 2); scene.add(sun);
+const grid = new THREE.GridHelper(4, 16, 0x2b3d66, 0x1a2742); scene.add(grid);
+const camera = new THREE.PerspectiveCamera(40, 1, 0.01, 100);
+camera.position.set(0.9, 0.8, -1.6);                      // спереди-сверху: нос смотрит на зрителя
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+const nose = new THREE.ArrowHelper(new THREE.Vector3(0, 0, -1), new THREE.Vector3(0, 0.02, 0), 0.9, 0xff4d4d, 0.1, 0.06);
+scene.add(nose);
+
+let current = null, currentFile = null, items = [];
+function dispose(o) {
+  o.traverse(x => { if (x.geometry) x.geometry.dispose(); });
+}
+function resize() {
+  const r = canvas.parentElement.getBoundingClientRect();
+  renderer.setSize(r.width, r.height, false);
+  camera.aspect = r.width / Math.max(1, r.height); camera.updateProjectionMatrix();
+}
+addEventListener('resize', resize); resize();
+
+async function show(item) {
+  currentFile = item.file;
+  document.querySelectorAll('#list button').forEach(b => b.classList.toggle('on', b.dataset.file === item.file));
+  const info = document.getElementById('info');
+  info.textContent = `Загрузка ${item.file}…`;
+  let rec;
+  try {
+    rec = await (await fetch('/demo/assets/models/meshes/' + item.file, { cache: 'no-store' })).json();
+  } catch (e) {
+    info.textContent = `${item.file}: файл пустой или ещё записывается — откройте позже`;
+    return;
+  }
+  if (currentFile !== item.file) return;
+  if (current) { scene.remove(current); dispose(current); }
+  const cfg = document.getElementById('useCfg').checked ? item.cfg || {} : {};
+  if (rec.faces && rec.n) {
+    current = createSchemGroup(rec, item.type_id || item.file, { ...cfg, size: 1.0 });
+  } else {
+    current = new THREE.Group();
+  }
+  scene.add(current);
+  const tris = rec.faces ? rec.faces.length * 2 : 0;
+  info.textContent = `${item.file}${item.type_id ? ' → ' + item.type_id : ''} · воксели ${rec.n ? rec.n.join('×') : '?'} · ${tris.toLocaleString('ru')} треугольников`;
+}
+
+function fmtKB(b) { return b > 1e6 ? (b / 1e6).toFixed(1) + ' МБ' : Math.round(b / 1e3) + ' КБ'; }
+function render() {
+  const q = document.getElementById('filter').value.trim().toLowerCase();
+  const list = document.getElementById('list');
+  list.innerHTML = '';
+  const now = Date.now() / 1000;
+  items.filter(it => !q || it.file.toLowerCase().includes(q) || (it.type_id || '').includes(q))
+    .sort((a, b) => b.mtime - a.mtime)
+    .forEach(it => {
+      const b = document.createElement('button');
+      b.dataset.file = it.file;
+      b.className = it.file === currentFile ? 'on' : '';
+      const fresh = now - it.mtime < 3600;
+      b.innerHTML = `<span class="nm">${it.file.replace(/\.json$/, '')}${fresh ? '<span class="tag new">новая</span>' : ''}${it.bytes ? '' : '<span class="tag">пустой</span>'}</span>
+        <span class="sz">${fmtKB(it.bytes)}</span>
+        <span class="sub">${it.type_id ? 'в игре как ' + it.type_id : 'не подключена к игре'} · ${new Date(it.mtime * 1000).toLocaleString('ru')}</span>`;
+      b.onclick = () => show(it);
+      list.appendChild(b);
+    });
+}
+async function load() {
+  try {
+    items = await (await fetch('/api/voxels', { cache: 'no-store' })).json();
+    render();
+    const ready = items.filter(x => x.bytes > 0).sort((a, b) => b.mtime - a.mtime);
+    if (!currentFile && ready.length) show(ready[0]);
+  } catch (e) {
+    document.getElementById('info').textContent = 'Сервис не ответил: ' + e;
+  }
+}
+document.getElementById('filter').oninput = render;
+document.getElementById('useCfg').onchange = () => { const it = items.find(x => x.file === currentFile); if (it) show(it); };
+load(); setInterval(load, 20000);
+
+function tick() {
+  requestAnimationFrame(tick);
+  if (current && document.getElementById('spin').checked) current.rotation.y += 0.01;
+  controls.update();
+  renderer.render(scene, camera);
+}
+tick();
+</script>
+</body>
+</html>

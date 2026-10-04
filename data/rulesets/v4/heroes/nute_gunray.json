@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "id": "nute_gunray",
+  "display_name": "Нут Ганрей",
+  "description": "Вице-король Торговой федерации, трусливый, но богатый союзник Конфедерации.",
+  "faction": "separatists",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "trade_blockade",
+    "name": "Торговая блокада",
+    "text": "1 раз в игру: до конца раунда противник не может уходить в гиперпространство.",
+    "kind": "active",
+    "trigger": "round_start",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 1,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "block_hyperjump",
+        "params": {
+          "scope": "enemy_seat",
+          "duration_rounds": 1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "droid_foundry",
+    "name": "Дроидная верфь",
+    "text": "Если все три ваших корабля — сепаратисты, один уничтоженный дроидный корабль возвращается в игру с 2 HP (один раз за матч).",
+    "scope": "fleet",
+    "condition": {
+      "faction": "separatists",
+      "min_ships": 3
+    },
+    "effects": [
+      {
+        "op": "respawn",
+        "params": {
+          "hp": 2,
+          "uses": 1,
+          "require_role": "droid"
+        }
+      }
+    ]
+  },
+  "draft_cost": 0
+}

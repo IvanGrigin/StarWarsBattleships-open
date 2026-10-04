@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "id": "lambda_shuttle",
+  "display_name": "Шаттл класса «Лямбда»",
+  "description": "Курьерский и абордажный шаттл Империи со складывающимися крыльями.",
+  "faction": "empire",
+  "era": "galactic_civil_war",
+  "role": "support",
+  "unique": false,
+  "legacy_v3": false,
+  "draftable": true,
+  "raw_cost": 20,
+  "draft_cost": 8,
+  "max_hp": 6,
+  "max_shield": 1,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "weapon": {
+    "max_range": 1,
+    "range_penalty_per_hex": 0,
+    "long_range_arc": "front"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 1,
+    "boost": true
+  },
+  "hyperdrive": {
+    "class": 1,
+    "charge_cost": 1
+  },
+  "abilities": [
+    {
+      "id": "boarding_pods",
+      "enabled": true
+    },
+    {
+      "id": "repair_bay",
+      "enabled": true
+    }
+  ]
+}

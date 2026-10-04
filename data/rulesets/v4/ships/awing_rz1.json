@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "awing_rz1",
+  "display_name": "A-wing RZ-1",
+  "description": "Самый быстрый истребитель Альянса. Хрупкий, но уходит в прыжок раньше всех.",
+  "faction": "rebels",
+  "era": "galactic_civil_war",
+  "role": "interceptor",
+  "unique": false,
+  "legacy_v3": false,
+  "draftable": true,
+  "raw_cost": 19,
+  "draft_cost": 8,
+  "max_hp": 3,
+  "max_shield": 0,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    3,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "weapon": {
+    "max_range": 2,
+    "range_penalty_per_hex": 1,
+    "long_range_arc": "front"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 1,
+    "boost": true
+  },
+  "hyperdrive": {
+    "class": 1,
+    "charge_cost": 1
+  },
+  "abilities": [
+    {
+      "id": "fast_hyperdrive",
+      "enabled": true
+    }
+  ],
+  "cost_adjust": 0,
+  "balance_patch": {
+    "before": {
+      "arc_modifiers": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "max_hp": 3,
+      "max_shield": 0,
+      "draft_cost": 7
+    },
+    "delta": {
+      "F": 1
+    },
+    "source": "final.json: ML-оптимизация 2026-09-19: три эпохи, подстраивающийся бот за обе стороны, драфт «как у человека», новые способности кораблей"
+  }
+}

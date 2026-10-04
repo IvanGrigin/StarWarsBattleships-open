@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "death_star_1",
+  "display_name": "Звезда Смерти I",
+  "description": "Это вторая по величине космическая станция и первая станция из достроенных станций по величине, но уничтожилась благодаря Люку Скайуокеру, который её взорвал, летя на своем X-wing. Дальний выстрел: может атаковать корабль на любое расстояние (каждая клетка −2 к силе).",
+  "group": 2,
+  "draftable": true,
+  "draft_cost": 6,
+  "max_hp": 11,
+  "max_shield": 2,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": { "count": 1, "sides": 6 },
+  "arc_modifiers": [7, 0, 0, -1, 0, 0],
+  "abilities": [
+    { "id": "ranged_shot", "enabled": true }
+  ]
+}

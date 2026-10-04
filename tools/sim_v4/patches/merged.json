@@ -1,0 +1,182 @@
+{
+ "ships": {
+  "arc170": {
+   "F": -2,
+   "sides": -1,
+   "hp": -2,
+   "shield": -1
+  },
+  "delta7_aethersprite": {
+   "sides": 1
+  },
+  "eta2_actis": {
+   "sides": -1
+  },
+  "hyena_bomber": {
+   "F": 1
+  },
+  "laat_gunship": {
+   "F": -1,
+   "hp": -1
+  },
+  "munificent": {
+   "F": -1,
+   "rear": -1,
+   "shield": -1
+  },
+  "naboo_n1": {
+   "hp": 1
+  },
+  "naboo_royal_cruiser": {
+   "F": -1,
+   "hp": -2
+  },
+  "providence": {
+   "F": -2,
+   "sides": -2,
+   "rear": -2,
+   "hp": -1
+  },
+  "soulless_one": {
+   "F": -2
+  },
+  "tri_fighter": {
+   "sides": 1
+  },
+  "v19_torrent": {
+   "sides": -1
+  },
+  "venator": {
+   "F": -2,
+   "sides": -2,
+   "rear": -2,
+   "hp": -2
+  },
+  "vulture_droid": {
+   "F": 1
+  },
+  "awing_rz1": {
+   "F": 1
+  },
+  "bwing": {
+   "F": -2,
+   "hp": -2,
+   "shield": -1
+  },
+  "ghost": {
+   "F": -2,
+   "sides": -2,
+   "rear": -1,
+   "hp": -2,
+   "shield": -1,
+   "cost": -3
+  },
+  "gr75_transport": {
+   "hp": 1
+  },
+  "interdictor": {
+   "sides": -1,
+   "rear": -1
+  },
+  "mc80_home_one": {
+   "F": -2,
+   "sides": -2,
+   "rear": -2,
+   "hp": -2
+  },
+  "star_destroyer": {
+   "F": -2,
+   "sides": -2,
+   "rear": -1,
+   "hp": -2
+  },
+  "tie_advanced_x1": {
+   "F": -2,
+   "cost": -1
+  },
+  "tie_bomber": {
+   "F": -1
+  },
+  "tie_fighter": {
+   "hp": -1
+  },
+  "xwing_t65": {
+   "shield": 1
+  },
+  "ywing_btla4": {
+   "hp": -1
+  },
+  "mg100_bomber": {
+   "shield": -1
+  },
+  "raddus_cruiser": {
+   "F": -1,
+   "sides": -2,
+   "rear": -1
+  },
+  "resistance_transport": {
+   "F": 2
+  },
+  "resurgent_destroyer": {
+   "F": -2,
+   "sides": -2,
+   "rear": -2,
+   "B": -1,
+   "hp": -2,
+   "shield": -1
+  },
+  "rz2_awing": {
+   "F": 1
+  },
+  "tie_fo": {
+   "F": 1,
+   "sides": 1
+  },
+  "tie_silencer": {
+   "F": -2,
+   "hp": -2,
+   "shield": -1
+  },
+  "xwing_t70": {
+   "F": -1
+  },
+  "punishing_one": {
+   "F": -1
+  },
+  "slave_1": {
+   "F": -1
+  },
+  "millennium_falcon": {
+   "rear": -1,
+   "F": -2
+  },
+  "hounds_tooth": {
+   "F": -1
+  }
+ },
+ "heroes": {
+  "anakin": 0,
+  "general_grievous": 4,
+  "jango_fett": 0,
+  "mace_windu": 8,
+  "nute_gunray": 0,
+  "obi_wan": 8,
+  "padme_amidala": 8,
+  "qui_gon_jinn": 8,
+  "admiral_piett": 5,
+  "boba_fett": 6,
+  "darth_vader": 0,
+  "grand_moff_tarkin": 1,
+  "han_solo": 0,
+  "lando_calrissian": 5,
+  "leia_organa": 7,
+  "luke": 0,
+  "general_hux": 3,
+  "kylo_ren": 8,
+  "phasma": 8,
+  "poe_dameron": 0,
+  "rey": 0,
+  "snoke": 0,
+  "vice_admiral_holdo": 1
+ }
+}

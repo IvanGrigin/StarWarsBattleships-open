@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "id": "ghost",
+  "display_name": "Призрак",
+  "description": "Большой звездолёт повстанцев. При взрыве превращается в «Фантом».",
+  "faction": "rebels",
+  "era": "galactic_civil_war",
+  "role": "freighter",
+  "unique": true,
+  "legacy_v3": true,
+  "draftable": true,
+  "raw_cost": 24,
+  "draft_cost": 10,
+  "max_hp": 6,
+  "max_shield": 1,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    2,
+    1,
+    0,
+    2,
+    0,
+    1
+  ],
+  "weapon": {
+    "max_range": 2,
+    "range_penalty_per_hex": 2,
+    "long_range_arc": "all"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 1,
+    "boost": true
+  },
+  "hyperdrive": {
+    "class": 2,
+    "charge_cost": 2
+  },
+  "abilities": [
+    {
+      "id": "transform_to_phantom",
+      "enabled": true
+    }
+  ]
+}

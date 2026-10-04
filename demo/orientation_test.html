@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SWB — полный контроль моделей и курсов</title>
+  <style>
+    :root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:#03070d;color:#d7e8f5;font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace}#stage{position:absolute;inset:0}.panel{position:absolute;left:16px;top:16px;z-index:2;width:min(430px,calc(100vw - 32px));padding:14px 16px;background:#07111ded;border:1px solid #3ec8ff55;box-shadow:0 16px 60px #000;border-radius:8px}.title{color:#78d8ff;font-weight:900;letter-spacing:.1em}.hint{margin-top:7px;color:#8fa7b8}.ok{color:#71eea0}.counts{display:flex;gap:8px;margin:10px 0 4px}.badge{padding:4px 7px;background:#102239;border:1px solid #31506b;border-radius:4px;color:#bad7ea}select{width:100%;margin-top:7px;padding:8px;color:#d7e8f5;background:#0b1929;border:1px solid #294761;border-radius:5px}.nav{display:flex;gap:7px;margin-top:7px}.nav button{flex:1;padding:7px;background:#102239;color:#cfe7f7;border:1px solid #31506b;border-radius:5px;cursor:pointer}.legend{position:absolute;right:16px;bottom:16px;padding:9px 12px;background:#07111dcc;border:1px solid #ffffff1c;color:#9ab0c0}.legend b{color:#ffd36a}@media(max-width:700px){.panel{left:8px;top:8px;width:calc(100vw - 16px)}.legend{display:none}}
+  </style>
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <div id="stage"></div>
+  <section class="panel">
+    <div class="title">MODEL CATALOG // 6 FACINGS</div>
+    <div class="hint"><span class="ok">Зелёная стрелка</span> — направление хода. Нос обязан совпасть со стрелкой, низ модели — стоять над плитой.</div>
+    <div class="counts"><span id="game-count" class="badge">игровые: …</span><span id="mc-count" class="badge">Minecraft: …</span></div>
+    <select id="type" aria-label="Источник и корабль"></select>
+    <div class="nav"><button id="prev">← предыдущая</button><button id="next">следующая →</button></div>
+    <div id="status" class="hint">загрузка…</div>
+  </section>
+  <div class="legend"><b>0…5</b> — курсы по часовой · ПКМ — орбита · колесо — зум</div>
+  <script type="module">
+    import * as THREE from 'three';
+    import { createShipModel, loadExternalModels, loadSchemModels, primeVoxelSource } from './models3d.js';
+    import { createSchemGroup } from './schem_models.js';
+    import * as voxels from './voxel_ships.js';
+    import { DIR_DELTAS, axialToWorld, directionOffset, facingDegrees, facingRotY } from './orientation.js';
+
+    const GAME_TYPES = ['tie_fighter','tie_advanced_x1','xwing_t65','eta2_actis','millennium_falcon','star_destroyer','death_star_1','slave_1','ghost','phantom','vulture_droid'];
+    const renderer = new THREE.WebGLRenderer({antialias:true});
+    renderer.setPixelRatio(Math.min(devicePixelRatio,2)); renderer.setSize(innerWidth,innerHeight);
+    renderer.outputColorSpace=THREE.SRGBColorSpace; renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=1.25;
+    document.querySelector('#stage').append(renderer.domElement);
+    const scene=new THREE.Scene(); scene.background=new THREE.Color(0x03070d);
+    scene.add(new THREE.HemisphereLight(0xb9d7ff,0x111728,2.4));
+    const sun=new THREE.DirectionalLight(0xffedd4,4.5); sun.position.set(5,9,3); scene.add(sun);
+    const camera=new THREE.PerspectiveCamera(42,innerWidth/innerHeight,.05,100);
+    const root=new THREE.Group(); scene.add(root);
+    const tileGeo=new THREE.CylinderGeometry(.72,.72,.08,6);
+    const tileMat=new THREE.MeshStandardMaterial({color:0x182b48,metalness:.35,roughness:.7});
+    const gridMat=new THREE.LineBasicMaterial({color:0x42749b,transparent:true,opacity:.8});
+    const select=document.querySelector('#type'), status=document.querySelector('#status');
+    const query=new URLSearchParams(location.search);
+
+    const manifest=await (await fetch('assets/models/meshes/index.json')).json();
+    const mcIds=Object.keys(manifest).filter(id=>!id.startsWith('_')).sort();
+    document.querySelector('#game-count').textContent='игровые: '+GAME_TYPES.length;
+    document.querySelector('#mc-count').textContent='Minecraft: '+mcIds.length;
+    const gameGroup=document.createElement('optgroup'); gameGroup.label='ИГРОВЫЕ МОДЕЛИ ('+GAME_TYPES.length+')';
+    GAME_TYPES.forEach(id=>gameGroup.append(new Option(id,'game:'+id))); select.append(gameGroup);
+    const mcGroup=document.createElement('optgroup'); mcGroup.label='MINECRAFT-МОДЕЛИ ('+mcIds.length+')';
+    mcIds.forEach(id=>mcGroup.append(new Option(id,'mc:'+id))); select.append(mcGroup);
+
+    await loadExternalModels(); await loadSchemModels(); primeVoxelSource(voxels);
+
+    const recordCache=new Map(); let buildToken=0;
+    async function minecraftModel(id){
+      let rec=recordCache.get(id); const cfg0=manifest[id], cfg=typeof cfg0==='string'?{file:cfg0}:cfg0;
+      if(!rec){const res=await fetch('assets/models/meshes/'+cfg.file);if(!res.ok)throw new Error(cfg.file+' → HTTP '+res.status);rec=await res.json();recordCache.set(id,rec)}
+      return createSchemGroup(rec,id,cfg,null);
+    }
+    function floorModel(model){if(model.userData?.canonical?.centerXZ)return model;model.updateMatrixWorld(true);const box=new THREE.Box3().setFromObject(model),wrapper=new THREE.Group();if(!box.isEmpty()){const center=box.getCenter(new THREE.Vector3());model.position.x-=center.x;model.position.y-=box.min.y;model.position.z-=center.z}wrapper.add(model);wrapper.userData.canonical={nose:'-Z',up:'+Y',centerXZ:[0,0],floorY:0};return wrapper}
+    async function sourceModel(value,team){const [kind,id]=value.split(':');return floorModel(kind==='mc'?await minecraftModel(id):createShipModel(id,team))}
+    function dispose(object){object.traverse(o=>{if(o.isMesh&&o.geometry&&!o.userData.keepGeometry)o.geometry.dispose();if(o.isSprite&&o.material?.map)o.material.map.dispose();if(o.isSprite&&o.material)o.material.dispose()})}
+    function clear(){while(root.children.length){const o=root.children.pop();dispose(o)}}
+    function label(text,x,z){
+      const c=document.createElement('canvas');c.width=192;c.height=64;const g=c.getContext('2d');g.font='900 28px ui-monospace';g.textAlign='center';g.fillStyle='#d8ecff';g.fillText(text,96,38);
+      const tex=new THREE.CanvasTexture(c);tex.colorSpace=THREE.SRGBColorSpace;const s=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,transparent:true,depthTest:false}));s.position.set(x,.78,z);s.scale.set(.75,.25,1);root.add(s);
+    }
+    async function rebuild(){
+      const token=++buildToken; clear(); status.textContent='загрузка '+select.value+'…';
+      const requestedRaw=query.get('f'),requested=requestedRaw===null?NaN:Number(requestedRaw),facings=Number.isInteger(requested)&&requested>=0&&requested<6?[requested]:[0,1,2,3,4,5];
+      try{
+        for(const f of facings){
+          const [dq,dr]=DIR_DELTAS[f],p=facings.length===1?{x:0,z:0}:axialToWorld(dq,dr,1.75);
+          const tile=new THREE.Mesh(tileGeo,tileMat);tile.userData.keepGeometry=true;tile.position.set(p.x,0,p.z);root.add(tile);
+          const edges=new THREE.LineSegments(new THREE.EdgesGeometry(tileGeo),gridMat);edges.position.copy(tile.position);root.add(edges);
+          const ship=await sourceModel(select.value,f<3?'A':'B');if(token!==buildToken){dispose(ship);return}ship.scale.setScalar(1.25);ship.rotation.y=facingRotY(f);ship.position.set(p.x,.08,p.z);root.add(ship);
+          const d=directionOffset(f,1,.72),arrow=new THREE.ArrowHelper(new THREE.Vector3(d.x,0,d.z).normalize(),new THREE.Vector3(p.x,.12,p.z),.72,0x71eea0,.18,.1);root.add(arrow);label(String(f),p.x,p.z);
+        }
+        const [kind,id]=select.value.split(':');status.textContent=(kind==='mc'?'Minecraft':'игровой источник')+' · '+id+' · Y: '+[0,1,2,3,4,5].map(facingDegrees).join('°, ')+'° · nose −Z / up +Y / floor 0';history.replaceState(null,'','?model='+encodeURIComponent(select.value));
+      }catch(e){status.textContent='ОШИБКА: '+e.message;console.error(e)}
+    }
+    function step(delta){const options=[...select.options],i=Math.max(0,options.findIndex(o=>o.value===select.value));select.value=options[(i+delta+options.length)%options.length].value;rebuild()}
+    select.addEventListener('change',rebuild);document.querySelector('#prev').onclick=()=>step(-1);document.querySelector('#next').onclick=()=>step(1);
+    const initial=query.get('model');if(initial&&[...select.options].some(o=>o.value===initial))select.value=initial;await rebuild();
+
+    const orbit={theta:Number(query.get('theta'))||0,phi:Number(query.get('phi'))||.3,dist:Number(query.get('dist'))||10.5};let drag=null;
+    function cameraPose(){camera.position.set(orbit.dist*Math.sin(orbit.phi)*Math.sin(orbit.theta),orbit.dist*Math.cos(orbit.phi),orbit.dist*Math.sin(orbit.phi)*Math.cos(orbit.theta));camera.lookAt(0,0,0)}cameraPose();
+    renderer.domElement.addEventListener('contextmenu',e=>e.preventDefault());renderer.domElement.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,b:e.button}});addEventListener('pointerup',()=>drag=null);addEventListener('pointermove',e=>{if(!drag||drag.b!==2)return;orbit.theta-=(e.clientX-drag.x)*.006;orbit.phi=Math.max(.18,Math.min(1.45,orbit.phi-(e.clientY-drag.y)*.005));drag.x=e.clientX;drag.y=e.clientY;cameraPose()});addEventListener('wheel',e=>{orbit.dist=Math.max(4.5,Math.min(18,orbit.dist*(1+Math.sign(e.deltaY)*.09)));cameraPose()},{passive:true});addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+    window.__orientationQA={gameTypes:GAME_TYPES,minecraftIds:mcIds,manifest,scene,camera,renderer};(function frame(){requestAnimationFrame(frame);renderer.render(scene,camera)})();
+  </script>
+</body>
+</html>

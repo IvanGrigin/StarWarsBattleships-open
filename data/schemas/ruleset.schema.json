@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ruleset.schema.json",
+  "title": "Параметры правил (game.json, ruleset v3)",
+  "description": "Глобальные числа правил v3 (docs/contracts/core-api.md §4, §8).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ability_friendly_fire_default",
+    "activation_timeout_seconds",
+    "attack_cost",
+    "attacks_per_activation",
+    "charge_full_if_unused",
+    "charge_round_reset",
+    "combat_attacker_dice",
+    "combat_defender_dice",
+    "combat_defender_flat_bonus",
+    "draft_budget",
+    "fleet_size",
+    "initial_charges",
+    "max_charges",
+    "max_group2_per_seat",
+    "max_same_type_group1_per_seat",
+    "move_cost",
+    "omnidirectional_movement",
+    "rotate_cost",
+    "round_limit",
+    "ruleset_id",
+    "schema_version"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "ruleset_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Идентификатор набора правил, например \"v3\"."
+    },
+    "initial_charges": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "max_charges": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "move_cost": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rotate_cost": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "attack_cost": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "attacks_per_activation": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "fleet_size": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "draft_budget": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "max_group2_per_seat": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "max_same_type_group1_per_seat": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "round_limit": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "activation_timeout_seconds": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Сетевой таймер активации в секундах; по истечении сервер выполняет EndActivation (ADR-013 D11). 0 = таймер отключён (прототип/offline). Серверная часть — M5."
+    },
+    "ability_friendly_fire_default": {
+      "type": "boolean",
+      "description": "Политика дружественного огня по умолчанию для способностей, не закрепивших её явно (ADR-013 D5/D6 закрепляют true явно)."
+    },
+    "combat_attacker_dice": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3,
+      "description": "Сколько d6 бросает атакующий в бою (v3.1: 2)"
+    },
+    "combat_defender_dice": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3,
+      "description": "Сколько d6 бросает защищающийся (v3.1: 1)"
+    },
+    "combat_defender_flat_bonus": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3,
+      "description": "Плоский бонус к силе защищающегося поверх кубиков и сектора (v3.1: +1)"
+    },
+    "omnidirectional_movement": {
+      "type": "boolean",
+      "description": "v3.4: движение в любую сторону за move_cost (иначе только вперёд)"
+    },
+    "charge_round_reset": {
+      "type": "string",
+      "enum": [
+        "half_up",
+        "none"
+      ],
+      "description": "v3.5: перезапись зарядов в конце раунда — half_up = ceil(max/2)"
+    },
+    "charge_full_if_unused": {
+      "type": "boolean",
+      "description": "v3.5: корабль, не потративший зарядов за раунд, получает полный максимум"
+    }
+  }
+}

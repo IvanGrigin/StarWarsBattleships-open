@@ -1,0 +1,60 @@
+{
+ "ships": {
+  "awing_rz1": {
+   "F": 1
+  },
+  "bwing": {
+   "F": -2,
+   "sides": -1,
+   "hp": -2
+  },
+  "ghost": {
+   "F": -2,
+   "sides": -2,
+   "hp": -2,
+   "shield": -1
+  },
+  "gr75_transport": {
+   "F": 1
+  },
+  "hounds_tooth": {
+   "F": -1
+  },
+  "interdictor": {
+   "F": -1
+  },
+  "mc80_home_one": {
+   "F": -1,
+   "sides": -2,
+   "shield": -1
+  },
+  "millennium_falcon": {
+   "F": -2
+  },
+  "punishing_one": {
+   "F": -1
+  },
+  "slave_1": {
+   "F": -2
+  },
+  "star_destroyer": {
+   "F": -2,
+   "rear": -1
+  },
+  "tie_advanced_x1": {
+   "F": -2
+  },
+  "tie_bomber": {
+   "F": -1
+  },
+  "tie_fighter": {
+   "hp": -1
+  },
+  "ywing_btla4": {
+   "hp": -1
+  }
+ },
+ "heroes": {
+  "luke": 0
+ }
+}

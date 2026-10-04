@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "phantom",
+  "display_name": "Фантом",
+  "description": "Это маленький истребитель который по нормальному присоединен к хвосту Призрака.",
+  "group": 0,
+  "draftable": false,
+  "draft_cost": 3,
+  "max_hp": 2,
+  "max_shield": 0,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": { "count": 1, "sides": 6 },
+  "arc_modifiers": [2, 1, 0, -1, 0, 1],
+  "abilities": []
+}

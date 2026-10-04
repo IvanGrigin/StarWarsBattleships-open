@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SCENE3D — тест 3D-доски (37 гексов + 6 кораблей)</title>
+  <link rel="stylesheet" href="scene3d.css">
+  <style>
+    html, body { margin: 0; height: 100%; background: #04060c; color: #cfe0ff;
+      font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    #stage { position: absolute; inset: 0; }
+    #toolbar {
+      position: absolute; top: 10px; left: 10px; z-index: 20;
+      display: flex; flex-wrap: wrap; gap: 6px; max-width: 70vw;
+      padding: 8px; border-radius: 10px;
+      background: rgba(4, 8, 16, 0.82); border: 1px solid rgba(86, 211, 235, 0.25);
+    }
+    #toolbar button {
+      font: 700 11px ui-monospace, monospace; letter-spacing: 0.06em;
+      color: #bfe3ff; background: rgba(23, 42, 70, 0.85);
+      border: 1px solid rgba(86, 211, 235, 0.4); border-radius: 6px;
+      padding: 5px 9px; cursor: pointer;
+    }
+    #toolbar button:hover { background: rgba(38, 70, 110, 0.9); }
+    #status {
+      position: absolute; left: 10px; bottom: 10px; z-index: 20;
+      padding: 6px 10px; border-radius: 8px; max-width: 78vw;
+      background: rgba(4, 8, 16, 0.82); border: 1px solid rgba(86, 211, 235, 0.18);
+      color: #9fc6e8;
+    }
+    #help {
+      position: absolute; right: 10px; top: 10px; z-index: 20; text-align: right;
+      color: rgba(159, 198, 232, 0.75); font-size: 11px;
+      text-shadow: 0 1px 3px #01040a;
+    }
+  </style>
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div id="stage"></div>
+  <div id="toolbar">
+    <button id="btn-type-a">A: сменить типы ⇒</button>
+    <button id="btn-type-b">B: сменить типы ⇒</button>
+    <button id="btn-phase">Фаза: активация ⇄ выбор</button>
+    <button id="btn-hit">hit по случайному</button>
+    <button id="btn-attack">Атака: A2 → B2</button>
+    <button id="btn-close">Флот B ближе ⇄ дальше</button>
+  </div>
+  <div id="help">
+    ПКМ-drag — орбита · колесо — зум<br>
+    ЛКМ по клетке — взрыв / полёт<br>
+    серые стрелки у носа — повороты (клик)
+  </div>
+  <div id="status">инициализация…</div>
+
+  <script type="module">
+    import { Board3D } from './board3d.js';
+    import { createShipModel } from './models3d.js';
+
+    const statusEl = document.getElementById('status');
+    const status = (msg) => { statusEl.textContent = msg; };
+
+    const ALL_TYPES = ['tie_fighter', 'tie_advanced_x1', 'xwing_t65', 'eta2_actis',
+      'millennium_falcon', 'star_destroyer', 'death_star_1', 'slave_1',
+      'ghost', 'phantom', 'vulture_droid'];
+    const MAX_HP = { tie_fighter: 4, tie_advanced_x1: 6, xwing_t65: 4, eta2_actis: 5,
+      millennium_falcon: 8, star_destroyer: 8, death_star_1: 11, slave_1: 6,
+      ghost: 6, phantom: 2, vulture_droid: 4 };
+    const A_TYPES = ['xwing_t65', 'millennium_falcon', 'ghost'];
+    const B_TYPES = ['tie_fighter', 'tie_advanced_x1', 'slave_1'];
+
+    let typeShiftA = 0, typeShiftB = 0;
+    let closeB = false;
+    let beginPhase = false;      // false = выбран A2 (кольцо выбора + стрелки), true = фаза выбора
+    let hpExtra = { B1: -3, A3: -2, B3: -1 }; // повреждения для проверки цвета пипсов
+
+    function mkShip(id, seat, team, type, q, r, facing) {
+      return {
+        id, type_id: type, seat, team, q, r, facing,
+        hp: Math.max(1, MAX_HP[type] + (hpExtra[id] || 0)),
+        shield: 0, charges: 3, activated: false, attack_used: false, alive: true
+      };
+    }
+
+    // pin задания: A1 [(0,3),(0,2),(1,2)], B1 [(0,-3),(0,-2),(-1,-2)]
+    function fakeState() {
+      const bPos = closeB
+        ? [[0, -1], [1, -1], [-1, -1]]
+        : [[0, -3], [0, -2], [-1, -2]];
+      const ships = [
+        mkShip('A1', 'A1', 'A', A_TYPES[typeShiftA % A_TYPES.length], 0, 3, 0),
+        mkShip('A2', 'A2', 'A', A_TYPES[(typeShiftA + 1) % A_TYPES.length], 0, 2, 0),
+        mkShip('A3', 'A3', 'A', A_TYPES[(typeShiftA + 2) % A_TYPES.length], 1, 2, 0),
+        mkShip('B1', 'B1', 'B', B_TYPES[typeShiftB % B_TYPES.length], bPos[0][0], bPos[0][1], 3),
+        mkShip('B2', 'B2', 'B', B_TYPES[(typeShiftB + 1) % B_TYPES.length], bPos[1][0], bPos[1][1], 3),
+        mkShip('B3', 'B3', 'B', B_TYPES[(typeShiftB + 2) % B_TYPES.length], bPos[2][0], bPos[2][1], 3)
+      ];
+      return {
+        version: 1, phase: 'activation', round: 1, round_limit: 60,
+        active_seat: 'A1',
+        active_ship: beginPhase ? null : 'A2',
+        winner: null, ships
+      };
+    }
+
+    function fakeLegal() {
+      if (beginPhase) {
+        return [
+          { type: 'BeginActivation', ship_instance_id: 'A1' },
+          { type: 'BeginActivation', ship_instance_id: 'A2' },
+          { type: 'BeginActivation', ship_instance_id: 'A3' }
+        ];
+      }
+      return [
+        { type: 'Move', dir: 0 },  // (0,1)  — пара голубых клеток
+        { type: 'Move', dir: 1 },  // (1,1)
+        { type: 'RotateLeft' },
+        { type: 'RotateRight' },
+        { type: 'DeclareAttack', target_ship_instance_id: 'B2' },
+        { type: 'EndActivation' }
+      ];
+    }
+
+    // Дым-проверка models3d: все 11 моделей строятся без исключений.
+    let built = 0;
+    try {
+      for (const t of ALL_TYPES) {
+        const g = createShipModel(t, 'A');
+        let meshes = 0;
+        g.traverse((o) => { if (o.isMesh) meshes++; });
+        if (meshes > 0) built++;
+      }
+    } catch (e) {
+      status('ОШИБКА models3d: ' + e.message);
+    }
+    if (built === ALL_TYPES.length) {
+      status('models3d OK: 11/11 моделей · сцена готова');
+    }
+
+    const DIR_DELTAS = [[0, -1], [1, -1], [1, 0], [0, 1], [-1, 1], [-1, 0]];
+    let curState = fakeState();
+    let curLegal = fakeLegal();
+
+    const board = Board3D.init(document.getElementById('stage'), {
+      cell: 1.0,
+      radius: 3,
+      onCellClick(cell) {
+        if (!cell) { status('клик мимо поля'); return; }
+        const ship = curState.ships.find((s) => s.id === curState.active_ship);
+        const mv = ship && curLegal.find((c) => {
+          if (c.type !== 'Move') return false;
+          const d = DIR_DELTAS[c.dir];
+          return ship.q + d[0] === cell.q && ship.r + d[1] === cell.r;
+        });
+        if (mv) {
+          // легальный Move — корабль летит в клетку
+          ship.q = cell.q; ship.r = cell.r;
+          Board3D.setState(curState);
+          status('Move dir ' + mv.dir + ' → (' + cell.q + ',' + cell.r + ')');
+          return;
+        }
+        // эффект взрыва по клику (задание)
+        Board3D.spawnHit(cell.q, cell.r, 'boom');
+        status('boom → (' + cell.q + ',' + cell.r + ')');
+      },
+      onCellHover(cell) {
+        if (cell) statusEl.textContent = 'hover → (' + cell.q + ',' + cell.r + ')';
+      },
+      onCommand(cmd) {
+        const ship = curState.ships.find((s) => s.id === curState.active_ship);
+        if (ship && (cmd.type === 'RotateLeft' || cmd.type === 'RotateRight')) {
+          ship.facing = (ship.facing + (cmd.type === 'RotateRight' ? 1 : 5)) % 6;
+          Board3D.setState(curState);
+          status(cmd.type + ' → facing ' + ship.facing);
+        }
+      }
+    });
+
+    Board3D.setState(curState);
+    Board3D.setLegal(curLegal);
+
+    // ---------- кнопки ----------
+
+    document.getElementById('btn-type-a').addEventListener('click', () => {
+      typeShiftA++;
+      curState = fakeState(); curLegal = fakeLegal();
+      Board3D.setState(curState); Board3D.setLegal(curLegal);
+      status('флот A: ' + curState.ships.filter((s) => s.team === 'A').map((s) => s.type_id).join(', '));
+    });
+    document.getElementById('btn-type-b').addEventListener('click', () => {
+      typeShiftB++;
+      curState = fakeState(); curLegal = fakeLegal();
+      Board3D.setState(curState); Board3D.setLegal(curLegal);
+      status('флот B: ' + curState.ships.filter((s) => s.team === 'B').map((s) => s.type_id).join(', '));
+    });
+    document.getElementById('btn-phase').addEventListener('click', () => {
+      beginPhase = !beginPhase;
+      curState = fakeState(); curLegal = fakeLegal();
+      Board3D.setState(curState); Board3D.setLegal(curLegal);
+      status(beginPhase
+        ? 'Фаза выбора: зелёные кольца на неактивированных, стрелки скрыты'
+        : 'Фаза активации A2: жёлтое кольцо + стрелка курса + курсоры поворота');
+    });
+    document.getElementById('btn-hit').addEventListener('click', () => {
+      const alive = curState.ships.filter((s) => s.alive);
+      const s = alive[Math.floor(Math.random() * alive.length)];
+      Board3D.spawnHit(s.q, s.r, 'hit');
+      status('hit → ' + s.id + ' (' + s.q + ',' + s.r + ')');
+    });
+    document.getElementById('btn-attack').addEventListener('click', () => {
+      const t = curState.ships.find((s) => s.id === 'B2');
+      if (!t || !t.alive) { status('B2 уничтожен — проверка пипсов/исчезновения'); return; }
+      Board3D.spawnHit(t.q, t.r, 'boom');
+      t.hp = Math.max(0, t.hp - 2);
+      if (t.hp === 0) t.alive = false;
+      Board3D.setState(curState);
+      status('A2 ⚡ B2: hp ' + t.hp + (t.alive ? '' : ' — уничтожен (модель и пипсы исчезнут)'));
+    });
+    document.getElementById('btn-close').addEventListener('click', () => {
+      closeB = !closeB;
+      curState = fakeState(); curLegal = fakeLegal();
+      Board3D.setState(curState); Board3D.setLegal(curLegal);
+      status(closeB
+        ? 'Флот B рядом: проверка оранжевых колец + бейджей бонуса атаки (дистанция ≤3)'
+        : 'Флот B вернулся на стартовые клетки');
+    });
+  </script>
+</body>
+</html>

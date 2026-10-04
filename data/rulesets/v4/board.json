@@ -1,0 +1,8 @@
+{
+  "schema_version": 2,
+  "radius": 4,
+  "cell_count": 61,
+  "orientation": "pointy_top",
+  "coordinate_system": "axial_qr",
+  "note": "61 клетка — как в исходных правилах Григиных («поле — 61 шестиугольник»). v3 играл на радиусе 3 (37 клеток) ради демо."
+}

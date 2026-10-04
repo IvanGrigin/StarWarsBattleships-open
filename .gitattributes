@@ -1,0 +1,2 @@
+# Historical snapshots are preserved byte-for-byte; do not normalize their whitespace.
+archive/pre-v0.4.1/** -whitespace

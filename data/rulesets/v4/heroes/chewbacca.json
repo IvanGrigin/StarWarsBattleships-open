@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "id": "chewbacca",
+  "display_name": "Чубакка",
+  "description": "Вуки-механик и второй пилот «Сокола тысячелетия».",
+  "faction": "rebels",
+  "era": "any",
+  "ability": {
+    "id": "field_repair",
+    "name": "Ремонт на коленке",
+    "text": "2 раза в игру: восстановите 1 HP или 1 щит своему кораблю в фазе восстановления.",
+    "kind": "active",
+    "trigger": "recovery_phase",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 2,
+    "effect_sequence": [
+      {
+        "op": "repair",
+        "params": {
+          "hp": 1,
+          "or_shield": 1,
+          "target": "own_ship"
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "wookiee_strength",
+    "name": "Сила вуки",
+    "text": "Корабли повстанцев получают +2 к броску абордажа — и при атаке, и при защите.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "rebels",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "boarding_bonus",
+        "params": {
+          "value": 2
+        }
+      }
+    ]
+  },
+  "draft_cost": 2
+}

@@ -1,0 +1,29 @@
+name: AI commit policy
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-new-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Validate newly introduced commit messages
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PUSH_BASE: ${{ github.event.before }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            base="$PR_BASE"
+          else
+            base="$PUSH_BASE"
+          fi
+          if [ "$base" = "0000000000000000000000000000000000000000" ]; then
+            base=$(git rev-list --max-parents=0 HEAD | tail -1)
+          fi
+          python3 tools/check_commit_message.py --range "$base..HEAD"

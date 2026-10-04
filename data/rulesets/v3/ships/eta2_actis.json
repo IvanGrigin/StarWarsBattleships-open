@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "eta2_actis",
+  "display_name": "Eta-2 Actis",
+  "description": "Корабль джедаев Эта-2 класса Актис. На таком корабле летал Оби Ван Кеноби с Энакином Скайуокер на поле боя над Корусантом.",
+  "group": 1,
+  "draftable": true,
+  "draft_cost": 6,
+  "max_hp": 5,
+  "max_shield": 0,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": { "count": 1, "sides": 6 },
+  "arc_modifiers": [2, 1, 1, 0, 1, 1],
+  "abilities": []
+}

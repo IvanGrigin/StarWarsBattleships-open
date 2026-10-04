@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Звёздные войны: эпохи и фракции</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css?v=cine1">
+<script src="components/ship-hex-token.js?v=indicators1"></script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<header id="top">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"><i></i></span>
+    <span class="brand-copy"><span class="brand-kicker">STAR WARS · TACTICAL COMMAND</span><span class="brand-title">ЭПОХИ И ФРАКЦИИ</span></span>
+    <span class="version-tag">V 0.5</span>
+  </div>
+  <div class="top-context"><span id="eraName"></span><span id="phaseInfo"></span></div>
+  <div class="topbtns">
+    <span id="patchInfo"></span>
+    <button id="btnMute" type="button" title="Звук (клавиша M)" aria-label="Звук"></button>
+    <button id="btnRules" type="button">Правила партии</button>
+    <button id="btnNew" type="button" class="primary">Меню</button>
+  </div>
+</header>
+
+<section id="menu" hidden aria-label="Главное меню">
+  <div class="menu-sky" aria-hidden="true"></div>
+  <div class="menu-wrap">
+    <div class="menu-hero">
+      <div class="menu-kicker">STAR WARS · TACTICAL COMMAND</div>
+      <h1>ЭПОХИ И<br>ФРАКЦИИ</h1>
+      <p class="menu-lead">Тактика на гексах: драфт героев и кораблей трёх эпох, бой секторами, гиперколодец у чёрной дыры.</p>
+      <div class="menu-actions">
+        <button type="button" id="menuContinue" class="menu-btn ghost" hidden>▶ Продолжить партию</button>
+        <button type="button" id="menuRules" class="menu-btn ghost">Правила</button>
+      </div>
+    </div>
+    <div class="menu-setup">
+      <div class="menu-step"><h3><span>1</span>Режим</h3><div class="mcards" id="mMode"></div></div>
+      <div class="menu-step"><h3><span>2</span>Эпоха</h3><div class="mcards three" id="mEra"></div></div>
+      <div class="menu-step"><h3><span>3</span>Место боя</h3><div class="mcards" id="mPlace"></div></div>
+      <div class="menu-step"><h3><span>4</span>Соперник</h3><div class="mchips" id="mOpp"></div><div class="mchips side" id="mSide"></div></div>
+      <button type="button" id="menuGo" class="menu-go">В БОЙ <kbd>Enter</kbd></button>
+    </div>
+  </div>
+</section>
+
+<section id="draft" hidden>
+  <div id="order"></div>
+  <div class="draft-rosters">
+    <aside class="roster A" id="rosterA"></aside>
+    <aside class="roster B" id="rosterB"></aside>
+  </div>
+  <div class="draft-main">
+    <div class="catalog" id="catalog">
+      <h2>Герои</h2><div class="cards" id="heroCards"></div>
+      <h2>Корабли</h2><div class="cards" id="shipCards"></div>
+    </div>
+    <section class="peek" id="peek" aria-live="polite"></section>
+  </div>
+</section>
+
+<section id="battle" hidden>
+  <aside class="fleets" id="fleets"></aside>
+  <div class="stage">
+    <canvas id="board"></canvas>
+    <div id="labels"></div>
+    <div id="mapHints" aria-label="Манёвры на карте"></div>
+    <div class="stage-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="stage-coordinate" aria-hidden="true"><b class="red">КРАСНЫЕ</b> <span>/</span> <b class="blue">СИНИЕ</b> · TACTICAL GRID</div>
+    <div id="banner"></div>
+    <div id="turnQueue" aria-label="Очередь ходов"></div>
+    <div id="mapTip" role="status" hidden></div>
+    <div id="wellBanner" role="alert" hidden></div>
+    <label class="angle" for="camAngle">Наклон <input type="range" id="camAngle" min="30" max="88" value="68"> <span id="camAngleV">68°</span></label>
+    <div id="lastlog" title="Последние события; полный журнал — в панели справа"></div>
+    <div id="actionBar" aria-label="Команды"><div id="cmdBox"></div></div>
+    <div id="victory" hidden></div>
+    <div id="cine" hidden aria-hidden="true"><i class="bar top"></i><i class="bar bottom"></i><div class="cine-card"><div class="cine-title"></div><div class="cine-sub"></div><div class="cine-skip">клик или Esc — пропустить</div></div></div>
+    <div id="replayBar" hidden><span id="replayRound">Повтор</span><button type="button" id="replayStop">■ Остановить</button></div>
+    <div class="stage-footer" aria-hidden="true"><span>HOLOMAP // BATTLESPACE</span><span>HOLO-NET · LIVE</span></div>
+  </div>
+  <aside class="actions">
+    <section class="box"><h4>Ход</h4><div id="guide"></div>
+      <div id="sectorReadout" class="sector-legend" aria-live="polite" aria-label="Шкала силы сторон корабля">
+        <span class="sector-legend-title">СИЛА ГРАНИ</span>
+        <span><i class="negative"></i>−</span><span><i class="zero"></i>0</span><span><i class="one"></i>+1</span><span><i class="two"></i>+2</span><span><i class="high"></i>+3…</span>
+      </div>
+    </section>
+    <section class="box"><h4>Выбрано <small>(клик по кораблю — только просмотр)</small></h4><div id="inspect"></div></section>
+    <details id="logBox"><summary>Журнал партии</summary><ol id="log"></ol></details>
+  </aside>
+</section>
+
+<dialog id="cardDlg"><div id="cardBody"></div><div class="dlgbtns"><button id="dlgClose" type="button">Закрыть</button><button id="dlgPick" type="button" class="primary">Взять</button></div></dialog>
+<dialog id="rulesDlg"><div class="rules" id="rulesBody"></div><div class="dlgbtns"><button id="rulesClose" type="button">Понятно</button></div></dialog>
+
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<script type="module" src="game.js?v=mute1"></script>
+</body>
+</html>

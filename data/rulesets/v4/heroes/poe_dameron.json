@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "id": "poe_dameron",
+  "display_name": "По Дэмерон",
+  "description": "Лучший пилот Сопротивления, командир «Чёрного звена».",
+  "faction": "resistance",
+  "era": "new_order",
+  "ability": {
+    "id": "best_pilot",
+    "name": "Лучший пилот флота",
+    "text": "Пассивно: ваш корабль может двигаться на 2 клетки по прямой за 1 заряд один раз в раунд.",
+    "kind": "passive",
+    "trigger": "always",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 0,
+    "effect_sequence": [
+      {
+        "op": "free_boost",
+        "params": {
+          "uses_per_round": 1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "black_squadron",
+    "name": "Чёрное звено",
+    "text": "Ваши корабли Сопротивления получают +1 к защите, пока стоят на соседних клетках друг с другом.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "resistance",
+      "min_ships": 2
+    },
+    "effects": [
+      {
+        "op": "adjacency_bonus",
+        "params": {
+          "defense": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 0
+}

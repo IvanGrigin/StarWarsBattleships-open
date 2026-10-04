@@ -1,0 +1,1810 @@
+{
+  "ruleset_id": "v3",
+  "die_sides": 6,
+  "arc_min": -2,
+  "arc_max": 7,
+  "outcomes_total": 36,
+  "rule": "strength = max(0, d6 + arc); attacker and defender each roll d6 (attacker first); higher strength wins, the loser suffers damage = strength difference; tie = no damage; shield = 0 (all damage to hull)",
+  "table": [
+    {
+      "arc_attacker": -2,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 14,
+        "tie": 8,
+        "defender_win": 14
+      },
+      "probabilities": {
+        "attacker_win": 0.388889,
+        "tie": 0.222222,
+        "defender_win": 0.388889
+      },
+      "expected_damage": {
+        "to_defender": 0.833333,
+        "to_attacker": 0.833333
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 6,
+        "defender_win": 20
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.166667,
+        "defender_win": 0.555556
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.388889
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 6,
+        "tie": 4,
+        "defender_win": 26
+      },
+      "probabilities": {
+        "attacker_win": 0.166667,
+        "tie": 0.111111,
+        "defender_win": 0.722222
+      },
+      "expected_damage": {
+        "to_defender": 0.277778,
+        "to_attacker": 2.111111
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 3,
+        "tie": 3,
+        "defender_win": 30
+      },
+      "probabilities": {
+        "attacker_win": 0.083333,
+        "tie": 0.083333,
+        "defender_win": 0.833333
+      },
+      "expected_damage": {
+        "to_defender": 0.111111,
+        "to_attacker": 2.944444
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 1,
+        "tie": 2,
+        "defender_win": 33
+      },
+      "probabilities": {
+        "attacker_win": 0.027778,
+        "tie": 0.055556,
+        "defender_win": 0.916667
+      },
+      "expected_damage": {
+        "to_defender": 0.027778,
+        "to_attacker": 3.861111
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 1,
+        "defender_win": 35
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.027778,
+        "defender_win": 0.972222
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 4.833333
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 5.833333
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 6.833333
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 7.833333
+      }
+    },
+    {
+      "arc_attacker": -2,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 8.833333
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 20,
+        "tie": 6,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.555556,
+        "tie": 0.166667,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.388889,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 5,
+        "defender_win": 21
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.138889,
+        "defender_win": 0.583333
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.555556
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 6,
+        "tie": 4,
+        "defender_win": 26
+      },
+      "probabilities": {
+        "attacker_win": 0.166667,
+        "tie": 0.111111,
+        "defender_win": 0.722222
+      },
+      "expected_damage": {
+        "to_defender": 0.277778,
+        "to_attacker": 2.277778
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 3,
+        "tie": 3,
+        "defender_win": 30
+      },
+      "probabilities": {
+        "attacker_win": 0.083333,
+        "tie": 0.083333,
+        "defender_win": 0.833333
+      },
+      "expected_damage": {
+        "to_defender": 0.111111,
+        "to_attacker": 3.111111
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 1,
+        "tie": 2,
+        "defender_win": 33
+      },
+      "probabilities": {
+        "attacker_win": 0.027778,
+        "tie": 0.055556,
+        "defender_win": 0.916667
+      },
+      "expected_damage": {
+        "to_defender": 0.027778,
+        "to_attacker": 4.027778
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 1,
+        "defender_win": 35
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.027778,
+        "defender_win": 0.972222
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 5.0
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 6.0
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 7.0
+      }
+    },
+    {
+      "arc_attacker": -1,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 8.0
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 26,
+        "tie": 4,
+        "defender_win": 6
+      },
+      "probabilities": {
+        "attacker_win": 0.722222,
+        "tie": 0.111111,
+        "defender_win": 0.166667
+      },
+      "expected_damage": {
+        "to_defender": 2.111111,
+        "to_attacker": 0.277778
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 21,
+        "tie": 5,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.583333,
+        "tie": 0.138889,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.555556,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 5,
+        "defender_win": 21
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.138889,
+        "defender_win": 0.583333
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.555556
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 6,
+        "tie": 4,
+        "defender_win": 26
+      },
+      "probabilities": {
+        "attacker_win": 0.166667,
+        "tie": 0.111111,
+        "defender_win": 0.722222
+      },
+      "expected_damage": {
+        "to_defender": 0.277778,
+        "to_attacker": 2.277778
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 3,
+        "tie": 3,
+        "defender_win": 30
+      },
+      "probabilities": {
+        "attacker_win": 0.083333,
+        "tie": 0.083333,
+        "defender_win": 0.833333
+      },
+      "expected_damage": {
+        "to_defender": 0.111111,
+        "to_attacker": 3.111111
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 1,
+        "tie": 2,
+        "defender_win": 33
+      },
+      "probabilities": {
+        "attacker_win": 0.027778,
+        "tie": 0.055556,
+        "defender_win": 0.916667
+      },
+      "expected_damage": {
+        "to_defender": 0.027778,
+        "to_attacker": 4.027778
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 1,
+        "defender_win": 35
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.027778,
+        "defender_win": 0.972222
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 5.0
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 6.0
+      }
+    },
+    {
+      "arc_attacker": 0,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 7.0
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 30,
+        "tie": 3,
+        "defender_win": 3
+      },
+      "probabilities": {
+        "attacker_win": 0.833333,
+        "tie": 0.083333,
+        "defender_win": 0.083333
+      },
+      "expected_damage": {
+        "to_defender": 2.944444,
+        "to_attacker": 0.111111
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 26,
+        "tie": 4,
+        "defender_win": 6
+      },
+      "probabilities": {
+        "attacker_win": 0.722222,
+        "tie": 0.111111,
+        "defender_win": 0.166667
+      },
+      "expected_damage": {
+        "to_defender": 2.277778,
+        "to_attacker": 0.277778
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 21,
+        "tie": 5,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.583333,
+        "tie": 0.138889,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.555556,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 5,
+        "defender_win": 21
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.138889,
+        "defender_win": 0.583333
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.555556
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 6,
+        "tie": 4,
+        "defender_win": 26
+      },
+      "probabilities": {
+        "attacker_win": 0.166667,
+        "tie": 0.111111,
+        "defender_win": 0.722222
+      },
+      "expected_damage": {
+        "to_defender": 0.277778,
+        "to_attacker": 2.277778
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 3,
+        "tie": 3,
+        "defender_win": 30
+      },
+      "probabilities": {
+        "attacker_win": 0.083333,
+        "tie": 0.083333,
+        "defender_win": 0.833333
+      },
+      "expected_damage": {
+        "to_defender": 0.111111,
+        "to_attacker": 3.111111
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 1,
+        "tie": 2,
+        "defender_win": 33
+      },
+      "probabilities": {
+        "attacker_win": 0.027778,
+        "tie": 0.055556,
+        "defender_win": 0.916667
+      },
+      "expected_damage": {
+        "to_defender": 0.027778,
+        "to_attacker": 4.027778
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 1,
+        "defender_win": 35
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.027778,
+        "defender_win": 0.972222
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 5.0
+      }
+    },
+    {
+      "arc_attacker": 1,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 0,
+        "defender_win": 36
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.0,
+        "defender_win": 1.0
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 6.0
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 33,
+        "tie": 2,
+        "defender_win": 1
+      },
+      "probabilities": {
+        "attacker_win": 0.916667,
+        "tie": 0.055556,
+        "defender_win": 0.027778
+      },
+      "expected_damage": {
+        "to_defender": 3.861111,
+        "to_attacker": 0.027778
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 30,
+        "tie": 3,
+        "defender_win": 3
+      },
+      "probabilities": {
+        "attacker_win": 0.833333,
+        "tie": 0.083333,
+        "defender_win": 0.083333
+      },
+      "expected_damage": {
+        "to_defender": 3.111111,
+        "to_attacker": 0.111111
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 26,
+        "tie": 4,
+        "defender_win": 6
+      },
+      "probabilities": {
+        "attacker_win": 0.722222,
+        "tie": 0.111111,
+        "defender_win": 0.166667
+      },
+      "expected_damage": {
+        "to_defender": 2.277778,
+        "to_attacker": 0.277778
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 21,
+        "tie": 5,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.583333,
+        "tie": 0.138889,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.555556,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 5,
+        "defender_win": 21
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.138889,
+        "defender_win": 0.583333
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.555556
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 6,
+        "tie": 4,
+        "defender_win": 26
+      },
+      "probabilities": {
+        "attacker_win": 0.166667,
+        "tie": 0.111111,
+        "defender_win": 0.722222
+      },
+      "expected_damage": {
+        "to_defender": 0.277778,
+        "to_attacker": 2.277778
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 3,
+        "tie": 3,
+        "defender_win": 30
+      },
+      "probabilities": {
+        "attacker_win": 0.083333,
+        "tie": 0.083333,
+        "defender_win": 0.833333
+      },
+      "expected_damage": {
+        "to_defender": 0.111111,
+        "to_attacker": 3.111111
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 1,
+        "tie": 2,
+        "defender_win": 33
+      },
+      "probabilities": {
+        "attacker_win": 0.027778,
+        "tie": 0.055556,
+        "defender_win": 0.916667
+      },
+      "expected_damage": {
+        "to_defender": 0.027778,
+        "to_attacker": 4.027778
+      }
+    },
+    {
+      "arc_attacker": 2,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 0,
+        "tie": 1,
+        "defender_win": 35
+      },
+      "probabilities": {
+        "attacker_win": 0.0,
+        "tie": 0.027778,
+        "defender_win": 0.972222
+      },
+      "expected_damage": {
+        "to_defender": 0.0,
+        "to_attacker": 5.0
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 35,
+        "tie": 1,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 0.972222,
+        "tie": 0.027778,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 4.833333,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 33,
+        "tie": 2,
+        "defender_win": 1
+      },
+      "probabilities": {
+        "attacker_win": 0.916667,
+        "tie": 0.055556,
+        "defender_win": 0.027778
+      },
+      "expected_damage": {
+        "to_defender": 4.027778,
+        "to_attacker": 0.027778
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 30,
+        "tie": 3,
+        "defender_win": 3
+      },
+      "probabilities": {
+        "attacker_win": 0.833333,
+        "tie": 0.083333,
+        "defender_win": 0.083333
+      },
+      "expected_damage": {
+        "to_defender": 3.111111,
+        "to_attacker": 0.111111
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 26,
+        "tie": 4,
+        "defender_win": 6
+      },
+      "probabilities": {
+        "attacker_win": 0.722222,
+        "tie": 0.111111,
+        "defender_win": 0.166667
+      },
+      "expected_damage": {
+        "to_defender": 2.277778,
+        "to_attacker": 0.277778
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 21,
+        "tie": 5,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.583333,
+        "tie": 0.138889,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.555556,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 5,
+        "defender_win": 21
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.138889,
+        "defender_win": 0.583333
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.555556
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 6,
+        "tie": 4,
+        "defender_win": 26
+      },
+      "probabilities": {
+        "attacker_win": 0.166667,
+        "tie": 0.111111,
+        "defender_win": 0.722222
+      },
+      "expected_damage": {
+        "to_defender": 0.277778,
+        "to_attacker": 2.277778
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 3,
+        "tie": 3,
+        "defender_win": 30
+      },
+      "probabilities": {
+        "attacker_win": 0.083333,
+        "tie": 0.083333,
+        "defender_win": 0.833333
+      },
+      "expected_damage": {
+        "to_defender": 0.111111,
+        "to_attacker": 3.111111
+      }
+    },
+    {
+      "arc_attacker": 3,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 1,
+        "tie": 2,
+        "defender_win": 33
+      },
+      "probabilities": {
+        "attacker_win": 0.027778,
+        "tie": 0.055556,
+        "defender_win": 0.916667
+      },
+      "expected_damage": {
+        "to_defender": 0.027778,
+        "to_attacker": 4.027778
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 5.833333,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 35,
+        "tie": 1,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 0.972222,
+        "tie": 0.027778,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 5.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 33,
+        "tie": 2,
+        "defender_win": 1
+      },
+      "probabilities": {
+        "attacker_win": 0.916667,
+        "tie": 0.055556,
+        "defender_win": 0.027778
+      },
+      "expected_damage": {
+        "to_defender": 4.027778,
+        "to_attacker": 0.027778
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 30,
+        "tie": 3,
+        "defender_win": 3
+      },
+      "probabilities": {
+        "attacker_win": 0.833333,
+        "tie": 0.083333,
+        "defender_win": 0.083333
+      },
+      "expected_damage": {
+        "to_defender": 3.111111,
+        "to_attacker": 0.111111
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 26,
+        "tie": 4,
+        "defender_win": 6
+      },
+      "probabilities": {
+        "attacker_win": 0.722222,
+        "tie": 0.111111,
+        "defender_win": 0.166667
+      },
+      "expected_damage": {
+        "to_defender": 2.277778,
+        "to_attacker": 0.277778
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 21,
+        "tie": 5,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.583333,
+        "tie": 0.138889,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.555556,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 5,
+        "defender_win": 21
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.138889,
+        "defender_win": 0.583333
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.555556
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 6,
+        "tie": 4,
+        "defender_win": 26
+      },
+      "probabilities": {
+        "attacker_win": 0.166667,
+        "tie": 0.111111,
+        "defender_win": 0.722222
+      },
+      "expected_damage": {
+        "to_defender": 0.277778,
+        "to_attacker": 2.277778
+      }
+    },
+    {
+      "arc_attacker": 4,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 3,
+        "tie": 3,
+        "defender_win": 30
+      },
+      "probabilities": {
+        "attacker_win": 0.083333,
+        "tie": 0.083333,
+        "defender_win": 0.833333
+      },
+      "expected_damage": {
+        "to_defender": 0.111111,
+        "to_attacker": 3.111111
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 6.833333,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 6.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 35,
+        "tie": 1,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 0.972222,
+        "tie": 0.027778,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 5.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 33,
+        "tie": 2,
+        "defender_win": 1
+      },
+      "probabilities": {
+        "attacker_win": 0.916667,
+        "tie": 0.055556,
+        "defender_win": 0.027778
+      },
+      "expected_damage": {
+        "to_defender": 4.027778,
+        "to_attacker": 0.027778
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 30,
+        "tie": 3,
+        "defender_win": 3
+      },
+      "probabilities": {
+        "attacker_win": 0.833333,
+        "tie": 0.083333,
+        "defender_win": 0.083333
+      },
+      "expected_damage": {
+        "to_defender": 3.111111,
+        "to_attacker": 0.111111
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 26,
+        "tie": 4,
+        "defender_win": 6
+      },
+      "probabilities": {
+        "attacker_win": 0.722222,
+        "tie": 0.111111,
+        "defender_win": 0.166667
+      },
+      "expected_damage": {
+        "to_defender": 2.277778,
+        "to_attacker": 0.277778
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 21,
+        "tie": 5,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.583333,
+        "tie": 0.138889,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.555556,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 5,
+        "defender_win": 21
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.138889,
+        "defender_win": 0.583333
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.555556
+      }
+    },
+    {
+      "arc_attacker": 5,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 6,
+        "tie": 4,
+        "defender_win": 26
+      },
+      "probabilities": {
+        "attacker_win": 0.166667,
+        "tie": 0.111111,
+        "defender_win": 0.722222
+      },
+      "expected_damage": {
+        "to_defender": 0.277778,
+        "to_attacker": 2.277778
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 7.833333,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 7.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 6.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 35,
+        "tie": 1,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 0.972222,
+        "tie": 0.027778,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 5.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 33,
+        "tie": 2,
+        "defender_win": 1
+      },
+      "probabilities": {
+        "attacker_win": 0.916667,
+        "tie": 0.055556,
+        "defender_win": 0.027778
+      },
+      "expected_damage": {
+        "to_defender": 4.027778,
+        "to_attacker": 0.027778
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 30,
+        "tie": 3,
+        "defender_win": 3
+      },
+      "probabilities": {
+        "attacker_win": 0.833333,
+        "tie": 0.083333,
+        "defender_win": 0.083333
+      },
+      "expected_damage": {
+        "to_defender": 3.111111,
+        "to_attacker": 0.111111
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 26,
+        "tie": 4,
+        "defender_win": 6
+      },
+      "probabilities": {
+        "attacker_win": 0.722222,
+        "tie": 0.111111,
+        "defender_win": 0.166667
+      },
+      "expected_damage": {
+        "to_defender": 2.277778,
+        "to_attacker": 0.277778
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 21,
+        "tie": 5,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.583333,
+        "tie": 0.138889,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.555556,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    },
+    {
+      "arc_attacker": 6,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 10,
+        "tie": 5,
+        "defender_win": 21
+      },
+      "probabilities": {
+        "attacker_win": 0.277778,
+        "tie": 0.138889,
+        "defender_win": 0.583333
+      },
+      "expected_damage": {
+        "to_defender": 0.555556,
+        "to_attacker": 1.555556
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": -2,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 8.833333,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": -1,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 8.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": 0,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 7.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": 1,
+      "counts": {
+        "attacker_win": 36,
+        "tie": 0,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 1.0,
+        "tie": 0.0,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 6.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": 2,
+      "counts": {
+        "attacker_win": 35,
+        "tie": 1,
+        "defender_win": 0
+      },
+      "probabilities": {
+        "attacker_win": 0.972222,
+        "tie": 0.027778,
+        "defender_win": 0.0
+      },
+      "expected_damage": {
+        "to_defender": 5.0,
+        "to_attacker": 0.0
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": 3,
+      "counts": {
+        "attacker_win": 33,
+        "tie": 2,
+        "defender_win": 1
+      },
+      "probabilities": {
+        "attacker_win": 0.916667,
+        "tie": 0.055556,
+        "defender_win": 0.027778
+      },
+      "expected_damage": {
+        "to_defender": 4.027778,
+        "to_attacker": 0.027778
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": 4,
+      "counts": {
+        "attacker_win": 30,
+        "tie": 3,
+        "defender_win": 3
+      },
+      "probabilities": {
+        "attacker_win": 0.833333,
+        "tie": 0.083333,
+        "defender_win": 0.083333
+      },
+      "expected_damage": {
+        "to_defender": 3.111111,
+        "to_attacker": 0.111111
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": 5,
+      "counts": {
+        "attacker_win": 26,
+        "tie": 4,
+        "defender_win": 6
+      },
+      "probabilities": {
+        "attacker_win": 0.722222,
+        "tie": 0.111111,
+        "defender_win": 0.166667
+      },
+      "expected_damage": {
+        "to_defender": 2.277778,
+        "to_attacker": 0.277778
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": 6,
+      "counts": {
+        "attacker_win": 21,
+        "tie": 5,
+        "defender_win": 10
+      },
+      "probabilities": {
+        "attacker_win": 0.583333,
+        "tie": 0.138889,
+        "defender_win": 0.277778
+      },
+      "expected_damage": {
+        "to_defender": 1.555556,
+        "to_attacker": 0.555556
+      }
+    },
+    {
+      "arc_attacker": 7,
+      "arc_defender": 7,
+      "counts": {
+        "attacker_win": 15,
+        "tie": 6,
+        "defender_win": 15
+      },
+      "probabilities": {
+        "attacker_win": 0.416667,
+        "tie": 0.166667,
+        "defender_win": 0.416667
+      },
+      "expected_damage": {
+        "to_defender": 0.972222,
+        "to_attacker": 0.972222
+      }
+    }
+  ]
+}

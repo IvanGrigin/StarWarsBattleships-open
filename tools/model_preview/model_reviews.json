@@ -1,0 +1,5893 @@
+{
+ "note": "Оценки и повороты моделей из tools/model_preview. orientation — кватернион [x, y, z, w], применяется к корню модели; запечь в файл: tools/model_preview/patch_glb_rotation.py --quat.",
+ "reviews": {
+  "file:converted_glb/ghost_ship_obj.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:04:29.266Z",
+   "verdict": "dislike"
+  },
+  "file:converted_glb/ghost_ship_stl.glb": {
+   "comment": " нет текстов, также все размыто",
+   "file": "converted_glb/ghost_ship_stl.glb",
+   "source": "downloaded",
+   "updatedAt": "2026-09-17T14:27:21.994Z",
+   "verdict": "dislike"
+  },
+  "file:converted_glb/phantom_i_stl.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:04:31.756Z",
+   "verdict": "dislike"
+  },
+  "file:converted_glb/phantom_shuttle_stl.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:04:35.416Z",
+   "verdict": "dislike"
+  },
+  "file:converted_glb/vulture_flight_kit.glb": {
+   "comment": "Нет тексту тексту",
+   "file": "converted_glb/vulture_flight_kit.glb",
+   "source": "downloaded",
+   "updatedAt": "2026-09-17T14:27:50.406Z",
+   "verdict": "dislike"
+  },
+  "file:death_star_1_2k_opt.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.485Z",
+   "verdict": "like"
+  },
+  "file:death_star_1_joe_scalise.glb": {
+   "comment": "",
+   "file": "death_star_1_joe_scalise.glb",
+   "source": "downloaded",
+   "updatedAt": "2026-09-17T14:27:00.790Z",
+   "verdict": "dislike"
+  },
+  "file:eta2_actis_maxkamms_objaverse.glb": {
+   "comment": " нет текстов",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.484Z",
+   "verdict": "dislike"
+  },
+  "file:ghost_vcx100_jace1969_thing2663940/Ghost_Separate_STL.stl": {
+   "comment": "",
+   "orientation": [
+    1.1102230246251565e-16,
+    -0.7071067811865475,
+    -0.7071067811865476,
+    1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:28.162Z",
+   "verdict": "dislike"
+  },
+  "file:ghost_vcx100_jace1969_thing2663940/Rebells_Ghost_OBJ.obj": {
+   "comment": "",
+   "orientation": [
+    4.3297802811774677e-17,
+    -0.7071067811865474,
+    -0.7071067811865477,
+    -4.329780281177465e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:33.820Z",
+   "verdict": "dislike"
+  },
+  "file:ghost_vcx100_jace1969_thing2663940/Rebells_Ghost_STL_.stl": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:38.558Z",
+   "verdict": "dislike"
+  },
+  "file:ghost_vcx100_jace1969_thing2663940/Rebells_Ghost__Shuttle_OBJ.obj": {
+   "comment": "",
+   "orientation": [
+    1.1102230246251565e-16,
+    -0.7071067811865475,
+    -0.7071067811865476,
+    1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:43.779Z",
+   "verdict": "dislike"
+  },
+  "file:ghost_vcx100_jace1969_thing2663940/Rebells_Ghost__Shuttle_STL.stl": {
+   "comment": "",
+   "orientation": [
+    1.1102230246251565e-16,
+    -0.7071067811865475,
+    -0.7071067811865476,
+    1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:04:43.844Z",
+   "verdict": "dislike"
+  },
+  "file:ghost_vcx100_jace1969_thing2663940/Shuttle_STL.stl": {
+   "comment": "",
+   "orientation": [
+    -0.7071067811865476,
+    6.7724499650741e-17,
+    -1.5432010527429033e-16,
+    0.7071067811865475
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:04:49.201Z",
+   "verdict": "dislike"
+  },
+  "file:liked/a-wing_interceptor__A-wing.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:38:15.713Z",
+   "verdict": null
+  },
+  "file:liked/a-wing_interceptor__Supremacy_Astro_Interceptor.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -2.7755575615628914e-16,
+    -1
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:38:35.096Z",
+   "verdict": null
+  },
+  "file:liked/acclamator__Acclamator-Class_Assault_Ship.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:38:59.215Z",
+   "verdict": null
+  },
+  "file:liked/acclamator__Acclamator_Class_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:39:22.556Z",
+   "verdict": null
+  },
+  "file:liked/arquitens_cruiser__Arquitens-Class_Light_Cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:33:56.895Z",
+   "verdict": null
+  },
+  "file:liked/arquitens_cruiser__Crucero_Ligero_Imperial_Arquitens.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:15:01.027Z",
+   "verdict": null
+  },
+  "file:liked/b-wing_starfighter__A_SF-01_B-wing_starfighter.glb": {
+   "comment": "",
+   "orientation": [
+    0.5000000000000001,
+    -0.49999999999999983,
+    -0.5000000000000002,
+    -0.49999999999999994
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:40:09.655Z",
+   "verdict": null
+  },
+  "file:liked/b-wing_starfighter__B-Wing_W_I_P.glb": {
+   "comment": "",
+   "orientation": [
+    0.5000000000000001,
+    -0.49999999999999983,
+    -0.5000000000000001,
+    -0.4999999999999999
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:40:21.940Z",
+   "verdict": null
+  },
+  "file:liked/b-wing_starfighter__BTL-B_Y-Wing.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:40:35.457Z",
+   "verdict": null
+  },
+  "file:liked/cantwell_arrestor_cruiser__Cantwell-class_Arrestor_Cruiser_Star_Wars_ZEO.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:41:05.461Z",
+   "verdict": null
+  },
+  "file:liked/class_546_cruiser_gideon__Arquitens-class_546_Cruiser_Star_Wars_ZEO.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:34:06.662Z",
+   "verdict": null
+  },
+  "file:liked/core_ship_separatist__Star_Wars_Separatist_Core_Ship.glb": {
+   "comment": "",
+   "orientation": [
+    6.123233995736766e-17,
+    2.220446049250313e-16,
+    -1,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:34:19.559Z",
+   "verdict": null
+  },
+  "file:liked/cr90_corvette__CR120_Assault_Corvette.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:41:15.765Z",
+   "verdict": null
+  },
+  "file:liked/cr90_corvette__Lego_Star_Wars_CR90_Corvette.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:34:27.058Z",
+   "verdict": null
+  },
+  "file:liked/cr90_corvette__Star_Wars_CR90_Corvette.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:41:28.445Z",
+   "verdict": null
+  },
+  "file:liked/death_star_ii__Death_Star_-_Star_Wars.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:42:28.705Z",
+   "verdict": null
+  },
+  "file:liked/death_star_ii__Death_Star_II.glb": {
+   "comment": "",
+   "orientation": [
+    0.5,
+    0.5,
+    -0.4999999999999999,
+    0.5000000000000001
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:42:39.986Z",
+   "verdict": null
+  },
+  "file:liked/death_star_ii__R5-J2_Imperial_Astromech_Droid.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865477,
+    0,
+    0,
+    -0.7071067811865474
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:42:51.661Z",
+   "verdict": null
+  },
+  "file:liked/delta-7_aethersprite__Delta-7_Aethersprite-class_Light_Interceptor.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T10:02:15.536Z",
+   "verdict": null
+  },
+  "file:liked/delta-7_aethersprite__SWBF2_Custom_-_Anakin_s_Eta-2_Actis_Interceptor.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:43:03.538Z",
+   "verdict": null
+  },
+  "file:liked/delta-7b_aethersprite__Delta_7_jedi_interceptor.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:34:42.255Z",
+   "verdict": null
+  },
+  "file:liked/droid_tri-fighter__Droid_Tri_Fighter.glb": {
+   "comment": "",
+   "orientation": [
+    0.5000000000000001,
+    -0.49999999999999983,
+    -0.5000000000000002,
+    -0.49999999999999994
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:44:14.121Z",
+   "verdict": "like"
+  },
+  "file:liked/droid_tri-fighter__Trade_Federation_Droid_Tri-Fighter.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865475,
+    1.1102230246251565e-16,
+    -0.7071067811865476,
+    1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:34:57.054Z",
+   "verdict": null
+  },
+  "file:liked/droid_tri-fighter__tri_fighter_droid.glb": {
+   "comment": "",
+   "orientation": [
+    5.551115123125783e-17,
+    -0.7071067811865477,
+    0.7071067811865474,
+    -1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:07.976Z",
+   "verdict": null
+  },
+  "file:liked/eta-2_actis__Eta-2_Actis-class_Light_Interceptor.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:14.761Z",
+   "verdict": null
+  },
+  "file:liked/eta-2_actis__Eta-2_Actis_Jedi_Starfighter_-_Star_Wars.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:44:09.509Z",
+   "verdict": "like"
+  },
+  "file:liked/eta-2_actis__Star_Wars_Galaxies_-_Eta-2_Actis_Interceptor.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:19.379Z",
+   "verdict": null
+  },
+  "file:liked/executor_super_star_destroyer__Executor_Class_Super_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:24.436Z",
+   "verdict": null
+  },
+  "file:liked/executor_super_star_destroyer__Old_Executor.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:28.320Z",
+   "verdict": null
+  },
+  "file:liked/executor_super_star_destroyer__Star_Wars_-_Executor_Super_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:44:41.128Z",
+   "verdict": null
+  },
+  "file:liked/executor_super_star_destroyer__Star_Wars_Executor_Class_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:31.712Z",
+   "verdict": null
+  },
+  "file:liked/fang_fighter__High_Poly_X-Wing_Fighter.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:39.003Z",
+   "verdict": null
+  },
+  "file:liked/fang_fighter__Star_Wars_Tie_Fighter.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:44:53.278Z",
+   "verdict": null
+  },
+  "file:liked/first_order_tie_fighter__First_Order_Tie_Fighter.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865475,
+    0,
+    0,
+    0.7071067811865476
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:46.203Z",
+   "verdict": null
+  },
+  "file:liked/first_order_tie_fighter__TIE_sgf_Starfighter_Ground_Force.glb": {
+   "comment": "",
+   "orientation": [
+    5.551115123125783e-17,
+    -0.7071067811865477,
+    0.7071067811865474,
+    -1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:40:34.625Z",
+   "verdict": null
+  },
+  "file:liked/ghost_vcx-100__Phantom.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:44:59.938Z",
+   "verdict": null
+  },
+  "file:liked/ghost_vcx-100__Star_Wars_Rebels_Ghost_VCX-100_8K_Textures.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:35:51.421Z",
+   "verdict": null
+  },
+  "file:liked/gozanti_cruiser__Gozanti_Light_Cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:45:05.144Z",
+   "verdict": null
+  },
+  "file:liked/gozanti_cruiser__Imperial_Gozanti_Class_Cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:36:49.549Z",
+   "verdict": null
+  },
+  "file:liked/h-type_nubian_yacht__H_Type_Nubian_Yacht.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:45:16.861Z",
+   "verdict": null
+  },
+  "file:liked/hammerhead_corvette__Hammerhead_Corvette.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865475,
+    0.7071067811865476,
+    -4.329780281177466e-17,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:37:05.163Z",
+   "verdict": null
+  },
+  "file:liked/hyena_bomber__Hyena_Bomber.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:45:25.803Z",
+   "verdict": null
+  },
+  "file:liked/imperial_class_star_destroyer__Eclipse_Class_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:45:30.856Z",
+   "verdict": null
+  },
+  "file:liked/imperial_class_star_destroyer__Star_Wars_Imperial-Class_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:37:16.941Z",
+   "verdict": null
+  },
+  "file:liked/interdictor_cruiser__Star_Wars_The_Old_Republic_Leviathan_interdictor.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:40:43.012Z",
+   "verdict": "dislike"
+  },
+  "file:liked/laat_gunship__LAAT_i_Gunship.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:37:21.019Z",
+   "verdict": null
+  },
+  "file:liked/laat_gunship__Star_Wars_LAAT_i_Gunship.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:46:00.584Z",
+   "verdict": null
+  },
+  "file:liked/lambda_shuttle__3D_Imperial_Lambda_Shuttle_-_Star_Wars_model.glb": {
+   "comment": "",
+   "orientation": [
+    -0.49999999999999983,
+    0.5000000000000001,
+    -0.5000000000000001,
+    -0.4999999999999999
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:46:21.585Z",
+   "verdict": null
+  },
+  "file:liked/lambda_shuttle__Lambda_T-A_Shuttle.glb": {
+   "comment": "",
+   "orientation": [
+    0.5,
+    0.5,
+    -0.4999999999999999,
+    0.5000000000000001
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:46:40.591Z",
+   "verdict": null
+  },
+  "file:liked/lambda_shuttle__Star_Wars_Lambda_Shuttle.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:47:32.732Z",
+   "verdict": null
+  },
+  "file:liked/lucrehulk_battleship__Trade_Federation_Lucrehulk-class_battleship.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:40:46.024Z",
+   "verdict": null
+  },
+  "file:liked/malevolence__The_Malevolence_die-cast.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:38.379Z",
+   "verdict": null
+  },
+  "file:liked/malevolence__V-19_Torrent_Starfighter.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865477,
+    0,
+    0,
+    -0.7071067811865474
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:47:49.653Z",
+   "verdict": "dislike"
+  },
+  "file:liked/mc80_liberty_cruiser__mc80_liberty_class_star_cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:48:10.038Z",
+   "verdict": null
+  },
+  "file:liked/mc80_mon_calamari_cruiser__Mon_Calamari.glb": {
+   "comment": "",
+   "orientation": [
+    0.5000000000000001,
+    -0.49999999999999983,
+    -0.5000000000000002,
+    -0.49999999999999994
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:41:02.886Z",
+   "verdict": null
+  },
+  "file:liked/mc80_mon_calamari_cruiser__Star_Wars_MC80_Home_One_Type_Star_Cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:37:32.900Z",
+   "verdict": null
+  },
+  "file:liked/millennium_falcon_yt-1300__Millennium_Falcon_-_Star_Wars.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:41:08.137Z",
+   "verdict": null
+  },
+  "file:liked/millennium_falcon_yt-1300__Star_Wars_Galaxies_-_YT1300_Outside.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:37:45.529Z",
+   "verdict": "dislike"
+  },
+  "file:liked/munificent_frigate__Munificent-Class_Star_Frigate.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:37:52.745Z",
+   "verdict": null
+  },
+  "file:liked/munificent_frigate__Munificent_Class_Star_Frigate.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:48:18.138Z",
+   "verdict": null
+  },
+  "file:liked/munificent_frigate__Star_Wars_The_Clone_Wars_Munificent_S5-7_Style.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:48:56.042Z",
+   "verdict": null
+  },
+  "file:liked/n-1_starfighter__Naboo_N1_Starfighter.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:49:28.028Z",
+   "verdict": null
+  },
+  "file:liked/n-1_starfighter__The_Mandalorian_-_LEGO_N_1_Starfighter.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:49:39.664Z",
+   "verdict": null
+  },
+  "file:liked/n-1_starfighter__The_Mandalorian_-_LEGO_N_1_Starfighter__s1.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:49:50.597Z",
+   "verdict": null
+  },
+  "file:liked/n-1_starfighter__The_Mandalorian_-_LEGO_N_1_Starfighter__s2.glb": {
+   "comment": "",
+   "orientation": null,
+   "tags": [
+    "Не тот корабль"
+   ],
+   "updatedAt": "2026-09-18T08:50:01.699Z",
+   "verdict": "dislike"
+  },
+  "file:liked/naboo_royal_starship__Naboo_Cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:50:08.809Z",
+   "verdict": null
+  },
+  "file:liked/naboo_royal_starship__Naboo_Royal_Starship_J-type_327_Nubian.glb": {
+   "comment": "",
+   "orientation": [
+    2.7755575615628914e-16,
+    -1,
+    -2.465190328815662e-32,
+    -6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:50:45.501Z",
+   "verdict": null
+  },
+  "file:liked/naboo_royal_starship__Nubian_Royal_Starship.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:21:41.964Z",
+   "verdict": null
+  },
+  "file:liked/nebulon-b_frigate__Frigata_Nebulon_B_Frigate_Nebulon_B.glb": {
+   "comment": "",
+   "orientation": [
+    -0.7071067811865475,
+    0.7071067811865476,
+    -4.329780281177466e-17,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:50:55.383Z",
+   "verdict": null
+  },
+  "file:liked/nebulon-b_frigate__Star_Wars_Nebulon_B_Frigate.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -0.7071067811865475,
+    0.7071067811865476
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:02.299Z",
+   "verdict": null
+  },
+  "file:liked/nu-class_shuttle__Nu-Class_Shuttle_Starwars_CW.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865475,
+    0.7071067811865476,
+    -4.329780281177466e-17,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:16.143Z",
+   "verdict": null
+  },
+  "file:liked/nu-class_shuttle__Star_Wars_Nu_Class_Attack_Shuttle.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:41:22.627Z",
+   "verdict": null
+  },
+  "file:liked/nubian_royal_starship__Naboo_Royal_cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    -0.7071067811865474,
+    0,
+    -0.7071067811865477
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:50.303Z",
+   "verdict": "dislike"
+  },
+  "file:liked/pelta_frigate__Pelta-Class_Medical_Frigate.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:28.534Z",
+   "verdict": null
+  },
+  "file:liked/quasar_fire_carrier__Quasar_Fire_Class_Imperial_Light_Carrier.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:41:26.558Z",
+   "verdict": null
+  },
+  "file:liked/razor_crest__Razor_Crest_-_Star_Wars.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:51:34.459Z",
+   "verdict": null
+  },
+  "file:liked/razor_crest__Razor_Crest_Snow_Ice_Textured.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:21:49.596Z",
+   "verdict": null
+  },
+  "file:liked/razor_crest__Razor_Crest_Textured_and_animated.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:21:57.741Z",
+   "verdict": null
+  },
+  "file:liked/razor_crest__The_Mandalorian_Razor_Crest_Full_Interior.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:22:01.538Z",
+   "verdict": null
+  },
+  "file:liked/republic_cruiser_consular__Consular_cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:34.162Z",
+   "verdict": null
+  },
+  "file:liked/republic_cruiser_consular__Republic_Consular_Cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:41:34.072Z",
+   "verdict": null
+  },
+  "file:liked/republic_cruiser_consular__Star_Wars_Republic_Frigate.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:36.858Z",
+   "verdict": null
+  },
+  "file:liked/resurgent_star_destroyer__Low_poly_Resurgent_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    1.699538841808614e-32,
+    -1,
+    -2.7755575615628914e-16,
+    -6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:22:08.584Z",
+   "verdict": null
+  },
+  "file:liked/resurgent_star_destroyer__Resurgent-class-star-destroyer-low-poly.glb": {
+   "comment": "",
+   "orientation": [
+    -1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.359631073446891e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:22:15.755Z",
+   "verdict": null
+  },
+  "file:liked/resurgent_star_destroyer__Resurgent_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:39.845Z",
+   "verdict": null
+  },
+  "file:liked/rz-2_a-wing__Resistance_RZ-2_A-_Wing_Fighter.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:43.774Z",
+   "verdict": null
+  },
+  "file:liked/sith_infiltrator_scimitar__Darth_Maul_s_Sith_Infiltrator_Scimitar.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:22:20.289Z",
+   "verdict": null
+  },
+  "file:liked/slave_1_firespray__Slave1.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:22:25.474Z",
+   "verdict": null
+  },
+  "file:liked/soulless_one__Star_Wars_Galaxies_-_Belbullab-22.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    2.5922262378547223e-32,
+    -1,
+    -2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:22:39.156Z",
+   "verdict": null
+  },
+  "file:liked/supremacy_mega_star_destroyer__Low_Poly_Supremacy_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:53.616Z",
+   "verdict": null
+  },
+  "file:liked/t-6_jedi_shuttle__T-6_Shuttle.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:03.596Z",
+   "verdict": "dislike"
+  },
+  "file:liked/t-70_x-wing__Incom_T-70_X-Wing_-_Wings_Closed.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:06.488Z",
+   "verdict": null
+  },
+  "file:liked/t-70_x-wing__Incom_T-70_X-Wing_-_Wings_Open.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:12.189Z",
+   "verdict": null
+  },
+  "file:liked/t-70_x-wing__STAR_WARS_-_INCOM_T-70_X-WING_FIGHTER.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:22:46.024Z",
+   "verdict": null
+  },
+  "file:liked/t-85_x-wing__Incom-FreiTek_T-70_X-wing_-_Black_One.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:22:51.889Z",
+   "verdict": null
+  },
+  "file:liked/t-85_x-wing__RZ-3_A-Wing.glb": {
+   "comment": "",
+   "orientation": [
+    2.220446049250313e-16,
+    -1,
+    -2.220446049250313e-16,
+    4.930380657631324e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:48.003Z",
+   "verdict": null
+  },
+  "file:liked/tie_advanced_x1__Star_Wars_TIE_x1_Advanced_x1.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865475,
+    0.7071067811865476,
+    -4.3297802811774677e-17,
+    -4.329780281177465e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:23:10.254Z",
+   "verdict": null
+  },
+  "file:liked/tie_advanced_x1__TIE_Advanced_x1_Vader_s_TIE_-_Star_Wars.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:23:16.465Z",
+   "verdict": null
+  },
+  "file:liked/tie_bomber__Star_Wars_TIE_sa_Bomber.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:23:24.187Z",
+   "verdict": null
+  },
+  "file:liked/tie_bomber__Star_Wars_Tie_Bomber.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865476,
+    1.1102230246251565e-16,
+    0.7071067811865475,
+    -1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:23:35.497Z",
+   "verdict": null
+  },
+  "file:liked/tie_bomber__TIE_bomber.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865472,
+    -0.7071067811865478,
+    4.3297802811774646e-17,
+    -4.329780281177468e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:23:41.872Z",
+   "verdict": null
+  },
+  "file:liked/tie_dagger__Tie_Dagger.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:23:55.986Z",
+   "verdict": null
+  },
+  "file:liked/tie_defender__STAR_WARS_Tie_Defender.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:41:42.410Z",
+   "verdict": null
+  },
+  "file:liked/tie_defender__Star_Wars_TIE_d_Defender.glb": {
+   "comment": "",
+   "orientation": [
+    2.7755575615628914e-16,
+    -0.7071067811865477,
+    0.7071067811865475,
+    -2.7755575615628914e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:26:37.466Z",
+   "verdict": null
+  },
+  "file:liked/tie_defender__Tie-Defender_-_by_Gianmarco_Falerni.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:26:54.204Z",
+   "verdict": null
+  },
+  "file:liked/tie_defender__Tie-Defender_-_by_Leonardo_Russo.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:27:05.695Z",
+   "verdict": null
+  },
+  "file:liked/tie_defender_elite__Star_Wars_TIE_d_Defender_Elite.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:38:55.491Z",
+   "verdict": null
+  },
+  "file:liked/tie_fighter_imperial__3D_T.I.E_Fighter_-_Star_Wars_model.glb": {
+   "comment": "",
+   "orientation": [
+    -0.49999999999999983,
+    0.5000000000000001,
+    -0.5,
+    -0.49999999999999994
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:04.609Z",
+   "verdict": null
+  },
+  "file:liked/tie_fighter_imperial__TIE.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:27:21.548Z",
+   "verdict": null
+  },
+  "file:liked/tie_fighter_imperial__TIE_Fighter.glb": {
+   "comment": "",
+   "orientation": [
+    0.5,
+    0.4999999999999999,
+    -0.5,
+    0.5000000000000001
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:28:15.608Z",
+   "verdict": null
+  },
+  "file:liked/tie_interceptor__Star_Wars_TIE_in_Interceptor.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -0.7071067811865477,
+    -0.7071067811865474
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:28:22.900Z",
+   "verdict": null
+  },
+  "file:liked/tie_interceptor__Tie-Interceptor_-_by_Tommaso_Incecchi.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -0.7071067811865477,
+    -0.7071067811865474
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:30:02.262Z",
+   "verdict": null
+  },
+  "file:liked/tie_rb_brute__Star_Wars_TIE_rb_Brute.glb": {
+   "comment": "",
+   "orientation": [
+    -0.4999999999999999,
+    0.5,
+    -0.5,
+    0.5000000000000001
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:02:41.026Z",
+   "verdict": null
+  },
+  "file:liked/tie_reaper__TIE_C2.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:12.861Z",
+   "verdict": null
+  },
+  "file:liked/tie_reaper__TIE_Reaper.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:16.686Z",
+   "verdict": null
+  },
+  "file:liked/tie_reaper__TIE_rlg_Reaper_ground_attack_lander.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:41:49.479Z",
+   "verdict": null
+  },
+  "file:liked/tie_silencer__TIE_vn_Silencer.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -0.7071067811865477,
+    -0.7071067811865474
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:30:34.180Z",
+   "verdict": null
+  },
+  "file:liked/tie_silencer__Tie_Silencer.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -1,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:41:55.223Z",
+   "verdict": null
+  },
+  "file:liked/tie_striker__TIE_sa_Bomber.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:30:41.815Z",
+   "verdict": null
+  },
+  "file:liked/twilight_g9_rigger__G9_Rigger_Freighter.glb": {
+   "comment": "",
+   "orientation": [
+    -0.5000000000000001,
+    0.4999999999999999,
+    -0.4999999999999997,
+    0.5000000000000001
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:09.879Z",
+   "verdict": null
+  },
+  "file:liked/twilight_g9_rigger__Twilight.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0.7071067811865475,
+    0,
+    0.7071067811865476
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:19.657Z",
+   "verdict": null
+  },
+  "file:liked/u-55_orbital_loadlifter__U-55_Loadlifter_TLJ_Resistance_Transport.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:17.694Z",
+   "verdict": null
+  },
+  "file:liked/u-wing__Star_Wars_U-Wing_UT-60d.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:31:26.308Z",
+   "verdict": null
+  },
+  "file:liked/u-wing__futuristic_sci-fi_spaceship.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:24.020Z",
+   "verdict": null
+  },
+  "file:liked/v-19_torrent__Star_Wars_V-19_Torrent.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865477,
+    0,
+    0,
+    -0.7071067811865474
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:31:36.089Z",
+   "verdict": null
+  },
+  "file:liked/v-19_torrent__V-19_Torrent_-_Star_Wars_-_Clone_Wars.glb": {
+   "comment": "",
+   "orientation": [
+    4.3297802811774677e-17,
+    -0.7071067811865474,
+    -0.7071067811865477,
+    -4.329780281177465e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:31.657Z",
+   "verdict": null
+  },
+  "file:liked/v-19_torrent__V-19_Torrent_Starfighter_-_Prototype_Variant.glb": {
+   "comment": "",
+   "orientation": [
+    4.329780281177466e-17,
+    0.7071067811865476,
+    -0.7071067811865475,
+    4.329780281177467e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:36.080Z",
+   "verdict": null
+  },
+  "file:liked/v-wing_starfighter__Republic_V-wing_Starfighter.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:31:46.633Z",
+   "verdict": null
+  },
+  "file:liked/v-wing_starfighter__V19_Torrent_Starfighter.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:31:52.887Z",
+   "verdict": null
+  },
+  "file:liked/v4_hounds_tooth__Hound_s_Tooth_CT4012.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865475,
+    0.7071067811865476,
+    -4.3297802811774677e-17,
+    -4.329780281177465e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:03:46.740Z",
+   "verdict": null
+  },
+  "file:liked/v4_interdictor__Interdictor_Star_Destroyer_Immobilizer_418.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:03:24.392Z",
+   "verdict": null
+  },
+  "file:liked/v4_interdictor__Star_Wars_Immobilizer_418.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:03:27.361Z",
+   "verdict": null
+  },
+  "file:liked/v4_pirate_corsair__Star_Wars_Lethisk-class_Armored_Freighter.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:03:30.554Z",
+   "verdict": null
+  },
+  "file:liked/v4_pirate_marauder__DP-20_Corellian_Gunship.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:03:33.827Z",
+   "verdict": null
+  },
+  "file:liked/v4_providence__providence-class-cruiser.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    0,
+    -0.7071067811865477,
+    -0.7071067811865474
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-24T10:04:14.085Z",
+   "verdict": null
+  },
+  "file:liked/v4_raddus_cruiser__MC85.glb": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-24T10:04:23.475Z",
+   "verdict": "dislike"
+  },
+  "file:liked/venator_star_destroyer__Republic_Venator_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:41.075Z",
+   "verdict": null
+  },
+  "file:liked/venator_star_destroyer__Star_Wars_Republic_Venator_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:15.489Z",
+   "verdict": null
+  },
+  "file:liked/venator_star_destroyer__Venator_Class_Star_Destroyer.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:32:00.085Z",
+   "verdict": null
+  },
+  "file:liked/vulture_droid_starfighter__Lego_Star_Wars_Vulture_Droid.glb": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:46.744Z",
+   "verdict": "dislike"
+  },
+  "file:liked/vulture_droid_starfighter__Vulture_Droid.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:32:14.971Z",
+   "verdict": null
+  },
+  "file:liked/vulture_droid_starfighter__Vulture_droid_starfighter.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:20.722Z",
+   "verdict": null
+  },
+  "file:liked/x-wing_t-65_starfighter__Star_Wars_X-wing_Fighter.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:32:21.462Z",
+   "verdict": null
+  },
+  "file:liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars.glb": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:32:27.749Z",
+   "verdict": "dislike"
+  },
+  "file:liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars__s1.glb": {
+   "comment": "",
+   "orientation": [
+    -0.7071067811865472,
+    0,
+    0,
+    -0.7071067811865478
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:32:35.428Z",
+   "verdict": null
+  },
+  "file:liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars__s2.glb": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:32:44.146Z",
+   "verdict": "dislike"
+  },
+  "file:liked/x-wing_t-65_starfighter__X-Wing_T-65.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:32:57.886Z",
+   "verdict": null
+  },
+  "file:liked/xyston_star_destroyer__Old_Xyston.glb": {
+   "comment": "",
+   "orientation": [
+    1.699538841808614e-32,
+    -1,
+    -2.7755575615628914e-16,
+    -6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:26.050Z",
+   "verdict": null
+  },
+  "file:liked/xyston_star_destroyer__Xyston-class_Star_Destroyer_EaW_Remake.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:49.283Z",
+   "verdict": null
+  },
+  "file:liked/xyston_star_destroyer__Xyston_Overhaul.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:28.703Z",
+   "verdict": null
+  },
+  "file:liked/xyston_star_destroyer__Xyston_Star_Destroyer_Redesign.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:18.580Z",
+   "verdict": null
+  },
+  "file:liked/y-wing_starfighter__Star_Wars_Y-wing_Fighter_Bomber.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    2.220446049250313e-16,
+    -6.123233995736766e-17,
+    1.232595164407831e-32
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:42:34.225Z",
+   "verdict": null
+  },
+  "file:liked/y-wing_starfighter__Y-wing_Starfighter_-_Star_Wars.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:33:06.372Z",
+   "verdict": null
+  },
+  "file:liked/y-wing_starfighter__Y-wing_starfighter.glb": {
+   "comment": "",
+   "orientation": [
+    1.1102230246251565e-16,
+    -0.7071067811865475,
+    -0.7071067811865476,
+    1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:39:54.021Z",
+   "verdict": null
+  },
+  "file:liked/yt-2400_freighter__Star_Wars_YT-2400_Light_Freighter.glb": {
+   "comment": "",
+   "orientation": [
+    2.7755575615628914e-16,
+    -0.7071067811865477,
+    -2.7755575615628914e-16,
+    -0.7071067811865475
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:40:03.965Z",
+   "verdict": null
+  },
+  "file:liked/yt-2400_freighter__YT-1850.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:40:07.686Z",
+   "verdict": null
+  },
+  "file:liked/yt-2400_freighter__YT-2442.glb": {
+   "comment": "",
+   "orientation": [
+    0.7071067811865476,
+    1.1102230246251565e-16,
+    0.7071067811865475,
+    -1.1102230246251565e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:40:19.612Z",
+   "verdict": null
+  },
+  "file:liked/z-95_headhunter__Incom_Z-95-AF4_Headhunter.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:33:11.637Z",
+   "verdict": null
+  },
+  "file:liked/z-95_headhunter__Star_Wars_Z-95_Headhunter.glb": {
+   "comment": "",
+   "orientation": [
+    1,
+    0,
+    0,
+    2.220446049250313e-16
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:40:24.036Z",
+   "verdict": null
+  },
+  "file:liked/z-95_headhunter__Z-95_Headhunter.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T09:40:26.869Z",
+   "verdict": null
+  },
+  "file:millennium_falcon_opt.glb": {
+   "comment": "Нет тексту тексту тексту",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.477Z",
+   "verdict": "dislike"
+  },
+  "file:millennium_falcon_stym/scene.gltf": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.475Z",
+   "verdict": "like"
+  },
+  "file:phantom_i_danielalex_printables55615.stl": {
+   "comment": "",
+   "file": "phantom_i_danielalex_printables55615.stl",
+   "source": "downloaded",
+   "updatedAt": "2026-09-17T14:27:29.419Z",
+   "verdict": "dislike"
+  },
+  "file:star_destroyer_current.glb": {
+   "comment": "",
+   "file": "star_destroyer_current.glb",
+   "source": "downloaded",
+   "updatedAt": "2026-09-17T14:27:05.329Z",
+   "verdict": "dislike"
+  },
+  "file:star_destroyer_opt.glb": {
+   "comment": "",
+   "file": "star_destroyer_opt.glb",
+   "source": "downloaded",
+   "updatedAt": "2026-09-17T14:27:03.395Z",
+   "verdict": "like"
+  },
+  "file:tie_advanced_x1_daniel_objaverse.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.484Z",
+   "verdict": "like"
+  },
+  "file:tie_fighter_current.glb": {
+   "comment": "",
+   "file": "tie_fighter_current.glb",
+   "source": "downloaded",
+   "updatedAt": "2026-09-17T14:27:07.294Z",
+   "verdict": "dislike"
+  },
+  "file:tie_fighter_opt.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.483Z",
+   "verdict": "like"
+  },
+  "file:vulture_droid_theo_objaverse.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.480Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_articulation_ext_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:46.238Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_articulation_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:48.037Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_articulation_mid_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:51.054Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_body_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:52.272Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_body_front_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:53.246Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_body_rear_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:43:54.371Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_flap_inf_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:02.288Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_flap_sup_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:04.286Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_head.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:05.696Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_laser_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:13.495Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_neck_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:16.958Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_scissor_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:18.655Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_wing_complet_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:21.458Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_wing_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:23.080Z",
+   "verdict": "dislike"
+  },
+  "file:vulture_flight_zeinfel_thing4458309/droid_wing_flight_fixed.stl": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:24.549Z",
+   "verdict": "dislike"
+  },
+  "file:xwing_t65_current.glb": {
+   "comment": "",
+   "orientation": null,
+   "tags": [],
+   "updatedAt": "2026-09-18T09:44:30.895Z",
+   "verdict": "dislike"
+  },
+  "file:xwing_t65_heataker_objaverse.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.478Z",
+   "verdict": "like"
+  },
+  "file:xwing_t65_opt.glb": {
+   "comment": "",
+   "orientation": [
+    0,
+    1,
+    0,
+    6.123233995736766e-17
+   ],
+   "tags": [],
+   "updatedAt": "2026-09-18T08:21:18.479Z",
+   "verdict": "like"
+  },
+  "sf:0061ff00a6654020bcbf3b2be53affca": {
+   "author": "caeruleumamy",
+   "comment": "крылья не в той ориентации - не та раскраска",
+   "license": "CC Attribution",
+   "likes": 39,
+   "name": "Mandalorian Gauntlet fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "0061ff00a6654020bcbf3b2be53affca",
+   "updatedAt": "2026-09-17T16:40:34.361Z",
+   "url": "https://sketchfab.com/3d-models/0061ff00a6654020bcbf3b2be53affca",
+   "verdict": "dislike"
+  },
+  "sf:00f12d7a839842c783bb745d39302308": {
+   "author": "quiznos323",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 135,
+   "name": "Eta-2 Actis (Jedi Starfighter) - Star Wars",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "00f12d7a839842c783bb745d39302308",
+   "updatedAt": "2026-09-17T16:31:39.656Z",
+   "url": "https://sketchfab.com/3d-models/00f12d7a839842c783bb745d39302308",
+   "verdict": "like"
+  },
+  "sf:0289dfef03054f099643150678ec830e": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 104,
+   "name": "Republic V-wing Starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "0289dfef03054f099643150678ec830e",
+   "updatedAt": "2026-09-17T19:01:42.250Z",
+   "url": "https://sketchfab.com/3d-models/0289dfef03054f099643150678ec830e",
+   "verdict": "like"
+  },
+  "sf:06c7d3d7aaa94986aa4b0b37d5a868bb": {
+   "author": "Rebus2077",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "TIE/sg2 Starfighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "06c7d3d7aaa94986aa4b0b37d5a868bb",
+   "updatedAt": "2026-09-17T18:55:27.833Z",
+   "url": "https://sketchfab.com/3d-models/06c7d3d7aaa94986aa4b0b37d5a868bb",
+   "verdict": "like"
+  },
+  "sf:071b158d02c044ee9b431aeb28b85b6a": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 414,
+   "name": "Star Wars: GR-75 Medium Transport",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "071b158d02c044ee9b431aeb28b85b6a",
+   "updatedAt": "2026-09-17T16:44:42.146Z",
+   "url": "https://sketchfab.com/3d-models/071b158d02c044ee9b431aeb28b85b6a",
+   "verdict": "like"
+  },
+  "sf:077def5acbb848f7bf110b75e35ebd96": {
+   "author": "tdr125",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 4,
+   "name": "Roc relief with a boat and the inscription",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "077def5acbb848f7bf110b75e35ebd96",
+   "updatedAt": "2026-09-17T15:22:02.725Z",
+   "url": "https://sketchfab.com/3d-models/077def5acbb848f7bf110b75e35ebd96",
+   "verdict": "dislike"
+  },
+  "sf:0910b83410c14f9695eeb8722f78c8ed": {
+   "author": "allanromanreyes",
+   "comment": "",
+   "license": "Free Standard",
+   "likes": 25,
+   "name": "LAAT Gunship and Shock Trooper",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "0910b83410c14f9695eeb8722f78c8ed",
+   "updatedAt": "2026-09-17T17:14:35.392Z",
+   "url": "https://sketchfab.com/3d-models/0910b83410c14f9695eeb8722f78c8ed",
+   "verdict": "dislike"
+  },
+  "sf:0b3825de4fa542a893c9f9344b7e5f31": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 196,
+   "name": "Star Wars: TIE/x1 Advanced x1",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "0b3825de4fa542a893c9f9344b7e5f31",
+   "updatedAt": "2026-09-17T18:53:17.547Z",
+   "url": "https://sketchfab.com/3d-models/0b3825de4fa542a893c9f9344b7e5f31",
+   "verdict": "like"
+  },
+  "sf:0bc502e4c5c84d1da5ac1962654639a8": {
+   "author": "tobard",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 15,
+   "name": "G9 Rigger Freighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "0bc502e4c5c84d1da5ac1962654639a8",
+   "updatedAt": "2026-09-17T19:00:33.953Z",
+   "url": "https://sketchfab.com/3d-models/0bc502e4c5c84d1da5ac1962654639a8",
+   "verdict": "like"
+  },
+  "sf:0c4da7c7c3104fcf9a59a5d9497335e8": {
+   "author": "StratoArtStudios",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 37,
+   "name": "Incom T-70 X-Wing - Wings Closed",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур",
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "0c4da7c7c3104fcf9a59a5d9497335e8",
+   "updatedAt": "2026-09-17T18:52:49.616Z",
+   "url": "https://sketchfab.com/3d-models/0c4da7c7c3104fcf9a59a5d9497335e8",
+   "verdict": "like"
+  },
+  "sf:0d829115bb4d472da5d05cdf529b6694": {
+   "author": "ThrillDaWill",
+   "comment": "есть ножки - наземное",
+   "license": "CC Attribution",
+   "likes": 126,
+   "name": "Star Wars Separatist Core Ship",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "0d829115bb4d472da5d05cdf529b6694",
+   "updatedAt": "2026-09-17T15:23:35.453Z",
+   "url": "https://sketchfab.com/3d-models/0d829115bb4d472da5d05cdf529b6694",
+   "verdict": "like"
+  },
+  "sf:0e159e5844fa4df29605d2c7c5e8719e": {
+   "author": "megamanzx1.2.spsi",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "Republic V-wing starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "0e159e5844fa4df29605d2c7c5e8719e",
+   "updatedAt": "2026-09-17T19:01:47.227Z",
+   "url": "https://sketchfab.com/3d-models/0e159e5844fa4df29605d2c7c5e8719e",
+   "verdict": "like"
+  },
+  "sf:0e4cbb98a2ba43f2a11498061b3f21d8": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 323,
+   "name": "Star Wars: Executor Class Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "0e4cbb98a2ba43f2a11498061b3f21d8",
+   "updatedAt": "2026-09-17T16:32:28.360Z",
+   "url": "https://sketchfab.com/3d-models/0e4cbb98a2ba43f2a11498061b3f21d8",
+   "verdict": "like"
+  },
+  "sf:102aab8967174476b264d69e979f9d70": {
+   "author": "A308",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 60,
+   "name": "BTL-B Y-Wing",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "102aab8967174476b264d69e979f9d70",
+   "updatedAt": "2026-09-17T19:05:34.269Z",
+   "url": "https://sketchfab.com/3d-models/102aab8967174476b264d69e979f9d70",
+   "verdict": "like"
+  },
+  "sf:105763d2e9a34bd2866785d19f5315a7": {
+   "author": "joaocarlos98",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 24,
+   "name": "Arquitens-Class Light Cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "105763d2e9a34bd2866785d19f5315a7",
+   "updatedAt": "2026-09-17T15:14:54.008Z",
+   "url": "https://sketchfab.com/3d-models/105763d2e9a34bd2866785d19f5315a7",
+   "verdict": "dislike"
+  },
+  "sf:10876c0d9585401898d5f78d29f42f14": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 8,
+   "name": "Delta 7 jedi interceptor",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "10876c0d9585401898d5f78d29f42f14",
+   "updatedAt": "2026-09-17T16:21:25.120Z",
+   "url": "https://sketchfab.com/3d-models/10876c0d9585401898d5f78d29f42f14",
+   "verdict": "like"
+  },
+  "sf:114e538d4b054d2fb098929ac33426db": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 19,
+   "name": "Imperial Gozanti Class Cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "114e538d4b054d2fb098929ac33426db",
+   "updatedAt": "2026-09-17T16:43:43.944Z",
+   "url": "https://sketchfab.com/3d-models/114e538d4b054d2fb098929ac33426db",
+   "verdict": "like"
+  },
+  "sf:12bf05c7f55040d7bc11b38a2b620735": {
+   "author": "corelliastarshipyards",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "TIE/C2",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "12bf05c7f55040d7bc11b38a2b620735",
+   "updatedAt": "2026-09-17T18:57:48.307Z",
+   "url": "https://sketchfab.com/3d-models/12bf05c7f55040d7bc11b38a2b620735",
+   "verdict": "like"
+  },
+  "sf:12ded72169eb492fa32db0e054686727": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 2,
+   "name": "Sentinel class landing craft",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры",
+    "Нет текстур"
+   ],
+   "uid": "12ded72169eb492fa32db0e054686727",
+   "updatedAt": "2026-09-17T18:50:33.808Z",
+   "url": "https://sketchfab.com/3d-models/12ded72169eb492fa32db0e054686727",
+   "verdict": "dislike"
+  },
+  "sf:12f5007af9ed4186aec9932a8a29b4d9": {
+   "author": "Rebus2077",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 23,
+   "name": "Metther-class Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "12f5007af9ed4186aec9932a8a29b4d9",
+   "updatedAt": "2026-09-17T16:51:53.096Z",
+   "url": "https://sketchfab.com/3d-models/12f5007af9ed4186aec9932a8a29b4d9",
+   "verdict": "like"
+  },
+  "sf:135f13a14efa41ccbec056a8b3ac616b": {
+   "author": "JamesNeal",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 11,
+   "name": "Millennium Falcon YT-1300 2nd Attempt",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "135f13a14efa41ccbec056a8b3ac616b",
+   "updatedAt": "2026-09-17T17:23:50.134Z",
+   "url": "https://sketchfab.com/3d-models/135f13a14efa41ccbec056a8b3ac616b",
+   "verdict": "dislike"
+  },
+  "sf:1395ceb2daf542db9deb4c7efe881ac9": {
+   "author": "WirtualneMuzeaMalopolski",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 90,
+   "name": "First whispers of love /Secrets of love",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "1395ceb2daf542db9deb4c7efe881ac9",
+   "updatedAt": "2026-09-17T19:00:12.202Z",
+   "url": "https://sketchfab.com/3d-models/1395ceb2daf542db9deb4c7efe881ac9",
+   "verdict": "dislike"
+  },
+  "sf:1555e5602ac446a592881283888fbb2e": {
+   "author": "Admiral_Forever",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 47,
+   "name": "Old Executor",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "1555e5602ac446a592881283888fbb2e",
+   "updatedAt": "2026-09-17T16:33:56.140Z",
+   "url": "https://sketchfab.com/3d-models/1555e5602ac446a592881283888fbb2e",
+   "verdict": "like"
+  },
+  "sf:166bcb0a842e451b9e81f96f7b2adea7": {
+   "author": "MichaelEGA",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 22,
+   "name": "E-Wing Cockpit Version 1",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "166bcb0a842e451b9e81f96f7b2adea7",
+   "updatedAt": "2026-09-17T16:23:59.260Z",
+   "url": "https://sketchfab.com/3d-models/166bcb0a842e451b9e81f96f7b2adea7",
+   "verdict": "dislike"
+  },
+  "sf:16d9c29231b24df0ab92376eb39930d8": {
+   "author": "joaocarlos98",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 13,
+   "name": "Delta-7 Aethersprite-Class Light Interceptor",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур"
+   ],
+   "uid": "16d9c29231b24df0ab92376eb39930d8",
+   "updatedAt": "2026-09-17T15:52:18.257Z",
+   "url": "https://sketchfab.com/3d-models/16d9c29231b24df0ab92376eb39930d8",
+   "verdict": "dislike"
+  },
+  "sf:172cb62cc1e141cfae4c48440c348de0": {
+   "author": "quiznos323",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 204,
+   "name": "Razor Crest - Star Wars",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "172cb62cc1e141cfae4c48440c348de0",
+   "updatedAt": "2026-09-17T18:47:20.532Z",
+   "url": "https://sketchfab.com/3d-models/172cb62cc1e141cfae4c48440c348de0",
+   "verdict": "like"
+  },
+  "sf:172e790b08ec436da02b0816cd0a09e1": {
+   "author": "Tankboi2468",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 25,
+   "name": "Blackhawk helicopter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "172e790b08ec436da02b0816cd0a09e1",
+   "updatedAt": "2026-09-17T14:54:38.066Z",
+   "url": "https://sketchfab.com/3d-models/172e790b08ec436da02b0816cd0a09e1",
+   "verdict": "dislike"
+  },
+  "sf:174740e01bf04cf69a0af16b32dd6068": {
+   "author": "dmitrtihom",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "Nebulon-B Frigate",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "174740e01bf04cf69a0af16b32dd6068",
+   "updatedAt": "2026-09-17T17:28:36.738Z",
+   "url": "https://sketchfab.com/3d-models/174740e01bf04cf69a0af16b32dd6068",
+   "verdict": "dislike"
+  },
+  "sf:178f0e05ba64420485e7319c6a9ee6c6": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 43,
+   "name": "Eta-2 Actis-class Light Interceptor",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "178f0e05ba64420485e7319c6a9ee6c6",
+   "updatedAt": "2026-09-17T16:31:30.730Z",
+   "url": "https://sketchfab.com/3d-models/178f0e05ba64420485e7319c6a9ee6c6",
+   "verdict": "like"
+  },
+  "sf:17ccca0dbb6b4e338fa999202f9e6685": {
+   "author": "nathanmlange",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 822,
+   "name": "Death Star II",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "17ccca0dbb6b4e338fa999202f9e6685",
+   "updatedAt": "2026-09-17T15:51:29.378Z",
+   "url": "https://sketchfab.com/3d-models/17ccca0dbb6b4e338fa999202f9e6685",
+   "verdict": "like"
+  },
+  "sf:1986f7b0dee647b3b2374eb80dbd1faf": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 336,
+   "name": "Star Wars: Nebulon B Frigate",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "1986f7b0dee647b3b2374eb80dbd1faf",
+   "updatedAt": "2026-09-17T17:28:32.913Z",
+   "url": "https://sketchfab.com/3d-models/1986f7b0dee647b3b2374eb80dbd1faf",
+   "verdict": "like"
+  },
+  "sf:19b1b0126f8248c28ce38863413c30b8": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 140,
+   "name": "Star Wars: Nebulon B Frigate",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "19b1b0126f8248c28ce38863413c30b8",
+   "updatedAt": "2026-09-17T17:28:24.287Z",
+   "url": "https://sketchfab.com/3d-models/19b1b0126f8248c28ce38863413c30b8",
+   "verdict": "like"
+  },
+  "sf:1adcaa3ce9cb44168f7141bd357c1e78": {
+   "author": "Leytra",
+   "comment": "",
+   "license": "Free Standard",
+   "likes": 26,
+   "name": "ARC 170 Starfighter, Pathfinder Modification",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "1adcaa3ce9cb44168f7141bd357c1e78",
+   "updatedAt": "2026-09-17T15:11:27.781Z",
+   "url": "https://sketchfab.com/3d-models/1adcaa3ce9cb44168f7141bd357c1e78",
+   "verdict": "like"
+  },
+  "sf:1baec82df8ca4a108547828463d7f2d2": {
+   "author": "aiv",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 124,
+   "name": "Tie-Interceptor - by Tommaso Incecchi",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "1baec82df8ca4a108547828463d7f2d2",
+   "updatedAt": "2026-09-17T18:57:11.675Z",
+   "url": "https://sketchfab.com/3d-models/1baec82df8ca4a108547828463d7f2d2",
+   "verdict": "like"
+  },
+  "sf:1c007fe6562848c4b38e4897e08c638a": {
+   "author": "aiv",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 66,
+   "name": "Tie-Defender - by Gianmarco Falerni",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "1c007fe6562848c4b38e4897e08c638a",
+   "updatedAt": "2026-09-17T18:55:55.474Z",
+   "url": "https://sketchfab.com/3d-models/1c007fe6562848c4b38e4897e08c638a",
+   "verdict": "like"
+  },
+  "sf:1de80cd0587542adba4dad5a96ec602b": {
+   "author": "ilinskiyoleg69",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 15,
+   "name": "Orchid Malevolence",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "1de80cd0587542adba4dad5a96ec602b",
+   "updatedAt": "2026-09-17T17:18:12.827Z",
+   "url": "https://sketchfab.com/3d-models/1de80cd0587542adba4dad5a96ec602b",
+   "verdict": "dislike"
+  },
+  "sf:1e4aaa57565d4f098d01cf9c89e4e1e6": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 41,
+   "name": "Republic Venator Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "1e4aaa57565d4f098d01cf9c89e4e1e6",
+   "updatedAt": "2026-09-17T19:02:49.420Z",
+   "url": "https://sketchfab.com/3d-models/1e4aaa57565d4f098d01cf9c89e4e1e6",
+   "verdict": "like"
+  },
+  "sf:1eb28d4940ab4ce9863f7e3b51d9b22d": {
+   "author": "NathanielLDEutc",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 24,
+   "name": "Executor Class Super Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "1eb28d4940ab4ce9863f7e3b51d9b22d",
+   "updatedAt": "2026-09-17T16:34:29.832Z",
+   "url": "https://sketchfab.com/3d-models/1eb28d4940ab4ce9863f7e3b51d9b22d",
+   "verdict": "like"
+  },
+  "sf:1ed4046fcad74f4d88defd3d01c646b9": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 26,
+   "name": "First Order Dreadnought",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль",
+    "Нет текстур"
+   ],
+   "uid": "1ed4046fcad74f4d88defd3d01c646b9",
+   "updatedAt": "2026-09-17T16:38:00.325Z",
+   "url": "https://sketchfab.com/3d-models/1ed4046fcad74f4d88defd3d01c646b9",
+   "verdict": "dislike"
+  },
+  "sf:1f732c70bb5e46ac91a01112844a5350": {
+   "author": "almeanay",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "Homework v2",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "1f732c70bb5e46ac91a01112844a5350",
+   "updatedAt": "2026-09-17T16:45:39.490Z",
+   "url": "https://sketchfab.com/3d-models/1f732c70bb5e46ac91a01112844a5350",
+   "verdict": "dislike"
+  },
+  "sf:204c992ab27c4c1cad6a60b7c20b8c01": {
+   "author": "LtxxwSibeRia",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 210,
+   "name": "Russian X-555 air-launched cruise missile",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "204c992ab27c4c1cad6a60b7c20b8c01",
+   "updatedAt": "2026-09-17T17:01:43.399Z",
+   "url": "https://sketchfab.com/3d-models/204c992ab27c4c1cad6a60b7c20b8c01",
+   "verdict": "dislike"
+  },
+  "sf:206b8061e5554ea5b224ec95089f181d": {
+   "author": "Pheroks8686",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 0,
+   "name": "Fallen Angel Sword (Stylized / Game-Ready)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "206b8061e5554ea5b224ec95089f181d",
+   "updatedAt": "2026-09-17T15:19:48.623Z",
+   "url": "https://sketchfab.com/3d-models/206b8061e5554ea5b224ec95089f181d",
+   "verdict": "dislike"
+  },
+  "sf:22bc65f9eb4640b6ae58b1b5e184e80e": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 286,
+   "name": "Star Wars: TIE/d Defender",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "22bc65f9eb4640b6ae58b1b5e184e80e",
+   "updatedAt": "2026-09-17T18:56:00.575Z",
+   "url": "https://sketchfab.com/3d-models/22bc65f9eb4640b6ae58b1b5e184e80e",
+   "verdict": "like"
+  },
+  "sf:23a208ebd31e4e9a89fc3826e02c47d9": {
+   "author": "lolqeeeeeeeeee",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 111,
+   "name": "Star Wars The Clone Wars Munificent (S5-7 Style)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "23a208ebd31e4e9a89fc3826e02c47d9",
+   "updatedAt": "2026-09-17T17:24:31.547Z",
+   "url": "https://sketchfab.com/3d-models/23a208ebd31e4e9a89fc3826e02c47d9",
+   "verdict": "like"
+  },
+  "sf:2517de834ad7418ea367ecdacd13524c": {
+   "author": "steventa3d",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 713,
+   "name": "Droid Tri Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "2517de834ad7418ea367ecdacd13524c",
+   "updatedAt": "2026-09-17T16:23:33.881Z",
+   "url": "https://sketchfab.com/3d-models/2517de834ad7418ea367ecdacd13524c",
+   "verdict": "like"
+  },
+  "sf:25fe21477d814e4aa123ea131381acc1": {
+   "author": "alexsanrpg",
+   "comment": "дубликаты есть = 3 корбаля тут",
+   "license": "CC Attribution",
+   "likes": 25,
+   "name": "Soulless One starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "25fe21477d814e4aa123ea131381acc1",
+   "updatedAt": "2026-09-17T18:51:44.203Z",
+   "url": "https://sketchfab.com/3d-models/25fe21477d814e4aa123ea131381acc1",
+   "verdict": "dislike"
+  },
+  "sf:26d0f09e4ae64c41ad0119caa30d8058": {
+   "author": "4130ff15fe394c239cc064b5286c43",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 74,
+   "name": "Star Wars Galaxies - YT1300 (Outside)",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "26d0f09e4ae64c41ad0119caa30d8058",
+   "updatedAt": "2026-09-17T17:23:02.689Z",
+   "url": "https://sketchfab.com/3d-models/26d0f09e4ae64c41ad0119caa30d8058",
+   "verdict": "like"
+  },
+  "sf:2785243f8c8944c788cb0cbab3100cb4": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 69,
+   "name": "Belbullab-22 Starfighter (Soulless One)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "2785243f8c8944c788cb0cbab3100cb4",
+   "updatedAt": "2026-09-17T15:18:00.233Z",
+   "url": "https://sketchfab.com/3d-models/2785243f8c8944c788cb0cbab3100cb4",
+   "verdict": "like"
+  },
+  "sf:27af6a0dbbec45fc8c497aa691f3042a": {
+   "author": "LarsH.",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 133,
+   "name": "Star Wars Tie Interceptor",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "27af6a0dbbec45fc8c497aa691f3042a",
+   "updatedAt": "2026-09-17T18:57:27.995Z",
+   "url": "https://sketchfab.com/3d-models/27af6a0dbbec45fc8c497aa691f3042a",
+   "verdict": "like"
+  },
+  "sf:2960ce19665b4dd788930c45a88455f9": {
+   "author": "Relaykiller",
+   "comment": "",
+   "license": "CC Attribution-ShareAlike",
+   "likes": 0,
+   "name": "Zetta Class Shuttle (low Poly)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "2960ce19665b4dd788930c45a88455f9",
+   "updatedAt": "2026-09-17T19:06:43.259Z",
+   "url": "https://sketchfab.com/3d-models/2960ce19665b4dd788930c45a88455f9",
+   "verdict": "dislike"
+  },
+  "sf:2a5b040487014397929f401517157c34": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "H Type Nubian Yacht",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "2a5b040487014397929f401517157c34",
+   "updatedAt": "2026-09-17T16:45:01.315Z",
+   "url": "https://sketchfab.com/3d-models/2a5b040487014397929f401517157c34",
+   "verdict": "like"
+  },
+  "sf:2a9045dac44b4f3a8c1c77b905aaa844": {
+   "author": "archfan",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 146,
+   "name": "Star Wars V-19 Torrent",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "2a9045dac44b4f3a8c1c77b905aaa844",
+   "updatedAt": "2026-09-17T19:01:21.997Z",
+   "url": "https://sketchfab.com/3d-models/2a9045dac44b4f3a8c1c77b905aaa844",
+   "verdict": "like"
+  },
+  "sf:2d1bf74e06a347449a20c8f2181aac78": {
+   "author": "hunterwiltse",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 235,
+   "name": "R5-J2 Imperial Astromech Droid",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "2d1bf74e06a347449a20c8f2181aac78",
+   "updatedAt": "2026-09-17T15:51:17.267Z",
+   "url": "https://sketchfab.com/3d-models/2d1bf74e06a347449a20c8f2181aac78",
+   "verdict": "like"
+  },
+  "sf:2ec794d32f57492c98566d6536295b1a": {
+   "author": "rendysix",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 96,
+   "name": "Supremacy (Astro Interceptor)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "2ec794d32f57492c98566d6536295b1a",
+   "updatedAt": "2026-09-17T14:54:20.502Z",
+   "url": "https://sketchfab.com/3d-models/2ec794d32f57492c98566d6536295b1a",
+   "verdict": "like"
+  },
+  "sf:2fab090e8d064cc2ba1516987f9fc373": {
+   "author": "ElinHohler",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 786,
+   "name": "Razor Crest (Textured and animated)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "2fab090e8d064cc2ba1516987f9fc373",
+   "updatedAt": "2026-09-17T18:47:26.682Z",
+   "url": "https://sketchfab.com/3d-models/2fab090e8d064cc2ba1516987f9fc373",
+   "verdict": "like"
+  },
+  "sf:32962e67d052475c9f764ff729aab4ef": {
+   "author": "richardas.rac",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 4,
+   "name": "Vulture droid starfighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "32962e67d052475c9f764ff729aab4ef",
+   "updatedAt": "2026-09-17T19:03:29.095Z",
+   "url": "https://sketchfab.com/3d-models/32962e67d052475c9f764ff729aab4ef",
+   "verdict": "like"
+  },
+  "sf:33a3e25abcb74e389c34c49fbeeef19a": {
+   "author": "NETRUNNER_pl",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 78,
+   "name": "T-WING Star Wars inspired interceptor - FREE",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "33a3e25abcb74e389c34c49fbeeef19a",
+   "updatedAt": "2026-09-17T14:54:22.378Z",
+   "url": "https://sketchfab.com/3d-models/33a3e25abcb74e389c34c49fbeeef19a",
+   "verdict": "dislike"
+  },
+  "sf:351316a020f64fb2b22d768c5019d608": {
+   "author": "Rebus2077",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 6,
+   "name": "Golden Axe Gozanti-class cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "351316a020f64fb2b22d768c5019d608",
+   "updatedAt": "2026-09-17T16:44:32.170Z",
+   "url": "https://sketchfab.com/3d-models/351316a020f64fb2b22d768c5019d608",
+   "verdict": "dislike"
+  },
+  "sf:371f3a340c644ca6a3d437344e05ed83": {
+   "author": "Heataker",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 46,
+   "name": "Star Wars; Y-wing Fighter/Bomber",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "371f3a340c644ca6a3d437344e05ed83",
+   "updatedAt": "2026-09-17T19:05:24.869Z",
+   "url": "https://sketchfab.com/3d-models/371f3a340c644ca6a3d437344e05ed83",
+   "verdict": "like"
+  },
+  "sf:38175e3e033249f1a65430bb49610ee6": {
+   "author": "ElinHohler",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 150,
+   "name": "Razor Crest (Snow/Ice Textured)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "38175e3e033249f1a65430bb49610ee6",
+   "updatedAt": "2026-09-17T18:47:22.406Z",
+   "url": "https://sketchfab.com/3d-models/38175e3e033249f1a65430bb49610ee6",
+   "verdict": "like"
+  },
+  "sf:383789880b6640ffb307a0e81b9d7798": {
+   "author": "OmarFarukJabed",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 8,
+   "name": "Boat",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "383789880b6640ffb307a0e81b9d7798",
+   "updatedAt": "2026-09-17T18:48:39.431Z",
+   "url": "https://sketchfab.com/3d-models/383789880b6640ffb307a0e81b9d7798",
+   "verdict": "dislike"
+  },
+  "sf:39723cb22c944a32b218b966e9eec3a3": {
+   "author": "Kupariparta",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 5,
+   "name": "Tarayu-class Battlecruiser",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "39723cb22c944a32b218b966e9eec3a3",
+   "updatedAt": "2026-09-17T17:21:30.575Z",
+   "url": "https://sketchfab.com/3d-models/39723cb22c944a32b218b966e9eec3a3",
+   "verdict": "dislike"
+  },
+  "sf:39bbd96e87ea47f68b80d4336259137d": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 50,
+   "name": "Lucrehulk-class Battleship (Unfinished/WIP)",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "39bbd96e87ea47f68b80d4336259137d",
+   "updatedAt": "2026-09-17T17:16:59.177Z",
+   "url": "https://sketchfab.com/3d-models/39bbd96e87ea47f68b80d4336259137d",
+   "verdict": "like"
+  },
+  "sf:3a87de2b79a14f8b8c2ab88916b32576": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 13,
+   "name": "TIE/sa Bomber",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "3a87de2b79a14f8b8c2ab88916b32576",
+   "updatedAt": "2026-09-17T18:58:43.764Z",
+   "url": "https://sketchfab.com/3d-models/3a87de2b79a14f8b8c2ab88916b32576",
+   "verdict": "like"
+  },
+  "sf:3a953f309c584e269eda1a40955c04bc": {
+   "author": "LarsH.",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 80,
+   "name": "Star Wars Tie Bomber",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "3a953f309c584e269eda1a40955c04bc",
+   "updatedAt": "2026-09-17T18:55:17.720Z",
+   "url": "https://sketchfab.com/3d-models/3a953f309c584e269eda1a40955c04bc",
+   "verdict": "like"
+  },
+  "sf:3b42b8e1a0bf4ab38b2adf36b940223e": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 6,
+   "name": "First Order Tie Fighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "3b42b8e1a0bf4ab38b2adf36b940223e",
+   "updatedAt": "2026-09-17T16:36:15.685Z",
+   "url": "https://sketchfab.com/3d-models/3b42b8e1a0bf4ab38b2adf36b940223e",
+   "verdict": "like"
+  },
+  "sf:3cf69f6c85234aac8844e845e74ac75b": {
+   "author": "quiznos323",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 38,
+   "name": "Naboo N-1 Starfighter - Star Wars",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "3cf69f6c85234aac8844e845e74ac75b",
+   "updatedAt": "2026-09-17T17:26:25.414Z",
+   "url": "https://sketchfab.com/3d-models/3cf69f6c85234aac8844e845e74ac75b",
+   "verdict": "like"
+  },
+  "sf:3cfcf3b6012a42d6a19e42388e54cd9b": {
+   "author": "boittemike1",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 295,
+   "name": "3D Imperial Lambda Shuttle - Star Wars model",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "3cfcf3b6012a42d6a19e42388e54cd9b",
+   "updatedAt": "2026-09-17T17:16:00.772Z",
+   "url": "https://sketchfab.com/3d-models/3cfcf3b6012a42d6a19e42388e54cd9b",
+   "verdict": "like"
+  },
+  "sf:3d5f01485e9e4e8b9d995d7764341afe": {
+   "author": "SebastianSosnowski",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-NoDerivs",
+   "likes": 409,
+   "name": "Death Star - Star Wars",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "3d5f01485e9e4e8b9d995d7764341afe",
+   "updatedAt": "2026-09-17T15:51:42.273Z",
+   "url": "https://sketchfab.com/3d-models/3d5f01485e9e4e8b9d995d7764341afe",
+   "verdict": "like"
+  },
+  "sf:3d69bfae76234847976e7d5d20585723": {
+   "author": "sabinoplane",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 110,
+   "name": "Pelta-Class Medical Frigate",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не та поза (стоит/шагает)"
+   ],
+   "uid": "3d69bfae76234847976e7d5d20585723",
+   "updatedAt": "2026-09-17T18:09:21.302Z",
+   "url": "https://sketchfab.com/3d-models/3d69bfae76234847976e7d5d20585723",
+   "verdict": "like"
+  },
+  "sf:3d7120a5875646bba8a0830a6ecd933c": {
+   "author": "Yanez-Designs",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 26,
+   "name": "Lego Star Wars CR90 Corvette",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "3d7120a5875646bba8a0830a6ecd933c",
+   "updatedAt": "2026-09-17T15:48:27.533Z",
+   "url": "https://sketchfab.com/3d-models/3d7120a5875646bba8a0830a6ecd933c",
+   "verdict": "like"
+  },
+  "sf:3d8d49802bea484bbd5040c68a1aa022": {
+   "author": "damian_oo",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 25,
+   "name": "STAR WARS Tie Defender",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "3d8d49802bea484bbd5040c68a1aa022",
+   "updatedAt": "2026-09-17T18:56:08.810Z",
+   "url": "https://sketchfab.com/3d-models/3d8d49802bea484bbd5040c68a1aa022",
+   "verdict": "like"
+  },
+  "sf:3ee6175431394dad9cd7020c823a336f": {
+   "author": "Rebus2077",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 7,
+   "name": "Melihace T. Redej'gina (GDA)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "3ee6175431394dad9cd7020c823a336f",
+   "updatedAt": "2026-09-17T18:56:27.441Z",
+   "url": "https://sketchfab.com/3d-models/3ee6175431394dad9cd7020c823a336f",
+   "verdict": "dislike"
+  },
+  "sf:400abf08c94e4b4e809fca0aa51a5e00": {
+   "author": "4130ff15fe394c239cc064b5286c43",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 284,
+   "name": "Star Wars Galaxies - YT1300 (Inside)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "400abf08c94e4b4e809fca0aa51a5e00",
+   "updatedAt": "2026-09-17T17:23:12.332Z",
+   "url": "https://sketchfab.com/3d-models/400abf08c94e4b4e809fca0aa51a5e00",
+   "verdict": "dislike"
+  },
+  "sf:4025afe48e2f4291aadfd70a42f4e3e0": {
+   "author": "doclusifer2",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 78,
+   "name": "Frigata Nebulon B/ Frigate Nebulon B",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "4025afe48e2f4291aadfd70a42f4e3e0",
+   "updatedAt": "2026-09-17T17:29:15.319Z",
+   "url": "https://sketchfab.com/3d-models/4025afe48e2f4291aadfd70a42f4e3e0",
+   "verdict": "like"
+  },
+  "sf:417e1c4012d546daad8cab468b2f6a7e": {
+   "author": "jcreadingtutor",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "Tie Silencer",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "417e1c4012d546daad8cab468b2f6a7e",
+   "updatedAt": "2026-09-17T18:58:37.252Z",
+   "url": "https://sketchfab.com/3d-models/417e1c4012d546daad8cab468b2f6a7e",
+   "verdict": "like"
+  },
+  "sf:42099d76950743be87ac5ceced33649f": {
+   "author": "Rebus2077",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 9,
+   "name": "TIE/rlg Reaper ground attack lander",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "42099d76950743be87ac5ceced33649f",
+   "updatedAt": "2026-09-17T18:57:41.286Z",
+   "url": "https://sketchfab.com/3d-models/42099d76950743be87ac5ceced33649f",
+   "verdict": "like"
+  },
+  "sf:44d5db77bb1342e5a6e58c24a0dcb256": {
+   "author": "A308",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 123,
+   "name": "Munificent-Class Star Frigate",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не та поза (стоит/шагает)"
+   ],
+   "uid": "44d5db77bb1342e5a6e58c24a0dcb256",
+   "updatedAt": "2026-09-17T17:24:53.177Z",
+   "url": "https://sketchfab.com/3d-models/44d5db77bb1342e5a6e58c24a0dcb256",
+   "verdict": "like"
+  },
+  "sf:45a2a54cabcc4936b4839074c6a047c0": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 10,
+   "name": "Imperial Acclamator-Class Assault Ship",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры",
+    "Нет текстур"
+   ],
+   "uid": "45a2a54cabcc4936b4839074c6a047c0",
+   "updatedAt": "2026-09-17T15:10:12.839Z",
+   "url": "https://sketchfab.com/3d-models/45a2a54cabcc4936b4839074c6a047c0",
+   "verdict": "dislike"
+  },
+  "sf:4753499e947949fcafb6cd5d2511c885": {
+   "author": "dmitrtihom",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 4,
+   "name": "MC80 Liberty Type Heavy Star Cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "4753499e947949fcafb6cd5d2511c885",
+   "updatedAt": "2026-09-17T17:21:41.491Z",
+   "url": "https://sketchfab.com/3d-models/4753499e947949fcafb6cd5d2511c885",
+   "verdict": "dislike"
+  },
+  "sf:4b63a4e5c33e47e1a7a6ed141a8ef56e": {
+   "author": "nestor_d",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 34,
+   "name": "CR120 Assault Corvette",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "4b63a4e5c33e47e1a7a6ed141a8ef56e",
+   "updatedAt": "2026-09-17T15:48:35.635Z",
+   "url": "https://sketchfab.com/3d-models/4b63a4e5c33e47e1a7a6ed141a8ef56e",
+   "verdict": "like"
+  },
+  "sf:4d59a2ee3f6f4c9c9894d97ac34bcf36": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 42,
+   "name": "Darth Maul's Sith Infiltrator (Scimitar)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "4d59a2ee3f6f4c9c9894d97ac34bcf36",
+   "updatedAt": "2026-09-17T18:50:41.728Z",
+   "url": "https://sketchfab.com/3d-models/4d59a2ee3f6f4c9c9894d97ac34bcf36",
+   "verdict": "like"
+  },
+  "sf:4d6d3793ce7f432c9141b14cb7d7c512": {
+   "author": "WobblyG",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-NoDerivs",
+   "likes": 81,
+   "name": "TIE/vn Silencer",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "4d6d3793ce7f432c9141b14cb7d7c512",
+   "updatedAt": "2026-09-17T18:58:13.086Z",
+   "url": "https://sketchfab.com/3d-models/4d6d3793ce7f432c9141b14cb7d7c512",
+   "verdict": "like"
+  },
+  "sf:4ea4a492c3b447ea9391e5dbbf68f40b": {
+   "author": "SammuelProductions",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 4,
+   "name": "First Order Tie Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "4ea4a492c3b447ea9391e5dbbf68f40b",
+   "updatedAt": "2026-09-17T16:37:11.289Z",
+   "url": "https://sketchfab.com/3d-models/4ea4a492c3b447ea9391e5dbbf68f40b",
+   "verdict": "like"
+  },
+  "sf:4effca46a3ab4893aab2dadd941c5d47": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 6,
+   "name": "Gozanti Light Cruiser",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "4effca46a3ab4893aab2dadd941c5d47",
+   "updatedAt": "2026-09-17T16:44:20.289Z",
+   "url": "https://sketchfab.com/3d-models/4effca46a3ab4893aab2dadd941c5d47",
+   "verdict": "like"
+  },
+  "sf:50f7cebe61044d21801a301162212be2": {
+   "author": "quiznos323",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 88,
+   "name": "Y-wing Starfighter - Star Wars",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "50f7cebe61044d21801a301162212be2",
+   "updatedAt": "2026-09-17T19:05:11.710Z",
+   "url": "https://sketchfab.com/3d-models/50f7cebe61044d21801a301162212be2",
+   "verdict": "like"
+  },
+  "sf:5375de94c2484ab0b2a2bd75aa63c2b4": {
+   "author": "boittemike1",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 1148,
+   "name": "3D T.I.E Fighter - Star Wars model",
+   "rotate_after_download": true,
+   "source": "sketchfab_index",
+   "tags": [
+    "Неверная ориентация"
+   ],
+   "uid": "5375de94c2484ab0b2a2bd75aa63c2b4",
+   "updatedAt": "2026-09-17T18:57:05.856Z",
+   "url": "https://sketchfab.com/3d-models/5375de94c2484ab0b2a2bd75aa63c2b4",
+   "verdict": "like"
+  },
+  "sf:53ff865f97894102944488033af18c2a": {
+   "author": "jalanmccarthy13",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 0,
+   "name": "Mini The Ghost",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "53ff865f97894102944488033af18c2a",
+   "updatedAt": "2026-09-17T16:42:43.196Z",
+   "url": "https://sketchfab.com/3d-models/53ff865f97894102944488033af18c2a",
+   "verdict": "dislike"
+  },
+  "sf:5533beb5c09c41438b2c8f54ea670a8e": {
+   "author": "joaocarlos98",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 16,
+   "name": "Delta-7B Aethersprite-Class Light Interceptor",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур"
+   ],
+   "uid": "5533beb5c09c41438b2c8f54ea670a8e",
+   "updatedAt": "2026-09-17T15:52:11.942Z",
+   "url": "https://sketchfab.com/3d-models/5533beb5c09c41438b2c8f54ea670a8e",
+   "verdict": "dislike"
+  },
+  "sf:5542f951834e4032b229ebdee12d3310": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 86,
+   "name": "Vulture Droid",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "5542f951834e4032b229ebdee12d3310",
+   "updatedAt": "2026-09-17T19:03:42.970Z",
+   "url": "https://sketchfab.com/3d-models/5542f951834e4032b229ebdee12d3310",
+   "verdict": "like"
+  },
+  "sf:558ee974a1884ad09ef4c6b3fcb41c17": {
+   "author": "rebelriot",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 1,
+   "name": "Fully Armed Munificent Star Frigate",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "558ee974a1884ad09ef4c6b3fcb41c17",
+   "updatedAt": "2026-09-17T17:25:18.873Z",
+   "url": "https://sketchfab.com/3d-models/558ee974a1884ad09ef4c6b3fcb41c17",
+   "verdict": "like"
+  },
+  "sf:576ef2806fc145d7bd811ce1790ee5d4": {
+   "author": "dennispersecond",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 49,
+   "name": "Low poly Resurgent Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "576ef2806fc145d7bd811ce1790ee5d4",
+   "updatedAt": "2026-09-17T18:49:16.675Z",
+   "url": "https://sketchfab.com/3d-models/576ef2806fc145d7bd811ce1790ee5d4",
+   "verdict": "like"
+  },
+  "sf:5906f0b5065947ac8addb622240c7589": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 24,
+   "name": "Consular cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "5906f0b5065947ac8addb622240c7589",
+   "updatedAt": "2026-09-17T18:47:57.690Z",
+   "url": "https://sketchfab.com/3d-models/5906f0b5065947ac8addb622240c7589",
+   "verdict": "like"
+  },
+  "sf:5a5d6adf2e0444d5be94323938f6d329": {
+   "author": "doclusifer2",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 84,
+   "name": "Crucero Ligero Imperial Arquitens",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "5a5d6adf2e0444d5be94323938f6d329",
+   "updatedAt": "2026-09-17T15:11:34.998Z",
+   "url": "https://sketchfab.com/3d-models/5a5d6adf2e0444d5be94323938f6d329",
+   "verdict": "like"
+  },
+  "sf:5a6781752e03414f8041fd672807e25c": {
+   "author": "Warhammer_81",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 86,
+   "name": "Incom Z-95-AF4 Headhunter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "5a6781752e03414f8041fd672807e25c",
+   "updatedAt": "2026-09-17T19:06:35.786Z",
+   "url": "https://sketchfab.com/3d-models/5a6781752e03414f8041fd672807e25c",
+   "verdict": "like"
+  },
+  "sf:5b570acb31e04d80adf970bac2c4f661": {
+   "author": "KasraHomayoniAfshar",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 246,
+   "name": "Lambda T-A Shuttle",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "5b570acb31e04d80adf970bac2c4f661",
+   "updatedAt": "2026-09-17T17:15:35.136Z",
+   "url": "https://sketchfab.com/3d-models/5b570acb31e04d80adf970bac2c4f661",
+   "verdict": "like"
+  },
+  "sf:5bcaa60ed5ce4a51b4233aed418f2280": {
+   "author": "metalmorag",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 230,
+   "name": "TIE",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "5bcaa60ed5ce4a51b4233aed418f2280",
+   "updatedAt": "2026-09-17T18:56:50.453Z",
+   "url": "https://sketchfab.com/3d-models/5bcaa60ed5ce4a51b4233aed418f2280",
+   "verdict": "like"
+  },
+  "sf:5ca9a2c89480421592cd65b82d2a028b": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 25,
+   "name": "Trade Federation Landing Craft",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур",
+    "Размытые текстуры"
+   ],
+   "uid": "5ca9a2c89480421592cd65b82d2a028b",
+   "updatedAt": "2026-09-17T15:20:02.797Z",
+   "url": "https://sketchfab.com/3d-models/5ca9a2c89480421592cd65b82d2a028b",
+   "verdict": "dislike"
+  },
+  "sf:5cc750a5fb2546c8a1bf97373bee0cb8": {
+   "author": "CMBC",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 16,
+   "name": "Whispering Crown - coral",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "5cc750a5fb2546c8a1bf97373bee0cb8",
+   "updatedAt": "2026-09-17T18:58:57.441Z",
+   "url": "https://sketchfab.com/3d-models/5cc750a5fb2546c8a1bf97373bee0cb8",
+   "verdict": "dislike"
+  },
+  "sf:5d3c94af529544fd8062813a1d958fd1": {
+   "author": "dmitrtihom",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 3,
+   "name": "Nebulon C",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "5d3c94af529544fd8062813a1d958fd1",
+   "updatedAt": "2026-09-17T17:27:51.001Z",
+   "url": "https://sketchfab.com/3d-models/5d3c94af529544fd8062813a1d958fd1",
+   "verdict": "dislike"
+  },
+  "sf:5d9f47f1e46b426daad6c692ecdf1024": {
+   "author": "lepere.svt.limoges",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 1,
+   "name": "Erosion différentielle mini cheminée de basalte",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "5d9f47f1e46b426daad6c692ecdf1024",
+   "updatedAt": "2026-09-17T18:48:12.940Z",
+   "url": "https://sketchfab.com/3d-models/5d9f47f1e46b426daad6c692ecdf1024",
+   "verdict": "dislike"
+  },
+  "sf:5f1211d2ef064deb870712b52c0e63a3": {
+   "author": "SWU",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 147,
+   "name": "Naboo Cruiser",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "5f1211d2ef064deb870712b52c0e63a3",
+   "updatedAt": "2026-09-17T18:09:11.899Z",
+   "url": "https://sketchfab.com/3d-models/5f1211d2ef064deb870712b52c0e63a3",
+   "verdict": "like"
+  },
+  "sf:5f892f207edf4456bdc4ac1a14a1a85e": {
+   "author": "TG13730",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 3,
+   "name": "X Cube- Flying-Test Low Poly",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "5f892f207edf4456bdc4ac1a14a1a85e",
+   "updatedAt": "2026-09-17T15:18:15.178Z",
+   "url": "https://sketchfab.com/3d-models/5f892f207edf4456bdc4ac1a14a1a85e",
+   "verdict": "dislike"
+  },
+  "sf:6025ff516d4f4145958870d7c7702727": {
+   "author": "JosevanD2",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 2,
+   "name": "Keris - Javanese Dagger",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "6025ff516d4f4145958870d7c7702727",
+   "updatedAt": "2026-09-17T18:55:37.070Z",
+   "url": "https://sketchfab.com/3d-models/6025ff516d4f4145958870d7c7702727",
+   "verdict": "dislike"
+  },
+  "sf:62134c970d3c4abea173339b802ce666": {
+   "author": "KimMurzin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 21,
+   "name": "Y-wing starfighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "62134c970d3c4abea173339b802ce666",
+   "updatedAt": "2026-09-17T19:05:17.110Z",
+   "url": "https://sketchfab.com/3d-models/62134c970d3c4abea173339b802ce666",
+   "verdict": "like"
+  },
+  "sf:6356d19e87494ad8b6f55d0f0e9ec8a7": {
+   "author": "Heataker",
+   "comment": "",
+   "license": "Free Standard",
+   "likes": 157,
+   "name": "Star Wars; CR90 Corvette",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "6356d19e87494ad8b6f55d0f0e9ec8a7",
+   "updatedAt": "2026-09-17T15:23:47.921Z",
+   "url": "https://sketchfab.com/3d-models/6356d19e87494ad8b6f55d0f0e9ec8a7",
+   "verdict": "like"
+  },
+  "sf:638f449449e54e5787d2ba9537b1f0a1": {
+   "author": "Battata",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 0,
+   "name": "Project #1",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "638f449449e54e5787d2ba9537b1f0a1",
+   "updatedAt": "2026-09-17T18:53:05.248Z",
+   "url": "https://sketchfab.com/3d-models/638f449449e54e5787d2ba9537b1f0a1",
+   "verdict": "dislike"
+  },
+  "sf:65850006f9d14e36b2a416c026c3b74b": {
+   "author": "bruhepic925",
+   "comment": "есть лишнее обекты  - дркгие корабли",
+   "license": "CC Attribution",
+   "likes": 12,
+   "name": "C-9979 landing craft",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "65850006f9d14e36b2a416c026c3b74b",
+   "updatedAt": "2026-09-17T15:21:22.493Z",
+   "url": "https://sketchfab.com/3d-models/65850006f9d14e36b2a416c026c3b74b",
+   "verdict": "dislike"
+  },
+  "sf:6643d349670e44fba653ca6960ede289": {
+   "author": "Admiral_Forever",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 11,
+   "name": "Low Poly Supremacy Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Нет текстур",
+    "Low-poly / грубая"
+   ],
+   "uid": "6643d349670e44fba653ca6960ede289",
+   "updatedAt": "2026-09-17T18:52:02.895Z",
+   "url": "https://sketchfab.com/3d-models/6643d349670e44fba653ca6960ede289",
+   "verdict": "like"
+  },
+  "sf:6687ac94f30d4d8abd0fb3df6924c650": {
+   "author": "notcplkerry",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 170,
+   "name": "Low-Poly FN SCAR-H, SF inspired attachments",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "6687ac94f30d4d8abd0fb3df6924c650",
+   "updatedAt": "2026-09-17T18:58:05.319Z",
+   "url": "https://sketchfab.com/3d-models/6687ac94f30d4d8abd0fb3df6924c650",
+   "verdict": "dislike"
+  },
+  "sf:66c12bf19188468883ba268fd45a7d6d": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 99,
+   "name": "Star Wars: TIE/rb Brute",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "66c12bf19188468883ba268fd45a7d6d",
+   "updatedAt": "2026-09-17T18:57:33.095Z",
+   "url": "https://sketchfab.com/3d-models/66c12bf19188468883ba268fd45a7d6d",
+   "verdict": "like"
+  },
+  "sf:6756a00af35e4ea7b34231726fbf8e8c": {
+   "author": "Zack_Hawley",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 23,
+   "name": "Naboo N1 Starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "6756a00af35e4ea7b34231726fbf8e8c",
+   "updatedAt": "2026-09-17T17:26:07.893Z",
+   "url": "https://sketchfab.com/3d-models/6756a00af35e4ea7b34231726fbf8e8c",
+   "verdict": "like"
+  },
+  "sf:67804739c036405faea16120d31bc65a": {
+   "author": "A308",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 61,
+   "name": "V-19 Torrent Starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "67804739c036405faea16120d31bc65a",
+   "updatedAt": "2026-09-17T19:01:35.617Z",
+   "url": "https://sketchfab.com/3d-models/67804739c036405faea16120d31bc65a",
+   "verdict": "like"
+  },
+  "sf:679fbe1689834748bd8dfd781542b95b": {
+   "author": "N.S-STUDIOS",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 4,
+   "name": "A/SF-01 B-wing starfighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур"
+   ],
+   "uid": "679fbe1689834748bd8dfd781542b95b",
+   "updatedAt": "2026-09-17T15:17:18.488Z",
+   "url": "https://sketchfab.com/3d-models/679fbe1689834748bd8dfd781542b95b",
+   "verdict": "dislike"
+  },
+  "sf:6a587e545b1c48bea95480b49458ac63": {
+   "author": "DanielAndersson",
+   "comment": "without legs",
+   "license": "CC Attribution",
+   "likes": 446,
+   "name": "Star Wars: Gozanti-Class Cruiser",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "6a587e545b1c48bea95480b49458ac63",
+   "updatedAt": "2026-09-17T16:43:36.550Z",
+   "url": "https://sketchfab.com/3d-models/6a587e545b1c48bea95480b49458ac63",
+   "verdict": "like"
+  },
+  "sf:6b3a978684df450f8d90afc62beab319": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 29,
+   "name": "Arquitens-Class Light Cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "6b3a978684df450f8d90afc62beab319",
+   "updatedAt": "2026-09-17T15:16:07.628Z",
+   "url": "https://sketchfab.com/3d-models/6b3a978684df450f8d90afc62beab319",
+   "verdict": "dislike"
+  },
+  "sf:709235d3ffa54e90b378740d474e4a7b": {
+   "author": "SWU",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 309,
+   "name": "Slave1",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "709235d3ffa54e90b378740d474e4a7b",
+   "updatedAt": "2026-09-17T18:50:52.242Z",
+   "url": "https://sketchfab.com/3d-models/709235d3ffa54e90b378740d474e4a7b",
+   "verdict": "like"
+  },
+  "sf:70f4ebcc3bae403abf7c2a012b0ca159": {
+   "author": "eliottlh3D",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 22,
+   "name": "Fondor Haulcraft | Star Wars Fan Art",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур",
+    "Low-poly / грубая"
+   ],
+   "uid": "70f4ebcc3bae403abf7c2a012b0ca159",
+   "updatedAt": "2026-09-17T16:37:40.104Z",
+   "url": "https://sketchfab.com/3d-models/70f4ebcc3bae403abf7c2a012b0ca159",
+   "verdict": "dislike"
+  },
+  "sf:73185a19bcf64def984007427ce1d336": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 11,
+   "name": "Recursant Class Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры",
+    "Нет текстур"
+   ],
+   "uid": "73185a19bcf64def984007427ce1d336",
+   "updatedAt": "2026-09-17T18:47:40.423Z",
+   "url": "https://sketchfab.com/3d-models/73185a19bcf64def984007427ce1d336",
+   "verdict": "dislike"
+  },
+  "sf:738ab8a1279740b48d88b960459c41a8": {
+   "author": "Dakata_123",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 32,
+   "name": "Hyena Bomber",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "738ab8a1279740b48d88b960459c41a8",
+   "updatedAt": "2026-09-17T16:48:47.320Z",
+   "url": "https://sketchfab.com/3d-models/738ab8a1279740b48d88b960459c41a8",
+   "verdict": "like"
+  },
+  "sf:74dcce4616614706a5a14cc18f9e051f": {
+   "author": "A308",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 152,
+   "name": "LAAT/i Gunship",
+   "rotate_after_download": true,
+   "source": "sketchfab_index",
+   "tags": [
+    "Неверная ориентация"
+   ],
+   "uid": "74dcce4616614706a5a14cc18f9e051f",
+   "updatedAt": "2026-09-17T17:06:40.891Z",
+   "url": "https://sketchfab.com/3d-models/74dcce4616614706a5a14cc18f9e051f",
+   "verdict": "like"
+  },
+  "sf:74e86b3a3f5340d5a9154197866df6af": {
+   "author": "ZEOCMF",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-NoDerivs",
+   "likes": 136,
+   "name": "LAAT Gunship Devil's Chariot [Star Wars] ZEO",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "74e86b3a3f5340d5a9154197866df6af",
+   "updatedAt": "2026-09-17T17:14:30.278Z",
+   "url": "https://sketchfab.com/3d-models/74e86b3a3f5340d5a9154197866df6af",
+   "verdict": "dislike"
+  },
+  "sf:750fdbb97e3e4d10a7472e79c6c84540": {
+   "author": "Griemikk321",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 1,
+   "name": "The Malevolence",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "750fdbb97e3e4d10a7472e79c6c84540",
+   "updatedAt": "2026-09-17T17:18:07.473Z",
+   "url": "https://sketchfab.com/3d-models/750fdbb97e3e4d10a7472e79c6c84540",
+   "verdict": "dislike"
+  },
+  "sf:7525e51ae1fe4f6c8c1e13940d6ee7d9": {
+   "author": "jcarpenter48",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 81,
+   "name": "V-19 Torrent Starfighter - Prototype Variant",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не та поза (стоит/шагает)"
+   ],
+   "uid": "7525e51ae1fe4f6c8c1e13940d6ee7d9",
+   "updatedAt": "2026-09-17T19:01:05.784Z",
+   "url": "https://sketchfab.com/3d-models/7525e51ae1fe4f6c8c1e13940d6ee7d9",
+   "verdict": "like"
+  },
+  "sf:7681f18c7a6a4e5b860ece879bcb612c": {
+   "author": "chrisleeX",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 258,
+   "name": "The Mandalorian - LEGO N 1 Starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "7681f18c7a6a4e5b860ece879bcb612c",
+   "updatedAt": "2026-09-17T17:25:45.331Z",
+   "url": "https://sketchfab.com/3d-models/7681f18c7a6a4e5b860ece879bcb612c",
+   "verdict": "like"
+  },
+  "sf:77e5a30af490488c8019dcb3780ec847": {
+   "author": "smithson17",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 255,
+   "name": "Star Wars LAAT/i Gunship",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "77e5a30af490488c8019dcb3780ec847",
+   "updatedAt": "2026-09-17T17:06:21.092Z",
+   "url": "https://sketchfab.com/3d-models/77e5a30af490488c8019dcb3780ec847",
+   "verdict": "like"
+  },
+  "sf:791c1bddd3344ddca1391f34b306f398": {
+   "author": "welormit",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 3,
+   "name": "Z-95 Headhunter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "791c1bddd3344ddca1391f34b306f398",
+   "updatedAt": "2026-09-17T19:06:26.126Z",
+   "url": "https://sketchfab.com/3d-models/791c1bddd3344ddca1391f34b306f398",
+   "verdict": "like"
+  },
+  "sf:7927b89d39a24104838bfc863d335b32": {
+   "author": "jcreadingtutor",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "Tie Dagger",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "7927b89d39a24104838bfc863d335b32",
+   "updatedAt": "2026-09-17T18:55:32.899Z",
+   "url": "https://sketchfab.com/3d-models/7927b89d39a24104838bfc863d335b32",
+   "verdict": "like"
+  },
+  "sf:796a76a4c30b49fbba94ae7be7cc1cb8": {
+   "author": "A308",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 78,
+   "name": "Twilight",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "796a76a4c30b49fbba94ae7be7cc1cb8",
+   "updatedAt": "2026-09-17T19:00:35.769Z",
+   "url": "https://sketchfab.com/3d-models/796a76a4c30b49fbba94ae7be7cc1cb8",
+   "verdict": "like"
+  },
+  "sf:7c5f9d41b52941ccabe3ae7f673f5b9d": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 7,
+   "name": "Xyston Star Destroyer Redesign",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Нет текстур",
+    "Low-poly / грубая"
+   ],
+   "uid": "7c5f9d41b52941ccabe3ae7f673f5b9d",
+   "updatedAt": "2026-09-17T19:04:51.760Z",
+   "url": "https://sketchfab.com/3d-models/7c5f9d41b52941ccabe3ae7f673f5b9d",
+   "verdict": "like"
+  },
+  "sf:7e926c8bcaa44d82a84aac7b6244551d": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 44,
+   "name": "Acclamator Class Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "7e926c8bcaa44d82a84aac7b6244551d",
+   "updatedAt": "2026-09-17T15:10:35.324Z",
+   "url": "https://sketchfab.com/3d-models/7e926c8bcaa44d82a84aac7b6244551d",
+   "verdict": "like"
+  },
+  "sf:80171ec2930b4949836bcf24d9694c41": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 618,
+   "name": "Star Wars: TIE/in Interceptor",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "80171ec2930b4949836bcf24d9694c41",
+   "updatedAt": "2026-09-17T18:57:18.036Z",
+   "url": "https://sketchfab.com/3d-models/80171ec2930b4949836bcf24d9694c41",
+   "verdict": "like"
+  },
+  "sf:802fa70fb8cd46f5b741cb6b99f66229": {
+   "author": "A308",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 95,
+   "name": "Arquitens-Class Light Cruiser",
+   "rotate_after_download": true,
+   "source": "sketchfab_index",
+   "tags": [
+    "Неверная ориентация"
+   ],
+   "uid": "802fa70fb8cd46f5b741cb6b99f66229",
+   "updatedAt": "2026-09-17T15:14:44.679Z",
+   "url": "https://sketchfab.com/3d-models/802fa70fb8cd46f5b741cb6b99f66229",
+   "verdict": "like"
+  },
+  "sf:822c8b4550ce4222a2e4a548873b547b": {
+   "author": "dmitrtihom",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 7,
+   "name": "Xyston-class Star Destroyer (EaW Remake)",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "822c8b4550ce4222a2e4a548873b547b",
+   "updatedAt": "2026-09-17T19:04:38.952Z",
+   "url": "https://sketchfab.com/3d-models/822c8b4550ce4222a2e4a548873b547b",
+   "verdict": "like"
+  },
+  "sf:826a509909f944aaa19b3f4f0c6263ff": {
+   "author": "ahmedhaboush19992",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 22,
+   "name": "Suicide Bomber Drone",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "826a509909f944aaa19b3f4f0c6263ff",
+   "updatedAt": "2026-09-17T18:48:04.272Z",
+   "url": "https://sketchfab.com/3d-models/826a509909f944aaa19b3f4f0c6263ff",
+   "verdict": "dislike"
+  },
+  "sf:82f44fdf444f4646ba7945371f15a38e": {
+   "author": "nestor_d",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 17,
+   "name": "RZ-3 A-Wing",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "82f44fdf444f4646ba7945371f15a38e",
+   "updatedAt": "2026-09-17T18:52:58.514Z",
+   "url": "https://sketchfab.com/3d-models/82f44fdf444f4646ba7945371f15a38e",
+   "verdict": "like"
+  },
+  "sf:83654f360e1e4c72b716a2a60ed09031": {
+   "author": "mariusaskvik",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 71,
+   "name": "Darth Vader's TIE Advanced x1",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "83654f360e1e4c72b716a2a60ed09031",
+   "updatedAt": "2026-09-17T18:53:32.052Z",
+   "url": "https://sketchfab.com/3d-models/83654f360e1e4c72b716a2a60ed09031",
+   "verdict": "like"
+  },
+  "sf:8377fa6caf07412eab8d30ab7eabba04": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 11,
+   "name": "TIE Carrier (Fan-made Star Wars ship)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "8377fa6caf07412eab8d30ab7eabba04",
+   "updatedAt": "2026-09-17T18:09:27.095Z",
+   "url": "https://sketchfab.com/3d-models/8377fa6caf07412eab8d30ab7eabba04",
+   "verdict": "dislike"
+  },
+  "sf:83a4fbc4bf604b7fb25c122cb972bacd": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 7,
+   "name": "Resurgent Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "83a4fbc4bf604b7fb25c122cb972bacd",
+   "updatedAt": "2026-09-17T18:49:07.871Z",
+   "url": "https://sketchfab.com/3d-models/83a4fbc4bf604b7fb25c122cb972bacd",
+   "verdict": "like"
+  },
+  "sf:85ad1f2c09a84dd6b6afd6c373433910": {
+   "author": "lampotstreams",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 11,
+   "name": "Resurgent-class-star-destroyer-low-poly",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "85ad1f2c09a84dd6b6afd6c373433910",
+   "updatedAt": "2026-09-17T18:48:47.216Z",
+   "url": "https://sketchfab.com/3d-models/85ad1f2c09a84dd6b6afd6c373433910",
+   "verdict": "like"
+  },
+  "sf:864b0b3c9fe7459eabff1c8823c736fa": {
+   "author": "4130ff15fe394c239cc064b5286c43",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 62,
+   "name": "Star Wars Galaxies - Belbullab-22",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "864b0b3c9fe7459eabff1c8823c736fa",
+   "updatedAt": "2026-09-17T15:18:03.653Z",
+   "url": "https://sketchfab.com/3d-models/864b0b3c9fe7459eabff1c8823c736fa",
+   "verdict": "like"
+  },
+  "sf:86ad9b1e39a54d6eb73c4107c08a1467": {
+   "author": "TG13730",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 18,
+   "name": "Westland LYSANDER",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "86ad9b1e39a54d6eb73c4107c08a1467",
+   "updatedAt": "2026-09-17T18:48:21.130Z",
+   "url": "https://sketchfab.com/3d-models/86ad9b1e39a54d6eb73c4107c08a1467",
+   "verdict": "dislike"
+  },
+  "sf:8709051658be46f2ac2a747c782febda": {
+   "author": "AndrewDeltoro",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 95,
+   "name": "Star Wars Republic Venator Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая",
+    "Нет текстур"
+   ],
+   "uid": "8709051658be46f2ac2a747c782febda",
+   "updatedAt": "2026-09-17T19:02:21.217Z",
+   "url": "https://sketchfab.com/3d-models/8709051658be46f2ac2a747c782febda",
+   "verdict": "like"
+  },
+  "sf:8740b94179ba43a7ac6476973ca0c577": {
+   "author": "cgitutorials",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 202,
+   "name": "Star Wars Rebels: Ghost: VCX-100 (8K Textures)",
+   "rotate_after_download": true,
+   "source": "sketchfab_index",
+   "tags": [
+    "Неверная ориентация"
+   ],
+   "uid": "8740b94179ba43a7ac6476973ca0c577",
+   "updatedAt": "2026-09-17T16:41:58.631Z",
+   "url": "https://sketchfab.com/3d-models/8740b94179ba43a7ac6476973ca0c577",
+   "verdict": "like"
+  },
+  "sf:88139b67d5174829bd9942d26ce6d5af": {
+   "author": "A308",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 96,
+   "name": "Vulture Droid",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "88139b67d5174829bd9942d26ce6d5af",
+   "updatedAt": "2026-09-17T19:03:35.154Z",
+   "url": "https://sketchfab.com/3d-models/88139b67d5174829bd9942d26ce6d5af",
+   "verdict": "like"
+  },
+  "sf:88b4304c517b4b1ea94dcfc48dd398f9": {
+   "author": "YeaBoiiiiiiiii",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 17,
+   "name": "Quasar Fire Class Imperial Light Carrier",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "88b4304c517b4b1ea94dcfc48dd398f9",
+   "updatedAt": "2026-09-17T18:09:43.912Z",
+   "url": "https://sketchfab.com/3d-models/88b4304c517b4b1ea94dcfc48dd398f9",
+   "verdict": "like"
+  },
+  "sf:8951f092e9f5413e88408e3b3e4c40f0": {
+   "author": "jay2307",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 17,
+   "name": "TIE Bomber",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "8951f092e9f5413e88408e3b3e4c40f0",
+   "updatedAt": "2026-09-17T18:54:57.291Z",
+   "url": "https://sketchfab.com/3d-models/8951f092e9f5413e88408e3b3e4c40f0",
+   "verdict": "like"
+  },
+  "sf:89f0c947fd3c415faea9b883bfd871d0": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 13,
+   "name": "TIE Reaper",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "89f0c947fd3c415faea9b883bfd871d0",
+   "updatedAt": "2026-09-17T18:57:56.874Z",
+   "url": "https://sketchfab.com/3d-models/89f0c947fd3c415faea9b883bfd871d0",
+   "verdict": "like"
+  },
+  "sf:8a1e1760391c4ac6a50373c2bf5efa2e": {
+   "author": "ShineyFX",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 2778,
+   "name": "Star Wars: The Clone Wars: Venator Prefab",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "8a1e1760391c4ac6a50373c2bf5efa2e",
+   "updatedAt": "2026-09-17T19:02:08.003Z",
+   "url": "https://sketchfab.com/3d-models/8a1e1760391c4ac6a50373c2bf5efa2e",
+   "verdict": "dislike"
+  },
+  "sf:8bf93a1cf76047c0b23cbd7a31c0fef3": {
+   "author": "demonslayersrr",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 14,
+   "name": "Imperial-Class Star Destroyer (Star Wars)",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "8bf93a1cf76047c0b23cbd7a31c0fef3",
+   "updatedAt": "2026-09-17T16:52:19.450Z",
+   "url": "https://sketchfab.com/3d-models/8bf93a1cf76047c0b23cbd7a31c0fef3",
+   "verdict": "dislike"
+  },
+  "sf:8ca35cee5f614c289a1ff069556fef98": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 7,
+   "name": "Hammerhead Corvette",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "8ca35cee5f614c289a1ff069556fef98",
+   "updatedAt": "2026-09-17T16:46:55.018Z",
+   "url": "https://sketchfab.com/3d-models/8ca35cee5f614c289a1ff069556fef98",
+   "verdict": "like"
+  },
+  "sf:8d7539ceba7142c2ab5ce296659c026d": {
+   "author": "LarsH.",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 91,
+   "name": "Star Wars U-Wing UT-60d",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "8d7539ceba7142c2ab5ce296659c026d",
+   "updatedAt": "2026-09-17T19:00:46.297Z",
+   "url": "https://sketchfab.com/3d-models/8d7539ceba7142c2ab5ce296659c026d",
+   "verdict": "like"
+  },
+  "sf:8fe0b8ca71e8404d8ba3a0c65c64315b": {
+   "author": "flightclubua",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 9,
+   "name": "Orion E Fixed-wing Male UAV by Kronstadt",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "8fe0b8ca71e8404d8ba3a0c65c64315b",
+   "updatedAt": "2026-09-17T16:23:47.935Z",
+   "url": "https://sketchfab.com/3d-models/8fe0b8ca71e8404d8ba3a0c65c64315b",
+   "verdict": "dislike"
+  },
+  "sf:8fe215c3b4154320b89ec60e6d0cd5ec": {
+   "author": "Admiral_Forever",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 20,
+   "name": "Xyston Overhaul",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "8fe215c3b4154320b89ec60e6d0cd5ec",
+   "updatedAt": "2026-09-17T19:04:59.079Z",
+   "url": "https://sketchfab.com/3d-models/8fe215c3b4154320b89ec60e6d0cd5ec",
+   "verdict": "like"
+  },
+  "sf:90cc8920a1e849c5a6694ee859314f35": {
+   "author": "rodesqa",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 329,
+   "name": "Street fighter Elena fan art",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "90cc8920a1e849c5a6694ee859314f35",
+   "updatedAt": "2026-09-17T16:34:40.315Z",
+   "url": "https://sketchfab.com/3d-models/90cc8920a1e849c5a6694ee859314f35",
+   "verdict": "dislike"
+  },
+  "sf:91a9de06514042f485dd96e5d488c383": {
+   "author": "Blue-Six6",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 0,
+   "name": "Resistance RZ-2 A- Wing Fighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур"
+   ],
+   "uid": "91a9de06514042f485dd96e5d488c383",
+   "updatedAt": "2026-09-17T18:50:26.549Z",
+   "url": "https://sketchfab.com/3d-models/91a9de06514042f485dd96e5d488c383",
+   "verdict": "like"
+  },
+  "sf:926acd7aed8a47779685bf3058128b47": {
+   "author": "n-",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 292,
+   "name": "attractor/8 Wang-Sun (stop_motion2)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "926acd7aed8a47779685bf3058128b47",
+   "updatedAt": "2026-09-17T16:24:27.835Z",
+   "url": "https://sketchfab.com/3d-models/926acd7aed8a47779685bf3058128b47",
+   "verdict": "dislike"
+  },
+  "sf:92a477bf7373414bbbce3b75e6ebb1b8": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 170,
+   "name": "Star Wars: TIE/in Interceptor",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "92a477bf7373414bbbce3b75e6ebb1b8",
+   "updatedAt": "2026-09-17T18:57:23.466Z",
+   "url": "https://sketchfab.com/3d-models/92a477bf7373414bbbce3b75e6ebb1b8",
+   "verdict": "like"
+  },
+  "sf:932d0a7bb69f41b0a5a37bbf3a194bd7": {
+   "author": "_kii",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 96,
+   "name": "Bladeless Stealth Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "932d0a7bb69f41b0a5a37bbf3a194bd7",
+   "updatedAt": "2026-09-17T16:35:31.287Z",
+   "url": "https://sketchfab.com/3d-models/932d0a7bb69f41b0a5a37bbf3a194bd7",
+   "verdict": "dislike"
+  },
+  "sf:94c16ec8088545e9ae924f0a94b30968": {
+   "author": "allanromanreyes",
+   "comment": "",
+   "license": "Free Standard",
+   "likes": 36,
+   "name": "ARC-170 Starfighter and Clone Pilot",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "94c16ec8088545e9ae924f0a94b30968",
+   "updatedAt": "2026-09-17T15:10:42.854Z",
+   "url": "https://sketchfab.com/3d-models/94c16ec8088545e9ae924f0a94b30968",
+   "verdict": "dislike"
+  },
+  "sf:966265e37e61433b919ba640a12a33f5": {
+   "author": "SomeGuyUsingBlender",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 198,
+   "name": "Munificent Class Star Frigate",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "966265e37e61433b919ba640a12a33f5",
+   "updatedAt": "2026-09-17T17:25:06.376Z",
+   "url": "https://sketchfab.com/3d-models/966265e37e61433b919ba640a12a33f5",
+   "verdict": "like"
+  },
+  "sf:98f1decbda5c48aea22a11c7ddd62a7b": {
+   "author": "quiznos323",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 70,
+   "name": "TIE Advanced x1 (Vader's TIE) - Star Wars",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "98f1decbda5c48aea22a11c7ddd62a7b",
+   "updatedAt": "2026-09-17T18:53:10.378Z",
+   "url": "https://sketchfab.com/3d-models/98f1decbda5c48aea22a11c7ddd62a7b",
+   "verdict": "like"
+  },
+  "sf:993d2920342f46f7b92baf3aea1c3cf3": {
+   "author": "quiznos323",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 109,
+   "name": "T-65 X-wing Starfighter - Star Wars",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "993d2920342f46f7b92baf3aea1c3cf3",
+   "updatedAt": "2026-09-17T19:04:18.759Z",
+   "url": "https://sketchfab.com/3d-models/993d2920342f46f7b92baf3aea1c3cf3",
+   "verdict": "like"
+  },
+  "sf:9b1fe5c56ca44d3da632235f7599abc5": {
+   "author": "A308",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 57,
+   "name": "Z-95 Headhunter",
+   "rotate_after_download": true,
+   "source": "sketchfab_index",
+   "tags": [
+    "Неверная ориентация"
+   ],
+   "uid": "9b1fe5c56ca44d3da632235f7599abc5",
+   "updatedAt": "2026-09-17T19:06:20.593Z",
+   "url": "https://sketchfab.com/3d-models/9b1fe5c56ca44d3da632235f7599abc5",
+   "verdict": "like"
+  },
+  "sf:9b5e5e5192f64a7faad93a3bfd2efaf2": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 181,
+   "name": "Star Wars: MC80 Home One Type Star Cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "9b5e5e5192f64a7faad93a3bfd2efaf2",
+   "updatedAt": "2026-09-17T17:22:04.687Z",
+   "url": "https://sketchfab.com/3d-models/9b5e5e5192f64a7faad93a3bfd2efaf2",
+   "verdict": "like"
+  },
+  "sf:9c06ba9b24144221aa80f56192f485b6": {
+   "author": "scarlequin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 70,
+   "name": "Trade Federation Droid Tri-Fighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "9c06ba9b24144221aa80f56192f485b6",
+   "updatedAt": "2026-09-17T16:23:35.728Z",
+   "url": "https://sketchfab.com/3d-models/9c06ba9b24144221aa80f56192f485b6",
+   "verdict": "like"
+  },
+  "sf:9d160e16845a4b518a2d30a7c716f20d": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 305,
+   "name": "Star Wars: Lambda Shuttle",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "9d160e16845a4b518a2d30a7c716f20d",
+   "updatedAt": "2026-09-17T17:14:43.175Z",
+   "url": "https://sketchfab.com/3d-models/9d160e16845a4b518a2d30a7c716f20d",
+   "verdict": "like"
+  },
+  "sf:9e47fbf0b28e40b692198ee7441d99f8": {
+   "author": "WobblyG",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-NoDerivs",
+   "likes": 117,
+   "name": "Incom-FreiTek T-70 X-wing - \"Black One\"",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "9e47fbf0b28e40b692198ee7441d99f8",
+   "updatedAt": "2026-09-17T18:52:24.581Z",
+   "url": "https://sketchfab.com/3d-models/9e47fbf0b28e40b692198ee7441d99f8",
+   "verdict": "like"
+  },
+  "sf:9f19cd3ebbe5438f950aa22bde5136ea": {
+   "author": "jcreadingtutor",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 15,
+   "name": "Tie Silencer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "9f19cd3ebbe5438f950aa22bde5136ea",
+   "updatedAt": "2026-09-17T18:58:27.365Z",
+   "url": "https://sketchfab.com/3d-models/9f19cd3ebbe5438f950aa22bde5136ea",
+   "verdict": "like"
+  },
+  "sf:9f22cfc0912e41e9b31ac1a7ab26ddb0": {
+   "author": "LarsH.",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 31,
+   "name": "Star Wars Tie Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "9f22cfc0912e41e9b31ac1a7ab26ddb0",
+   "updatedAt": "2026-09-17T16:35:01.227Z",
+   "url": "https://sketchfab.com/3d-models/9f22cfc0912e41e9b31ac1a7ab26ddb0",
+   "verdict": "like"
+  },
+  "sf:9fe8f1d0ef8e41f4a85d3fb0cdfdfebf": {
+   "author": "joshlu",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 2,
+   "name": "9 Coblentz Ave (Demolished)",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "9fe8f1d0ef8e41f4a85d3fb0cdfdfebf",
+   "updatedAt": "2026-09-17T18:54:50.345Z",
+   "url": "https://sketchfab.com/3d-models/9fe8f1d0ef8e41f4a85d3fb0cdfdfebf",
+   "verdict": "dislike"
+  },
+  "sf:a0e8486c603343c3a8cd06a5e3cb21c2": {
+   "author": "frankybelis",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 258,
+   "name": "STAR WARS - INCOM T-70 X-WING FIGHTER",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "a0e8486c603343c3a8cd06a5e3cb21c2",
+   "updatedAt": "2026-09-17T18:52:19.556Z",
+   "url": "https://sketchfab.com/3d-models/a0e8486c603343c3a8cd06a5e3cb21c2",
+   "verdict": "like"
+  },
+  "sf:a2ba853ccabc45418a5f213c5b4b6516": {
+   "author": "Blue-Six6",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 1,
+   "name": "U-55 Loadlifter TLJ Resistance Transport",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "a2ba853ccabc45418a5f213c5b4b6516",
+   "updatedAt": "2026-09-17T18:48:31.421Z",
+   "url": "https://sketchfab.com/3d-models/a2ba853ccabc45418a5f213c5b4b6516",
+   "verdict": "like"
+  },
+  "sf:a3a01470d6794792892dff5c15c7a267": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 100,
+   "name": "Star Wars: TIE/x1 Advanced x1",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "a3a01470d6794792892dff5c15c7a267",
+   "updatedAt": "2026-09-17T18:53:23.144Z",
+   "url": "https://sketchfab.com/3d-models/a3a01470d6794792892dff5c15c7a267",
+   "verdict": "like"
+  },
+  "sf:a59d744ee05e4664b023153137a5f8e4": {
+   "author": "manilov.ap",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 17,
+   "name": "Dh106",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "a59d744ee05e4664b023153137a5f8e4",
+   "updatedAt": "2026-09-17T15:19:53.302Z",
+   "url": "https://sketchfab.com/3d-models/a59d744ee05e4664b023153137a5f8e4",
+   "verdict": "dislike"
+  },
+  "sf:a6f29bb8f80149c5a83ca1341fc10093": {
+   "author": "jcreadingtutor",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 8,
+   "name": "First Order Tie Fighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "a6f29bb8f80149c5a83ca1341fc10093",
+   "updatedAt": "2026-09-17T16:37:04.975Z",
+   "url": "https://sketchfab.com/3d-models/a6f29bb8f80149c5a83ca1341fc10093",
+   "verdict": "like"
+  },
+  "sf:a8fb9ecdf203401794d495b63b17eb5a": {
+   "author": "ZEOCMF",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-NoDerivs",
+   "likes": 66,
+   "name": "Cantwell-class Arrestor Cruiser [Star Wars] ZEO",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "a8fb9ecdf203401794d495b63b17eb5a",
+   "updatedAt": "2026-09-17T15:22:55.779Z",
+   "url": "https://sketchfab.com/3d-models/a8fb9ecdf203401794d495b63b17eb5a",
+   "verdict": "like"
+  },
+  "sf:acef1a618d36439397c9408cf33d7230": {
+   "author": "EmilSc",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 107,
+   "name": "Nu-Class Shuttle | Starwars CW",
+   "rotate_after_download": true,
+   "source": "sketchfab_index",
+   "tags": [
+    "Неверная ориентация"
+   ],
+   "uid": "acef1a618d36439397c9408cf33d7230",
+   "updatedAt": "2026-09-17T18:08:40.923Z",
+   "url": "https://sketchfab.com/3d-models/acef1a618d36439397c9408cf33d7230",
+   "verdict": "like"
+  },
+  "sf:aee7185dc9224aa0b424c657f7b9b093": {
+   "author": "risto296",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 249,
+   "name": "Eclipse Class Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "aee7185dc9224aa0b424c657f7b9b093",
+   "updatedAt": "2026-09-17T16:59:34.940Z",
+   "url": "https://sketchfab.com/3d-models/aee7185dc9224aa0b424c657f7b9b093",
+   "verdict": "like"
+  },
+  "sf:af8de96df4424197aad06e6e0d25e22e": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 48,
+   "name": "A/SF-01 B-wing starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "af8de96df4424197aad06e6e0d25e22e",
+   "updatedAt": "2026-09-17T15:16:38.844Z",
+   "url": "https://sketchfab.com/3d-models/af8de96df4424197aad06e6e0d25e22e",
+   "verdict": "like"
+  },
+  "sf:b0b146acde014ea0bf51ed572a500982": {
+   "author": "dmitrtihom",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 3,
+   "name": "Resurgent-class Star Destroyer First Order",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "b0b146acde014ea0bf51ed572a500982",
+   "updatedAt": "2026-09-17T18:48:54.852Z",
+   "url": "https://sketchfab.com/3d-models/b0b146acde014ea0bf51ed572a500982",
+   "verdict": "dislike"
+  },
+  "sf:b13126de57c44f5388e80b411f47078e": {
+   "author": "SWU",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 290,
+   "name": "A-wing",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "b13126de57c44f5388e80b411f47078e",
+   "updatedAt": "2026-09-17T14:54:13.501Z",
+   "url": "https://sketchfab.com/3d-models/b13126de57c44f5388e80b411f47078e",
+   "verdict": "like"
+  },
+  "sf:b2499f64dca6428ab5e812f3709ca706": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 19,
+   "name": "Naboo Royal cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая",
+    "Нет текстур"
+   ],
+   "uid": "b2499f64dca6428ab5e812f3709ca706",
+   "updatedAt": "2026-09-17T18:09:06.888Z",
+   "url": "https://sketchfab.com/3d-models/b2499f64dca6428ab5e812f3709ca706",
+   "verdict": "like"
+  },
+  "sf:b38237445cfe4fb690ab47581b861498": {
+   "author": "Rebus2077",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 4,
+   "name": "TIE/sgf Starfighter Ground Force",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "b38237445cfe4fb690ab47581b861498",
+   "updatedAt": "2026-09-17T16:35:58.014Z",
+   "url": "https://sketchfab.com/3d-models/b38237445cfe4fb690ab47581b861498",
+   "verdict": "like"
+  },
+  "sf:b4a8ad8a1e8b4e5b961cf4726d8a8646": {
+   "author": "DrEgguin",
+   "comment": "убрать ножки",
+   "license": "CC Attribution",
+   "likes": 33,
+   "name": "Delta-7 Aethersprite-class Light Interceptor",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "b4a8ad8a1e8b4e5b961cf4726d8a8646",
+   "updatedAt": "2026-09-17T15:52:31.069Z",
+   "url": "https://sketchfab.com/3d-models/b4a8ad8a1e8b4e5b961cf4726d8a8646",
+   "verdict": "like"
+  },
+  "sf:b53f3436fa114d7b939789c24c92b9de": {
+   "author": "iedalton",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 65,
+   "name": "Star Wars Republic Frigate",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "b53f3436fa114d7b939789c24c92b9de",
+   "updatedAt": "2026-09-17T15:23:16.916Z",
+   "url": "https://sketchfab.com/3d-models/b53f3436fa114d7b939789c24c92b9de",
+   "verdict": "like"
+  },
+  "sf:b76f59276bc444458d5faaa9e6321cfc": {
+   "author": "4130ff15fe394c239cc064b5286c43",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 159,
+   "name": "SWBF2(Custom) - Anakin's Eta-2 Actis Interceptor",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "b76f59276bc444458d5faaa9e6321cfc",
+   "updatedAt": "2026-09-17T16:24:37.044Z",
+   "url": "https://sketchfab.com/3d-models/b76f59276bc444458d5faaa9e6321cfc",
+   "verdict": "like"
+  },
+  "sf:b7964fd1493d4c148a906e0df7049b73": {
+   "author": "heresylordcz",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 28,
+   "name": "Rho-Class Transport Shuttle",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "b7964fd1493d4c148a906e0df7049b73",
+   "updatedAt": "2026-09-17T18:08:27.542Z",
+   "url": "https://sketchfab.com/3d-models/b7964fd1493d4c148a906e0df7049b73",
+   "verdict": "dislike"
+  },
+  "sf:b9407262cdf34d37b0720ca6b70469be": {
+   "author": "DrEgguin",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 100,
+   "name": "ARC-170 Starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "b9407262cdf34d37b0720ca6b70469be",
+   "updatedAt": "2026-09-17T15:11:03.735Z",
+   "url": "https://sketchfab.com/3d-models/b9407262cdf34d37b0720ca6b70469be",
+   "verdict": "like"
+  },
+  "sf:b9e7a67cf726485da1493545fccce557": {
+   "author": "citizensnip",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 640,
+   "name": "TU-148 Long Range Interceptor",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "b9e7a67cf726485da1493545fccce557",
+   "updatedAt": "2026-09-17T14:54:24.628Z",
+   "url": "https://sketchfab.com/3d-models/b9e7a67cf726485da1493545fccce557",
+   "verdict": "dislike"
+  },
+  "sf:ba88e6e431974dc2b920d43dccc750c6": {
+   "author": "LarsH.",
+   "comment": " слоденные крыотя",
+   "license": "CC Attribution",
+   "likes": 105,
+   "name": "Star Wars Lambda Shuttle",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "ba88e6e431974dc2b920d43dccc750c6",
+   "updatedAt": "2026-09-17T17:15:13.191Z",
+   "url": "https://sketchfab.com/3d-models/ba88e6e431974dc2b920d43dccc750c6",
+   "verdict": "dislike"
+  },
+  "sf:bc68504e220f47269e508f6777df2c18": {
+   "author": "nekiv",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 96,
+   "name": "YT-2442",
+   "rotate_after_download": true,
+   "source": "sketchfab_index",
+   "tags": [
+    "Неверная ориентация"
+   ],
+   "uid": "bc68504e220f47269e508f6777df2c18",
+   "updatedAt": "2026-09-17T19:05:49.993Z",
+   "url": "https://sketchfab.com/3d-models/bc68504e220f47269e508f6777df2c18",
+   "verdict": "like"
+  },
+  "sf:be2eaed4a2e04019a2bbf1ebf178f5d1": {
+   "author": "Sigil0fSaturn",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 28,
+   "name": "Tyrant Sculpt (Doom Eternal Fanart)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "be2eaed4a2e04019a2bbf1ebf178f5d1",
+   "updatedAt": "2026-09-17T18:56:17.975Z",
+   "url": "https://sketchfab.com/3d-models/be2eaed4a2e04019a2bbf1ebf178f5d1",
+   "verdict": "dislike"
+  },
+  "sf:be87d79b75be4c06bf7b70f477fceb44": {
+   "author": "nekiv",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 60,
+   "name": "TIE Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "be87d79b75be4c06bf7b70f477fceb44",
+   "updatedAt": "2026-09-17T18:56:45.530Z",
+   "url": "https://sketchfab.com/3d-models/be87d79b75be4c06bf7b70f477fceb44",
+   "verdict": "like"
+  },
+  "sf:c01b5e43490c4e63acf1f2821505e26b": {
+   "author": "jmd.personal1447",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 1,
+   "name": "Imperial TIE Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "c01b5e43490c4e63acf1f2821505e26b",
+   "updatedAt": "2026-09-17T18:55:40.791Z",
+   "url": "https://sketchfab.com/3d-models/c01b5e43490c4e63acf1f2821505e26b",
+   "verdict": "dislike"
+  },
+  "sf:c12520600eb141d1a7b691e5d95c7227": {
+   "author": "dmitrtihom",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 3,
+   "name": "Raddus. MC85 star cruiser (FOC Alliance)",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "c12520600eb141d1a7b691e5d95c7227",
+   "updatedAt": "2026-09-17T17:20:15.211Z",
+   "url": "https://sketchfab.com/3d-models/c12520600eb141d1a7b691e5d95c7227",
+   "verdict": "dislike"
+  },
+  "sf:c14d9e6c15d44cbbb41dad0e98f0a16a": {
+   "author": "vinyl_115",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "Simple Acclamator",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "c14d9e6c15d44cbbb41dad0e98f0a16a",
+   "updatedAt": "2026-09-17T14:59:36.762Z",
+   "url": "https://sketchfab.com/3d-models/c14d9e6c15d44cbbb41dad0e98f0a16a",
+   "verdict": "dislike"
+  },
+  "sf:c237a094d67f44678aa023a4219e50b8": {
+   "author": "the-holy-usurper",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 17,
+   "name": "mc80 liberty class star cruiser",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "c237a094d67f44678aa023a4219e50b8",
+   "updatedAt": "2026-09-17T17:22:40.507Z",
+   "url": "https://sketchfab.com/3d-models/c237a094d67f44678aa023a4219e50b8",
+   "verdict": "like"
+  },
+  "sf:c306f5183f364176912d782b19474781": {
+   "author": "SWU",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 351,
+   "name": "TIE Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "c306f5183f364176912d782b19474781",
+   "updatedAt": "2026-09-17T18:56:38.362Z",
+   "url": "https://sketchfab.com/3d-models/c306f5183f364176912d782b19474781",
+   "verdict": "like"
+  },
+  "sf:c58ab9de1c424c02b9840030b49c4445": {
+   "author": "rustamq865",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 16,
+   "name": "Sculpting Possibilities: The 3D Container",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "c58ab9de1c424c02b9840030b49c4445",
+   "updatedAt": "2026-09-17T18:48:35.230Z",
+   "url": "https://sketchfab.com/3d-models/c58ab9de1c424c02b9840030b49c4445",
+   "verdict": "dislike"
+  },
+  "sf:c7e6688d5b6542cf804d74bda07cd793": {
+   "author": "rodrigoscar",
+   "comment": "убрать числа",
+   "license": "CC Attribution",
+   "likes": 187,
+   "name": "Naboo Starfighter_01",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "c7e6688d5b6542cf804d74bda07cd793",
+   "updatedAt": "2026-09-17T17:27:45.188Z",
+   "url": "https://sketchfab.com/3d-models/c7e6688d5b6542cf804d74bda07cd793",
+   "verdict": "like"
+  },
+  "sf:c89014c4229641109576ef81d3256074": {
+   "author": "dmitrtihom",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 13,
+   "name": "TIE Silencer First Order",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "c89014c4229641109576ef81d3256074",
+   "updatedAt": "2026-09-17T18:58:18.081Z",
+   "url": "https://sketchfab.com/3d-models/c89014c4229641109576ef81d3256074",
+   "verdict": "like"
+  },
+  "sf:ccc05006281b4dedb52ef47d64dd4b60": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 1,
+   "name": "Star Wars The Old Republic Leviathan interdictor",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "ccc05006281b4dedb52ef47d64dd4b60",
+   "updatedAt": "2026-09-17T17:00:48.150Z",
+   "url": "https://sketchfab.com/3d-models/ccc05006281b4dedb52ef47d64dd4b60",
+   "verdict": "like"
+  },
+  "sf:ccd2749df33641fba7a5326500abdbfb": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 245,
+   "name": "Star Wars: YT-2400 Light Freighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "ccd2749df33641fba7a5326500abdbfb",
+   "updatedAt": "2026-09-17T19:06:12.435Z",
+   "url": "https://sketchfab.com/3d-models/ccd2749df33641fba7a5326500abdbfb",
+   "verdict": "like"
+  },
+  "sf:cd6969e3938845a4a7e256f5cadd3f1c": {
+   "author": "Porg123",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 2,
+   "name": "Soulless One",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая",
+    "Не тот корабль",
+    "Нет текстур"
+   ],
+   "uid": "cd6969e3938845a4a7e256f5cadd3f1c",
+   "updatedAt": "2026-09-17T18:51:50.432Z",
+   "url": "https://sketchfab.com/3d-models/cd6969e3938845a4a7e256f5cadd3f1c",
+   "verdict": "dislike"
+  },
+  "sf:cd717b3b9108462d9f17bb2ab036957e": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 11,
+   "name": "Republic Consular Cruiser",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "cd717b3b9108462d9f17bb2ab036957e",
+   "updatedAt": "2026-09-17T18:47:50.353Z",
+   "url": "https://sketchfab.com/3d-models/cd717b3b9108462d9f17bb2ab036957e",
+   "verdict": "like"
+  },
+  "sf:cffeaec6b1d34db587a7f8c2f9c51915": {
+   "author": "CaptainJamesKirk",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 54,
+   "name": "Star Wars CR90 Corvette_interior",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "cffeaec6b1d34db587a7f8c2f9c51915",
+   "updatedAt": "2026-09-17T15:48:19.688Z",
+   "url": "https://sketchfab.com/3d-models/cffeaec6b1d34db587a7f8c2f9c51915",
+   "verdict": "dislike"
+  },
+  "sf:d018191fddfe480daa1a95160cbe4763": {
+   "author": "joaocarlos98",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 27,
+   "name": "Nu-Class Shuttle",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не та поза (стоит/шагает)"
+   ],
+   "uid": "d018191fddfe480daa1a95160cbe4763",
+   "updatedAt": "2026-09-17T18:08:45.993Z",
+   "url": "https://sketchfab.com/3d-models/d018191fddfe480daa1a95160cbe4763",
+   "verdict": "dislike"
+  },
+  "sf:d0d042b12b8c4a2993bfe7bee78c5953": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 75,
+   "name": "Star Wars: TIE/d Defender Elite",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "d0d042b12b8c4a2993bfe7bee78c5953",
+   "updatedAt": "2026-09-17T18:56:23.632Z",
+   "url": "https://sketchfab.com/3d-models/d0d042b12b8c4a2993bfe7bee78c5953",
+   "verdict": "like"
+  },
+  "sf:d10a382ebe764df5afa5ad87ad12ebde": {
+   "author": "airstudios3d",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 110,
+   "name": "V-19 Torrent - Star Wars - Clone Wars",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "d10a382ebe764df5afa5ad87ad12ebde",
+   "updatedAt": "2026-09-17T19:01:15.267Z",
+   "url": "https://sketchfab.com/3d-models/d10a382ebe764df5afa5ad87ad12ebde",
+   "verdict": "like"
+  },
+  "sf:d14eb14d83bd4e7ba7cbe443d76a10fd": {
+   "author": "dark_igorek",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 2491,
+   "name": "⛨ The Forgotten Knight ⛨",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "d14eb14d83bd4e7ba7cbe443d76a10fd",
+   "updatedAt": "2026-09-17T19:00:16.418Z",
+   "url": "https://sketchfab.com/3d-models/d14eb14d83bd4e7ba7cbe443d76a10fd",
+   "verdict": "dislike"
+  },
+  "sf:d2a5c2dfccbd445e8ec9bbee3e216b33": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 98,
+   "name": "Star Wars: Z-95 Headhunter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "d2a5c2dfccbd445e8ec9bbee3e216b33",
+   "updatedAt": "2026-09-17T19:06:38.801Z",
+   "url": "https://sketchfab.com/3d-models/d2a5c2dfccbd445e8ec9bbee3e216b33",
+   "verdict": "like"
+  },
+  "sf:d2b9834148e84c86a2423148db1f6705": {
+   "author": "SWU",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 352,
+   "name": "ARC-170 Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "d2b9834148e84c86a2423148db1f6705",
+   "updatedAt": "2026-09-17T15:11:11.624Z",
+   "url": "https://sketchfab.com/3d-models/d2b9834148e84c86a2423148db1f6705",
+   "verdict": "like"
+  },
+  "sf:d48949c425704a8dafbe7e65d6dcd8c1": {
+   "author": "dandruffkielbasa",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 42,
+   "name": "The Malevolence die-cast",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не та поза (стоит/шагает)",
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "d48949c425704a8dafbe7e65d6dcd8c1",
+   "updatedAt": "2026-09-17T17:17:25.185Z",
+   "url": "https://sketchfab.com/3d-models/d48949c425704a8dafbe7e65d6dcd8c1",
+   "verdict": "like"
+  },
+  "sf:d572f763ba5c4a70a88aa9c680bd549b": {
+   "author": "turbopurr",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 3,
+   "name": "Dooku's Solar Saier",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "d572f763ba5c4a70a88aa9c680bd549b",
+   "updatedAt": "2026-09-17T18:51:05.157Z",
+   "url": "https://sketchfab.com/3d-models/d572f763ba5c4a70a88aa9c680bd549b",
+   "verdict": "like"
+  },
+  "sf:d5b4e79acd684d52a1f3303edf22039b": {
+   "author": "kalebiscoolio78",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 56,
+   "name": "Ghostly Reaper",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "d5b4e79acd684d52a1f3303edf22039b",
+   "updatedAt": "2026-09-17T18:58:01.433Z",
+   "url": "https://sketchfab.com/3d-models/d5b4e79acd684d52a1f3303edf22039b",
+   "verdict": "dislike"
+  },
+  "sf:d83350882d0246d8a1233b748e3c0b09": {
+   "author": "vargov",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 0,
+   "name": "Decorative composition - Vargov LC0141",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "d83350882d0246d8a1233b748e3c0b09",
+   "updatedAt": "2026-09-17T17:06:02.882Z",
+   "url": "https://sketchfab.com/3d-models/d83350882d0246d8a1233b748e3c0b09",
+   "verdict": "dislike"
+  },
+  "sf:d83fb5eb8fb542789e751c05a542f5bc": {
+   "author": "Nekodemo",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 218,
+   "name": "B-Wing ( W I P )",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "d83fb5eb8fb542789e751c05a542f5bc",
+   "updatedAt": "2026-09-17T15:16:25.087Z",
+   "url": "https://sketchfab.com/3d-models/d83fb5eb8fb542789e751c05a542f5bc",
+   "verdict": "like"
+  },
+  "sf:d8496e6544254b5692b9182240e83416": {
+   "author": "Leytra",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 29,
+   "name": "V19 Torrent Starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "d8496e6544254b5692b9182240e83416",
+   "updatedAt": "2026-09-17T19:01:28.297Z",
+   "url": "https://sketchfab.com/3d-models/d8496e6544254b5692b9182240e83416",
+   "verdict": "like"
+  },
+  "sf:d8a033a4b16744aca9edf9275b8f655b": {
+   "author": "bennyboiyt",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 46,
+   "name": "Star Wars Nu Class Attack Shuttle",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "d8a033a4b16744aca9edf9275b8f655b",
+   "updatedAt": "2026-09-17T17:29:29.927Z",
+   "url": "https://sketchfab.com/3d-models/d8a033a4b16744aca9edf9275b8f655b",
+   "verdict": "like"
+  },
+  "sf:d9e91c978a514ae3b44719eedfa990a2": {
+   "author": "2theMAX_the_Stair_Fax",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 2,
+   "name": "GEM: SF-1 \"Shooting Star II\"",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "d9e91c978a514ae3b44719eedfa990a2",
+   "updatedAt": "2026-09-17T15:51:22.352Z",
+   "url": "https://sketchfab.com/3d-models/d9e91c978a514ae3b44719eedfa990a2",
+   "verdict": "dislike"
+  },
+  "sf:dab029b751bd4cc293b66e3cc013e3a0": {
+   "author": "SWU",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 316,
+   "name": "TIE bomber",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "dab029b751bd4cc293b66e3cc013e3a0",
+   "updatedAt": "2026-09-17T18:55:04.416Z",
+   "url": "https://sketchfab.com/3d-models/dab029b751bd4cc293b66e3cc013e3a0",
+   "verdict": "like"
+  },
+  "sf:db79c93b024c4082a053f03f9cce2edc": {
+   "author": "FascinationKR7X",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 2,
+   "name": "Trade Federation Lucrehulk-class battleship",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "db79c93b024c4082a053f03f9cce2edc",
+   "updatedAt": "2026-09-17T17:16:16.433Z",
+   "url": "https://sketchfab.com/3d-models/db79c93b024c4082a053f03f9cce2edc",
+   "verdict": "like"
+  },
+  "sf:dc96265da5b743e3b5892ef4eb11f3a6": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 20,
+   "name": "Vindicator-Class Heavy Cruiser",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "dc96265da5b743e3b5892ef4eb11f3a6",
+   "updatedAt": "2026-09-17T16:59:40.120Z",
+   "url": "https://sketchfab.com/3d-models/dc96265da5b743e3b5892ef4eb11f3a6",
+   "verdict": "dislike"
+  },
+  "sf:dcec7fe734e441dfafdc03ea0bb58d4a": {
+   "author": "Admiral_Forever",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 21,
+   "name": "Old Xyston",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "dcec7fe734e441dfafdc03ea0bb58d4a",
+   "updatedAt": "2026-09-17T19:05:06.654Z",
+   "url": "https://sketchfab.com/3d-models/dcec7fe734e441dfafdc03ea0bb58d4a",
+   "verdict": "like"
+  },
+  "sf:dd9799a6627d4cf8ae6b4b7c913f8f97": {
+   "author": "Planetrix23",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 7,
+   "name": "Naboo N-4 Heavy Starfighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "dd9799a6627d4cf8ae6b4b7c913f8f97",
+   "updatedAt": "2026-09-17T17:26:17.506Z",
+   "url": "https://sketchfab.com/3d-models/dd9799a6627d4cf8ae6b4b7c913f8f97",
+   "verdict": "like"
+  },
+  "sf:de1d5faa9f704cfa8095b41d243e252a": {
+   "author": "corelliastarshipyards",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 5,
+   "name": "YT-1850",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "de1d5faa9f704cfa8095b41d243e252a",
+   "updatedAt": "2026-09-17T19:06:04.211Z",
+   "url": "https://sketchfab.com/3d-models/de1d5faa9f704cfa8095b41d243e252a",
+   "verdict": "like"
+  },
+  "sf:df018bc2cecc4a5182fde06ddc9b1496": {
+   "author": "Admiral_Forever",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 186,
+   "name": "Star Wars - Executor Super Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "df018bc2cecc4a5182fde06ddc9b1496",
+   "updatedAt": "2026-09-17T16:33:31.556Z",
+   "url": "https://sketchfab.com/3d-models/df018bc2cecc4a5182fde06ddc9b1496",
+   "verdict": "like"
+  },
+  "sf:dfcebbe398ad439e84c32cdc4925b249": {
+   "author": "N.S-STUDIOS",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 6,
+   "name": "UT-60D U-wing starfighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур",
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "dfcebbe398ad439e84c32cdc4925b249",
+   "updatedAt": "2026-09-17T19:00:42.352Z",
+   "url": "https://sketchfab.com/3d-models/dfcebbe398ad439e84c32cdc4925b249",
+   "verdict": "dislike"
+  },
+  "sf:e08e911d18344d3480439b387fc2ee3f": {
+   "author": "SWU",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 89,
+   "name": "Mon Calamari",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "e08e911d18344d3480439b387fc2ee3f",
+   "updatedAt": "2026-09-17T17:22:32.507Z",
+   "url": "https://sketchfab.com/3d-models/e08e911d18344d3480439b387fc2ee3f",
+   "verdict": "like"
+  },
+  "sf:e3694d8502dc412ea7e1decd42d948c4": {
+   "author": "4130ff15fe394c239cc064b5286c43",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 145,
+   "name": "Star Wars Galaxies - Eta-2 Actis Interceptor",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры"
+   ],
+   "uid": "e3694d8502dc412ea7e1decd42d948c4",
+   "updatedAt": "2026-09-17T16:31:10.016Z",
+   "url": "https://sketchfab.com/3d-models/e3694d8502dc412ea7e1decd42d948c4",
+   "verdict": "like"
+  },
+  "sf:e4ffa6cae3dc4da7ad6acda50b889f3d": {
+   "author": "cashlb08",
+   "comment": "This is good/ LEGO are perfect",
+   "license": "CC Attribution",
+   "likes": 0,
+   "name": "tri fighter droid",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "e4ffa6cae3dc4da7ad6acda50b889f3d",
+   "updatedAt": "2026-09-17T16:22:36.010Z",
+   "url": "https://sketchfab.com/3d-models/e4ffa6cae3dc4da7ad6acda50b889f3d",
+   "verdict": "like"
+  },
+  "sf:e6a2171be5c34bb68a05aba657fd8fa8": {
+   "author": "KuatEntralla3D",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 46,
+   "name": "Acclamator-Class Assault Ship",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "e6a2171be5c34bb68a05aba657fd8fa8",
+   "updatedAt": "2026-09-17T15:10:23.610Z",
+   "url": "https://sketchfab.com/3d-models/e6a2171be5c34bb68a05aba657fd8fa8",
+   "verdict": "like"
+  },
+  "sf:e6b85951f85940c1b26505eda7d73ef9": {
+   "author": "Heataker",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 38,
+   "name": "Star Wars; X-wing Fighter",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "e6b85951f85940c1b26505eda7d73ef9",
+   "updatedAt": "2026-09-17T19:04:25.538Z",
+   "url": "https://sketchfab.com/3d-models/e6b85951f85940c1b26505eda7d73ef9",
+   "verdict": "like"
+  },
+  "sf:e727eda4a34f46ca9555f080a2a1f462": {
+   "author": "ZEOCMF",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-NoDerivs",
+   "likes": 85,
+   "name": "Arquitens-class 546 Cruiser [Star Wars] ZEO",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "e727eda4a34f46ca9555f080a2a1f462",
+   "updatedAt": "2026-09-17T16:50:07.241Z",
+   "url": "https://sketchfab.com/3d-models/e727eda4a34f46ca9555f080a2a1f462",
+   "verdict": "like"
+  },
+  "sf:e8c3ca18d21745e9a0f805b05924dae9": {
+   "author": "jcwiki",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 27,
+   "name": "X-Wing T-65",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "e8c3ca18d21745e9a0f805b05924dae9",
+   "updatedAt": "2026-09-17T19:03:59.575Z",
+   "url": "https://sketchfab.com/3d-models/e8c3ca18d21745e9a0f805b05924dae9",
+   "verdict": "like"
+  },
+  "sf:ed3931b2f8924245a7c3237b69e7f7b1": {
+   "author": "egni",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 31,
+   "name": "Lego Star Wars Vulture Droid",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не та поза (стоит/шагает)"
+   ],
+   "uid": "ed3931b2f8924245a7c3237b69e7f7b1",
+   "updatedAt": "2026-09-17T19:03:54.401Z",
+   "url": "https://sketchfab.com/3d-models/ed3931b2f8924245a7c3237b69e7f7b1",
+   "verdict": "like"
+  },
+  "sf:ed6dc932c3ce407dbe4b903c73595030": {
+   "author": "quiznos323",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 70,
+   "name": "Millennium Falcon - Star Wars",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая",
+    "Размытые текстуры"
+   ],
+   "uid": "ed6dc932c3ce407dbe4b903c73595030",
+   "updatedAt": "2026-09-17T17:24:04.788Z",
+   "url": "https://sketchfab.com/3d-models/ed6dc932c3ce407dbe4b903c73595030",
+   "verdict": "like"
+  },
+  "sf:ee72226c953c414ca0b7ab5780fe400a": {
+   "author": "Binkley-Piratepants",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 461,
+   "name": "The Mandalorian, Razor Crest, Full Interior",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "ee72226c953c414ca0b7ab5780fe400a",
+   "updatedAt": "2026-09-17T18:09:54.186Z",
+   "url": "https://sketchfab.com/3d-models/ee72226c953c414ca0b7ab5780fe400a",
+   "verdict": "like"
+  },
+  "sf:f2170d4a3ee04e8588c0ad29d4f91767": {
+   "author": "charles.woods",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 435,
+   "name": "High Poly X-Wing Fighter",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "f2170d4a3ee04e8588c0ad29d4f91767",
+   "updatedAt": "2026-09-17T16:35:23.215Z",
+   "url": "https://sketchfab.com/3d-models/f2170d4a3ee04e8588c0ad29d4f91767",
+   "verdict": "like"
+  },
+  "sf:f3a1d27293e14616b22e9c55a365bc80": {
+   "author": "joaocarlos98",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 18,
+   "name": "T-6 Shuttle",
+   "source": "sketchfab_index",
+   "tags": [
+    "Нет текстур",
+    "Размытые текстуры",
+    "Low-poly / грубая"
+   ],
+   "uid": "f3a1d27293e14616b22e9c55a365bc80",
+   "updatedAt": "2026-09-17T18:52:09.521Z",
+   "url": "https://sketchfab.com/3d-models/f3a1d27293e14616b22e9c55a365bc80",
+   "verdict": "like"
+  },
+  "sf:f631077977754b5591298ecfa201380b": {
+   "author": "hobbit84",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 102,
+   "name": "Naboo Royal Starship (J-type 327 Nubian)",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "f631077977754b5591298ecfa201380b",
+   "updatedAt": "2026-09-17T18:08:58.218Z",
+   "url": "https://sketchfab.com/3d-models/f631077977754b5591298ecfa201380b",
+   "verdict": "like"
+  },
+  "sf:f7047bcf9c464236b315a4daea9d8c31": {
+   "author": "DanielAndersson",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 138,
+   "name": "Star Wars: TIE/sa Bomber",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "f7047bcf9c464236b315a4daea9d8c31",
+   "updatedAt": "2026-09-17T18:55:11.424Z",
+   "url": "https://sketchfab.com/3d-models/f7047bcf9c464236b315a4daea9d8c31",
+   "verdict": "like"
+  },
+  "sf:f72431e7a97e4bf994dd8b1f3f288d7c": {
+   "author": "boyle.kj",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 37,
+   "name": "Nubian Royal Starship",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "f72431e7a97e4bf994dd8b1f3f288d7c",
+   "updatedAt": "2026-09-17T18:08:53.012Z",
+   "url": "https://sketchfab.com/3d-models/f72431e7a97e4bf994dd8b1f3f288d7c",
+   "verdict": "like"
+  },
+  "sf:f885869eb13c4a83b5c2f1b26a9900cb": {
+   "author": "almeanay",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 15,
+   "name": "Homework",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "f885869eb13c4a83b5c2f1b26a9900cb",
+   "updatedAt": "2026-09-17T16:45:46.825Z",
+   "url": "https://sketchfab.com/3d-models/f885869eb13c4a83b5c2f1b26a9900cb",
+   "verdict": "dislike"
+  },
+  "sf:f9e1f3d51e21439d8ac22e3e0adc1345": {
+   "author": "aiv",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 74,
+   "name": "Tie-Defender - by Leonardo Russo",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "f9e1f3d51e21439d8ac22e3e0adc1345",
+   "updatedAt": "2026-09-17T18:55:49.820Z",
+   "url": "https://sketchfab.com/3d-models/f9e1f3d51e21439d8ac22e3e0adc1345",
+   "verdict": "like"
+  },
+  "sf:fa18d537db4d4020a443c1802ec0f88e": {
+   "author": "Heataker",
+   "comment": "",
+   "license": "Free Standard",
+   "likes": 463,
+   "name": "Star Wars; Imperial-Class Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [
+    "Low-poly / грубая"
+   ],
+   "uid": "fa18d537db4d4020a443c1802ec0f88e",
+   "updatedAt": "2026-09-17T16:50:28.933Z",
+   "url": "https://sketchfab.com/3d-models/fa18d537db4d4020a443c1802ec0f88e",
+   "verdict": "like"
+  },
+  "sf:fb0e5c0c512a43b98f0a6aec15aa696a": {
+   "author": "Lopiv2",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 14,
+   "name": "X-Wing T-65",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "fb0e5c0c512a43b98f0a6aec15aa696a",
+   "updatedAt": "2026-09-17T19:04:11.769Z",
+   "url": "https://sketchfab.com/3d-models/fb0e5c0c512a43b98f0a6aec15aa696a",
+   "verdict": "like"
+  },
+  "sf:fba55b1beebf494b885caf2dc873edff": {
+   "author": "Schwaeli",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 163,
+   "name": "futuristic sci-fi spaceship",
+   "source": "sketchfab_index",
+   "tags": [
+    "Не тот корабль"
+   ],
+   "uid": "fba55b1beebf494b885caf2dc873edff",
+   "updatedAt": "2026-09-17T19:00:59.260Z",
+   "url": "https://sketchfab.com/3d-models/fba55b1beebf494b885caf2dc873edff",
+   "verdict": "like"
+  },
+  "sf:fc54544abbd2405f9a1ad2c48640d5c2": {
+   "author": "klgaming",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 24,
+   "name": "Phantom",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "fc54544abbd2405f9a1ad2c48640d5c2",
+   "updatedAt": "2026-09-17T16:42:32.098Z",
+   "url": "https://sketchfab.com/3d-models/fc54544abbd2405f9a1ad2c48640d5c2",
+   "verdict": "like"
+  },
+  "sf:fc9c7a44588144808b12c1cf8b02419a": {
+   "author": "eLearningUMCG",
+   "comment": "",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 13,
+   "name": "Dental Intra Oral X-ray Positioner, Bite-wing",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "fc9c7a44588144808b12c1cf8b02419a",
+   "updatedAt": "2026-09-17T16:24:18.534Z",
+   "url": "https://sketchfab.com/3d-models/fc9c7a44588144808b12c1cf8b02419a",
+   "verdict": "dislike"
+  },
+  "sf:fdb88c34f5fd48f1988c732c9ce93f3e": {
+   "author": "Konraad",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 1,
+   "name": "Quasar- Fire Cruiser- Carrier",
+   "rotate_after_download": true,
+   "source": "sketchfab_index",
+   "tags": [
+    "Не та поза (стоит/шагает)",
+    "Неверная ориентация"
+   ],
+   "uid": "fdb88c34f5fd48f1988c732c9ce93f3e",
+   "updatedAt": "2026-09-17T18:09:37.250Z",
+   "url": "https://sketchfab.com/3d-models/fdb88c34f5fd48f1988c732c9ce93f3e",
+   "verdict": "dislike"
+  },
+  "sf:fe43576b3b9a4bf19fc1455f4c6923e2": {
+   "author": "CMBC",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 4,
+   "name": "Whisper Cradle - punishment",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "fe43576b3b9a4bf19fc1455f4c6923e2",
+   "updatedAt": "2026-09-17T19:00:03.622Z",
+   "url": "https://sketchfab.com/3d-models/fe43576b3b9a4bf19fc1455f4c6923e2",
+   "verdict": "dislike"
+  },
+  "sf:fe8271ee4ec6492abfe2a4476f11ad19": {
+   "author": "StratoArtStudios",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 97,
+   "name": "Incom T-70 X-Wing - Wings Open",
+   "source": "sketchfab_index",
+   "tags": [
+    "Размытые текстуры",
+    "Нет текстур",
+    "Low-poly / грубая"
+   ],
+   "uid": "fe8271ee4ec6492abfe2a4476f11ad19",
+   "updatedAt": "2026-09-17T18:52:36.181Z",
+   "url": "https://sketchfab.com/3d-models/fe8271ee4ec6492abfe2a4476f11ad19",
+   "verdict": "like"
+  },
+  "sf:ff65cd3c27234615a3b68088f67e99e4": {
+   "author": "ForkyForklift",
+   "comment": "",
+   "license": "CC Attribution",
+   "likes": 386,
+   "name": "Venator Class Star Destroyer",
+   "source": "sketchfab_index",
+   "tags": [],
+   "uid": "ff65cd3c27234615a3b68088f67e99e4",
+   "updatedAt": "2026-09-17T19:01:57.712Z",
+   "url": "https://sketchfab.com/3d-models/ff65cd3c27234615a3b68088f67e99e4",
+   "verdict": "like"
+  }
+ }
+}

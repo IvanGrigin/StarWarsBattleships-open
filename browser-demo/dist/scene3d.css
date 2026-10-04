@@ -1,0 +1,137 @@
+/* demo/scene3d.css — стили 3D-сцены (Board3D) и её DOM-оверлея.
+ * Тема — тёмный космос в духе demo/style.css: моно-шрифт телеметрии,
+ * голубой (#38b6ff) команда A, красный (#ff5d5d) команда B.
+ */
+
+/* Контейнер сцены: канвас растягивается на весь контейнер, оверлей сверху. */
+.s3d-stage {
+  position: relative;
+  overflow: hidden;
+  background: #04060c;
+}
+.s3d-stage .s3d-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+/* Оверлей: только проекции, никаких событий мыши. */
+.s3d-overlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  user-select: none;
+}
+.s3d-overlay > div { position: absolute; left: 0; top: 0; will-change: transform; }
+
+/* ---------- метка корабля: сид + HP-пипсы ---------- */
+
+.s3d-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.s3d-seat {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-shadow: 0 1px 3px rgba(1, 4, 9, 0.95), 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.s3d-team-a .s3d-seat { color: #8fd2ff; }
+.s3d-team-b .s3d-seat { color: #ff9d99; }
+
+.s3d-pips {
+  display: flex;
+  gap: 2px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  background: rgba(2, 6, 12, 0.66);
+  border: 1px solid rgba(120, 160, 200, 0.18);
+}
+.s3d-pip {
+  width: 7px;
+  height: 9px;
+  border-radius: 1.5px;
+  background: #232c3d;
+  box-shadow: inset 0 0 0 1px rgba(140, 170, 210, 0.12);
+}
+.s3d-pip.on.hi  { background: #71eea0; box-shadow: 0 0 4px rgba(113, 238, 160, 0.55); }
+.s3d-pip.on.mid { background: #f5c86b; box-shadow: 0 0 4px rgba(245, 200, 107, 0.55); }
+.s3d-pip.on.low { background: #ff5c55; box-shadow: 0 0 4px rgba(255, 92, 85, 0.6); }
+
+/* ---------- фланговые числа выбранного корабля (на рёбрах гекса) ---------- */
+
+.s3d-flank-wrap { width: 0; height: 0; }
+.s3d-flank {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 24px;
+  height: 20px;
+  padding: 1px 5px;
+  border: 1px solid rgba(92, 229, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(2, 8, 15, 0.9);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(1, 4, 9, 0.95), 0 0 9px rgba(0, 0, 0, 0.85);
+  white-space: pre;
+}
+.s3d-flank.v2 { color: #b8ffc4; }              /* сильный сектор */
+.s3d-flank.v1 { color: #ffffff; }
+.s3d-flank.v0 { color: rgba(155, 170, 200, 0.6); }
+.s3d-flank.vn { color: #ff9a9a; }              /* слабый/минус */
+.s3d-flank.dim { opacity: 0.62; transform-origin: center; }
+
+/* ---------- враг в досягаемости: кольцо + бейдж бонуса атаки ---------- */
+
+.s3d-ring {
+  border: 2px dashed rgba(255, 150, 64, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(255, 150, 64, 0.25), inset 0 0 12px rgba(255, 150, 64, 0.12);
+}
+.s3d-ring.far { border-color: rgba(255, 213, 79, 0.7); }
+
+.s3d-badge {
+  min-width: 22px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 4px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  background: rgba(6, 10, 20, 0.92);
+  border: 1px solid rgba(255, 150, 64, 0.9);
+}
+.s3d-badge.v2 { color: #8ee6a1; }
+.s3d-badge.v1 { color: #eaf2ff; }
+.s3d-badge.v0 { color: rgba(200, 210, 230, 0.8); }
+.s3d-badge.vn { color: #ff9a9a; border-color: rgba(255, 120, 120, 0.8); }
+
+/* Регулятор угла обзора (10..85°) */
+.s3d-elev {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: rgba(4, 8, 14, 0.78);
+  border: 1px solid rgba(113, 238, 160, 0.22);
+  border-radius: 6px;
+  color: #cfd8e6;
+  font: 700 10px ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.08em;
+  pointer-events: auto;
+}
+.s3d-elev input[type="range"] { width: 130px; accent-color: #3ec8ff; cursor: pointer; }

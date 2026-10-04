@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "id": "finn",
+  "display_name": "Финн",
+  "description": "FN-2187: штурмовик Первого Ордена, перешедший на сторону Сопротивления.",
+  "faction": "resistance",
+  "era": "new_order",
+  "ability": {
+    "id": "inside_knowledge",
+    "name": "Знание изнутри",
+    "text": "Пассивно: ваши атаки по кораблям Первого Ордена и Империи получают +1 к силе.",
+    "kind": "passive",
+    "trigger": "always",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 0,
+    "effect_sequence": [
+      {
+        "op": "faction_hatred",
+        "params": {
+          "targets": [
+            "first_order",
+            "empire"
+          ],
+          "strength": 1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "defector",
+    "name": "Перебежчик",
+    "text": "Раз за матч корабль Сопротивления ведёт абордаж без траты зарядов и без ограничения по роли.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "resistance",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "free_boarding",
+        "params": {
+          "uses": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 2
+}

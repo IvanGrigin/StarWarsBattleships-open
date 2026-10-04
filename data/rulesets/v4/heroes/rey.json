@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "id": "rey",
+  "display_name": "Рей",
+  "description": "Мусорщица с Джакку, ученица Люка и Леи, внучка Палпатина.",
+  "faction": "resistance",
+  "era": "new_order",
+  "ability": {
+    "id": "raw_power",
+    "name": "Необученная сила",
+    "text": "2 раза в игру: перебросьте любой свой кубик; второй результат окончателен.",
+    "kind": "reaction",
+    "trigger": "after_dice_revealed",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 2,
+    "effect_sequence": [
+      {
+        "op": "reroll_die",
+        "params": {
+          "die_owner": "own"
+        }
+      }
+    ],
+    "priority": 10,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed",
+      "DieModified"
+    ]
+  },
+  "synergy": {
+    "id": "last_jedi",
+    "name": "Последняя из джедаев",
+    "text": "Корабли Сопротивления получают +1 к защите от атак кораблей Первого Ордена.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "resistance",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "faction_defense",
+        "params": {
+          "versus": [
+            "first_order"
+          ],
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 0
+}

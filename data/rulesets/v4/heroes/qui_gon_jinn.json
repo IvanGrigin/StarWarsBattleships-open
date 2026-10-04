@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "id": "qui_gon_jinn",
+  "display_name": "Квай-Гон Джинн",
+  "description": "Мастер-джедай, учитель Оби-Вана, нашедший Энакина на Татуине.",
+  "faction": "republic",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "living_force",
+    "name": "Живая Сила",
+    "text": "1 раз в игру: восстановите 2 HP любому своему кораблю или снимите с него все эффекты (мина, ион, буксир).",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 1,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "heal_or_cleanse",
+        "params": {
+          "heal": 2,
+          "target": "own_ship"
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "will_of_the_force",
+    "name": "Воля Силы",
+    "text": "Раз за матч ваш республиканский корабль, который должен быть уничтожен, остаётся в игре с 1 HP.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "republic",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "cheat_death",
+        "params": {
+          "hp": 1,
+          "uses": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 8
+}

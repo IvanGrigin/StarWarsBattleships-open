@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "slave_1",
+  "display_name": "Slave I",
+  "description": "Личный корабль Джанго Фетта и Боба Фетта, охотников за головами.",
+  "group": 2,
+  "draftable": true,
+  "draft_cost": 7,
+  "max_hp": 6,
+  "max_shield": 1,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": { "count": 1, "sides": 6 },
+  "arc_modifiers": [3, 1, 0, 2, 0, 1],
+  "abilities": []
+}

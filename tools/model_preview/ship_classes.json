@@ -1,0 +1,1385 @@
+{
+ "classes": {
+  "converted_glb/ghost_ship_obj.glb": {
+   "num": 1,
+   "rule": "название: /ghost|vcx/",
+   "ship": "ghost",
+   "source": "auto"
+  },
+  "converted_glb/ghost_ship_stl.glb": {
+   "num": 2,
+   "rule": "название: /ghost|vcx/",
+   "ship": "ghost",
+   "source": "auto"
+  },
+  "converted_glb/phantom_i_stl.glb": {
+   "num": 3,
+   "rule": "название: /phantom|shuttle-stl|shuttle-obj/",
+   "ship": "phantom",
+   "source": "auto"
+  },
+  "converted_glb/phantom_shuttle_stl.glb": {
+   "num": 4,
+   "rule": "название: /phantom|shuttle-stl|shuttle-obj/",
+   "ship": "phantom",
+   "source": "auto"
+  },
+  "converted_glb/vulture_flight_kit.glb": {
+   "num": 5,
+   "rule": "путь: /^converted-glb/vulture-flight-kit|vulture/",
+   "ship": "vulture_droid",
+   "source": "auto"
+  },
+  "death_star_1_2k_opt.glb": {
+   "num": 6,
+   "rule": "название: /death-star/",
+   "ship": "death_star_1",
+   "source": "auto"
+  },
+  "death_star_1_joe_scalise.glb": {
+   "num": 7,
+   "rule": "название: /death-star/",
+   "ship": "death_star_1",
+   "source": "auto"
+  },
+  "eta2_actis_maxkamms_objaverse.glb": {
+   "num": 8,
+   "rule": "название: /eta-2|eta2|actis/",
+   "ship": "eta2_actis",
+   "source": "auto"
+  },
+  "ghost_vcx100_jace1969_thing2663940/Ghost_Separate_STL.stl": {
+   "num": 9,
+   "rule": "название: /ghost|vcx/",
+   "ship": "ghost",
+   "source": "auto"
+  },
+  "ghost_vcx100_jace1969_thing2663940/Rebells_Ghost_OBJ.obj": {
+   "num": 10,
+   "rule": "название: /ghost|vcx/",
+   "ship": "ghost",
+   "source": "auto"
+  },
+  "ghost_vcx100_jace1969_thing2663940/Rebells_Ghost_STL_.stl": {
+   "num": 11,
+   "rule": "название: /ghost|vcx/",
+   "ship": "ghost",
+   "source": "auto"
+  },
+  "ghost_vcx100_jace1969_thing2663940/Rebells_Ghost__Shuttle_OBJ.obj": {
+   "num": 12,
+   "rule": "название: /ghost-+shuttle/",
+   "ship": "ghost",
+   "source": "auto"
+  },
+  "ghost_vcx100_jace1969_thing2663940/Rebells_Ghost__Shuttle_STL.stl": {
+   "num": 13,
+   "rule": "название: /ghost-+shuttle/",
+   "ship": "ghost",
+   "source": "auto"
+  },
+  "ghost_vcx100_jace1969_thing2663940/Shuttle_STL.stl": {
+   "num": 14,
+   "rule": "название: /phantom|shuttle-stl|shuttle-obj/",
+   "ship": "phantom",
+   "source": "auto"
+  },
+  "liked/a-wing_interceptor__A-wing.glb": {
+   "num": 15,
+   "rule": "название: /a-wing/",
+   "ship": "awing_rz1",
+   "source": "auto"
+  },
+  "liked/a-wing_interceptor__Supremacy_Astro_Interceptor.glb": {
+   "num": 16,
+   "rule": "название: /astro-interceptor/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/acclamator__Acclamator-Class_Assault_Ship.glb": {
+   "num": 17,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/acclamator__Acclamator_Class_Star_Destroyer.glb": {
+   "num": 18,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/arc-170__ARC-170_Fighter.glb": {
+   "num": 19,
+   "rule": "название: /arc-170|arc170/",
+   "ship": "arc170",
+   "source": "auto"
+  },
+  "liked/arc-170__ARC-170_Starfighter.glb": {
+   "num": 20,
+   "rule": "название: /arc-170|arc170/",
+   "ship": "arc170",
+   "source": "auto"
+  },
+  "liked/arc-170__ARC_170_Starfighter_Pathfinder_Modification.glb": {
+   "num": 21,
+   "rule": "название: /arc-170|arc170/",
+   "ship": "arc170",
+   "source": "auto"
+  },
+  "liked/arquitens_cruiser__Arquitens-Class_Light_Cruiser.glb": {
+   "num": 22,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/arquitens_cruiser__Crucero_Ligero_Imperial_Arquitens.glb": {
+   "num": 23,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/b-wing_starfighter__A_SF-01_B-wing_starfighter.glb": {
+   "num": 24,
+   "rule": "название: /b-wing|a-sf-01/",
+   "ship": "bwing",
+   "source": "auto"
+  },
+  "liked/b-wing_starfighter__B-Wing_W_I_P.glb": {
+   "num": 25,
+   "rule": "название: /b-wing|a-sf-01/",
+   "ship": "bwing",
+   "source": "auto"
+  },
+  "liked/b-wing_starfighter__BTL-B_Y-Wing.glb": {
+   "num": 26,
+   "rule": "название: /y-wing|btl-a4|btl-b/",
+   "ship": "ywing_btla4",
+   "source": "auto"
+  },
+  "liked/cantwell_arrestor_cruiser__Cantwell-class_Arrestor_Cruiser_Star_Wars_ZEO.glb": {
+   "num": 27,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/class_546_cruiser_gideon__Arquitens-class_546_Cruiser_Star_Wars_ZEO.glb": {
+   "num": 28,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/core_ship_separatist__Star_Wars_Separatist_Core_Ship.glb": {
+   "num": 29,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/cr90_corvette__CR120_Assault_Corvette.glb": {
+   "num": 30,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/cr90_corvette__Lego_Star_Wars_CR90_Corvette.glb": {
+   "num": 31,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/cr90_corvette__Star_Wars_CR90_Corvette.glb": {
+   "num": 32,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/death_star_ii__Death_Star_-_Star_Wars.glb": {
+   "num": 33,
+   "rule": "название: /death-star/",
+   "ship": "death_star_1",
+   "source": "auto"
+  },
+  "liked/death_star_ii__Death_Star_II.glb": {
+   "num": 34,
+   "rule": "название: /death-star-ii|death-star-2/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/death_star_ii__R5-J2_Imperial_Astromech_Droid.glb": {
+   "num": 35,
+   "rule": "название: /r5-j2|astromech/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/delta-7_aethersprite__Delta-7_Aethersprite-class_Light_Interceptor.glb": {
+   "num": 36,
+   "rule": "название: /delta-7|aethersprite/",
+   "ship": "delta7_aethersprite",
+   "source": "auto"
+  },
+  "liked/delta-7_aethersprite__SWBF2_Custom_-_Anakin_s_Eta-2_Actis_Interceptor.glb": {
+   "num": 37,
+   "rule": "название: /eta-2|eta2|actis/",
+   "ship": "eta2_actis",
+   "source": "auto"
+  },
+  "liked/delta-7b_aethersprite__Delta_7_jedi_interceptor.glb": {
+   "num": 38,
+   "rule": "название: /delta-7|aethersprite/",
+   "ship": "delta7_aethersprite",
+   "source": "auto"
+  },
+  "liked/droid_tri-fighter__Droid_Tri_Fighter.glb": {
+   "num": 39,
+   "rule": "название: /tri-fighter|tri-fighter-droid/",
+   "ship": "tri_fighter",
+   "source": "auto"
+  },
+  "liked/droid_tri-fighter__Trade_Federation_Droid_Tri-Fighter.glb": {
+   "num": 40,
+   "rule": "название: /tri-fighter|tri-fighter-droid/",
+   "ship": "tri_fighter",
+   "source": "auto"
+  },
+  "liked/droid_tri-fighter__tri_fighter_droid.glb": {
+   "num": 41,
+   "rule": "название: /tri-fighter|tri-fighter-droid/",
+   "ship": "tri_fighter",
+   "source": "auto"
+  },
+  "liked/eta-2_actis__Eta-2_Actis-class_Light_Interceptor.glb": {
+   "num": 42,
+   "rule": "название: /eta-2|eta2|actis/",
+   "ship": "eta2_actis",
+   "source": "auto"
+  },
+  "liked/eta-2_actis__Eta-2_Actis_Jedi_Starfighter_-_Star_Wars.glb": {
+   "num": 43,
+   "rule": "название: /eta-2|eta2|actis/",
+   "ship": "eta2_actis",
+   "source": "auto"
+  },
+  "liked/eta-2_actis__Star_Wars_Galaxies_-_Eta-2_Actis_Interceptor.glb": {
+   "num": 44,
+   "rule": "название: /eta-2|eta2|actis/",
+   "ship": "eta2_actis",
+   "source": "auto"
+  },
+  "liked/executor_super_star_destroyer__Executor_Class_Super_Star_Destroyer.glb": {
+   "num": 45,
+   "rule": "название: /executor|super-star-destroyer/",
+   "ship": "executor",
+   "source": "auto"
+  },
+  "liked/executor_super_star_destroyer__Old_Executor.glb": {
+   "num": 46,
+   "rule": "название: /executor|super-star-destroyer/",
+   "ship": "executor",
+   "source": "auto"
+  },
+  "liked/executor_super_star_destroyer__Star_Wars_-_Executor_Super_Star_Destroyer.glb": {
+   "num": 47,
+   "rule": "название: /executor|super-star-destroyer/",
+   "ship": "executor",
+   "source": "auto"
+  },
+  "liked/executor_super_star_destroyer__Star_Wars_Executor_Class_Star_Destroyer.glb": {
+   "num": 48,
+   "rule": "название: /executor|super-star-destroyer/",
+   "ship": "executor",
+   "source": "auto"
+  },
+  "liked/fang_fighter__High_Poly_X-Wing_Fighter.glb": {
+   "num": 49,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  },
+  "liked/fang_fighter__Star_Wars_Tie_Fighter.glb": {
+   "num": 50,
+   "rule": "название: /tie-fighter|t-i-e|tie-ln/",
+   "ship": "tie_fighter",
+   "source": "auto"
+  },
+  "liked/first_order_tie_fighter__First_Order_Tie_Fighter.glb": {
+   "num": 51,
+   "rule": "название: /first-order-tie|tie-fo\\b|tie/fo/",
+   "ship": "tie_fo",
+   "source": "auto"
+  },
+  "liked/first_order_tie_fighter__TIE_sgf_Starfighter_Ground_Force.glb": {
+   "num": 52,
+   "rule": "группа: /first-order-tie|tie-fo\\b|tie/fo/",
+   "ship": "tie_fo",
+   "source": "auto"
+  },
+  "liked/ghost_vcx-100__Phantom.glb": {
+   "num": 53,
+   "rule": "название: /phantom|shuttle-stl|shuttle-obj/",
+   "ship": "phantom",
+   "source": "auto"
+  },
+  "liked/ghost_vcx-100__Star_Wars_Rebels_Ghost_VCX-100_8K_Textures.glb": {
+   "num": 54,
+   "rule": "название: /ghost|vcx/",
+   "ship": "ghost",
+   "source": "auto"
+  },
+  "liked/gozanti_cruiser__Gozanti_Light_Cruiser.glb": {
+   "num": 55,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/gozanti_cruiser__Imperial_Gozanti_Class_Cruiser.glb": {
+   "num": 56,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/gozanti_cruiser__Star_Wars_Gozanti-Class_Cruiser.glb": {
+   "num": 57,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/gr-75_transport__Star_Wars_GR-75_Medium_Transport.glb": {
+   "num": 58,
+   "rule": "название: /gr-75/",
+   "ship": "gr75_transport",
+   "source": "auto"
+  },
+  "liked/h-type_nubian_yacht__H_Type_Nubian_Yacht.glb": {
+   "num": 59,
+   "rule": "название: /naboo-royal|royal-starship|nubian-royal|j-type|h-type|nubian-yacht|naboo-cruiser/",
+   "ship": "naboo_royal_cruiser",
+   "source": "auto"
+  },
+  "liked/hammerhead_corvette__Hammerhead_Corvette.glb": {
+   "num": 60,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/hyena_bomber__Hyena_Bomber.glb": {
+   "num": 61,
+   "rule": "название: /hyena/",
+   "ship": "hyena_bomber",
+   "source": "auto"
+  },
+  "liked/imperial_class_star_destroyer__Eclipse_Class_Star_Destroyer.glb": {
+   "num": 62,
+   "rule": "название: /eclipse|metther/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/imperial_class_star_destroyer__Metther-class_Star_Destroyer.glb": {
+   "num": 63,
+   "rule": "название: /eclipse|metther/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/imperial_class_star_destroyer__Star_Wars_Imperial-Class_Star_Destroyer.glb": {
+   "num": 64,
+   "rule": "название: /imperial-class|imperial-star-destroyer|star-destroyer/",
+   "ship": "star_destroyer",
+   "source": "auto"
+  },
+  "liked/interdictor_cruiser__Star_Wars_The_Old_Republic_Leviathan_interdictor.glb": {
+   "num": 65,
+   "rule": "название: /leviathan|old-republic/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/laat_gunship__LAAT_i_Gunship.glb": {
+   "num": 66,
+   "rule": "название: /laat/",
+   "ship": "laat_gunship",
+   "source": "auto"
+  },
+  "liked/laat_gunship__Star_Wars_LAAT_i_Gunship.glb": {
+   "num": 67,
+   "rule": "название: /laat/",
+   "ship": "laat_gunship",
+   "source": "auto"
+  },
+  "liked/lambda_shuttle__3D_Imperial_Lambda_Shuttle_-_Star_Wars_model.glb": {
+   "num": 68,
+   "rule": "название: /lambda/",
+   "ship": "lambda_shuttle",
+   "source": "auto"
+  },
+  "liked/lambda_shuttle__Lambda_T-A_Shuttle.glb": {
+   "num": 69,
+   "rule": "название: /lambda/",
+   "ship": "lambda_shuttle",
+   "source": "auto"
+  },
+  "liked/lambda_shuttle__Star_Wars_Lambda_Shuttle.glb": {
+   "num": 70,
+   "rule": "название: /lambda/",
+   "ship": "lambda_shuttle",
+   "source": "auto"
+  },
+  "liked/lucrehulk_battleship__Lucrehulk-class_Battleship_Unfinished_WIP.glb": {
+   "num": 71,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/lucrehulk_battleship__Trade_Federation_Lucrehulk-class_battleship.glb": {
+   "num": 72,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/malevolence__The_Malevolence_die-cast.glb": {
+   "num": 73,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/malevolence__V-19_Torrent_Starfighter.glb": {
+   "num": 74,
+   "rule": "название: /v-19|torrent/",
+   "ship": "v19_torrent",
+   "source": "auto"
+  },
+  "liked/mc80_liberty_cruiser__mc80_liberty_class_star_cruiser.glb": {
+   "num": 75,
+   "rule": "название: /mc80|home-one|mon-calamari/",
+   "ship": "mc80_home_one",
+   "source": "auto"
+  },
+  "liked/mc80_mon_calamari_cruiser__Mon_Calamari.glb": {
+   "num": 76,
+   "rule": "название: /mc80|home-one|mon-calamari/",
+   "ship": "mc80_home_one",
+   "source": "auto"
+  },
+  "liked/mc80_mon_calamari_cruiser__Star_Wars_MC80_Home_One_Type_Star_Cruiser.glb": {
+   "num": 77,
+   "rule": "название: /mc80|home-one|mon-calamari/",
+   "ship": "mc80_home_one",
+   "source": "auto"
+  },
+  "liked/millennium_falcon_yt-1300__Millennium_Falcon_-_Star_Wars.glb": {
+   "num": 78,
+   "rule": "название: /millennium-falcon|falcon|yt-1300/",
+   "ship": "millennium_falcon",
+   "source": "auto"
+  },
+  "liked/millennium_falcon_yt-1300__Star_Wars_Galaxies_-_YT1300_Outside.glb": {
+   "num": 79,
+   "rule": "группа: /millennium-falcon|falcon|yt-1300/",
+   "ship": "millennium_falcon",
+   "source": "auto"
+  },
+  "liked/munificent_frigate__Fully_Armed_Munificent_Star_Frigate.glb": {
+   "num": 80,
+   "rule": "название: /munificent/",
+   "ship": "munificent",
+   "source": "auto"
+  },
+  "liked/munificent_frigate__Munificent-Class_Star_Frigate.glb": {
+   "num": 81,
+   "rule": "название: /munificent/",
+   "ship": "munificent",
+   "source": "auto"
+  },
+  "liked/munificent_frigate__Munificent_Class_Star_Frigate.glb": {
+   "num": 82,
+   "rule": "название: /munificent/",
+   "ship": "munificent",
+   "source": "auto"
+  },
+  "liked/munificent_frigate__Star_Wars_The_Clone_Wars_Munificent_S5-7_Style.glb": {
+   "num": 83,
+   "rule": "название: /munificent/",
+   "ship": "munificent",
+   "source": "auto"
+  },
+  "liked/n-1_starfighter__Naboo_N-1_Starfighter_-_Star_Wars.glb": {
+   "num": 84,
+   "rule": "название: /n-1|n1-starfighter|naboo-n1|naboo-starfighter/",
+   "ship": "naboo_n1",
+   "source": "auto"
+  },
+  "liked/n-1_starfighter__Naboo_N-4_Heavy_Starfighter.glb": {
+   "num": 85,
+   "rule": "группа: /n-1|n1-starfighter|naboo-n1|naboo-starfighter/",
+   "ship": "naboo_n1",
+   "source": "auto"
+  },
+  "liked/n-1_starfighter__Naboo_N1_Starfighter.glb": {
+   "num": 86,
+   "rule": "название: /n-1|n1-starfighter|naboo-n1|naboo-starfighter/",
+   "ship": "naboo_n1",
+   "source": "auto"
+  },
+  "liked/n-1_starfighter__The_Mandalorian_-_LEGO_N_1_Starfighter.glb": {
+   "num": 87,
+   "rule": "название: /n-1|n1-starfighter|naboo-n1|naboo-starfighter/",
+   "ship": "naboo_n1",
+   "source": "auto"
+  },
+  "liked/n-1_starfighter__The_Mandalorian_-_LEGO_N_1_Starfighter__s1.glb": {
+   "num": 88,
+   "rule": "название: /n-1|n1-starfighter|naboo-n1|naboo-starfighter/",
+   "ship": "naboo_n1",
+   "source": "auto"
+  },
+  "liked/n-1_starfighter__The_Mandalorian_-_LEGO_N_1_Starfighter__s2.glb": {
+   "num": 89,
+   "rule": "название: /n-1|n1-starfighter|naboo-n1|naboo-starfighter/",
+   "ship": "naboo_n1",
+   "source": "auto"
+  },
+  "liked/naboo_royal_starship__Naboo_Cruiser.glb": {
+   "num": 90,
+   "rule": "название: /naboo-royal|royal-starship|nubian-royal|j-type|h-type|nubian-yacht|naboo-cruiser/",
+   "ship": "naboo_royal_cruiser",
+   "source": "auto"
+  },
+  "liked/naboo_royal_starship__Naboo_Royal_Starship_J-type_327_Nubian.glb": {
+   "num": 91,
+   "rule": "название: /naboo-royal|royal-starship|nubian-royal|j-type|h-type|nubian-yacht|naboo-cruiser/",
+   "ship": "naboo_royal_cruiser",
+   "source": "auto"
+  },
+  "liked/naboo_royal_starship__Naboo_Starfighter_01.glb": {
+   "num": 92,
+   "rule": "название: /n-1|n1-starfighter|naboo-n1|naboo-starfighter/",
+   "ship": "naboo_n1",
+   "source": "auto"
+  },
+  "liked/naboo_royal_starship__Nubian_Royal_Starship.glb": {
+   "num": 93,
+   "rule": "название: /naboo-royal|royal-starship|nubian-royal|j-type|h-type|nubian-yacht|naboo-cruiser/",
+   "ship": "naboo_royal_cruiser",
+   "source": "auto"
+  },
+  "liked/nebulon-b_frigate__Frigata_Nebulon_B_Frigate_Nebulon_B.glb": {
+   "num": 94,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/nebulon-b_frigate__Star_Wars_Nebulon_B_Frigate.glb": {
+   "num": 95,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/nu-class_shuttle__Nu-Class_Shuttle_Starwars_CW.glb": {
+   "num": 96,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/nu-class_shuttle__Star_Wars_Nu_Class_Attack_Shuttle.glb": {
+   "num": 97,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/nubian_royal_starship__Naboo_Royal_cruiser.glb": {
+   "num": 98,
+   "rule": "название: /naboo-royal|royal-starship|nubian-royal|j-type|h-type|nubian-yacht|naboo-cruiser/",
+   "ship": "naboo_royal_cruiser",
+   "source": "auto"
+  },
+  "liked/pelta_frigate__Pelta-Class_Medical_Frigate.glb": {
+   "num": 99,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/quasar_fire_carrier__Quasar_Fire_Class_Imperial_Light_Carrier.glb": {
+   "num": 100,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/razor_crest__Razor_Crest_-_Star_Wars.glb": {
+   "num": 101,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/razor_crest__Razor_Crest_Snow_Ice_Textured.glb": {
+   "num": 102,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/razor_crest__Razor_Crest_Textured_and_animated.glb": {
+   "num": 103,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/razor_crest__The_Mandalorian_Razor_Crest_Full_Interior.glb": {
+   "num": 104,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/republic_cruiser_consular__Consular_cruiser.glb": {
+   "num": 105,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/republic_cruiser_consular__Republic_Consular_Cruiser.glb": {
+   "num": 106,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/republic_cruiser_consular__Star_Wars_Republic_Frigate.glb": {
+   "num": 107,
+   "rule": "группа: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/resurgent_star_destroyer__Low_poly_Resurgent_Star_Destroyer.glb": {
+   "num": 108,
+   "rule": "название: /resurgent/",
+   "ship": "resurgent_destroyer",
+   "source": "auto"
+  },
+  "liked/resurgent_star_destroyer__Resurgent-class-star-destroyer-low-poly.glb": {
+   "num": 109,
+   "rule": "название: /resurgent/",
+   "ship": "resurgent_destroyer",
+   "source": "auto"
+  },
+  "liked/resurgent_star_destroyer__Resurgent_Star_Destroyer.glb": {
+   "num": 110,
+   "rule": "название: /resurgent/",
+   "ship": "resurgent_destroyer",
+   "source": "auto"
+  },
+  "liked/rz-2_a-wing__Resistance_RZ-2_A-_Wing_Fighter.glb": {
+   "num": 111,
+   "rule": "название: /rz-2/",
+   "ship": "rz2_awing",
+   "source": "auto"
+  },
+  "liked/sith_infiltrator_scimitar__Darth_Maul_s_Sith_Infiltrator_Scimitar.glb": {
+   "num": 112,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/slave_1_firespray__Slave1.glb": {
+   "num": 113,
+   "rule": "группа: /slave-1|slave-i\\b|firespray/",
+   "ship": "slave_1",
+   "source": "auto"
+  },
+  "liked/solar_sailer_dooku__Dooku_s_Solar_Saier.glb": {
+   "num": 114,
+   "rule": "группа: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/soulless_one__Belbullab-22_Starfighter_Soulless_One.glb": {
+   "num": 115,
+   "rule": "название: /soulless/",
+   "ship": "soulless_one",
+   "source": "auto"
+  },
+  "liked/soulless_one__Star_Wars_Galaxies_-_Belbullab-22.glb": {
+   "num": 116,
+   "rule": "группа: /soulless/",
+   "ship": "soulless_one",
+   "source": "auto"
+  },
+  "liked/supremacy_mega_star_destroyer__Low_Poly_Supremacy_Star_Destroyer.glb": {
+   "num": 117,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/t-6_jedi_shuttle__T-6_Shuttle.glb": {
+   "num": 118,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/t-70_x-wing__Incom_T-70_X-Wing_-_Wings_Closed.glb": {
+   "num": 119,
+   "rule": "название: /t-70/",
+   "ship": "xwing_t70",
+   "source": "auto"
+  },
+  "liked/t-70_x-wing__Incom_T-70_X-Wing_-_Wings_Open.glb": {
+   "num": 120,
+   "rule": "название: /t-70/",
+   "ship": "xwing_t70",
+   "source": "auto"
+  },
+  "liked/t-70_x-wing__STAR_WARS_-_INCOM_T-70_X-WING_FIGHTER.glb": {
+   "num": 121,
+   "rule": "название: /t-70/",
+   "ship": "xwing_t70",
+   "source": "auto"
+  },
+  "liked/t-85_x-wing__Incom-FreiTek_T-70_X-wing_-_Black_One.glb": {
+   "num": 122,
+   "rule": "название: /t-70/",
+   "ship": "xwing_t70",
+   "source": "auto"
+  },
+  "liked/t-85_x-wing__RZ-3_A-Wing.glb": {
+   "num": 123,
+   "rule": "название: /a-wing/",
+   "ship": "awing_rz1",
+   "source": "auto"
+  },
+  "liked/tie_advanced_x1__Darth_Vader_s_TIE_Advanced_x1.glb": {
+   "num": 124,
+   "rule": "название: /tie-advanced|advanced-x1/",
+   "ship": "tie_advanced_x1",
+   "source": "auto"
+  },
+  "liked/tie_advanced_x1__Star_Wars_TIE_x1_Advanced_x1.glb": {
+   "num": 125,
+   "rule": "название: /tie-advanced|advanced-x1/",
+   "ship": "tie_advanced_x1",
+   "source": "auto"
+  },
+  "liked/tie_advanced_x1__TIE_Advanced_x1_Vader_s_TIE_-_Star_Wars.glb": {
+   "num": 126,
+   "rule": "название: /tie-advanced|advanced-x1/",
+   "ship": "tie_advanced_x1",
+   "source": "auto"
+  },
+  "liked/tie_bomber__Star_Wars_TIE_sa_Bomber.glb": {
+   "num": 127,
+   "rule": "группа: /tie-bomber|tie-bomb/",
+   "ship": "tie_bomber",
+   "source": "auto"
+  },
+  "liked/tie_bomber__Star_Wars_Tie_Bomber.glb": {
+   "num": 128,
+   "rule": "название: /tie-bomber|tie-bomb/",
+   "ship": "tie_bomber",
+   "source": "auto"
+  },
+  "liked/tie_bomber__TIE_bomber.glb": {
+   "num": 129,
+   "rule": "название: /tie-bomber|tie-bomb/",
+   "ship": "tie_bomber",
+   "source": "auto"
+  },
+  "liked/tie_dagger__TIE_sg2_Starfighter.glb": {
+   "num": 130,
+   "rule": "группа: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_dagger__Tie_Dagger.glb": {
+   "num": 131,
+   "rule": "название: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_defender__STAR_WARS_Tie_Defender.glb": {
+   "num": 132,
+   "rule": "название: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_defender__Star_Wars_TIE_d_Defender.glb": {
+   "num": 133,
+   "rule": "группа: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_defender__Tie-Defender_-_by_Gianmarco_Falerni.glb": {
+   "num": 134,
+   "rule": "название: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_defender__Tie-Defender_-_by_Leonardo_Russo.glb": {
+   "num": 135,
+   "rule": "название: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_defender_elite__Star_Wars_TIE_d_Defender_Elite.glb": {
+   "num": 136,
+   "rule": "группа: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_fighter_imperial__3D_T.I.E_Fighter_-_Star_Wars_model.glb": {
+   "num": 137,
+   "rule": "название: /tie-fighter|t-i-e|tie-ln/",
+   "ship": "tie_fighter",
+   "source": "auto"
+  },
+  "liked/tie_fighter_imperial__TIE.glb": {
+   "num": 138,
+   "rule": "группа: /tie-fighter|t-i-e|tie-ln/",
+   "ship": "tie_fighter",
+   "source": "auto"
+  },
+  "liked/tie_fighter_imperial__TIE_Fighter.glb": {
+   "num": 139,
+   "rule": "название: /tie-fighter|t-i-e|tie-ln/",
+   "ship": "tie_fighter",
+   "source": "auto"
+  },
+  "liked/tie_interceptor__Star_Wars_TIE_in_Interceptor.glb": {
+   "num": 140,
+   "rule": "группа: /tie-interceptor/",
+   "ship": "tie_interceptor",
+   "source": "auto"
+  },
+  "liked/tie_interceptor__Star_Wars_Tie_Interceptor.glb": {
+   "num": 141,
+   "rule": "название: /tie-interceptor/",
+   "ship": "tie_interceptor",
+   "source": "auto"
+  },
+  "liked/tie_interceptor__Tie-Interceptor_-_by_Tommaso_Incecchi.glb": {
+   "num": 142,
+   "rule": "название: /tie-interceptor/",
+   "ship": "tie_interceptor",
+   "source": "auto"
+  },
+  "liked/tie_rb_brute__Star_Wars_TIE_rb_Brute.glb": {
+   "num": 143,
+   "rule": "название: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_reaper__TIE_C2.glb": {
+   "num": 144,
+   "rule": "группа: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_reaper__TIE_Reaper.glb": {
+   "num": 145,
+   "rule": "название: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_reaper__TIE_rlg_Reaper_ground_attack_lander.glb": {
+   "num": 146,
+   "rule": "название: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/tie_silencer__TIE_Silencer_First_Order.glb": {
+   "num": 147,
+   "rule": "название: /silencer/",
+   "ship": "tie_silencer",
+   "source": "auto"
+  },
+  "liked/tie_silencer__TIE_vn_Silencer.glb": {
+   "num": 148,
+   "rule": "название: /silencer/",
+   "ship": "tie_silencer",
+   "source": "auto"
+  },
+  "liked/tie_silencer__Tie_Silencer.glb": {
+   "num": 149,
+   "rule": "название: /silencer/",
+   "ship": "tie_silencer",
+   "source": "auto"
+  },
+  "liked/tie_striker__TIE_sa_Bomber.glb": {
+   "num": 150,
+   "rule": "группа: /tie-dagger|tie-defender|tie-rb|brute|tie-reaper|reaper|tie-striker|striker/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/twilight_g9_rigger__G9_Rigger_Freighter.glb": {
+   "num": 151,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/twilight_g9_rigger__Twilight.glb": {
+   "num": 152,
+   "rule": "название: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/u-55_orbital_loadlifter__U-55_Loadlifter_TLJ_Resistance_Transport.glb": {
+   "num": 153,
+   "rule": "название: /u-55|loadlifter|resistance-transport/",
+   "ship": "resistance_transport",
+   "source": "auto"
+  },
+  "liked/u-wing__Star_Wars_U-Wing_UT-60d.glb": {
+   "num": 154,
+   "rule": "название: /u-wing|v-wing/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/u-wing__futuristic_sci-fi_spaceship.glb": {
+   "num": 155,
+   "rule": "группа: /u-wing|v-wing/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/v-19_torrent__Star_Wars_V-19_Torrent.glb": {
+   "num": 156,
+   "rule": "название: /v-19|torrent/",
+   "ship": "v19_torrent",
+   "source": "auto"
+  },
+  "liked/v-19_torrent__V-19_Torrent_-_Star_Wars_-_Clone_Wars.glb": {
+   "num": 157,
+   "rule": "название: /v-19|torrent/",
+   "ship": "v19_torrent",
+   "source": "auto"
+  },
+  "liked/v-19_torrent__V-19_Torrent_Starfighter_-_Prototype_Variant.glb": {
+   "num": 158,
+   "rule": "название: /v-19|torrent/",
+   "ship": "v19_torrent",
+   "source": "auto"
+  },
+  "liked/v-wing_starfighter__Republic_V-wing_Starfighter.glb": {
+   "num": 159,
+   "rule": "название: /u-wing|v-wing/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/v-wing_starfighter__V19_Torrent_Starfighter.glb": {
+   "num": 160,
+   "rule": "название: /v-19|torrent/",
+   "ship": "v19_torrent",
+   "source": "auto"
+  },
+  "liked/v4_hounds_tooth__Hound_s_Tooth_CT4012.glb": {
+   "num": 218,
+   "rule": "поиск find_models.py",
+   "ship": "hounds_tooth",
+   "source": "auto"
+  },
+  "liked/v4_interdictor__Interdictor_Star_Destroyer_Immobilizer_418.glb": {
+   "num": 212,
+   "rule": "поиск find_models.py",
+   "ship": "interdictor",
+   "source": "auto"
+  },
+  "liked/v4_interdictor__Star_Wars_Immobilizer_418.glb": {
+   "num": 213,
+   "rule": "поиск find_models.py",
+   "ship": "interdictor",
+   "source": "auto"
+  },
+  "liked/v4_interdictor__interdictor_class_star_destroyer_canon.glb": {
+   "num": 219,
+   "rule": "поиск find_models.py",
+   "ship": "interdictor",
+   "source": "auto"
+  },
+  "liked/v4_pirate_corsair__-_X_-_StarFreighter_-_OnE_-.glb": {
+   "num": 220,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_corsair",
+   "source": "auto"
+  },
+  "liked/v4_pirate_corsair__Aril_Freighter.glb": {
+   "num": 221,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_corsair",
+   "source": "auto"
+  },
+  "liked/v4_pirate_corsair__Merchant_Haul_7_LT-900-CXX_Freighter_Class.glb": {
+   "num": 222,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_corsair",
+   "source": "auto"
+  },
+  "liked/v4_pirate_corsair__Star_Wars_BFF-1_Bulk_Freighter.glb": {
+   "num": 214,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_corsair",
+   "source": "auto"
+  },
+  "liked/v4_pirate_corsair__Star_Wars_Lethisk-class_Armored_Freighter.glb": {
+   "num": 215,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_corsair",
+   "source": "auto"
+  },
+  "liked/v4_pirate_corsair__YTS-27_light_freighter_The_Kowakian_Corsair.glb": {
+   "num": 223,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_corsair",
+   "source": "auto"
+  },
+  "liked/v4_pirate_marauder__DP-20_Corellian_Gunship.glb": {
+   "num": 216,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_marauder",
+   "source": "auto"
+  },
+  "liked/v4_pirate_marauder__Star_Wars_Corellian_Gunship.glb": {
+   "num": 224,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_marauder",
+   "source": "auto"
+  },
+  "liked/v4_pirate_marauder__Star_Wars_Marauder-class_Corvette.glb": {
+   "num": 225,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_marauder",
+   "source": "auto"
+  },
+  "liked/v4_pirate_skiff__Sorosuub_Preybird_Heavy_Assault_Fighter.glb": {
+   "num": 217,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_skiff",
+   "source": "auto"
+  },
+  "liked/v4_providence__providence-class-cruiser.glb": {
+   "num": 226,
+   "rule": "поиск find_models.py",
+   "ship": "providence",
+   "source": "auto"
+  },
+  "liked/v4_raddus_cruiser__MC85.glb": {
+   "num": 227,
+   "rule": "поиск find_models.py",
+   "ship": "raddus_cruiser",
+   "source": "auto"
+  },
+  "liked/v4_tie_sf__Special_Forces_Tie_Fighter.glb": {
+   "num": 228,
+   "rule": "поиск find_models.py",
+   "ship": "tie_sf",
+   "source": "auto"
+  },
+  "liked/v4_tie_sf__TIE_sf_space_superiority_fighter.glb": {
+   "num": 229,
+   "rule": "поиск find_models.py",
+   "ship": "tie_sf",
+   "source": "auto"
+  },
+  "liked/v4_upsilon_shuttle__Kylo_Ren_Command_Shuttle.glb": {
+   "num": 230,
+   "rule": "поиск find_models.py",
+   "ship": "upsilon_shuttle",
+   "source": "auto"
+  },
+  "liked/venator_star_destroyer__Republic_Venator_Star_Destroyer.glb": {
+   "num": 161,
+   "rule": "название: /venator/",
+   "ship": "venator",
+   "source": "auto"
+  },
+  "liked/venator_star_destroyer__Star_Wars_Republic_Venator_Star_Destroyer.glb": {
+   "num": 162,
+   "rule": "название: /venator/",
+   "ship": "venator",
+   "source": "auto"
+  },
+  "liked/venator_star_destroyer__Venator_Class_Star_Destroyer.glb": {
+   "num": 163,
+   "rule": "название: /venator/",
+   "ship": "venator",
+   "source": "auto"
+  },
+  "liked/vulture_droid_starfighter__Lego_Star_Wars_Vulture_Droid.glb": {
+   "num": 164,
+   "rule": "путь: /^converted-glb/vulture-flight-kit|vulture/",
+   "ship": "vulture_droid",
+   "source": "auto"
+  },
+  "liked/vulture_droid_starfighter__Vulture_Droid.glb": {
+   "num": 165,
+   "rule": "путь: /^converted-glb/vulture-flight-kit|vulture/",
+   "ship": "vulture_droid",
+   "source": "auto"
+  },
+  "liked/vulture_droid_starfighter__Vulture_droid_starfighter.glb": {
+   "num": 166,
+   "rule": "путь: /^converted-glb/vulture-flight-kit|vulture/",
+   "ship": "vulture_droid",
+   "source": "auto"
+  },
+  "liked/x-wing_t-65_starfighter__Star_Wars_X-wing_Fighter.glb": {
+   "num": 167,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  },
+  "liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars.glb": {
+   "num": 168,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  },
+  "liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars__s1.glb": {
+   "num": 169,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  },
+  "liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars__s2.glb": {
+   "num": 170,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  },
+  "liked/x-wing_t-65_starfighter__X-Wing_T-65.glb": {
+   "num": 171,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  },
+  "liked/xyston_star_destroyer__Old_Xyston.glb": {
+   "num": 172,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/xyston_star_destroyer__Xyston-class_Star_Destroyer_EaW_Remake.glb": {
+   "num": 173,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/xyston_star_destroyer__Xyston_Overhaul.glb": {
+   "num": 174,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/xyston_star_destroyer__Xyston_Star_Destroyer_Redesign.glb": {
+   "num": 175,
+   "rule": "название: /supremacy|xyston|acclamator|arquitens|546-cruiser|cantwell|quasar|gozanti|hammerhead|pelta|nebulon|lucrehulk|core-ship|consular|republic-cruiser|malevolence/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/y-wing_starfighter__Star_Wars_Y-wing_Fighter_Bomber.glb": {
+   "num": 176,
+   "rule": "название: /y-wing|btl-a4|btl-b/",
+   "ship": "ywing_btla4",
+   "source": "auto"
+  },
+  "liked/y-wing_starfighter__Y-wing_Starfighter_-_Star_Wars.glb": {
+   "num": 177,
+   "rule": "название: /y-wing|btl-a4|btl-b/",
+   "ship": "ywing_btla4",
+   "source": "auto"
+  },
+  "liked/y-wing_starfighter__Y-wing_starfighter.glb": {
+   "num": 178,
+   "rule": "название: /y-wing|btl-a4|btl-b/",
+   "ship": "ywing_btla4",
+   "source": "auto"
+  },
+  "liked/yt-2400_freighter__Star_Wars_YT-2400_Light_Freighter.glb": {
+   "num": 179,
+   "rule": "поиск find_models.py",
+   "ship": "pirate_corsair",
+   "source": "auto"
+  },
+  "liked/yt-2400_freighter__YT-1850.glb": {
+   "num": 180,
+   "rule": "группа: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/yt-2400_freighter__YT-2442.glb": {
+   "num": 181,
+   "rule": "группа: /razor-crest|yt-2400|outrider|fang-fighter|nu-class|t-6|jedi-shuttle|sith-infiltrator|scimitar|solar-sailer|twilight|g9-rigger|cr90|cr120|corvette/",
+   "ship": "none",
+   "source": "auto"
+  },
+  "liked/z-95_headhunter__Incom_Z-95-AF4_Headhunter.glb": {
+   "num": 182,
+   "rule": "название: /z-95|headhunter/",
+   "ship": "z95_headhunter",
+   "source": "auto"
+  },
+  "liked/z-95_headhunter__Star_Wars_Z-95_Headhunter.glb": {
+   "num": 183,
+   "rule": "название: /z-95|headhunter/",
+   "ship": "z95_headhunter",
+   "source": "auto"
+  },
+  "liked/z-95_headhunter__Z-95_Headhunter.glb": {
+   "num": 184,
+   "rule": "название: /z-95|headhunter/",
+   "ship": "z95_headhunter",
+   "source": "auto"
+  },
+  "millennium_falcon_opt.glb": {
+   "num": 185,
+   "rule": "название: /millennium-falcon|falcon|yt-1300/",
+   "ship": "millennium_falcon",
+   "source": "auto"
+  },
+  "millennium_falcon_stym/scene.gltf": {
+   "num": 186,
+   "rule": "группа: /millennium-falcon|falcon|yt-1300/",
+   "ship": "millennium_falcon",
+   "source": "auto"
+  },
+  "phantom_i_danielalex_printables55615.stl": {
+   "num": 187,
+   "rule": "название: /phantom|shuttle-stl|shuttle-obj/",
+   "ship": "phantom",
+   "source": "auto"
+  },
+  "star_destroyer_current.glb": {
+   "num": 188,
+   "rule": "название: /imperial-class|imperial-star-destroyer|star-destroyer/",
+   "ship": "star_destroyer",
+   "source": "auto"
+  },
+  "star_destroyer_opt.glb": {
+   "num": 189,
+   "rule": "название: /imperial-class|imperial-star-destroyer|star-destroyer/",
+   "ship": "star_destroyer",
+   "source": "auto"
+  },
+  "tie_advanced_x1_daniel_objaverse.glb": {
+   "num": 190,
+   "rule": "название: /tie-advanced|advanced-x1/",
+   "ship": "tie_advanced_x1",
+   "source": "auto"
+  },
+  "tie_fighter_current.glb": {
+   "num": 191,
+   "rule": "название: /tie-fighter|t-i-e|tie-ln/",
+   "ship": "tie_fighter",
+   "source": "auto"
+  },
+  "tie_fighter_opt.glb": {
+   "num": 192,
+   "rule": "название: /tie-fighter|t-i-e|tie-ln/",
+   "ship": "tie_fighter",
+   "source": "auto"
+  },
+  "vulture_droid_theo_objaverse.glb": {
+   "num": 193,
+   "rule": "путь: /^converted-glb/vulture-flight-kit|vulture/",
+   "ship": "vulture_droid",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_articulation_ext_fixed.stl": {
+   "num": 194,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_articulation_fixed.stl": {
+   "num": 195,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_articulation_mid_fixed.stl": {
+   "num": 196,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_body_fixed.stl": {
+   "num": 197,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_body_front_fixed.stl": {
+   "num": 198,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_body_rear_fixed.stl": {
+   "num": 199,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_flap_inf_fixed.stl": {
+   "num": 200,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_flap_sup_fixed.stl": {
+   "num": 201,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_head.stl": {
+   "num": 202,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_laser_fixed.stl": {
+   "num": 203,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_neck_fixed.stl": {
+   "num": 204,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_scissor_fixed.stl": {
+   "num": 205,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_wing_complet_fixed.stl": {
+   "num": 206,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_wing_fixed.stl": {
+   "num": 207,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "vulture_flight_zeinfel_thing4458309/droid_wing_flight_fixed.stl": {
+   "num": 208,
+   "rule": "путь: /^vulture-flight-zeinfel-thing4458309//",
+   "ship": "none",
+   "source": "auto"
+  },
+  "xwing_t65_current.glb": {
+   "num": 209,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  },
+  "xwing_t65_heataker_objaverse.glb": {
+   "num": 210,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  },
+  "xwing_t65_opt.glb": {
+   "num": 211,
+   "rule": "название: /x-wing|xwing|t-65/",
+   "ship": "xwing_t65",
+   "source": "auto"
+  }
+ },
+ "note": "Тип корабля ростера v4 для каждой скачанной модели; none — нет в игре. source: auto (classify_models.py) или manual (правка на странице)."
+}

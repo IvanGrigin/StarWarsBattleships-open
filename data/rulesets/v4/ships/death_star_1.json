@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "id": "death_star_1",
+  "display_name": "Звезда Смерти I",
+  "description": "Боевая станция Империи. Дальний выстрел: атакует корабль на любой дистанции, каждая клетка — штраф к силе. Уничтожена Люком Скайуокером на X-wing.",
+  "faction": "empire",
+  "era": "galactic_civil_war",
+  "role": "station",
+  "unique": true,
+  "legacy_v3": true,
+  "draftable": false,
+  "raw_cost": 44,
+  "draft_cost": 18,
+  "max_hp": 11,
+  "max_shield": 2,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    7,
+    0,
+    0,
+    -1,
+    0,
+    0
+  ],
+  "weapon": {
+    "max_range": 6,
+    "range_penalty_per_hex": 2,
+    "long_range_arc": "all"
+  },
+  "engine": {
+    "move_cost": null,
+    "pivot_cost": 2,
+    "boost": false
+  },
+  "hyperdrive": null,
+  "abilities": [
+    {
+      "id": "ranged_shot",
+      "enabled": true
+    },
+    {
+      "id": "superlaser",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "darth_vader",
+  "display_name": "Дарт Вейдер",
+  "description": "Был Энакином Скайуокер но когда стал ситхом он стал Дарт Вейдером.",
+  "ability": {
+    "id": "force_path",
+    "name": "Путь силы",
+    "text": "1 раза в игру может атаковать корабль на расстоянии в одну клетку(не соприкасаясь)",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [
+      { "fact": "phase", "op": "eq", "value": "activation" },
+      { "fact": "activation_seat_is_owner", "op": "eq", "value": true }
+    ],
+    "target_filter": {
+      "target_kind": "enemy_ship",
+      "min_distance": 2,
+      "max_distance": 2,
+      "destination": null,
+      "count": 1
+    },
+    "cost": { "charges_mode": "fixed", "charges": 0, "consumes_ship_attack": false },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "ability_attack",
+        "params": {
+          "range": 2,
+          "range_penalty": 0,
+          "line_of_sight": "intermediate_cells_free",
+          "sector_rule": "standard_direction"
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": ["AbilityUsed", "AttackDeclared", "DieRolled", "StrengthCalculated", "DamageApplied", "ShipDestroyed"],
+    "test_plan": {
+      "positive": "C013+ (план): корабль владельца атакует вражеский корабль на гекс-расстоянии 2 (ровно одна клетка между); бой разрешается по стандартному конвейеру (d6 атакующего, затем d6 защищающегося, сектора, урон щит→корпус); использование списано.",
+      "negative": "C013− (план): цель на расстоянии 1 (соприкосновение) или 3 отклонена; цель на расстоянии 2 с занятой промежуточной клеткой отклонена (line_of_sight); цель — свой/союзный корабль отклонена; повторное использование и использование вне своей активации отклонены; {ok:false} без изменения состояния."
+    },
+    "design_notes": "«На расстоянии в одну клетку (не соприкасаясь)» формализовано как гекс-расстояние 2 (MASTER_PLAN_RU §4.9; метрика — core-api §1). Открытые вопросы rules-v3 §9.6 (линия видимости, сектор) пинятся так: линия видимости — промежуточная клетка прямой атакующий→цель свободна от кораблей; сектор атакующего — по direction_from к цели, защищающегося — обратно (стандартные формулы core-api §1); штраф дальности отсутствует (слагаемое range = 0). Способность не тратит заряды и не расходует обычную атаку корабля, поэтому в одной активации возможны обычная атака и атака способности.",
+    "proposal_v3": [
+      "расстояние = гекс-расстояние 2, промежуточная клетка прямой должна быть свободна от кораблей",
+      "сектора и урон — по стандартному конвейеру боя, штраф дальности range_penalty = 0",
+      "consumes_ship_attack: false — способность не расходует обычную атаку корабля"
+    ]
+  }
+}

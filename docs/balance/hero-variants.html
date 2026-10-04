@@ -1,0 +1,265 @@
+<meta charset="utf-8">
+<title>Герои: варианты баланса</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo+2:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+:root{--bg:#f3f5fa;--paper:#ffffff;--ink:#16203a;--muted:#5b6784;--line:#d9dfec;--accent:#1f5fbf;
+--hi:#c2410c;--hi-bg:#fdeee6;--lo:#1d6fb8;--lo-bg:#e6f0fb;--ok:#2f7d4f;--ok-bg:#e7f4ec;--new:#7a4bb8;--new-bg:#f1eafb;
+--display:"Russo One","Exo 2",system-ui,sans-serif;--body:"Exo 2",system-ui,-apple-system,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1120;--paper:#111a2e;--ink:#dfe6f5;--muted:#8d9ab8;--line:#24324f;--accent:#6aa6ff;
+--hi:#ff9a62;--hi-bg:#3a2216;--lo:#72b4ff;--lo-bg:#15283f;--ok:#6fd49a;--ok-bg:#13301f;--new:#c3a2ff;--new-bg:#2a1f40}}
+:root[data-theme="dark"]{--bg:#0b1120;--paper:#111a2e;--ink:#dfe6f5;--muted:#8d9ab8;--line:#24324f;--accent:#6aa6ff;
+--hi:#ff9a62;--hi-bg:#3a2216;--lo:#72b4ff;--lo-bg:#15283f;--ok:#6fd49a;--ok-bg:#13301f;--new:#c3a2ff;--new-bg:#2a1f40}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15.5px/1.55 var(--body);padding-inline:16px;padding-block:28px 48px;margin:0}
+.wrap{max-width:1100px;margin:0 auto;display:grid;gap:28px}
+h1{font:400 clamp(26px,4vw,38px)/1.1 var(--display);margin:0;text-wrap:balance}
+h2{font:400 20px/1.2 var(--display);margin:0 0 12px;letter-spacing:.02em}
+h3{font:700 17px/1.25 var(--body);margin:0;text-wrap:balance}
+.lead{max-width:72ch;color:var(--muted);margin:10px 0 0}
+.lead b{color:var(--ink)}
+.pkgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.pkg{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px}
+.pkg.rec{border:2px solid var(--accent)}
+.pkg p{margin:8px 0 0;font-size:14px;color:var(--muted)}
+.fm{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.fm p{margin:0 0 8px}.fm ol{margin:0;padding-left:20px;display:grid;gap:4px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.filters button{font:600 13px var(--body);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 13px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.filters button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.heroes{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.hero{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:10px;align-content:start}
+.hero header{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.fac{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.wr{display:grid;justify-items:end;gap:2px;min-width:112px}
+.wr b{font:400 20px/1 var(--display);font-variant-numeric:tabular-nums}
+.wr span{font-size:11.5px;font-weight:600}
+.hero.hi .wr b,.hero.hi .wr span{color:var(--hi)} .hero.lo .wr b,.hero.lo .wr span{color:var(--lo)} .hero.ok .wr b,.hero.ok .wr span{color:var(--ok)}
+.bar{display:block;position:relative;width:112px;height:6px;border-radius:3px;background:var(--line);margin-top:3px}
+.bar>i{display:block;height:100%;border-radius:3px;background:currentColor}
+.hero.hi .bar{color:var(--hi)} .hero.lo .bar{color:var(--lo)} .hero.ok .bar{color:var(--ok)}
+.bar em{position:absolute;left:45.45%;top:-3px;width:2px;height:12px;background:var(--ink);opacity:.5}
+.now{font-size:13.5px;color:var(--muted);margin:0;padding-bottom:10px;border-bottom:1px dashed var(--line)}
+.now b{color:var(--ink)}
+.var{display:grid;grid-template-columns:26px 1fr;gap:8px;align-items:start}
+.var p{margin:0;font-size:14px}
+.vt{font:400 13px/24px var(--display);text-align:center;border-radius:6px;background:var(--bg);border:1px solid var(--line)}
+.vA .vt{color:var(--muted)} .vB .vt{color:var(--accent)} .vC .vt{color:var(--new)}
+.chip{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;margin-left:4px;white-space:nowrap}
+.chip.sim{background:var(--ok-bg);color:var(--ok)} .chip.new{background:var(--new-bg);color:var(--new)}
+footer{color:var(--muted);font-size:13px;max-width:80ch}
+</style>
+<div class="wrap">
+<header><h1>Герои: варианты баланса</h1>
+<p class="lead">Для каждого героя — карточка сейчас, процент побед в симуляторе и варианты правки. <b>A</b> — только числа, проверено подбором на сотнях тысяч партий. <b>B</b> и <b>C</b> — по характеру персонажа: у героя появляется своя ниша и слабое место, и он выигрывает в «своей» ситуации; их ещё нужно проверить в симуляторе. Норма — 47–53% побед. Карточки в датасете пока не менялись.</p></header>
+<section><h2>Четыре подхода к балансу</h2><div class="pkgs"><article class="pkg"><h3>Пакет 1. «Числа»</h3><p>Тексты карточек не меняются; меняются числа и число применений (варианты A) и цены кораблей, которые подбирает симулятор. Минимум правок и всё проверено сотнями тысяч партий. Минус: у героев с перекосом (Фазма, Падме) остаются одни и те же «сильные всегда» способности, просто слабее.</p></article><article class="pkg"><h3>Пакет 2. «Характер»</h3><p>Героям с перекосом и слабым героям способности переписываются по варианту B: у каждого своя ниша и явное слабое место. Фазма сильна в слаженном огне, Оби-Ван — на месте, Хан — когда к нему подходят вплотную, Люк — против крупных кораблей. Каждый герой выигрывает в своей ситуации и проигрывает вне её. Нужно смоделировать около 15 новых механик, затем подобрать числа.</p></article><article class="pkg"><h3>Пакет 3. «Цена героя»</h3><p>Карточки героев не меняются, но герой стоит очки драфта из бюджета 24: сильный герой — слабее флот. Первая прикидка (ещё не проверена симуляцией): Фазма и Оби-Ван — 3 очка, Падме, Мейс, Сноук и Квай-Гон — 2, Вейдер и Люк — 1, остальные — 0, а Дуку, По, Хан и Нут получают +1–2 к бюджету. Одна ручка на героя, и её легко подобрать симуляцией.</p></article><article class="pkg rec"><h3>Пакет 4. «Смешанный» (рекомендую)</h3><p>Корабли — по ценам из подбора (перекос во многом в кораблях: «Тихушник» 69,5%, «Провиденс» 64%). Герои в норме — без изменений. Сильные — вариант A (меньше чисел, тот же характер). Слабые — вариант B, чтобы у них появилась своя роль, а не просто «больше того же». Меньше всего переписывать, и у каждого слабого героя появляется лицо.</p></article></div></section>
+<section class="fm"><h2>Первый ход</h2><p>Сторона, ходящая первой в раунде, выигрывает 44% партий: ответный ход видит позицию и бьёт первым вплотную.</p><ol><li>Вариант 1: первый игрок в раунде активирует два корабля подряд, дальше по очереди.</li><li>Вариант 2: второй игрок в раунде 1 получает −1 заряд на каждый корабль (компенсация за ответный удар).</li><li>Вариант 3: первым в раунде ходит тот, у кого меньше суммарной прочности (догоняющий) — вместо чередования.</li></ol></section>
+<section><h2>Герои — от самого сильного к самому слабому</h2>
+<div class="filters" role="group" aria-label="Фильтр героев">
+<button id="f-all" aria-pressed="true" data-f="all">Все 32</button>
+<button id="f-hi" aria-pressed="false" data-f="hi">Выше нормы</button>
+<button id="f-lo" aria-pressed="false" data-f="lo">Ниже нормы</button>
+<button id="f-ok" aria-pressed="false" data-f="ok">В норме</button></div>
+<div class="heroes" id="heroes">
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Фазма</h3><span class="fac">Первый Орден</span></div>
+  <div class="wr"><b>77.9%</b><span>выше нормы</span><i class="bar"><i style="width:96%"></i><em></em></i></div></header>
+  <p class="now"><b>Точность.</b> Все броски кубика, при атаке, увеличиваются на 1<br><b>Выучка штурмовиков.</b> Ваши корабли Первого Ордена не теряют заряды от ионного оружия.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Точность»: +1 к силе атаки только кораблям Первого Ордена (сейчас +1 к каждому из двух кубиков, то есть +2 всем). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Капитан штурмовиков»: корабль Первого Ордена получает +2 к силе атаки, если по этой цели в этом раунде уже стрелял другой ваш корабль. Сильна в слаженном огне звеном, слаба, когда флот разбросан. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Хромированная броня»: самый дорогой корабль флота получает +1 щит и не теряет заряды от иона; «Точность» — 1 раз за раунд перебросить свой кубик атаки. Из нападающей становится стойкой. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Оби-Ван Кеноби</h3><span class="fac">Республика</span></div>
+  <div class="wr"><b>70.9%</b><span>выше нормы</span><i class="bar"><i style="width:83%"></i><em></em></i></div></header>
+  <p class="now"><b>Мимо.</b> 2 раза в игру может после броска противника может перевернуть кубик любой гранью (но нельзя менять с 6 на 1)<br><b>Высокая позиция.</b> Пока в вашем флоте есть хотя бы один республиканский корабль, ваши корабли получают +1 к защите в секторе F (атака в лоб).</p>
+  <div class="var vA"><span class="vt">A</span><p>«Мимо»: 1 раз за игру, кубик атакующего уменьшается на 3 (не ниже 1), а не переворачивается в 1–2. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Соресу»: +1 к защите кораблю, который в эту активацию не двигался. «Мимо» — 1 раз. Герой обороны: силён, когда держит позицию, слаб в погоне. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Высокая позиция»: если у атакующего по вашему кораблю меньше HP, чем у вашего, атака получает −2. Раз за игру «Мимо». Наказывает раненых, рвущихся добить. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Падме Амидала</h3><span class="fac">Республика</span></div>
+  <div class="wr"><b>68.4%</b><span>выше нормы</span><i class="bar"><i style="width:79%"></i><em></em></i></div></header>
+  <p class="now"><b>Дипломатическая неприкосновенность.</b> 1 раз в игру: до конца раунда по одному вашему кораблю нельзя атаковать на дистанции больше 1.<br><b>Сила единства.</b> За каждый республиканский корабль в вашем флоте все ваши республиканские корабли получают +1 к силе атаки (максимум +3). Если все три корабля флота республиканские, каждый из них дополнительно получает +1 максимального HP и +1 щита.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Сила единства»: +1 к силе атаки за каждый корабль Республики, но не больше +1; бонус чистой Республики (+1 HP и щит) убрать. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Сила единства»: +1 к силе атаки республиканскому кораблю, рядом с которым (на соседней клетке) стоит другой республиканский. Строй, а не просто состав: разбили строй — бонуса нет. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Дипломат»: 1 раз за игру отмените любую атаку (на любой дистанции); пока ни один ваш корабль не атаковал в этом раунде, ваши корабли получают +1 к защите. Сила в переговорах, а не в огне. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Мейс Винду</h3><span class="fac">Республика</span></div>
+  <div class="wr"><b>66.0%</b><span>выше нормы</span><i class="bar"><i style="width:75%"></i><em></em></i></div></header>
+  <p class="now"><b>Ваапад.</b> 2 раза в игру: после броска боя, в котором ваш корабль защищается, поменяйте местами кубики атакующего и защищающегося.<br><b>Дисциплина Ваапада.</b> Если бой вплотную по вашему республиканскому кораблю закончился ничьей, атакующий получает 1 урона.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Ваапад»: 1 раз за игру (сейчас 2). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Ваапад»: только в ближнем бою; если атака по вашему кораблю не пробила защиту, атакующий получает урон, равный разнице. Мастер ближнего боя, бесполезен против дальнего огня. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Ваапад» 1 раз, «Дисциплина» остаётся: ничья вплотную — 1 урона атакующему. Меньше чистой силы, больше угрозы в ближнем бою. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Верховный лидер Сноук</h3><span class="fac">Первый Орден</span></div>
+  <div class="wr"><b>65.2%</b><span>выше нормы</span><i class="bar"><i style="width:73%"></i><em></em></i></div></header>
+  <p class="now"><b>Нити кукловода.</b> 1 раз в игру: возьмите под контроль вражеский истребитель на одну атаку (он атакует своего союзника).<br><b>Верховный лидер.</b> В начале каждого чётного раунда корабли Первого Ордена получают +1 заряд (не выше максимума).</p>
+  <div class="var vA"><span class="vt">A</span><p>Без «Нитей кукловода»: только «Верховный лидер» (+1 заряд Первому Ордену в чётные раунды). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Нити кукловода»: 1 раз за игру, только истребитель на дистанции 1–2 от вашего крупного корабля. Кукловод действует из тени флагмана. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Марионетка»: 1 раз за игру вражеский герой не может применить свою способность до конца раунда. Контроль вместо урона. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Квай-Гон Джинн</h3><span class="fac">Республика</span></div>
+  <div class="wr"><b>64.8%</b><span>выше нормы</span><i class="bar"><i style="width:72%"></i><em></em></i></div></header>
+  <p class="now"><b>Живая Сила.</b> 1 раз в игру: восстановите 2 HP любому своему кораблю или снимите с него все эффекты (мина, ион, буксир).<br><b>Воля Силы.</b> Раз за матч ваш республиканский корабль, который должен быть уничтожен, остаётся в игре с 1 HP.</p>
+  <div class="var vA"><span class="vt">A</span><p>Без «Воли Силы» (спасения корабля с 1 HP); «Живая Сила» остаётся. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Воля Силы» срабатывает, только если в флоте осталось больше одного корабля — жертва ради других, а не спасение последнего. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Живая Сила»: лечение 2 HP можно применить к кораблю, который в этом раунде ещё не активировался, и он пропускает атаку. Милосердие ценой темпа. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Дарт Вейдер</h3><span class="fac">Империя</span></div>
+  <div class="wr"><b>60.6%</b><span>выше нормы</span><i class="bar"><i style="width:65%"></i><em></em></i></div></header>
+  <p class="now"><b>Путь силы.</b> 1 раза в игру может атаковать корабль на расстоянии в одну клетку(не соприкасаясь)<br><b>Тёмное командование.</b> Все ваши имперские корабли получают +1 к силе атаки в секторе F.</p>
+  <div class="var vA"><span class="vt">A</span><p>Без «Пути силы» (атака через клетку); «Тёмное командование» (+1 в секторе F) остаётся. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Удушение»: 1 раз за игру вражеский корабль на дистанции 1–2 не может атаковать в этом раунде. Синергия — +1 в секторе F только самому дорогому кораблю (флагман Вейдера). <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Лучший пилот Империи»: +1 к силе атаки и форсаж за 1 заряд, но только TIE Advanced X1 или истребителю; остальные без бонуса. Сильный одиночка, а не командир флота. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Люк Скайуокер</h3><span class="fac">Повстанцы</span></div>
+  <div class="wr"><b>60.3%</b><span>выше нормы</span><i class="bar"><i style="width:64%"></i><em></em></i></div></header>
+  <p class="now"><b>Точный выстрел.</b> 1 раз в игру в свой ход может перевернуть кубик любой гранью (Но нельзя с 1 на 6)<br><b>Сила велика в нём.</b> Пока у вашего флота осталось не больше одного корабля, этот корабль получает +2 к силе атаки.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Сила велика в нём»: последний корабль получает +1, а не +2. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Атака на траншею»: +2 к силе атаки истребителя по крупным кораблям и станциям; «Точный выстрел» 1 раз. Охотник на гигантов, средний против истребителей. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Доверься Силе»: 1 раз за игру атака не может промахнуться (урон не меньше 2); «Сила велика» только истребителю. Один решающий выстрел вместо постоянного бонуса. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero hi" data-state="hi">
+  <header><div><h3>Кайло Рен</h3><span class="fac">Первый Орден</span></div>
+  <div class="wr"><b>54.9%</b><span>выше нормы</span><i class="bar"><i style="width:54%"></i><em></em></i></div></header>
+  <p class="now"><b>Остановка Силой.</b> 2 раза в игру: остановите вражеский корабль — он тратит все заряды и завершает активацию.<br><b>Необузданная ярость.</b> Корабль Первого Ордена, потерявший за один раунд 3 HP и больше, получает +2 к силе атаки до конца своей следующей активации.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Остановка Силой»: 1 раз за игру (сейчас 2). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Необузданная ярость»: +2 к атаке после потери 3 HP, но в этой активации корабль не может отступать (только вперёд). Сила в злости — и предсказуемость. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Остановка» 1 раз, ярость +1. Мягкая версия. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Генерал Хакс</h3><span class="fac">Первый Орден</span></div>
+  <div class="wr"><b>50.7%</b><span>в норме</span><i class="bar"><i style="width:47%"></i><em></em></i></div></header>
+  <p class="now"><b>Массированный залп.</b> 1 раз в игру: все ваши корабли атакуют в этом раунде с +1 к силе, но в следующем раунде получают −1 к защите.<br><b>Доктрина Первого Ордена.</b> Если все три ваших корабля — Первый Орден, каждый получает +1 щита.</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Старкиллер»: 1 раз за игру залп по всем вражеским кораблям в одной линии на дистанции 3–4 (1d4 каждому); синергия щита остаётся. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Адмирал Пиетт</h3><span class="fac">Империя</span></div>
+  <div class="wr"><b>50.5%</b><span>в норме</span><i class="bar"><i style="width:46%"></i><em></em></i></div></header>
+  <p class="now"><b>Сомкнуть сеть.</b> 1 раз в игру: сдвиньте два своих корабля на одну клетку каждый вне очереди активации.<br><b>Выучка флагмана.</b> Ваши имперские крупные корабли (capital) поворачиваются за 1 заряд вместо 2.</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Выучка флагмана» остаётся; «Сомкнуть сеть» — только корабли рядом с вашим крупным. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Гранд-мофф Таркин</h3><span class="fac">Империя</span></div>
+  <div class="wr"><b>49.9%</b><span>в норме</span><i class="bar"><i style="width:45%"></i><em></em></i></div></header>
+  <p class="now"><b>Огонь по готовности.</b> 1 раз в игру: ваш корабль с дальностью 3+ атакует дважды за активацию.<br><b>Железная дисциплина.</b> Ваши имперские корабли не теряют заряды, когда не атакуют: в конце раунда они получают +1 заряд сверх обычного (не выше максимума).</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Доктрина страха»: 1 раз за игру ваш крупный корабль атакует все цели в секторе F на дистанции 1–3 с −2. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Йода</h3><span class="fac">Республика</span></div>
+  <div class="wr"><b>49.7%</b><span>в норме</span><i class="bar"><i style="width:45%"></i><em></em></i></div></header>
+  <p class="now"><b>Предвидение.</b> Пассивно: в начале каждого раунда вы узнаёте, какой корабль противник активирует первым; 1 раз в игру можете заставить его начать с другого корабля.<br><b>Совет джедаев.</b> Все ваши республиканские корабли один раз за матч перебрасывают свой кубик защиты.</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Предвидение»: каждый раунд, а не 1 раз, но только пока у вас кораблей меньше, чем у соперника. Мудрость проигрывающего. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Дарт Мол</h3><span class="fac">Сепаратисты</span></div>
+  <div class="wr"><b>49.7%</b><span>в норме</span><i class="bar"><i style="width:45%"></i><em></em></i></div></header>
+  <p class="now"><b>Двойной удар.</b> Пассивно: при атаке вплотную (дистанция 1) ваш корабль наносит +1 урона, но и получает +1 урона от ответных атак.<br><b>Месть ситха.</b> Если ваш корабль сепаратистов уничтожен в бою вплотную, уничтоживший его корабль получает 1 урона (щит не защищает).</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Двойной удар»: +1 урона вплотную и +1 к атаке по кораблю, который атаковал вас в прошлом раунде (месть). <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Император Палпатин</h3><span class="fac">Империя</span></div>
+  <div class="wr"><b>49.6%</b><span>в норме</span><i class="bar"><i style="width:45%"></i><em></em></i></div></header>
+  <p class="now"><b>Неограниченная власть.</b> 1 раз в игру: любой ваш корабль немедленно получает 3 заряда и атакует вне очереди.<br><b>Покров тёмной стороны.</b> Ваши корабли Империи и сепаратистов считаются одной фракцией для всех синергий.</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Всё идёт по плану»: власть можно применить на ход соперника — после его атаки. Хитрее, та же сила. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Чубакка</h3><span class="fac">Повстанцы</span></div>
+  <div class="wr"><b>49.2%</b><span>в норме</span><i class="bar"><i style="width:44%"></i><em></em></i></div></header>
+  <p class="now"><b>Ремонт на коленке.</b> 2 раза в игру: восстановите 1 HP или 1 щит своему кораблю в фазе восстановления.<br><b>Сила вуки.</b> Корабли повстанцев получают +2 к броску абордажа — и при атаке, и при защите.</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Рёв вуки»: +2 к абордажу (как на карточке) и 1 раз за игру ремонт 2 HP «Соколу тысячелетия». <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Боба Фетт</h3><span class="fac">Охотники</span></div>
+  <div class="wr"><b>48.2%</b><span>в норме</span><i class="bar"><i style="width:42%"></i><em></em></i></div></header>
+  <p class="now"><b>Бомба.</b> Создает бомбу которая двигается в задоном направление на заданное количество клеток от 1 до 3(одна клетка в твой хот) и взрывается когда попадает в корабль. От взрыва корабль получает 1 d4 урона<br><b>Добыча охотника.</b> Уничтожив вражеский корабль, ваш корабль восстанавливает 1 HP.</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Добыча охотника»: за уничтожение — +1 HP и +2 заряда; бомба 1 раз. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Рей</h3><span class="fac">Сопротивление</span></div>
+  <div class="wr"><b>47.9%</b><span>в норме</span><i class="bar"><i style="width:42%"></i><em></em></i></div></header>
+  <p class="now"><b>Необученная сила.</b> 2 раза в игру: перебросьте любой свой кубик; второй результат окончателен.<br><b>Последняя из джедаев.</b> Корабли Сопротивления получают +1 к защите от атак кораблей Первого Ордена.</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Необученная сила»: переброс любого кубика, свой или чужой, 2 раза. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero ok" data-state="ok">
+  <header><div><h3>Адмирал Акбар</h3><span class="fac">Повстанцы</span></div>
+  <div class="wr"><b>47.6%</b><span>в норме</span><i class="bar"><i style="width:41%"></i><em></em></i></div></header>
+  <p class="now"><b>Это ловушка!.</b> 1 раз в игру: отмените одну атаку противника по вашему кораблю с дистанции 2+ (бросок не совершается).<br><b>Сосредоточить огонь.</b> Ваш крупный корабль (роль capital или corvette) даёт соседним союзникам +1 к силе атаки.</p>
+  <div class="var vA"><span class="vt">A</span><p>Карточка как есть (в норме). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Это ловушка!»: отменить дальнюю атаку и сразу ответить атакой этого корабля. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Ведж Антиллес</h3><span class="fac">Повстанцы</span></div>
+  <div class="wr"><b>46.6%</b><span>ниже нормы</span><i class="bar"><i style="width:39%"></i><em></em></i></div></header>
+  <p class="now"><b>Держись цели.</b> Пассивно: ваш корабль, атакующий ту же цель второй раунд подряд, получает +1 к силе атаки.<br><b>Разбойная эскадрилья.</b> Если во флоте два и больше истребителя повстанцев (fighter/interceptor), каждый из них получает +1 к защите в секторе F.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Держись цели»: +2 (сейчас +1). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Разбойная эскадрилья»: +1 к атаке истребителю, если соседний союзный истребитель атаковал ту же цель. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Генерал Гривус</h3><span class="fac">Сепаратисты</span></div>
+  <div class="wr"><b>45.1%</b><span>ниже нормы</span><i class="bar"><i style="width:37%"></i><em></em></i></div></header>
+  <p class="now"><b>Четыре клинка.</b> 1 раз в игру: ваш корабль атакует в этой активации дважды, второй раз — с −1 к силе.<br><b>Охотник на джедаев.</b> Корабли сепаратистов получают +1 к силе атаки по кораблям Республики.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Четыре клинка»: вторая атака без штрафа −1. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Бегство»: 1 раз за игру корабль, который должен быть уничтожен, уходит в гиперпространство с 1 HP и возвращается в следующем раунде. Трус и коллекционер — жив, чтобы драться дальше. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Охотник на джедаев»: +1 к атаке по кораблям Республики и +1 по кораблю, на который играет герой-джедай (Оби-Ван, Энакин, Йода, Мейс, Квай-Гон). Контрвыбор в драфте. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Джанго Фетт</h3><span class="fac">Охотники</span></div>
+  <div class="wr"><b>44.9%</b><span>ниже нормы</span><i class="bar"><i style="width:36%"></i><em></em></i></div></header>
+  <p class="now"><b>Мина.</b> Создает мину которая не двигается и взрывается когда корабль встает на туже клетку или на соседнии клетки что и мина. От взрыва получаешь 1d4 урона<br><b>Мандалорский арсенал.</b> Мина, поставленная владельцем, наносит 1d4+1 урона.</p>
+  <div class="var vA"><span class="vt">A</span><p>Мина 2 раза за игру. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Мандалорец»: мина 1d4+1; поставив мину, корабль Джанго получает +1 к защите до конца раунда. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Лэндо Калриссиан</h3><span class="fac">Повстанцы</span></div>
+  <div class="wr"><b>42.4%</b><span>ниже нормы</span><i class="bar"><i style="width:32%"></i><em></em></i></div></header>
+  <p class="now"><b>Блеф.</b> 1 раз в игру: объявите блеф до броска боя. Если вы выигрываете бросок, урон удваивается; если проигрываете — вы теряете дополнительно 1 HP.<br><b>Барон-администратор.</b> Если во флоте есть корабль повстанцев, бюджет драфта увеличивается на 2 очка.</p>
+  <div class="var vA"><span class="vt">A</span><p>Бюджет драфта +4 (сейчас +2), блеф 2 раза. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Сабакк»: перед броском объявите ставку 1–3; попали — урон + ставка, промахнулись — ваш корабль теряет ставку в HP. Азарт вместо удвоения. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Барон-администратор»: бюджет +3 и можно взять два корабля чужой фракции. Лэндо — про сделки в драфте. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Лея Органа</h3><span class="fac">Повстанцы</span></div>
+  <div class="wr"><b>42.0%</b><span>ниже нормы</span><i class="bar"><i style="width:31%"></i><em></em></i></div></header>
+  <p class="now"><b>Инструктаж.</b> 1 раз в игру в начале раунда: все ваши корабли получают по 1 заряду.<br><b>Командование Альянса.</b> Если все три ваших корабля — повстанцы, каждый из них получает +1 к силе атаки в секторах BL, B, BR (удар в хвост).</p>
+  <div class="var vA"><span class="vt">A</span><p>«Инструктаж» 2 раза, удар в хвост +2. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Надежда»: когда ваш корабль уничтожен, остальные получают +1 заряд и +1 к атаке до конца следующего раунда. Сильнее в беде. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Командование Альянса»: удар в хвост +1 без условия «все три — повстанцы»; «Инструктаж» — каждый чётный раунд. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Энакин Скайуокер</h3><span class="fac">Республика</span></div>
+  <div class="wr"><b>39.9%</b><span>ниже нормы</span><i class="bar"><i style="width:27%"></i><em></em></i></div></header>
+  <p class="now"><b>Путь силы.</b> 1 раза в игру может передвинуть любой корабль на расстоянии в одну клетку (не обязательно свой)<br><b>Избранный пилот.</b> Один ваш республиканский корабль (выбирается в начале матча) получает +1 к силе атаки и −1 к защите.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Избранный пилот»: +1 к атаке без штрафа к защите. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Безрассудный ас»: избранный корабль получает +2 к атаке, если за эту активацию прошёл 2+ клетки, но −1 к защите. Скорость и риск. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Путь силы» 2 раза и «Под тёмным влиянием»: если избранный корабль уничтожен, все остальные ваши корабли получают +1 к атаке до конца игры. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Финн</h3><span class="fac">Сопротивление</span></div>
+  <div class="wr"><b>39.0%</b><span>ниже нормы</span><i class="bar"><i style="width:25%"></i><em></em></i></div></header>
+  <p class="now"><b>Знание изнутри.</b> Пассивно: ваши атаки по кораблям Первого Ордена и Империи получают +1 к силе.<br><b>Перебежчик.</b> Раз за матч корабль Сопротивления ведёт абордаж без траты зарядов и без ограничения по роли.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Знание изнутри»: +2 к атаке и +1 к защите против Первого Ордена и Империи. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Перебежчик»: против Первого Ордена +2 к атаке; против остальных — +1 к защите. Герой-контрвыбор: силён против своих бывших. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Бывший штурмовик»: 1 раз за игру узнайте и отмените способность вражеского героя Первого Ордена (Фазма, Хакс, Кайло, Сноук). <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Вице-адмирал Холдо</h3><span class="fac">Сопротивление</span></div>
+  <div class="wr"><b>38.0%</b><span>ниже нормы</span><i class="bar"><i style="width:24%"></i><em></em></i></div></header>
+  <p class="now"><b>Манёвр Холдо.</b> 1 раз в игру: ваш корабль с гипердрайвом уничтожается и наносит 1d6 урона всем кораблям на линии прыжка (до 3 клеток).<br><b>Командир эвакуации.</b> Транспорты и крупные корабли Сопротивления начинают матч с +1 щитом.</p>
+  <div class="var vA"><span class="vt">A</span><p>Стартовый щит +2 транспортам и крупным, таран 2d6. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Манёвр Холдо»: таран 2d6 по всем на линии прыжка до 5 клеток; корабль уничтожается. Одна жертва, решающая партию. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Командир эвакуации»: транспорты и крупные +1 щит; раз за игру уведите повреждённый корабль (он выходит из боя и не считается уничтоженным). <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>R2-D2</h3><span class="fac">Сопротивление</span></div>
+  <div class="wr"><b>37.4%</b><span>ниже нормы</span><i class="bar"><i style="width:23%"></i><em></em></i></div></header>
+  <p class="now"><b>Латка астромеха.</b> Пассивно: в фазе восстановления ваш корабль с дроидом восстанавливает 1 щит раз в два раунда.<br><b>Астромех в каждом крыле.</b> Раз за матч каждый ваш истребитель Сопротивления (fighter/interceptor) отменяет по себе атаку ионной пушкой.</p>
+  <div class="var vA"><span class="vt">A</span><p>Латка: 2 щита каждый раунд. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Взлом»: 1 раз за игру вражеский корабль на дистанции 1 теряет все заряды и способность корабля до конца раунда; латка раз в 2 раунда. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Астромех»: 1 щит каждый раунд, но только истребителям. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Хан Соло</h3><span class="fac">Повстанцы</span></div>
+  <div class="wr"><b>37.0%</b><span>ниже нормы</span><i class="bar"><i style="width:22%"></i><em></em></i></div></header>
+  <p class="now"><b>Гиперпрыжок.</b> 1 раз в игру в свой ход может переместить свой корабль в любую клетку карты кроме соседних с кораблями за все единицы заряда (без поворота)<br><b>Удача контрабандиста.</b> Ваш корабль с гипердрайвом класса 0–1 платит за гиперпрыжок на 1 заряд меньше.</p>
+  <div class="var vA"><span class="vt">A</span><p>Гиперпрыжок 3 раза за игру и без траты зарядов. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Я стреляю первым»: 1 раз за раунд, когда вражеский корабль встаёт вплотную к вашему, ваш атакует немедленно, до его атаки. Контрабандист, которого нельзя застать врасплох. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Кессельский рейс»: «Сокол» и грузовики получают форсаж за 1 заряд и +1 к защите на дистанции 2+; гиперпрыжок 1 раз. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Нут Ганрей</h3><span class="fac">Сепаратисты</span></div>
+  <div class="wr"><b>36.2%</b><span>ниже нормы</span><i class="bar"><i style="width:20%"></i><em></em></i></div></header>
+  <p class="now"><b>Торговая блокада.</b> 1 раз в игру: до конца раунда противник не может уходить в гиперпространство.<br><b>Дроидная верфь.</b> Если все три ваших корабля — сепаратисты, один уничтоженный дроидный корабль возвращается в игру с 2 HP (один раз за матч).</p>
+  <div class="var vA"><span class="vt">A</span><p>«Дроидная верфь» без условия «все три — сепаратисты». <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Торговая федерация»: дроидные корабли стоят на 1 очко дешевле в драфте; верфь 1 раз. Экономика вместо боя. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Блокада»: гиперпрыжок противника запрещён (как на карточке) и вражеские корабли на дистанции 1 от крупного корабля Нута платят за шаг на 1 заряд больше. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>По Дэмерон</h3><span class="fac">Сопротивление</span></div>
+  <div class="wr"><b>32.9%</b><span>ниже нормы</span><i class="bar"><i style="width:14%"></i><em></em></i></div></header>
+  <p class="now"><b>Лучший пилот флота.</b> Пассивно: ваш корабль может двигаться на 2 клетки по прямой за 1 заряд один раз в раунд.<br><b>Чёрное звено.</b> Ваши корабли Сопротивления получают +1 к защите, пока стоят на соседних клетках друг с другом.</p>
+  <div class="var vA"><span class="vt">A</span><p>Рывок 2 раза за раунд, «Чёрное звено» +2 к защите. <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Лучший пилот флота»: его истребитель может атаковать и после атаки сдвинуться на 1–2 клетки (удар и отход). <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Чёрное звено»: +1 к атаке и +1 к защите истребителю, рядом с которым союзный истребитель. Звено, а не одиночка. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+<article class="hero lo" data-state="lo">
+  <header><div><h3>Граф Дуку</h3><span class="fac">Сепаратисты</span></div>
+  <div class="wr"><b>32.4%</b><span>ниже нормы</span><i class="bar"><i style="width:13%"></i><em></em></i></div></header>
+  <p class="now"><b>Молнии Силы.</b> 1 раз в игру: вражеский корабль на расстоянии 1–2 теряет 2 заряда и 1 HP (щит не защищает).<br><b>Командование Конфедерации.</b> Все ваши корабли сепаратистов получают +1 заряд в начале матча.</p>
+  <div class="var vA"><span class="vt">A</span><p>«Молнии Силы» 2 раза по 2 HP (щит не защищает). <span class="chip sim">числа из подбора</span></p></div><div class="var vB"><span class="vt">B</span><p>«Граф Серенно»: молнии 1 раз, 3 HP на дистанции 1–3; +1 к защите кораблям сепаратистов от атак джедаев. Дуэлянт и политик. <span class="chip new">ещё не проверено</span></p></div><div class="var vC"><span class="vt">C</span><p>«Дуэлянт»: в ближнем бою ваш корабль бросает два кубика защиты и берёт лучший. Опасен вплотную, беззащитен издалека. <span class="chip new">ещё не проверено</span></p></div>
+</article>
+</div></section>
+<footer>Процент побед — карточка как есть: 150 000 партий симулятора v4, случайные пары героев, корабли из общего каталога, тактический бот с обеих сторон. Симулятор не моделирует абордаж, гиперпрыжок (кроме способности Хана), ион, местность и события — по Чубакке, Финну, Нуту, R2-D2 и Фазме цифры неполные. Источник: tools/gen_hero_variants.py.</footer>
+</div>
+<script>
+document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  const f = b.dataset.f;
+  document.querySelectorAll(".hero").forEach(c => { c.hidden = f !== "all" && c.dataset.state !== f; });
+}));
+</script>

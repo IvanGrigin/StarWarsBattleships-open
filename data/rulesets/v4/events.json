@@ -1,0 +1,251 @@
+{
+  "schema_version": 2,
+  "deck_size": 24,
+  "cards": [
+    {
+      "id": "ion_storm",
+      "display_name": "Ионный шторм",
+      "timing": "round_start",
+      "copies": 2,
+      "text": "Все корабли теряют по 1 заряду. Корабли со способностью droid_brain теряют 2.",
+      "effect": {
+        "op": "all_ships_charges",
+        "params": {
+          "value": -1,
+          "droid_extra": -1
+        }
+      }
+    },
+    {
+      "id": "solar_flare",
+      "display_name": "Солнечная вспышка",
+      "timing": "round_start",
+      "copies": 2,
+      "text": "В этом раунде дальний огонь (дистанция 2+) получает −2 к силе.",
+      "effect": {
+        "op": "global_modifier",
+        "params": {
+          "ranged_strength": -2,
+          "duration_rounds": 1
+        }
+      }
+    },
+    {
+      "id": "asteroid_drift",
+      "display_name": "Дрейф астероидов",
+      "timing": "round_start",
+      "copies": 2,
+      "text": "Все клетки астероидов сдвигаются на одну клетку в направлении, указанном кубиком направления.",
+      "effect": {
+        "op": "move_terrain",
+        "params": {
+          "terrain": [
+            "asteroid_field",
+            "dense_asteroids"
+          ],
+          "distance": 1
+        }
+      }
+    },
+    {
+      "id": "pirate_raid",
+      "display_name": "Налёт пиратов",
+      "timing": "round_start",
+      "copies": 2,
+      "text": "На случайной свободной клетке края поля появляется «Пиратский корсар» под управлением поля.",
+      "effect": {
+        "op": "spawn_npc",
+        "params": {
+          "ship": "pirate_corsair",
+          "where": "board_edge",
+          "count": 1
+        }
+      }
+    },
+    {
+      "id": "bounty_posted",
+      "display_name": "Объявлена награда",
+      "timing": "round_start",
+      "copies": 2,
+      "text": "Выберите вражеский корабль. Тот, кто его уничтожит, получает 3 заряда на любой свой корабль.",
+      "effect": {
+        "op": "mark_bounty",
+        "params": {
+          "reward_charges": 3
+        }
+      }
+    },
+    {
+      "id": "hyperspace_lane",
+      "display_name": "Открыт гиперкоридор",
+      "timing": "round_start",
+      "copies": 2,
+      "text": "В этом раунде гиперпрыжок стоит на 1 заряд дешевле для всех.",
+      "effect": {
+        "op": "global_modifier",
+        "params": {
+          "hyperjump_discount": 1,
+          "duration_rounds": 1
+        }
+      }
+    },
+    {
+      "id": "comm_blackout",
+      "display_name": "Глушение связи",
+      "timing": "round_start",
+      "copies": 2,
+      "text": "В этом раунде фракционные синергии и ауры не работают.",
+      "effect": {
+        "op": "global_modifier",
+        "params": {
+          "disable_synergies": true,
+          "duration_rounds": 1
+        }
+      }
+    },
+    {
+      "id": "reinforcements",
+      "display_name": "Подкрепление",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Игрок, у которого меньше всего живых кораблей, возвращает 2 HP одному своему кораблю.",
+      "effect": {
+        "op": "underdog_heal",
+        "params": {
+          "hp": 2
+        }
+      }
+    },
+    {
+      "id": "minefield",
+      "display_name": "Старое минное поле",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Поставьте 2 мины (1d4 урона) на случайные свободные клетки. Мины действуют до конца матча.",
+      "effect": {
+        "op": "place_mines",
+        "params": {
+          "count": 2,
+          "damage_dice": {
+            "count": 1,
+            "sides": 4
+          }
+        }
+      }
+    },
+    {
+      "id": "imperial_patrol",
+      "display_name": "Имперский патруль",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "На краю поля появляется «Истребитель СИД» под управлением поля; он атакует ближайший корабль.",
+      "effect": {
+        "op": "spawn_npc",
+        "params": {
+          "ship": "tie_fighter",
+          "where": "board_edge",
+          "count": 1
+        }
+      }
+    },
+    {
+      "id": "salvage_field",
+      "display_name": "Поле обломков",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Две случайные пустые клетки становятся обломками (debris).",
+      "effect": {
+        "op": "add_terrain",
+        "params": {
+          "terrain": "debris",
+          "count": 2
+        }
+      }
+    },
+    {
+      "id": "gravity_anomaly",
+      "display_name": "Гравитационная аномалия",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Случайная клетка становится гравитационным колодцем до конца матча.",
+      "effect": {
+        "op": "add_terrain",
+        "params": {
+          "terrain": "gravity_well",
+          "count": 1
+        }
+      }
+    },
+    {
+      "id": "supply_drop",
+      "display_name": "Сброс припасов",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Каждый игрок получает 2 заряда, распределяемых между своими кораблями.",
+      "effect": {
+        "op": "all_seats_charges",
+        "params": {
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "force_vision",
+      "display_name": "Видение в Силе",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Каждый игрок с героем-джедаем или ситхом один раз в этом раунде перебрасывает кубик.",
+      "effect": {
+        "op": "grant_reroll",
+        "params": {
+          "hero_tag": [
+            "jedi",
+            "sith"
+          ],
+          "uses": 1
+        }
+      }
+    },
+    {
+      "id": "desertion",
+      "display_name": "Дезертирство",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Игрок с наибольшим числом живых кораблей теряет 1 заряд на каждом из них.",
+      "effect": {
+        "op": "leader_penalty",
+        "params": {
+          "charges": -1
+        }
+      }
+    },
+    {
+      "id": "nebula_drift",
+      "display_name": "Наползает туманность",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Три случайные клетки становятся туманностью до конца следующего раунда.",
+      "effect": {
+        "op": "add_terrain",
+        "params": {
+          "terrain": "nebula",
+          "count": 3,
+          "duration_rounds": 2
+        }
+      }
+    },
+    {
+      "id": "all_quiet",
+      "display_name": "Затишье",
+      "timing": "round_start",
+      "copies": 1,
+      "text": "Ничего не происходит. Каждый корабль получает +1 заряд сверх обычного восстановления.",
+      "effect": {
+        "op": "all_ships_charges",
+        "params": {
+          "value": 1
+        }
+      }
+    }
+  ]
+}

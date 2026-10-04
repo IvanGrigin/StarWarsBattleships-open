@@ -1,0 +1,68 @@
+{
+  "schema_version": 2,
+  "id": "vice_admiral_holdo",
+  "display_name": "Вице-адмирал Холдо",
+  "description": "Командующая, протаранившая флот Первого Ордена на световой скорости.",
+  "faction": "resistance",
+  "era": "new_order",
+  "ability": {
+    "id": "holdo_manoeuvre",
+    "name": "Манёвр Холдо",
+    "text": "1 раз в игру: ваш корабль с гипердрайвом уничтожается и наносит 1d6 урона всем кораблям на линии прыжка (до 3 клеток).",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 3,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "hyperspace_ram",
+        "params": {
+          "damage_dice": {
+            "count": 1,
+            "sides": 6
+          },
+          "length": 3,
+          "destroys_self": true
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": true,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed",
+      "HyperspaceRam",
+      "DamageApplied",
+      "ShipDestroyed"
+    ]
+  },
+  "synergy": {
+    "id": "evacuation_command",
+    "name": "Командир эвакуации",
+    "text": "Транспорты и крупные корабли Сопротивления начинают матч с +1 щитом.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "resistance",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "role_bonus",
+        "params": {
+          "roles": [
+            "transport",
+            "capital"
+          ],
+          "max_shield": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 1
+}

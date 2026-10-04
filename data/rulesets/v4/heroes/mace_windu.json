@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "id": "mace_windu",
+  "display_name": "Мейс Винду",
+  "description": "Мастер-джедай, глава Ордена, владелец фиолетового светового меча.",
+  "faction": "republic",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "vaapad",
+    "name": "Ваапад",
+    "text": "2 раза в игру: после броска боя, в котором ваш корабль защищается, поменяйте местами кубики атакующего и защищающегося.",
+    "kind": "reaction",
+    "trigger": "after_dice_revealed",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 2,
+    "effect_sequence": [
+      {
+        "op": "swap_dice",
+        "params": {
+          "between": [
+            "attacker",
+            "defender"
+          ]
+        }
+      }
+    ],
+    "priority": 10,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed",
+      "DieModified"
+    ]
+  },
+  "synergy": {
+    "id": "vaapad_discipline",
+    "name": "Дисциплина Ваапада",
+    "text": "Если бой вплотную по вашему республиканскому кораблю закончился ничьей, атакующий получает 1 урона.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "republic",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "tie_breaker_damage",
+        "params": {
+          "range": 1,
+          "role": "defender",
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 8
+}

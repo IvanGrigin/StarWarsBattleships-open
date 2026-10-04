@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "id": "count_dooku",
+  "display_name": "Граф Дуку",
+  "description": "Граф Серенно, бывший джедай, лидер Конфедерации независимых систем.",
+  "faction": "separatists",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "force_lightning",
+    "name": "Молнии Силы",
+    "text": "1 раз в игру: вражеский корабль на расстоянии 1–2 теряет 2 заряда и 1 HP (щит не защищает).",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 1,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "drain",
+        "params": {
+          "charges": 2,
+          "hp": 1,
+          "ignore_shield": true,
+          "range": [
+            1,
+            2
+          ]
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "separatist_command",
+    "name": "Командование Конфедерации",
+    "text": "Все ваши корабли сепаратистов получают +1 заряд в начале матча.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "separatists",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "start_charges",
+        "params": {
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 2
+}

@@ -1,0 +1,801 @@
+{
+ "arc170": {
+  "author": null,
+  "bytes": 513352,
+  "chosen": "победитель турнира",
+  "file": "arc170.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/arc-170__ARC-170_Starfighter.glb",
+  "url": "https://sketchfab.com/3d-models/b9407262cdf34d37b0720ca6b70469be"
+ },
+ "awing_rz1": {
+  "author": null,
+  "bytes": 504860,
+  "chosen": "победитель турнира",
+  "file": "awing_rz1.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   1,
+   2.220446049250313e-16,
+   -6.123233995736766e-17,
+   1.232595164407831e-32
+  ],
+  "source": "liked/a-wing_interceptor__A-wing.glb",
+  "url": "https://sketchfab.com/3d-models/b13126de57c44f5388e80b411f47078e"
+ },
+ "bwing": {
+  "author": null,
+  "bytes": 249408,
+  "chosen": "победитель турнира",
+  "file": "bwing.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0.5000000000000001,
+   -0.49999999999999983,
+   -0.5000000000000002,
+   -0.49999999999999994
+  ],
+  "source": "liked/b-wing_starfighter__A_SF-01_B-wing_starfighter.glb",
+  "url": "https://sketchfab.com/3d-models/af8de96df4424197aad06e6e0d25e22e"
+ },
+ "death_star_1": {
+  "author": "SebastianSosnowski",
+  "bytes": 175776,
+  "chosen": "победитель турнира",
+  "file": "death_star_1.glb",
+  "license": "CC BY-NC-ND 4.0",
+  "noderivatives": true,
+  "noncommercial": true,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "death_star_1_2k_opt.glb",
+  "url": "https://github.com/EdoEdoEdo/Death-Star-Promo"
+ },
+ "delta7_aethersprite": {
+  "author": null,
+  "bytes": 259684,
+  "chosen": "победитель турнира",
+  "file": "delta7_aethersprite.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "liked/delta-7_aethersprite__Delta-7_Aethersprite-class_Light_Interceptor.glb",
+  "url": "https://sketchfab.com/3d-models/b4a8ad8a1e8b4e5b961cf4726d8a8646"
+ },
+ "eta2_actis": {
+  "author": null,
+  "bytes": 214796,
+  "chosen": "победитель турнира",
+  "file": "eta2_actis.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   1,
+   2.220446049250313e-16,
+   -6.123233995736766e-17,
+   1.232595164407831e-32
+  ],
+  "source": "liked/eta-2_actis__Eta-2_Actis_Jedi_Starfighter_-_Star_Wars.glb",
+  "url": "https://sketchfab.com/3d-models/00f12d7a839842c783bb745d39302308"
+ },
+ "executor": {
+  "author": null,
+  "bytes": 2716124,
+  "chosen": "победитель турнира",
+  "file": "executor.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "liked/executor_super_star_destroyer__Executor_Class_Super_Star_Destroyer.glb",
+  "url": "https://sketchfab.com/3d-models/1eb28d4940ab4ce9863f7e3b51d9b22d"
+ },
+ "ghost": {
+  "author": null,
+  "bytes": 1438340,
+  "chosen": "победитель турнира",
+  "file": "ghost.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   -1,
+   2.220446049250313e-16
+  ],
+  "source": "liked/ghost_vcx-100__Star_Wars_Rebels_Ghost_VCX-100_8K_Textures.glb",
+  "url": "https://sketchfab.com/3d-models/8740b94179ba43a7ac6476973ca0c577"
+ },
+ "gr75_transport": {
+  "author": null,
+  "bytes": 825568,
+  "chosen": "победитель турнира",
+  "file": "gr75_transport.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/gr-75_transport__Star_Wars_GR-75_Medium_Transport.glb",
+  "url": "https://sketchfab.com/3d-models/071b158d02c044ee9b431aeb28b85b6a"
+ },
+ "hounds_tooth": {
+  "author": null,
+  "bytes": 19748,
+  "chosen": "победитель турнира",
+  "file": "hounds_tooth.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0.7071067811865475,
+   0.7071067811865476,
+   -4.3297802811774677e-17,
+   -4.329780281177465e-17
+  ],
+  "source": "liked/v4_hounds_tooth__Hound_s_Tooth_CT4012.glb",
+  "url": "https://sketchfab.com/3d-models/d0a6ab89711a40749953d4c305d4e343"
+ },
+ "hyena_bomber": {
+  "author": null,
+  "bytes": 399936,
+  "chosen": "победитель турнира",
+  "file": "hyena_bomber.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "liked/hyena_bomber__Hyena_Bomber.glb",
+  "url": "https://sketchfab.com/3d-models/738ab8a1279740b48d88b960459c41a8"
+ },
+ "interdictor": {
+  "author": "Daniel",
+  "bytes": 1920484,
+  "chosen": "победитель турнира",
+  "file": "interdictor.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "liked/v4_interdictor__Star_Wars_Immobilizer_418.glb",
+  "url": "https://sketchfab.com/3d-models/bac66b2e6edd4bc0aee8e8ceb3cefda8"
+ },
+ "laat_gunship": {
+  "author": null,
+  "bytes": 384932,
+  "chosen": "победитель турнира",
+  "file": "laat_gunship.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "liked/laat_gunship__LAAT_i_Gunship.glb",
+  "url": "https://sketchfab.com/3d-models/74dcce4616614706a5a14cc18f9e051f"
+ },
+ "lambda_shuttle": {
+  "author": null,
+  "bytes": 296180,
+  "chosen": "победитель турнира",
+  "file": "lambda_shuttle.glb",
+  "license": "CC Attribution-NonCommercial",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   -0.49999999999999983,
+   0.5000000000000001,
+   -0.5000000000000001,
+   -0.4999999999999999
+  ],
+  "source": "liked/lambda_shuttle__3D_Imperial_Lambda_Shuttle_-_Star_Wars_model.glb",
+  "url": "https://sketchfab.com/3d-models/3cfcf3b6012a42d6a19e42388e54cd9b"
+ },
+ "mc80_home_one": {
+  "author": null,
+  "bytes": 1921996,
+  "chosen": "победитель турнира",
+  "file": "mc80_home_one.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   -1,
+   2.220446049250313e-16,
+   -6.123233995736766e-17,
+   1.359631073446891e-32
+  ],
+  "source": "liked/mc80_mon_calamari_cruiser__Star_Wars_MC80_Home_One_Type_Star_Cruiser.glb",
+  "url": "https://sketchfab.com/3d-models/9b5e5e5192f64a7faad93a3bfd2efaf2"
+ },
+ "millennium_falcon": {
+  "author": null,
+  "bytes": 330660,
+  "chosen": "победитель турнира",
+  "file": "millennium_falcon.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   1,
+   0,
+   0,
+   2.220446049250313e-16
+  ],
+  "source": "liked/millennium_falcon_yt-1300__Millennium_Falcon_-_Star_Wars.glb",
+  "url": "https://sketchfab.com/3d-models/ed6dc932c3ce407dbe4b903c73595030"
+ },
+ "munificent": {
+  "author": null,
+  "bytes": 678180,
+  "chosen": "победитель турнира",
+  "file": "munificent.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   -1,
+   2.220446049250313e-16
+  ],
+  "source": "liked/munificent_frigate__Munificent-Class_Star_Frigate.glb",
+  "url": "https://sketchfab.com/3d-models/44d5db77bb1342e5a6e58c24a0dcb256"
+ },
+ "naboo_n1": {
+  "author": null,
+  "bytes": 200888,
+  "chosen": "победитель турнира",
+  "file": "naboo_n1.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/n-1_starfighter__Naboo_N-1_Starfighter_-_Star_Wars.glb",
+  "url": "https://sketchfab.com/3d-models/3cf69f6c85234aac8844e845e74ac75b"
+ },
+ "naboo_royal_cruiser": {
+  "author": null,
+  "bytes": 54324,
+  "chosen": "победитель турнира",
+  "file": "naboo_royal_cruiser.glb",
+  "license": "CC Attribution-NonCommercial",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   2.7755575615628914e-16,
+   -1,
+   -2.465190328815662e-32,
+   -6.123233995736766e-17
+  ],
+  "source": "liked/naboo_royal_starship__Naboo_Royal_Starship_J-type_327_Nubian.glb",
+  "url": "https://sketchfab.com/3d-models/f631077977754b5591298ecfa201380b"
+ },
+ "phantom": {
+  "author": null,
+  "bytes": 202204,
+  "chosen": "победитель турнира",
+  "file": "phantom.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "liked/ghost_vcx-100__Phantom.glb",
+  "url": "https://sketchfab.com/3d-models/fc54544abbd2405f9a1ad2c48640d5c2"
+ },
+ "pirate_corsair": {
+  "author": null,
+  "bytes": 580176,
+  "chosen": "лучшая по посеву (турнир не сыгран)",
+  "file": "pirate_corsair.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   2.7755575615628914e-16,
+   -0.7071067811865477,
+   -2.7755575615628914e-16,
+   -0.7071067811865475
+  ],
+  "source": "liked/yt-2400_freighter__Star_Wars_YT-2400_Light_Freighter.glb",
+  "url": "https://sketchfab.com/3d-models/ccd2749df33641fba7a5326500abdbfb"
+ },
+ "pirate_marauder": {
+  "author": null,
+  "bytes": 1403180,
+  "chosen": "победитель турнира",
+  "file": "pirate_marauder.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/v4_pirate_marauder__Star_Wars_Marauder-class_Corvette.glb",
+  "url": "https://sketchfab.com/3d-models/12acc2a9ba2142468e3b47b84e929a48"
+ },
+ "pirate_skiff": {
+  "author": "resurrected",
+  "bytes": 354240,
+  "chosen": "лучшая по посеву (турнир не сыгран)",
+  "file": "pirate_skiff.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/v4_pirate_skiff__Sorosuub_Preybird_Heavy_Assault_Fighter.glb",
+  "url": "https://sketchfab.com/3d-models/17ee6513410b44038e6ba5228d68281c"
+ },
+ "providence": {
+  "author": null,
+  "bytes": 72688,
+  "chosen": "победитель турнира",
+  "file": "providence.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   -0.7071067811865477,
+   -0.7071067811865474
+  ],
+  "source": "liked/v4_providence__providence-class-cruiser.glb",
+  "url": "https://sketchfab.com/3d-models/936e41cb4e304d71adb98776625fe38c"
+ },
+ "raddus_cruiser": {
+  "author": null,
+  "bytes": 79536,
+  "chosen": "лучшая по посеву (турнир не сыгран)",
+  "file": "raddus_cruiser.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/v4_raddus_cruiser__MC85.glb",
+  "url": "https://sketchfab.com/3d-models/555ca4b594f549b98e7fabfb7a26dc7c"
+ },
+ "resistance_transport": {
+  "author": null,
+  "bytes": 215896,
+  "chosen": "лучшая по посеву (турнир не сыгран)",
+  "file": "resistance_transport.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   1,
+   2.220446049250313e-16,
+   -6.123233995736766e-17,
+   1.232595164407831e-32
+  ],
+  "source": "liked/u-55_orbital_loadlifter__U-55_Loadlifter_TLJ_Resistance_Transport.glb",
+  "url": "https://sketchfab.com/3d-models/a2ba853ccabc45418a5f213c5b4b6516"
+ },
+ "resurgent_destroyer": {
+  "author": null,
+  "bytes": 166112,
+  "chosen": "победитель турнира",
+  "file": "resurgent_destroyer.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   1.699538841808614e-32,
+   -1,
+   -2.7755575615628914e-16,
+   -6.123233995736766e-17
+  ],
+  "source": "liked/resurgent_star_destroyer__Low_poly_Resurgent_Star_Destroyer.glb",
+  "url": "https://sketchfab.com/3d-models/576ef2806fc145d7bd811ce1790ee5d4"
+ },
+ "rz2_awing": {
+  "author": null,
+  "bytes": 180908,
+  "chosen": "победитель турнира",
+  "file": "rz2_awing.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   4.329780281177466e-17,
+   0.7071067811865476,
+   -0.7071067811865475,
+   4.329780281177467e-17
+  ],
+  "source": "liked/rz-2_a-wing__Resistance_RZ-2_A-_Wing_Fighter.glb",
+  "url": "https://sketchfab.com/3d-models/91a9de06514042f485dd96e5d488c383"
+ },
+ "slave_1": {
+  "author": null,
+  "bytes": 698568,
+  "chosen": "победитель турнира",
+  "file": "slave_1.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   4.329780281177466e-17,
+   0.7071067811865476,
+   -0.7071067811865475,
+   4.329780281177467e-17
+  ],
+  "source": "liked/slave_1_firespray__Slave1.glb",
+  "url": "https://sketchfab.com/3d-models/709235d3ffa54e90b378740d474e4a7b"
+ },
+ "soulless_one": {
+  "author": null,
+  "bytes": 204756,
+  "chosen": "победитель турнира",
+  "file": "soulless_one.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/soulless_one__Belbullab-22_Starfighter_Soulless_One.glb",
+  "url": "https://sketchfab.com/3d-models/2785243f8c8944c788cb0cbab3100cb4"
+ },
+ "star_destroyer": {
+  "author": null,
+  "bytes": 7915224,
+  "chosen": "победитель турнира",
+  "file": "star_destroyer.glb",
+  "license": "Free Standard",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   1,
+   0,
+   0,
+   2.220446049250313e-16
+  ],
+  "source": "liked/imperial_class_star_destroyer__Star_Wars_Imperial-Class_Star_Destroyer.glb",
+  "url": "https://sketchfab.com/3d-models/fa18d537db4d4020a443c1802ec0f88e"
+ },
+ "tie_advanced_x1": {
+  "author": null,
+  "bytes": 185132,
+  "chosen": "победитель турнира",
+  "file": "tie_advanced_x1.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "liked/tie_advanced_x1__TIE_Advanced_x1_Vader_s_TIE_-_Star_Wars.glb",
+  "url": "https://sketchfab.com/3d-models/98f1decbda5c48aea22a11c7ddd62a7b"
+ },
+ "tie_bomber": {
+  "author": null,
+  "bytes": 254200,
+  "chosen": "победитель турнира",
+  "file": "tie_bomber.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   0.7071067811865472,
+   -0.7071067811865478,
+   4.3297802811774646e-17,
+   -4.329780281177468e-17
+  ],
+  "source": "liked/tie_bomber__TIE_bomber.glb",
+  "url": "https://sketchfab.com/3d-models/dab029b751bd4cc293b66e3cc013e3a0"
+ },
+ "tie_fighter": {
+  "author": null,
+  "bytes": 1073744,
+  "chosen": "победитель турнира",
+  "file": "tie_fighter.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0.5,
+   0.4999999999999999,
+   -0.5,
+   0.5000000000000001
+  ],
+  "source": "liked/tie_fighter_imperial__TIE_Fighter.glb",
+  "url": "https://sketchfab.com/3d-models/be87d79b75be4c06bf7b70f477fceb44"
+ },
+ "tie_fo": {
+  "author": null,
+  "bytes": 529812,
+  "chosen": "победитель турнира",
+  "file": "tie_fo.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0.7071067811865475,
+   0,
+   0,
+   0.7071067811865476
+  ],
+  "source": "liked/first_order_tie_fighter__First_Order_Tie_Fighter.glb",
+  "url": "https://sketchfab.com/3d-models/4ea4a492c3b447ea9391e5dbbf68f40b"
+ },
+ "tie_interceptor": {
+  "author": null,
+  "bytes": 320464,
+  "chosen": "победитель турнира",
+  "file": "tie_interceptor.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   -0.7071067811865477,
+   -0.7071067811865474
+  ],
+  "source": "liked/tie_interceptor__Tie-Interceptor_-_by_Tommaso_Incecchi.glb",
+  "url": "https://sketchfab.com/3d-models/1baec82df8ca4a108547828463d7f2d2"
+ },
+ "tie_sf": {
+  "author": null,
+  "bytes": 77200,
+  "chosen": "лучшая по посеву (турнир не сыгран)",
+  "file": "tie_sf.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/v4_tie_sf__Special_Forces_Tie_Fighter.glb",
+  "url": "https://sketchfab.com/3d-models/a5c2fb3305c44355ab76fb224c41b3ee"
+ },
+ "tie_silencer": {
+  "author": null,
+  "bytes": 120260,
+  "chosen": "победитель турнира",
+  "file": "tie_silencer.glb",
+  "license": "CC Attribution-NonCommercial-NoDerivs",
+  "noderivatives": true,
+  "noncommercial": true,
+  "orientation": [
+   0,
+   0,
+   -0.7071067811865477,
+   -0.7071067811865474
+  ],
+  "source": "liked/tie_silencer__TIE_vn_Silencer.glb",
+  "url": "https://sketchfab.com/3d-models/4d6d3793ce7f432c9141b14cb7d7c512"
+ },
+ "tri_fighter": {
+  "author": null,
+  "bytes": 207872,
+  "chosen": "победитель турнира",
+  "file": "tri_fighter.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0.7071067811865475,
+   1.1102230246251565e-16,
+   -0.7071067811865476,
+   1.1102230246251565e-16
+  ],
+  "source": "liked/droid_tri-fighter__Trade_Federation_Droid_Tri-Fighter.glb",
+  "url": "https://sketchfab.com/3d-models/9c06ba9b24144221aa80f56192f485b6"
+ },
+ "upsilon_shuttle": {
+  "author": null,
+  "bytes": 172508,
+  "chosen": "лучшая по посеву (турнир не сыгран)",
+  "file": "upsilon_shuttle.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "source": "liked/v4_upsilon_shuttle__Kylo_Ren_Command_Shuttle.glb",
+  "url": "https://sketchfab.com/3d-models/4260195777e649dda2019f40035b52b8"
+ },
+ "v19_torrent": {
+  "author": null,
+  "bytes": 1165900,
+  "chosen": "победитель турнира",
+  "file": "v19_torrent.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   1,
+   0,
+   0,
+   2.220446049250313e-16
+  ],
+  "source": "liked/v-wing_starfighter__V19_Torrent_Starfighter.glb",
+  "url": "https://sketchfab.com/3d-models/d8496e6544254b5692b9182240e83416"
+ },
+ "venator": {
+  "author": null,
+  "bytes": 6178016,
+  "chosen": "победитель турнира",
+  "file": "venator.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   1,
+   0,
+   0,
+   2.220446049250313e-16
+  ],
+  "source": "liked/venator_star_destroyer__Venator_Class_Star_Destroyer.glb",
+  "url": "https://sketchfab.com/3d-models/ff65cd3c27234615a3b68088f67e99e4"
+ },
+ "vulture_droid": {
+  "author": null,
+  "bytes": 149912,
+  "chosen": "победитель турнира",
+  "file": "vulture_droid.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   1,
+   2.220446049250313e-16,
+   -6.123233995736766e-17,
+   1.232595164407831e-32
+  ],
+  "source": "liked/vulture_droid_starfighter__Vulture_Droid.glb",
+  "url": "https://sketchfab.com/3d-models/5542f951834e4032b229ebdee12d3310"
+ },
+ "xwing_t65": {
+  "author": null,
+  "bytes": 96072,
+  "chosen": "победитель турнира",
+  "file": "xwing_t65.glb",
+  "license": "? не подтверждена",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   0,
+   1,
+   0,
+   6.123233995736766e-17
+  ],
+  "source": "xwing_t65_opt.glb",
+  "url": null
+ },
+ "xwing_t70": {
+  "author": null,
+  "bytes": 841724,
+  "chosen": "победитель турнира",
+  "file": "xwing_t70.glb",
+  "license": "CC Attribution-NonCommercial",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   1,
+   0,
+   0,
+   2.220446049250313e-16
+  ],
+  "source": "liked/t-70_x-wing__STAR_WARS_-_INCOM_T-70_X-WING_FIGHTER.glb",
+  "url": "https://sketchfab.com/3d-models/a0e8486c603343c3a8cd06a5e3cb21c2"
+ },
+ "ywing_btla4": {
+  "author": null,
+  "bytes": 434392,
+  "chosen": "победитель турнира",
+  "file": "ywing_btla4.glb",
+  "license": "CC Attribution-NonCommercial-ShareAlike",
+  "noderivatives": false,
+  "noncommercial": true,
+  "orientation": [
+   1,
+   0,
+   0,
+   2.220446049250313e-16
+  ],
+  "source": "liked/y-wing_starfighter__Y-wing_Starfighter_-_Star_Wars.glb",
+  "url": "https://sketchfab.com/3d-models/50f7cebe61044d21801a301162212be2"
+ },
+ "z95_headhunter": {
+  "author": null,
+  "bytes": 105496,
+  "chosen": "победитель турнира",
+  "file": "z95_headhunter.glb",
+  "license": "CC Attribution",
+  "noderivatives": false,
+  "noncommercial": false,
+  "orientation": [
+   1,
+   0,
+   0,
+   2.220446049250313e-16
+  ],
+  "source": "liked/z-95_headhunter__Star_Wars_Z-95_Headhunter.glb",
+  "url": "https://sketchfab.com/3d-models/d2a5c2dfccbd445e8ec9bbee3e216b33"
+ }
+}

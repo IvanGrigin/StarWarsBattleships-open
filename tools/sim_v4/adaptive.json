@@ -1,0 +1,23 @@
+{
+ "empire": {
+  "threat_w": 0.9,
+  "idle_w": 0.31,
+  "kill_bonus": 3.0,
+  "approach": 0.01,
+  "theta": 1.0
+ },
+ "squad": {
+  "threat_w": 0,
+  "idle_w": 0.23,
+  "kill_bonus": 1.0,
+  "approach": 0.13,
+  "theta": 0.4
+ },
+ "duel": {
+  "threat_w": 0.15,
+  "idle_w": 0.23,
+  "kill_bonus": 4.0,
+  "approach": 0.04,
+  "theta": 1.6
+ }
+}

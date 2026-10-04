@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "id": "darth_maul",
+  "display_name": "Дарт Мол",
+  "description": "Забрак-ситх, ученик Дарта Сидиуса, боец с двойным световым мечом.",
+  "faction": "separatists",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "double_strike",
+    "name": "Двойной удар",
+    "text": "Пассивно: при атаке вплотную (дистанция 1) ваш корабль наносит +1 урона, но и получает +1 урона от ответных атак.",
+    "kind": "passive",
+    "trigger": "always",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 0,
+    "effect_sequence": [
+      {
+        "op": "melee_trade",
+        "params": {
+          "bonus_damage": 1,
+          "extra_damage_taken": 1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "sith_revenge",
+    "name": "Месть ситха",
+    "text": "Если ваш корабль сепаратистов уничтожен в бою вплотную, уничтоживший его корабль получает 1 урона (щит не защищает).",
+    "scope": "fleet",
+    "condition": {
+      "faction": "separatists",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "revenge_damage",
+        "params": {
+          "range": 1,
+          "value": 1,
+          "ignore_shield": true
+        }
+      }
+    ]
+  },
+  "draft_cost": 2
+}

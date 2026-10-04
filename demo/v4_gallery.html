@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>SWB v4 — корабли и персонажи фракций</title>
+<style>
+  html, body { margin: 0; background: #0b101c; color: #cfd8e6; font-family: ui-monospace, Menlo, monospace; }
+  header { padding: 18px 24px 6px; }
+  h1 { margin: 0; font-size: 20px; color: #8fd0ff; letter-spacing: 0.06em; }
+  .cnt { color: #8fa0b8; font-size: 12px; margin-top: 4px; }
+  #grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; padding: 18px 24px 40px; }
+  .card { background: #111a2c; border: 1px solid #24314e; border-radius: 10px; overflow: hidden; }
+  .card h3 { margin: 0; padding: 8px 10px 2px; font-size: 13px; color: #ffe082; }
+  .card .fac { padding: 0 10px 6px; font-size: 10px; color: #8fa0b8; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; }
+  .pair figure { margin: 0; }
+  .pair img { width: 100%; height: 110px; object-fit: cover; display: block; background: #0a0f1a; }
+  .pair figcaption { font-size: 9px; color: #7487a3; text-align: center; padding: 2px 0 4px; }
+  .cap a { color: #7487a3; font-size: 9px; word-break: break-all; display: block; padding: 0 10px 8px; text-decoration: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>SWB v4 — ЭПОХИ И ФРАКЦИИ: 51 корабль и их персонажи</h1>
+  <div class="cnt">Арт скачан с Wookieepedia (первые/главные изображения статей). Источники — под каждой карточкой.</div>
+</header>
+<div id="grid"></div>
+<script type="module">
+const manifest = await (await fetch('assets/v4_art/manifest.json')).json();
+const FACTIONS = {};
+try { const f = await (await fetch('../data/rulesets/v4/factions.json')).json();
+  for (const x of f.factions) FACTIONS[x.id] = x.display_name;
+} catch {}
+let shipFiles = {};
+try {
+  const idx = await (await fetch('../data/rulesets/v4/index.json')).json();
+  shipFiles = idx;
+} catch {}
+const grid = document.getElementById('grid');
+const ids = Object.keys(manifest).sort();
+document.querySelector('.cnt').textContent += ' · показано: ' + ids.length;
+for (const id of ids) {
+  const m = manifest[id];
+  let faction = '', name = id;
+  try {
+    const sf = shipFiles[id] || ('ships/' + id + '.json');
+    const j = await (await fetch('../data/rulesets/v4/' + sf.replace('.json', '') + '.json')).json();
+    name = j.display_name || id;
+    faction = FACTIONS[j.faction] || j.faction || '';
+  } catch (e) {}
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = '<h3>' + name + '</h3><div class="fac">' + faction + ' · ' + id + '</div>' +
+    '<div class="pair">' +
+    '<figure><img src="assets/v4_art/' + m.ship.file + '"><figcaption>КОРАБЛЬ</figcaption></figure>' +
+    '<figure><img src="assets/v4_art/' + m.character.file + '"><figcaption>ПЕРСОНАЖ</figcaption></figure>' +
+    '</div><div class="cap"><a href="' + (m.ship.url || '') + '" target="_blank">источник: Wookieepedia</a></div>';
+  grid.appendChild(card);
+}
+</script>
+</body>
+</html>

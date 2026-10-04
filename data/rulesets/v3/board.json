@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "radius": 3,
+  "cell_count": 37,
+  "orientation": "pointy_top",
+  "coordinate_system": "axial_qr"
+}

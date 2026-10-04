@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "id": "snoke",
+  "display_name": "Верховный лидер Сноук",
+  "description": "Марионетка Палпатина, наставник Кайло Рена.",
+  "faction": "first_order",
+  "era": "new_order",
+  "ability": {
+    "id": "puppet_strings",
+    "name": "Нити кукловода",
+    "text": "1 раз в игру: возьмите под контроль вражеский истребитель на одну атаку (он атакует своего союзника).",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 3,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "mind_control",
+        "params": {
+          "target_role": [
+            "fighter",
+            "interceptor"
+          ],
+          "actions": 1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": true,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "supreme_leader",
+    "name": "Верховный лидер",
+    "text": "В начале каждого чётного раунда корабли Первого Ордена получают +1 заряд (не выше максимума).",
+    "scope": "fleet",
+    "condition": {
+      "faction": "first_order",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "periodic_charges",
+        "params": {
+          "every_rounds": 2,
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 0
+}

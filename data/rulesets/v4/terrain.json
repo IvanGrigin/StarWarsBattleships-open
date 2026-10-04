@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "terrain": [
+    {
+      "id": "asteroid_field",
+      "display_name": "Астероидное поле",
+      "passable": true,
+      "blocks_line_of_fire": true,
+      "effects": {
+        "enter_damage_dice": {
+          "count": 1,
+          "sides": 4
+        },
+        "enter_damage_chance": "1/2",
+        "defense_bonus": 1,
+        "blocks_hyperjump_exit": true
+      },
+      "text": "Войти можно, но с шансом 1/2 корабль получает 1d4 урона. Стоящий в поле получает +1 к защите; сквозь клетку нельзя стрелять на дистанции 2+."
+    },
+    {
+      "id": "dense_asteroids",
+      "display_name": "Плотный пояс",
+      "passable": false,
+      "blocks_line_of_fire": true,
+      "effects": {
+        "blocks_hyperjump_exit": true
+      },
+      "text": "Непроходимая клетка: корабли не входят, дальний огонь не проходит."
+    },
+    {
+      "id": "nebula",
+      "display_name": "Туманность",
+      "passable": true,
+      "blocks_line_of_fire": true,
+      "effects": {
+        "max_incoming_range": 1,
+        "disables_abilities": [
+          "ranged_shot",
+          "torpedoes"
+        ]
+      },
+      "text": "Корабль в туманности нельзя атаковать дальше чем с дистанции 1; сам он тоже не стреляет далеко."
+    },
+    {
+      "id": "debris",
+      "display_name": "Обломки",
+      "passable": true,
+      "blocks_line_of_fire": false,
+      "effects": {
+        "move_cost_extra": 1,
+        "defense_bonus": 1
+      },
+      "text": "Вход в клетку стоит на 1 заряд дороже; стоящий в обломках получает +1 к защите."
+    },
+    {
+      "id": "gravity_well",
+      "display_name": "Гравитационный колодец",
+      "passable": true,
+      "blocks_line_of_fire": false,
+      "effects": {
+        "blocks_hyperjump": true,
+        "pull_toward_center": 1
+      },
+      "text": "Из клетки и с соседних клеток нельзя уйти в гиперпространство; в конце раунда корабль сносит на 1 клетку к центру колодца."
+    },
+    {
+      "id": "station_wreck",
+      "display_name": "Остов станции",
+      "passable": true,
+      "blocks_line_of_fire": true,
+      "effects": {
+        "defense_bonus": 2,
+        "salvage_charges": 1
+      },
+      "text": "Укрытие: +2 к защите. Первый корабль, вошедший в клетку, снимает с остова 1 заряд."
+    }
+  ]
+}

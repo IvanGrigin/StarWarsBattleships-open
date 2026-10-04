@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "id": "mc80_home_one",
+  "display_name": "Крейсер MC80 «Дом Один»",
+  "description": "Флагман адмирала Акбара при Эндоре: чинит звено и держит щит над союзниками.",
+  "faction": "rebels",
+  "era": "galactic_civil_war",
+  "role": "capital",
+  "unique": true,
+  "legacy_v3": false,
+  "draftable": true,
+  "raw_cost": 22,
+  "draft_cost": 9,
+  "max_hp": 8,
+  "max_shield": 2,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    0,
+    -1,
+    -1,
+    1,
+    -1,
+    -1
+  ],
+  "weapon": {
+    "max_range": 3,
+    "range_penalty_per_hex": 2,
+    "long_range_arc": "all"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 2,
+    "boost": false
+  },
+  "hyperdrive": {
+    "class": 2,
+    "charge_cost": 2
+  },
+  "abilities": [
+    {
+      "id": "repair_bay",
+      "enabled": true
+    },
+    {
+      "id": "shield_projector",
+      "enabled": true
+    },
+    {
+      "id": "carrier",
+      "enabled": true
+    }
+  ],
+  "cost_adjust": 0,
+  "balance_patch": {
+    "before": {
+      "arc_modifiers": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_hp": 10,
+      "max_shield": 2,
+      "draft_cost": 14
+    },
+    "delta": {
+      "F": -2,
+      "sides": -2,
+      "rear": -2,
+      "hp": -2
+    },
+    "source": "final.json: ML-оптимизация 2026-09-19: три эпохи, подстраивающийся бот за обе стороны, драфт «как у человека», новые способности кораблей"
+  }
+}

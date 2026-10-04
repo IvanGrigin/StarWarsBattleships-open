@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "id": "punishing_one",
+  "display_name": "«Каратель»",
+  "description": "Корабль Зукусса и Денгара из пятого эпизода: круговые сектора и плотный оборонительный огонь.",
+  "faction": "bounty_hunters",
+  "era": "any",
+  "role": "gunship",
+  "unique": true,
+  "legacy_v3": false,
+  "draftable": false,
+  "raw_cost": 23,
+  "draft_cost": 9,
+  "max_hp": 6,
+  "max_shield": 1,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "weapon": {
+    "max_range": 2,
+    "range_penalty_per_hex": 2,
+    "long_range_arc": "all"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 1,
+    "boost": true
+  },
+  "hyperdrive": {
+    "class": 1,
+    "charge_cost": 1
+  },
+  "abilities": [
+    {
+      "id": "point_defense",
+      "enabled": true
+    }
+  ],
+  "cost_adjust": 0,
+  "balance_patch": {
+    "before": {
+      "arc_modifiers": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_hp": 6,
+      "max_shield": 1,
+      "draft_cost": 10
+    },
+    "delta": {
+      "F": -1
+    },
+    "source": "final.json: ML-оптимизация 2026-09-19: три эпохи, подстраивающийся бот за обе стороны, драфт «как у человека», новые способности кораблей"
+  }
+}

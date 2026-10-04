@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWB — воспроизводимый гекс корабля</title>
+  <style>
+    :root { color-scheme: dark; --cyan:#5ce5ff; --amber:#f5c86b; --text:#e7f2f5; --dim:#7892a0; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; min-height:100%; background:#020509; color:var(--text); }
+    body { font:14px/1.45 Inter, ui-sans-serif, system-ui, sans-serif; background:radial-gradient(circle at 48% 20%,#0a2130 0,#030912 36%,#020509 76%); }
+    main { width:min(1180px, calc(100% - 32px)); margin:0 auto; padding:32px 0 56px; }
+    header { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:24px; }
+    .eyebrow { color:#668493; font:700 10px ui-monospace,monospace; letter-spacing:.18em; }
+    h1 { margin:6px 0 0; font-size:clamp(24px,4vw,44px); line-height:1; letter-spacing:.01em; }
+    header p { max-width:480px; margin:0; color:#8ba2ad; }
+    .workbench { display:grid; grid-template-columns:minmax(350px,1.05fr) minmax(300px,.95fr); overflow:hidden; border:1px solid rgba(92,229,255,.2); background:rgba(5,14,22,.84); box-shadow:0 28px 80px rgba(0,0,0,.46); }
+    .preview { min-height:610px; display:grid; place-items:center; padding:42px; border-right:1px solid rgba(92,229,255,.13); background:linear-gradient(rgba(3,10,17,.48),rgba(3,10,17,.8)),repeating-linear-gradient(0deg,transparent 0 31px,rgba(92,229,255,.035) 32px),repeating-linear-gradient(90deg,transparent 0 31px,rgba(92,229,255,.035) 32px); }
+    .preview swb-ship-hex { width:min(520px,100%); }
+    .controls { padding:26px; }
+    .controls h2,.examples h2 { margin:0 0 18px; color:#afc5ce; font-size:11px; letter-spacing:.16em; }
+    label { display:grid; gap:6px; color:#7892a0; font:700 9px ui-monospace,monospace; letter-spacing:.1em; }
+    select,input { width:100%; height:38px; padding:0 10px; border:1px solid rgba(106,170,194,.27); border-radius:0; outline:none; color:#dbe9ee; background:#07131e; font:700 12px ui-monospace,monospace; }
+    select:focus,input:focus { border-color:var(--cyan); }
+    .control-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .arc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:16px; }
+    .arc-grid input { text-align:center; }
+    .note { margin:16px 0; padding:12px; border-left:2px solid var(--amber); color:#9eb1b9; background:rgba(245,200,107,.06); font-size:12px; }
+    pre { overflow:auto; margin:0; padding:14px; border:1px solid rgba(92,229,255,.13); background:#02070d; color:#9fd7e7; font:11px/1.55 ui-monospace,monospace; white-space:pre-wrap; word-break:break-word; }
+    .examples { margin-top:30px; }
+    .examples-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+    .example { padding:14px; border:1px solid rgba(104,156,178,.17); background:rgba(7,17,26,.72); }
+    .example swb-ship-hex { width:100%; }
+    .example b { display:block; margin-top:6px; color:#afc5ce; font:700 10px ui-monospace,monospace; letter-spacing:.08em; text-align:center; }
+    footer { margin-top:22px; color:#617884; font:10px ui-monospace,monospace; }
+    @media(max-width:820px) { header{display:block} header p{margin-top:14px}.workbench{grid-template-columns:1fr}.preview{min-height:auto;border-right:0;border-bottom:1px solid rgba(92,229,255,.13)}.examples-grid{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:480px) { main{width:min(100% - 16px,1180px);padding-top:18px}.preview{padding:20px}.controls{padding:18px}.control-grid{grid-template-columns:1fr}.examples-grid{grid-template-columns:1fr 1fr}.example{padding:7px} }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div><div class="eyebrow">FLEET COMMAND // COMPONENT 08</div><h1>Гекс корабля</h1></div>
+    <p>Полностью воспроизводимый компонент: любая PNG/WebP/SVG-модель корабля, любой курс и любые шесть чисел. Весь контент принудительно остаётся внутри гекса.</p>
+  </header>
+
+  <section class="workbench">
+    <div class="preview">
+      <swb-ship-hex id="live-token" selected ship-src="assets/ships/xwing_t65.png" ship-alt="T-65 X-wing" label="T-65 // RED FIVE" arcs="3,2,1,0,1,2" facing="ne"></swb-ship-hex>
+    </div>
+    <div class="controls">
+      <h2>ПАРАМЕТРЫ КОМПОНЕНТА</h2>
+      <div class="control-grid">
+        <label>КОРАБЛЬ
+          <select id="ship">
+            <option value="xwing_t65">T-65 X-wing</option>
+            <option value="tie_fighter">Истребитель TIE</option>
+            <option value="tie_advanced_x1">TIE Advanced X1</option>
+            <option value="eta2_actis">Eta-2 Actis</option>
+            <option value="millennium_falcon">Сокол тысячелетия</option>
+            <option value="star_destroyer">Звёздный разрушитель</option>
+            <option value="death_star_1">Звезда Смерти I</option>
+            <option value="slave_1">Slave I</option>
+            <option value="ghost">Призрак</option>
+            <option value="phantom">Фантом</option>
+            <option value="vulture_droid">Дроид-стервятник</option>
+          </select>
+        </label>
+        <label>КУРС НОСА
+          <select id="facing">
+            <option value="ne">NE · вверх-вправо</option><option value="e">E · вправо</option>
+            <option value="se">SE · вниз-вправо</option><option value="sw">SW · вниз-влево</option>
+            <option value="w">W · влево</option><option value="nw">NW · вверх-влево</option>
+          </select>
+        </label>
+        <label>ТЕМА
+          <select id="theme"><option value="ally">Союзник</option><option value="enemy">Противник</option><option value="neutral">Нейтральный</option></select>
+        </label>
+        <label>МАСШТАБ МОДЕЛИ
+          <input id="scale" type="number" min="0.45" max="1.28" step="0.05" value="1">
+        </label>
+      </div>
+      <div class="arc-grid" id="arc-inputs">
+        <label>НОС<input value="3" aria-label="Нос"></label>
+        <label>ПЕРЕД-ПРАВО<input value="2" aria-label="Перед справа"></label>
+        <label>ТЫЛ-ПРАВО<input value="1" aria-label="Тыл справа"></label>
+        <label>ТЫЛ<input value="0" aria-label="Тыл"></label>
+        <label>ТЫЛ-ЛЕВО<input value="1" aria-label="Тыл слева"></label>
+        <label>ПЕРЕД-ЛЕВО<input value="2" aria-label="Перед слева"></label>
+      </div>
+      <div class="note"><b>Гарантия геометрии:</b> рамка, модель, линии и бейджи обрезаются гексом. Бейджи дополнительно стоят на внутреннем безопасном радиусе, поэтому не касаются контура даже при длинных значениях.</div>
+      <pre id="snippet"></pre>
+    </div>
+  </section>
+
+  <section class="examples">
+    <h2>ОДНА СХЕМА — РАЗНЫЕ КОРАБЛИ И ЧИСЛА</h2>
+    <div class="examples-grid">
+      <div class="example"><swb-ship-hex ship-src="assets/ships/tie_fighter.png" arcs="2,1,0,0,0,1" facing="w" theme="enemy" label="TIE/LN"></swb-ship-hex><b>TIE/LN · W</b></div>
+      <div class="example"><swb-ship-hex ship-src="assets/ships/millennium_falcon.png" arcs="2,1,2,0,2,1" facing="se" label="YT-1300"></swb-ship-hex><b>YT-1300 · SE</b></div>
+      <div class="example"><swb-ship-hex ship-src="assets/ships/star_destroyer.png" arcs="4,3,2,-1,2,3" facing="nw" theme="enemy" label="ISD II" ship-scale="1.08"></swb-ship-hex><b>ISD II · NW</b></div>
+      <div class="example"><swb-ship-hex ship-src="assets/ships/death_star_1.png" values="12,0,-2,7,1,3" facing="e" theme="neutral" label="DS-1" ship-scale=".86"></swb-ship-hex><b>Произвольные значения</b></div>
+    </div>
+  </section>
+  <footer>Файл компонента: components/ship-hex-token.js · без фреймворка и сборщика · Shadow DOM защищает стили от интерфейса игры.</footer>
+</main>
+
+<script src="components/ship-hex-token.js"></script>
+<script>
+  const token = document.getElementById('live-token');
+  const ship = document.getElementById('ship');
+  const facing = document.getElementById('facing');
+  const theme = document.getElementById('theme');
+  const scale = document.getElementById('scale');
+  const arcInputs = Array.from(document.querySelectorAll('#arc-inputs input'));
+  const snippet = document.getElementById('snippet');
+  const names = Object.fromEntries(Array.from(ship.options).map((option) => [option.value, option.textContent]));
+
+  function update() {
+    token.setAttribute('ship-src', 'assets/ships/' + ship.value + '.png');
+    token.setAttribute('ship-alt', names[ship.value]);
+    token.setAttribute('label', names[ship.value]);
+    token.setAttribute('facing', facing.value);
+    token.setAttribute('theme', theme.value);
+    token.setAttribute('ship-scale', scale.value);
+    token.setAttribute('arcs', arcInputs.map((input) => input.value || '0').join(','));
+    snippet.textContent = '<swb-ship-hex\n' +
+      '  ship-src="assets/ships/' + ship.value + '.png"\n' +
+      '  arcs="' + token.getAttribute('arcs') + '"\n' +
+      '  facing="' + facing.value + '"\n' +
+      '  theme="' + theme.value + '"\n' +
+      '  label="' + names[ship.value] + '">\n' +
+      '</swb-ship-hex>';
+  }
+  [ship, facing, theme, scale, ...arcInputs].forEach((control) => control.addEventListener('input', update));
+  update();
+</script>
+</body>
+</html>

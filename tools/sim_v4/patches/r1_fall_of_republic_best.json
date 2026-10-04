@@ -1,0 +1,70 @@
+{
+ "ships": {
+  "arc170": {
+   "F": -2,
+   "hp": -1,
+   "shield": -1
+  },
+  "delta7_aethersprite": {
+   "sides": 1
+  },
+  "hounds_tooth": {
+   "F": -1,
+   "shield": -1
+  },
+  "hyena_bomber": {
+   "shield": 1
+  },
+  "laat_gunship": {
+   "F": -1,
+   "rear": -1
+  },
+  "millennium_falcon": {
+   "F": -2
+  },
+  "munificent": {
+   "F": -1
+  },
+  "naboo_n1": {
+   "shield": 1
+  },
+  "naboo_royal_cruiser": {
+   "F": -1,
+   "hp": -1
+  },
+  "providence": {
+   "F": -2,
+   "sides": -1,
+   "shield": -1
+  },
+  "punishing_one": {
+   "F": -1,
+   "shield": -1
+  },
+  "slave_1": {
+   "F": -2,
+   "shield": -1
+  },
+  "soulless_one": {
+   "F": -2,
+   "shield": -1
+  },
+  "venator": {
+   "F": -2,
+   "sides": -1,
+   "shield": -1
+  },
+  "vulture_droid": {
+   "F": 1
+  }
+ },
+ "heroes": {
+  "anakin": 5,
+  "count_dooku": 5,
+  "mace_windu": 0,
+  "nute_gunray": 0,
+  "obi_wan": 0,
+  "padme_amidala": 0,
+  "qui_gon_jinn": 0
+ }
+}

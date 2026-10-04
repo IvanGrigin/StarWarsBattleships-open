@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "xwing_t65",
+  "display_name": "T-65 X-wing",
+  "description": "Любимый истребитель Люка Скайуокера. Пассивка: при атаке 50% шанс нанести урон (минимум 1).",
+  "group": 1,
+  "draftable": true,
+  "draft_cost": 5,
+  "max_hp": 4,
+  "max_shield": 0,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": { "count": 1, "sides": 6 },
+  "arc_modifiers": [2, 1, 0, 1, 0, 1],
+  "abilities": [
+    { "id": "lucky_shot", "enabled": true }
+  ]
+}

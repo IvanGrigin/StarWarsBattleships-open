@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "id": "resurgent_destroyer",
+  "display_name": "Разрушитель класса «Возрождение»",
+  "description": "Звёздный разрушитель нового поколения: вдвое крупнее имперского и заметно толще в броне.",
+  "faction": "first_order",
+  "era": "new_order",
+  "role": "capital",
+  "unique": false,
+  "legacy_v3": false,
+  "draftable": true,
+  "raw_cost": 18,
+  "draft_cost": 7,
+  "max_hp": 8,
+  "max_shield": 1,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    0,
+    0,
+    -1,
+    0,
+    -1,
+    0
+  ],
+  "weapon": {
+    "max_range": 3,
+    "range_penalty_per_hex": 2,
+    "long_range_arc": "all"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 2,
+    "boost": false
+  },
+  "hyperdrive": {
+    "class": 2,
+    "charge_cost": 2
+  },
+  "abilities": [
+    {
+      "id": "carrier",
+      "enabled": true
+    },
+    {
+      "id": "heavy_armor",
+      "enabled": true
+    }
+  ],
+  "cost_adjust": 0,
+  "balance_patch": {
+    "before": {
+      "arc_modifiers": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "max_hp": 10,
+      "max_shield": 2,
+      "draft_cost": 14
+    },
+    "delta": {
+      "F": -2,
+      "sides": -2,
+      "rear": -2,
+      "B": -1,
+      "hp": -2,
+      "shield": -1
+    },
+    "source": "final.json: ML-оптимизация 2026-09-19: три эпохи, подстраивающийся бот за обе стороны, драфт «как у человека», новые способности кораблей"
+  }
+}

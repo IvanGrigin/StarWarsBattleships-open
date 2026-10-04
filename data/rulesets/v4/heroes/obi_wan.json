@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "id": "obi_wan",
+  "display_name": "Оби-Ван Кеноби",
+  "description": "Наставник Энакина Скайуокер и Люка Скайуокер.",
+  "faction": "republic",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "miss",
+    "name": "Мимо",
+    "text": "2 раза в игру может после броска противника может перевернуть кубик любой гранью (но нельзя менять с 6 на 1)",
+    "kind": "reaction",
+    "trigger": "after_dice_revealed",
+    "condition": [
+      {
+        "fact": "phase",
+        "op": "eq",
+        "value": "combat_reaction"
+      },
+      {
+        "fact": "die_owner",
+        "op": "eq",
+        "value": "enemy"
+      }
+    ],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 2,
+    "effect_sequence": [
+      {
+        "op": "set_die_face",
+        "params": {
+          "die_owner": "enemy",
+          "forbid_from_face": 6,
+          "forbid_to_face": 1
+        }
+      }
+    ],
+    "priority": 10,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed",
+      "DieModified"
+    ],
+    "test_plan": {
+      "positive": "C012+ (план): после открытия бросков боя — атакующий (противник) выбросил 5, защищающийся корабль владельца 4 — владелец переворачивает кубик противника с 5 на 2; силы пересчитываются до применения урона, использование списано (осталось 1).",
+      "negative": "C012− (план): попытка заменить 6 на 1 отклонена; попытка перевернуть свой кубик отклонена; использование вне окна реакции (до бросков/после урона) отклонено; третье использование за матч отклонено; во всех случаях {ok:false} без событий и без изменения state hash."
+    },
+    "design_notes": "Открытый вопрос rules-v3 §9.6 («менять грань кубика или итоговую силу?») решён по рекомендации MASTER_PLAN_RU §4.6: меняется грань исходного кубика, итоговая сила пересчитывается по формуле core-api §4.4 (слагаемое reactions). Запрещён только переход 6 → 1; прочие новые грани 1–6 разрешены, выбор за владельцем в окне реакции. Окно открывается после обоих бросков боя и до расчёта сил (docs/rules/timing.md §9).",
+    "proposal_v3": [
+      "меняется грань исходного кубика, а не итоговая сила (рекомендация MASTER_PLAN_RU §4.6)",
+      "окно реакции — после обоих DieRolled и до StrengthCalculated",
+      "priority: 10 (реакции разрешаются по возрастанию priority, при равенстве — по порядку сидов)"
+    ]
+  },
+  "synergy": {
+    "id": "high_ground",
+    "name": "Высокая позиция",
+    "text": "Пока в вашем флоте есть хотя бы один республиканский корабль, ваши корабли получают +1 к защите в секторе F (атака в лоб).",
+    "scope": "fleet",
+    "condition": {
+      "faction": "republic",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "arc_bonus",
+        "params": {
+          "sector": 0,
+          "role": "defender",
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 8
+}

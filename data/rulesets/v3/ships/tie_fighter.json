@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "tie_fighter",
+  "display_name": "Истребитель СИД",
+  "description": "Обычный истребитель империи. С шансом ½ корабль воскреснет с жизнями d4.",
+  "group": 1,
+  "draftable": true,
+  "draft_cost": 4,
+  "max_hp": 4,
+  "max_shield": 0,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": { "count": 1, "sides": 6 },
+  "arc_modifiers": [2, 1, 0, 0, 0, 1],
+  "abilities": [
+    { "id": "resurrection", "enabled": true }
+  ]
+}

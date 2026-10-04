@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "adr": "sprint 1: heroes and special abilities disabled (ADR-011)",
+    "bots": "RandomLegal vs RandomLegal (per-seat Rng, seed = match_seed*1000003 + seat_index)",
+    "elapsed_sec": 246.598,
+    "errors": 0,
+    "generated": "2026-09-14 15:41:04",
+    "matches": 10000,
+    "played": 10000,
+    "round_limit": 60,
+    "ruleset_hash": "289FEA29F1BB029E",
+    "ruleset_id": "v3_5",
+    "seed_base": 6000
+  },
+  "outcomes": {
+    "draws": 726,
+    "length_histogram": {
+      "1-10": 792,
+      "11-20": 2854,
+      "21-30": 2484,
+      "31-40": 1619,
+      "41-50": 967,
+      "51-60": 1284
+    },
+    "reasons": {
+      "elimination": 9274,
+      "round_limit": 726
+    },
+    "rounds_avg": 28.8549,
+    "rounds_sum": 288549,
+    "wins_a": 4643,
+    "wins_b": 4631
+  },
+  "rng_calls_per_match": {
+    "avg": 34.9347,
+    "max": 79,
+    "min": 9,
+    "sum": 349347
+  },
+  "seats": {
+    "games_per_seat": 10000,
+    "wins": {
+      "A1": 4643,
+      "A2": 4643,
+      "B1": 4631,
+      "B2": 4631
+    }
+  },
+  "ships": {
+    "death_star_1": {
+      "avg_death_round": 6.52691729323308,
+      "cost_sum": 21834,
+      "damage_dealt": 54384,
+      "damage_taken": 45490,
+      "deaths": 3325,
+      "kills": 4473,
+      "matches_present": 3639,
+      "pick_rate": 0.030325,
+      "picks": 3639,
+      "survived": 314
+    },
+    "eta2_actis": {
+      "avg_death_round": 15.4994341757827,
+      "cost_sum": 45924,
+      "damage_dealt": 28034,
+      "damage_taken": 29794,
+      "deaths": 5302,
+      "kills": 4497,
+      "matches_present": 5867,
+      "pick_rate": 0.0637833333333333,
+      "picks": 7654,
+      "survived": 2352
+    },
+    "ghost": {
+      "avg_death_round": 23.1644893111639,
+      "cost_sum": 21912,
+      "damage_dealt": 20773,
+      "damage_taken": 22358,
+      "deaths": 1684,
+      "kills": 3463,
+      "matches_present": 3652,
+      "pick_rate": 0.0304333333333333,
+      "picks": 3652,
+      "survived": 1425
+    },
+    "millennium_falcon": {
+      "avg_death_round": 21.2725947521866,
+      "cost_sum": 23968,
+      "damage_dealt": 15859,
+      "damage_taken": 17327,
+      "deaths": 1372,
+      "kills": 2704,
+      "matches_present": 2996,
+      "pick_rate": 0.0249666666666667,
+      "picks": 2996,
+      "survived": 1624
+    },
+    "phantom": {
+      "avg_death_round": null,
+      "cost_sum": 0,
+      "damage_dealt": 0,
+      "damage_taken": 0,
+      "deaths": 0,
+      "kills": 0,
+      "matches_present": 0,
+      "pick_rate": 0.0,
+      "picks": 0,
+      "survived": 543
+    },
+    "slave_1": {
+      "avg_death_round": 18.5009737098345,
+      "cost_sum": 23982,
+      "damage_dealt": 16059,
+      "damage_taken": 17579,
+      "deaths": 2054,
+      "kills": 2598,
+      "matches_present": 3426,
+      "pick_rate": 0.02855,
+      "picks": 3426,
+      "survived": 1372
+    },
+    "star_destroyer": {
+      "avg_death_round": 20.9112903225806,
+      "cost_sum": 2484,
+      "damage_dealt": 1667,
+      "damage_taken": 1569,
+      "deaths": 124,
+      "kills": 281,
+      "matches_present": 276,
+      "pick_rate": 0.0023,
+      "picks": 276,
+      "survived": 152
+    },
+    "tie_advanced_x1": {
+      "avg_death_round": 18.2913543228386,
+      "cost_sum": 23576,
+      "damage_dealt": 15932,
+      "damage_taken": 17284,
+      "deaths": 2001,
+      "kills": 2575,
+      "matches_present": 3368,
+      "pick_rate": 0.0280666666666667,
+      "picks": 3368,
+      "survived": 1367
+    },
+    "tie_fighter": {
+      "avg_death_round": 16.2047516198704,
+      "cost_sum": 56908,
+      "damage_dealt": 54941,
+      "damage_taken": 56395,
+      "deaths": 9260,
+      "kills": 8998,
+      "matches_present": 8609,
+      "pick_rate": 0.118558333333333,
+      "picks": 14227,
+      "survived": 4967
+    },
+    "vulture_droid": {
+      "avg_death_round": 13.7928978402014,
+      "cost_sum": 51920,
+      "damage_dealt": 33681,
+      "damage_taken": 32756,
+      "deaths": 7547,
+      "kills": 5570,
+      "matches_present": 6979,
+      "pick_rate": 0.0865333333333333,
+      "picks": 10384,
+      "survived": 2837
+    },
+    "xwing_t65": {
+      "avg_death_round": 13.9492262437652,
+      "cost_sum": 51890,
+      "damage_dealt": 32842,
+      "damage_taken": 33620,
+      "deaths": 7819,
+      "kills": 5329,
+      "matches_present": 6961,
+      "pick_rate": 0.0864833333333333,
+      "picks": 10378,
+      "survived": 2559
+    }
+  }
+}

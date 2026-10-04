@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "scenario_id": "flagship_hunt",
+  "display_name": "Эскадра против флагмана",
+  "note": "Асимметрия, эпоха «Галактическая гражданская война». Игрок A — Империя: суперразрушитель «Палач» (в драфт не входит) и герой Империи. Игрок B — эскадра: герой повстанцев или «вне эпохи» и корабли повстанцев и «вне эпохи» в пределах бюджета. Эскадра должна уничтожить флагман до конца раунда-лимита, иначе побеждает Империя: без лимита эскадра просто не подходит к флагману, и партия кончается ничьей.",
+  "era": "galactic_civil_war",
+  "seat_order": [
+    "A1",
+    "B1"
+  ],
+  "teams": {
+    "A": [
+      "A1"
+    ],
+    "B": [
+      "B1"
+    ]
+  },
+  "seats": {
+    "A1": {
+      "cells": [
+        [
+          0,
+          -2
+        ]
+      ],
+      "facing": 3
+    },
+    "B1": {
+      "cells": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "facing": 0
+    }
+  },
+  "flagship": "executor",
+  "flagship_seat": "A1",
+  "flagship_heroes": [
+    "darth_vader",
+    "admiral_piett",
+    "grand_moff_tarkin",
+    "emperor_palpatine"
+  ],
+  "squadron_factions": [
+    "rebels",
+    "bounty_hunters"
+  ],
+  "seat_overrides": {
+    "B1": {
+      "draft_budget": 34,
+      "fleet_size": 4,
+      "max_capital_per_seat": 0,
+      "ship_cost_add": 0
+    }
+  },
+  "flagship_activations": 2,
+  "round_limit": 12,
+  "victory": "B выигрывает, если «Палач» уничтожен до конца раунда 12; иначе — A (или если уничтожена вся эскадра).",
+  "balance_note": "подобрано на сильных ботах (подстраивающийся бот за обе стороны, проверка Монте-Карло за «Палача»): эскадра выигрывает 53% и 57% соответственно (reports/flagship_hunt.md)",
+  "events_enabled": false,
+  "terrain_enabled": false,
+  "pirates": 0
+}

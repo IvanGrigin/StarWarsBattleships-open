@@ -1,0 +1,140 @@
+{
+  "schema_version": 2,
+  "ruleset_id": "v4_0",
+  "title": "Эпохи и фракции",
+  "based_on": "v3_5",
+  "initial_charges": 3,
+  "max_charges": 5,
+  "move_cost": 1,
+  "rotate_cost": 1,
+  "attack_cost": 0,
+  "attacks_per_activation": 1,
+  "charge_round_reset": "half_up",
+  "charge_full_if_unused": true,
+  "round_limit": 60,
+  "activation_timeout_seconds": 60,
+  "omnidirectional_movement": true,
+  "ability_friendly_fire_default": true,
+  "combat": {
+    "attacker_dice": 2,
+    "defender_dice": 1,
+    "defender_flat_bonus": 1,
+    "melee_range": 1,
+    "ranged_enabled": true,
+    "ranged_requires_line_of_fire": true,
+    "ranged_default_penalty_per_hex": 2,
+    "ranged_arc_rule": "Дальняя атака возможна только если цель в секторе, указанном в weapon.long_range_arc.",
+    "boarding": {
+      "enabled": true,
+      "requires": [
+        "роль support/transport/freighter/corvette/capital",
+        "или способность boarding_pods"
+      ],
+      "range": 1,
+      "cost_charges": 2,
+      "roll": "1d6 + 1 за каждый пункт щита атакующего против 1d6 + текущие заряды защитника",
+      "on_success": "Защитник теряет все заряды и 1 HP; на следующей активации он пропускает ход.",
+      "on_failure": "Атакующий теряет 1 HP.",
+      "immune": [
+        "droid_brain",
+        "station"
+      ]
+    },
+    "ram": {
+      "enabled": true,
+      "cost_charges": "все оставшиеся, минимум 2",
+      "range": 1,
+      "damage": "Обе стороны получают 1d6; атакующий дополнительно теряет 1 щит.",
+      "note": "Гипертаран (манёвр Холдо) — отдельная способность героя, а не обычный таран."
+    }
+  },
+  "hyperspace": {
+    "enabled": true,
+    "charge_cost_by_class": {
+      "0": 1,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4
+    },
+    "charge_up_activation": "Прыжок объявляется в активации и стоит указанное число зарядов; корабль уходит с поля в конце активации.",
+    "return": "В начале следующей активации владельца корабль возвращается на любую свободную клетку, не соседнюю с вражеским кораблём, курс — любой.",
+    "blocked_by": [
+      "gravity_well",
+      "interdictor",
+      "block_hyperjump"
+    ],
+    "no_hyperdrive": "Корабли без гипердрайва (hyperdrive=null) прыгать не могут вообще.",
+    "while_in_hyperspace": "Корабль нельзя атаковать, он не считается уничтоженным и не занимает клетку."
+  },
+  "draft": {
+    "budget_total": 26,
+    "budget_total_text": "Общий бюджет на героя и корабли; герой стоит очки (карточка героя, draft_cost, обычно 2), остальное — на корабли. При цене героя 2 кораблям остаётся 24.",
+    "hero_cost_default": 2,
+    "budget": 24,
+    "fleet_size": 3,
+    "max_capital_per_seat": 1,
+    "max_unique_per_seat": 1,
+    "max_foreign_faction_ships": 1,
+    "mode": "shared_catalog",
+    "mode_text": "Общий каталог: каждый корабль и каждый герой — в одном экземпляре. Игроки берут по очереди, каждым ходом — любую из своих четырёх фигурок (героя или корабль).",
+    "pick_order": [
+      "A",
+      "B",
+      "B",
+      "A",
+      "A",
+      "B",
+      "B",
+      "A"
+    ],
+    "pick_order_status": "предложение: «змейка» компенсирует право первого выбора",
+    "duplicates_allowed": false,
+    "fallback_rule": "Если законно достроить состав уже нельзя (соперник забрал нужное), игрок берёт любую оставшуюся карточку в пределах бюджета; эпоха и фракция для неё не действуют.",
+    "fallback_status": "предложение, ждёт решения владельцев",
+    "era_lock": true,
+    "era_lock_text": "Все корабли флота должны принадлежать эпохе героя или эпохе «any».",
+    "match_era": true,
+    "match_era_text": "Перед драфтом выбирается эпоха партии. Обе стороны берут героев и корабли только этой эпохи или «вне эпохи» (any): Империя не встречается с Первым Орденом.",
+    "match_era_status": "решение владельца от 2026-09-18",
+    "hero_defines_faction": true,
+    "stations_draftable": false,
+    "legacy_group_rules": "Группы 1/2 из правил v2.0 заменены ролями и бюджетом; поле group сохранено в данных v3 для совместимости."
+  },
+  "factions_enabled": true,
+  "faction_traits_enabled": true,
+  "hero_synergy_enabled": true,
+  "events": {
+    "enabled": true,
+    "draw_per_round": 1,
+    "deck_size": 24,
+    "first_event_round": 2,
+    "reshuffle_when_empty": true
+  },
+  "terrain": {
+    "enabled": true,
+    "default_setup": [
+      {
+        "terrain": "asteroid_field",
+        "count": 4
+      },
+      {
+        "terrain": "dense_asteroids",
+        "count": 2
+      },
+      {
+        "terrain": "nebula",
+        "count": 2
+      },
+      {
+        "terrain": "debris",
+        "count": 2
+      }
+    ],
+    "placement": "Случайно по сиду матча, но не ближе 2 клеток к стартовым клеткам сидов."
+  },
+  "pirates": {
+    "enabled": true,
+    "default_count": 0
+  }
+}

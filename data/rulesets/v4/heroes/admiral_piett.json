@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "id": "admiral_piett",
+  "display_name": "Адмирал Пиетт",
+  "description": "Офицер «Палача», переживший предшественника на этом посту.",
+  "faction": "empire",
+  "era": "galactic_civil_war",
+  "ability": {
+    "id": "tighten_the_net",
+    "name": "Сомкнуть сеть",
+    "text": "1 раз в игру: сдвиньте два своих корабля на одну клетку каждый вне очереди активации.",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 2,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "reposition",
+        "params": {
+          "ships": 2,
+          "distance": 1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "flagship_drill",
+    "name": "Выучка флагмана",
+    "text": "Ваши имперские крупные корабли (capital) поворачиваются за 1 заряд вместо 2.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "empire",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "pivot_discount",
+        "params": {
+          "roles": [
+            "capital"
+          ],
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 5
+}

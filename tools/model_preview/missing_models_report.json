@@ -1,0 +1,275 @@
+{
+ "nantex_fighter": [],
+ "providence": [
+  {
+   "uid": "936e41cb4e304d71adb98776625fe38c",
+   "name": "providence-class-cruiser",
+   "author": "simonyanedvard403",
+   "license": "CC Attribution",
+   "likes": 0,
+   "faces": 9923,
+   "vertices": 5824,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/936e41cb4e304d71adb98776625fe38c",
+   "query": "providence class"
+  }
+ ],
+ "interdictor": [
+  {
+   "uid": "bac66b2e6edd4bc0aee8e8ceb3cefda8",
+   "name": "Star Wars: Immobilizer 418",
+   "author": "Daniel",
+   "license": "CC Attribution",
+   "likes": 221,
+   "faces": 147620,
+   "vertices": 100471,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/bac66b2e6edd4bc0aee8e8ceb3cefda8",
+   "query": "immobilizer 418"
+  },
+  {
+   "uid": "452cab004f024c01969b2111fbdd55b8",
+   "name": "Interdictor Star Destroyer (Immobilizer 418)",
+   "author": "Kuat-Entralla 3D Engineering",
+   "license": "CC Attribution",
+   "likes": 12,
+   "faces": 390238,
+   "vertices": 194967,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/452cab004f024c01969b2111fbdd55b8",
+   "query": "interdictor star destroyer"
+  },
+  {
+   "uid": "5b913cccc7a94e82abd31a32136bb7b3",
+   "name": "interdictor_class_star_destroyer_canon",
+   "author": "vvmilleriii",
+   "license": "CC Attribution",
+   "likes": 0,
+   "faces": 81062,
+   "vertices": 43659,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/5b913cccc7a94e82abd31a32136bb7b3",
+   "query": "interdictor star destroyer"
+  }
+ ],
+ "mg100_bomber": [],
+ "raddus_cruiser": [
+  {
+   "uid": "c12520600eb141d1a7b691e5d95c7227",
+   "name": "Raddus. MC85 star cruiser (FOC Alliance)",
+   "author": "dmitrtihom",
+   "license": "CC Attribution",
+   "likes": 3,
+   "faces": 43454,
+   "vertices": 33517,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/c12520600eb141d1a7b691e5d95c7227",
+   "query": "raddus"
+  },
+  {
+   "uid": "555ca4b594f549b98e7fabfb7a26dc7c",
+   "name": "MC85",
+   "author": "seankellydk",
+   "license": "CC Attribution-NonCommercial-ShareAlike",
+   "likes": 0,
+   "faces": 115122,
+   "vertices": 57706,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/555ca4b594f549b98e7fabfb7a26dc7c",
+   "query": "mc85"
+  }
+ ],
+ "tie_sf": [
+  {
+   "uid": "a5c2fb3305c44355ab76fb224c41b3ee",
+   "name": "Special Forces Tie Fighter",
+   "author": "SpringSociety",
+   "license": "CC Attribution",
+   "likes": 11,
+   "faces": 1676,
+   "vertices": 1077,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/a5c2fb3305c44355ab76fb224c41b3ee",
+   "query": "tie special forces"
+  },
+  {
+   "uid": "6b19471c7dc74bf192e7a858065fcc1d",
+   "name": "TIE/sf space superiority fighter",
+   "author": "dmitrtihom",
+   "license": "CC Attribution",
+   "likes": 2,
+   "faces": 7628,
+   "vertices": 4444,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/6b19471c7dc74bf192e7a858065fcc1d",
+   "query": "tie sf"
+  }
+ ],
+ "upsilon_shuttle": [
+  {
+   "uid": "4260195777e649dda2019f40035b52b8",
+   "name": "Kylo Ren Command Shuttle",
+   "author": "SpringSociety",
+   "license": "CC Attribution",
+   "likes": 5,
+   "faces": 1496,
+   "vertices": 894,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/4260195777e649dda2019f40035b52b8",
+   "query": "kylo ren shuttle"
+  }
+ ],
+ "punishing_one": [],
+ "hounds_tooth": [
+  {
+   "uid": "d0a6ab89711a40749953d4c305d4e343",
+   "name": "Hound's Tooth CT4012",
+   "author": "s4207063",
+   "license": "CC Attribution",
+   "likes": 1,
+   "faces": 15676,
+   "vertices": 7787,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/d0a6ab89711a40749953d4c305d4e343",
+   "query": "hound's tooth"
+  }
+ ],
+ "pirate_corsair": [
+  {
+   "uid": "3e187fed67034c488a0a9e41eae36628",
+   "name": "YTS-27 light freighter \"The Kowakian Corsair\"",
+   "author": "JP_2793",
+   "license": "CC Attribution-NonCommercial",
+   "likes": 366,
+   "faces": 3197341,
+   "vertices": 1721368,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/3e187fed67034c488a0a9e41eae36628",
+   "query": "star wars freighter"
+  },
+  {
+   "uid": "ccd2749df33641fba7a5326500abdbfb",
+   "name": "Star Wars: YT-2400 Light Freighter",
+   "author": "Daniel",
+   "license": "CC Attribution",
+   "likes": 245,
+   "faces": 37940,
+   "vertices": 22900,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/ccd2749df33641fba7a5326500abdbfb",
+   "query": "star wars freighter"
+  },
+  {
+   "uid": "2131f750afff479588a46321d17ee25f",
+   "name": "Star Wars: BFF-1 Bulk Freighter",
+   "author": "Daniel",
+   "license": "CC Attribution",
+   "likes": 118,
+   "faces": 60366,
+   "vertices": 35076,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/2131f750afff479588a46321d17ee25f",
+   "query": "star wars freighter"
+  },
+  {
+   "uid": "20f6028d590b4e43a69ce15ec138b6d1",
+   "name": "Star Wars: Lethisk-class Armored Freighter",
+   "author": "Daniel",
+   "license": "CC Attribution",
+   "likes": 105,
+   "faces": 172824,
+   "vertices": 105285,
+   "animated": true,
+   "url": "https://sketchfab.com/3d-models/20f6028d590b4e43a69ce15ec138b6d1",
+   "query": "star wars freighter"
+  },
+  {
+   "uid": "578f25a5c48c40369491d507f3930501",
+   "name": "Aril Freighter",
+   "author": "mohamedhussien",
+   "license": "CC Attribution",
+   "likes": 20,
+   "faces": 43186,
+   "vertices": 22760,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/578f25a5c48c40369491d507f3930501",
+   "query": "star wars freighter"
+  },
+  {
+   "uid": "9165c79602d549e6bb304ca03eaa033b",
+   "name": "[-]X[-]StarFreighter[-]'OnE'[-]",
+   "author": "-X-ScornGames",
+   "license": "CC Attribution",
+   "likes": 13,
+   "faces": 8429,
+   "vertices": 4377,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/9165c79602d549e6bb304ca03eaa033b",
+   "query": "star wars freighter"
+  },
+  {
+   "uid": "f5ad676f934d42e1aceed476955356ae",
+   "name": "Merchant Haul 7  LT-900-CXX Freighter Class",
+   "author": "Cpt.Kirk",
+   "license": "CC Attribution",
+   "likes": 12,
+   "faces": 809319,
+   "vertices": 404350,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/f5ad676f934d42e1aceed476955356ae",
+   "query": "star wars freighter"
+  }
+ ],
+ "pirate_marauder": [
+  {
+   "uid": "b3a5c7c7d60c4bcfb74f54794c803645",
+   "name": "Star Wars: Corellian Gunship",
+   "author": "Daniel",
+   "license": "CC Attribution",
+   "likes": 85,
+   "faces": 201979,
+   "vertices": 113182,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/b3a5c7c7d60c4bcfb74f54794c803645",
+   "query": "star wars gunship"
+  },
+  {
+   "uid": "12acc2a9ba2142468e3b47b84e929a48",
+   "name": "Star Wars: Marauder-class Corvette",
+   "author": "Daniel",
+   "license": "CC Attribution",
+   "likes": 73,
+   "faces": 284370,
+   "vertices": 178144,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/12acc2a9ba2142468e3b47b84e929a48",
+   "query": "marauder corvette"
+  },
+  {
+   "uid": "567a3d650f1540d0b0abfe46623f677a",
+   "name": "DP-20 Corellian Gunship",
+   "author": "Khvostik",
+   "license": "CC Attribution",
+   "likes": 3,
+   "faces": 940,
+   "vertices": 787,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/567a3d650f1540d0b0abfe46623f677a",
+   "query": "star wars gunship"
+  }
+ ],
+ "pirate_skiff": [
+  {
+   "uid": "17ee6513410b44038e6ba5228d68281c",
+   "name": "Sorosuub Preybird Heavy Assault Fighter",
+   "author": "resurrected",
+   "license": "CC Attribution",
+   "likes": 34,
+   "faces": 41612,
+   "vertices": 20834,
+   "animated": false,
+   "url": "https://sketchfab.com/3d-models/17ee6513410b44038e6ba5228d68281c",
+   "query": "star wars pirate fighter"
+  }
+ ]
+}

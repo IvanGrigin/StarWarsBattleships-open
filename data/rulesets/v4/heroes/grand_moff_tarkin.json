@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "id": "grand_moff_tarkin",
+  "display_name": "Гранд-мофф Таркин",
+  "description": "Губернатор Внешнего кольца, командир Звезды Смерти, автор «доктрины страха».",
+  "faction": "empire",
+  "era": "galactic_civil_war",
+  "ability": {
+    "id": "fire_at_will",
+    "name": "Огонь по готовности",
+    "text": "1 раз в игру: ваш корабль с дальностью 3+ атакует дважды за активацию.",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 2,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "extra_attack",
+        "params": {
+          "count": 1,
+          "require_max_range": 3
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "iron_discipline",
+    "name": "Железная дисциплина",
+    "text": "Ваши имперские корабли не теряют заряды, когда не атакуют: в конце раунда они получают +1 заряд сверх обычного (не выше максимума).",
+    "scope": "fleet",
+    "condition": {
+      "faction": "empire",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "charge_regen_bonus",
+        "params": {
+          "value": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 1
+}

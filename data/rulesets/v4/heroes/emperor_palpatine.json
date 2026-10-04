@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "id": "emperor_palpatine",
+  "display_name": "Император Палпатин",
+  "description": "Дарт Сидиус: канцлер, затем Император; тайный хозяин обеих сторон Войн клонов.",
+  "faction": "empire",
+  "era": "any",
+  "ability": {
+    "id": "unlimited_power",
+    "name": "Неограниченная власть",
+    "text": "1 раз в игру: любой ваш корабль немедленно получает 3 заряда и атакует вне очереди.",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "grant_charges_and_attack",
+        "params": {
+          "charges": 3
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "shroud_of_the_dark_side",
+    "name": "Покров тёмной стороны",
+    "text": "Ваши корабли Империи и сепаратистов считаются одной фракцией для всех синергий.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "empire",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "faction_merge",
+        "params": {
+          "factions": [
+            "empire",
+            "separatists"
+          ]
+        }
+      }
+    ]
+  },
+  "draft_cost": 2
+}

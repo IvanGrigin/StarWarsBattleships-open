@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "id": "general_hux",
+  "display_name": "Генерал Хакс",
+  "description": "Командующий «Старкиллером» и флотом Первого Ордена.",
+  "faction": "first_order",
+  "era": "new_order",
+  "ability": {
+    "id": "order_barrage",
+    "name": "Массированный залп",
+    "text": "1 раз в игру: все ваши корабли атакуют в этом раунде с +1 к силе, но в следующем раунде получают −1 к защите.",
+    "kind": "active",
+    "trigger": "round_start",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 2,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "fleet_buff",
+        "params": {
+          "strength": 1,
+          "next_round_defense": -1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "first_order_doctrine",
+    "name": "Доктрина Первого Ордена",
+    "text": "Если все три ваших корабля — Первый Орден, каждый получает +1 щита.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "first_order",
+      "min_ships": 3
+    },
+    "effects": [
+      {
+        "op": "full_faction_bonus",
+        "params": {
+          "faction": "first_order",
+          "min_ships": 3,
+          "max_shield": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 3
+}

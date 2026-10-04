@@ -1,0 +1,199 @@
+#!/usr/bin/env python3
+"""Reference combat expectation table for rules v3, sprint 1 (core-api §4.3,
+MASTER_PLAN §13.3, task E004).
+
+The table is GENERATED from the rules — no hand-written numbers:
+    strength = max(0, d6 + arc)
+    attacker and defender each roll one independent d6 (attacker first)
+    higher strength wins; the loser suffers damage = strength difference
+    tie -> no damage on either side
+    shield = 0 baseline: all damage goes straight to hull
+
+JSON format written to tests/golden/combat_expectations.json:
+{
+  "ruleset_id": "v3",
+  "die_sides": 6,
+  "arc_min": -2,
+  "arc_max": 7,
+  "outcomes_total": 36,
+  "rule": "<the formula above>",
+  "table": [
+    {
+      "arc_attacker": <int, arc_min..arc_max>,
+      "arc_defender": <int, arc_min..arc_max>,
+      "counts": {"attacker_win": int, "tie": int, "defender_win": int},  # sum = 36
+      "probabilities": {"attacker_win": f, "tie": f, "defender_win": f},
+      "expected_damage": {"to_defender": f, "to_attacker": f}
+    },
+    ...
+  ]
+}
+Rows are ordered by arc_attacker, then arc_defender. Probabilities and expected
+damages are outcome counts divided by 36, rounded to 6 decimal places.
+expected_damage.to_defender is the damage suffered by the DEFENDER (when the
+attacker wins), to_attacker — by the ATTACKER (when the defender wins).
+
+Usage:
+    python3 tools/reference/combat_table.py
+Writes tests/golden/combat_expectations.json and reports/combat_table_report.md.
+Golden files must never be edited by hand (core-api §11).
+"""
+
+import json
+import os
+
+DIE_SIDES = 6
+ARC_MIN = -2
+ARC_MAX = 7
+OUTCOMES = DIE_SIDES * DIE_SIDES
+ROUND_DIGITS = 6
+
+REPO_ROOT = os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+GOLDEN_PATH = os.path.join(REPO_ROOT, "tests", "golden",
+                           "combat_expectations.json")
+REPORT_PATH = os.path.join(REPO_ROOT, "reports", "combat_table_report.md")
+
+RULE = ("strength = max(0, d6 + arc); attacker and defender each roll d6 "
+        "(attacker first); higher strength wins, the loser suffers damage = "
+        "strength difference; tie = no damage; shield = 0 (all damage to hull)")
+
+
+def row(arc_attacker: int, arc_defender: int) -> dict:
+    attacker_win = tie = defender_win = 0
+    damage_to_defender = 0
+    damage_to_attacker = 0
+    for die_a in range(1, DIE_SIDES + 1):
+        total_a = max(0, die_a + arc_attacker)
+        for die_d in range(1, DIE_SIDES + 1):
+            total_d = max(0, die_d + arc_defender)
+            if total_a > total_d:
+                attacker_win += 1
+                damage_to_defender += total_a - total_d
+            elif total_d > total_a:
+                defender_win += 1
+                damage_to_attacker += total_d - total_a
+            else:
+                tie += 1
+    return {
+        "arc_attacker": arc_attacker,
+        "arc_defender": arc_defender,
+        "counts": {
+            "attacker_win": attacker_win,
+            "tie": tie,
+            "defender_win": defender_win,
+        },
+        "probabilities": {
+            "attacker_win": round(attacker_win / OUTCOMES, ROUND_DIGITS),
+            "tie": round(tie / OUTCOMES, ROUND_DIGITS),
+            "defender_win": round(defender_win / OUTCOMES, ROUND_DIGITS),
+        },
+        "expected_damage": {
+            "to_defender": round(damage_to_defender / OUTCOMES, ROUND_DIGITS),
+            "to_attacker": round(damage_to_attacker / OUTCOMES, ROUND_DIGITS),
+        },
+    }
+
+
+def build_table() -> list:
+    return [row(a, d)
+            for a in range(ARC_MIN, ARC_MAX + 1)
+            for d in range(ARC_MIN, ARC_MAX + 1)]
+
+
+def build_golden(table: list) -> dict:
+    return {
+        "ruleset_id": "v3",
+        "die_sides": DIE_SIDES,
+        "arc_min": ARC_MIN,
+        "arc_max": ARC_MAX,
+        "outcomes_total": OUTCOMES,
+        "rule": RULE,
+        "table": table,
+    }
+
+
+def grid(table: list, group: str, metric: str, fmt: str) -> str:
+    """Markdown grid: rows arc_attacker, columns arc_defender."""
+    lookup = {(r["arc_attacker"], r["arc_defender"]): r for r in table}
+    arcs = list(range(ARC_MIN, ARC_MAX + 1))
+    lines = ["| arc_a \\ arc_d | " + " | ".join(str(d) for d in arcs) + " |",
+             "|---|" + "---:|" * len(arcs)]
+    for a in arcs:
+        cells = [fmt.format(lookup[(a, d)][group][metric]) for d in arcs]
+        lines.append("| " + str(a) + " | " + " | ".join(cells) + " |")
+    return "\n".join(lines)
+
+
+def build_report(table: list) -> str:
+    worst_for_attacker = min(
+        table, key=lambda r: (r["probabilities"]["attacker_win"],
+                              r["arc_attacker"], r["arc_defender"]))
+    best_for_attacker = max(
+        table, key=lambda r: (r["probabilities"]["attacker_win"],
+                              r["arc_attacker"], r["arc_defender"]))
+    lines = [
+        "# Combat expectations report (rules v3, sprint 1)",
+        "",
+        "Generated by `tools/reference/combat_table.py` from the rules, not by hand:",
+        "`" + RULE + "`",
+        "",
+        "- Coverage: all (arc_attacker, arc_defender) pairs in range "
+        f"[{ARC_MIN}, +{ARC_MAX}], {len(table)} rows, {OUTCOMES} equiprobable "
+        "(d6, d6) outcomes per row.",
+        "- Baseline shield = 0: damage = strength difference goes to hull.",
+        "- Golden data: `tests/golden/combat_expectations.json` (regenerate with "
+        "`python3 tools/reference/combat_table.py`, never edit by hand).",
+        "",
+        "## P(attacker wins)",
+        "",
+        grid(table, "probabilities", "attacker_win", "{:.4f}"),
+        "",
+        "## E(damage to defender)",
+        "",
+        grid(table, "expected_damage", "to_defender", "{:.4f}"),
+        "",
+        "## E(damage to attacker)",
+        "",
+        grid(table, "expected_damage", "to_attacker", "{:.4f}"),
+        "",
+        "## Extremes",
+        "",
+        f"- Best case for the attacker: arc pair "
+        f"({best_for_attacker['arc_attacker']:+d}, "
+        f"{best_for_attacker['arc_defender']:+d}) — "
+        f"P(win)={best_for_attacker['probabilities']['attacker_win']:.4f}, "
+        f"E(damage to defender)={best_for_attacker['expected_damage']['to_defender']:.4f}.",
+        f"- Worst case for the attacker: arc pair "
+        f"({worst_for_attacker['arc_attacker']:+d}, "
+        f"{worst_for_attacker['arc_defender']:+d}) — "
+        f"P(win)={worst_for_attacker['probabilities']['attacker_win']:.4f}, "
+        f"E(damage to attacker)={worst_for_attacker['expected_damage']['to_attacker']:.4f}.",
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def main() -> None:
+    table = build_table()
+    # Internal sanity: counts and rounded probabilities must be consistent.
+    for r in table:
+        assert sum(r["counts"].values()) == OUTCOMES
+        probs = r["probabilities"]
+        assert abs(sum(probs.values()) - 1.0) < 1e-5
+
+    os.makedirs(os.path.dirname(GOLDEN_PATH), exist_ok=True)
+    with open(GOLDEN_PATH, "w", encoding="utf-8") as f:
+        f.write(json.dumps(build_golden(table), indent=2) + "\n")
+
+    os.makedirs(os.path.dirname(REPORT_PATH), exist_ok=True)
+    with open(REPORT_PATH, "w", encoding="utf-8") as f:
+        f.write(build_report(table))
+
+    print(f"wrote {os.path.relpath(GOLDEN_PATH, REPO_ROOT)} "
+          f"({len(table)} rows)")
+    print(f"wrote {os.path.relpath(REPORT_PATH, REPO_ROOT)}")
+
+
+if __name__ == "__main__":
+    main()

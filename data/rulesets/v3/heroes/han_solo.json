@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "han_solo",
+  "display_name": "Хан Соло",
+  "description": "Очень хороший пилот один из друзей Люка Скайуокер раньше был контрабандистам.",
+  "ability": {
+    "id": "hyperjump",
+    "name": "Гиперпрыжок",
+    "text": "1 раз в игру в свой ход может переместить свой корабль в любую клетку карты кроме соседних с кораблями за все единицы заряда (без поворота)",
+    "kind": "active",
+    "trigger": "manual_during_activation",
+    "condition": [
+      { "fact": "phase", "op": "eq", "value": "activation" },
+      { "fact": "activation_seat_is_owner", "op": "eq", "value": true },
+      { "fact": "selected_ship_min_charges", "op": "gte", "value": 1 }
+    ],
+    "target_filter": {
+      "target_kind": "own_ship",
+      "min_distance": null,
+      "max_distance": null,
+      "destination": "any_free_cell_not_adjacent_to_ships",
+      "count": 1
+    },
+    "cost": { "charges_mode": "all", "charges": 0, "consumes_ship_attack": false },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "teleport_ship",
+        "params": {
+          "destination": "any_free_cell_not_adjacent_to_ships",
+          "keep_facing": true,
+          "set_charges": 0
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": ["AbilityUsed", "ShipMoved"],
+    "test_plan": {
+      "positive": "C015+ (план): активный свой корабль с ≥1 зарядом телепортируется в свободную клетку поля, не соседнюю ни с одним живым кораблём; заряды становятся 0; ориентация не меняется; использование списано.",
+      "negative": "C015− (план): клетка, соседняя с любым кораблём (включая свои и союзные), отклонена; при 0 зарядов способность недоступна; цель — чужой/союзный корабль отклонена; повторное использование отклонено; {ok:false} без изменения состояния."
+    },
+    "design_notes": "«Свой корабль» = активный корабль сида владельца в его активацию (MASTER_PLAN_RU §4.9 — «собственного выбранного корабля»). Назначение — любая свободная клетка поля, не соседняя ни с одним живым кораблём: свои, союзные и вражеские соседи исключаются одинаково (формализация «кроме соседних с кораблями»). Требование ≥1 заряда — в condition; «за все единицы заряда» = charges_mode «all», эквивалент set_charges: 0; ориентация не меняется (дословно «без поворота»). В журнале телепорт фиксируется ShipMoved (поля from/to подходят); отдельное событие расхода не создаётся — enum reason события ChargeSpent в спринте 1 ограничен move|rotate (core-api §6), обнуление зарядов отражается в состоянии.",
+    "proposal_v3": [
+      "цель — активный корабль владельца; назначение — свободная клетка не по соседству ни с одним живым кораблём",
+      "charges_mode: all — списываются все заряды (set_charges: 0); отдельного события расхода нет"
+    ]
+  }
+}

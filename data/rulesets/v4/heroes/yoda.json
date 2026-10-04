@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "id": "yoda",
+  "display_name": "Йода",
+  "description": "Гранд-мастер Ордена джедаев, учитель Люка Скайуокера.",
+  "faction": "republic",
+  "era": "fall_of_republic",
+  "ability": {
+    "id": "force_sight",
+    "name": "Предвидение",
+    "text": "Пассивно: в начале каждого раунда вы узнаёте, какой корабль противник активирует первым; 1 раз в игру можете заставить его начать с другого корабля.",
+    "kind": "active",
+    "trigger": "round_start",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "force_activation_order",
+        "params": {
+          "scope": "enemy_seat"
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "jedi_council",
+    "name": "Совет джедаев",
+    "text": "Все ваши республиканские корабли один раз за матч перебрасывают свой кубик защиты.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "republic",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "grant_reroll",
+        "params": {
+          "role": "defender",
+          "uses": 1
+        }
+      }
+    ]
+  },
+  "draft_cost": 2
+}

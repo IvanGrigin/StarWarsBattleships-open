@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "id": "laat_gunship",
+  "display_name": "Штурмовой транспорт LAAT/i",
+  "description": "Десантный канонерский катер клонов: высаживает абордажную команду и латает союзников прямо в бою.",
+  "faction": "republic",
+  "era": "fall_of_republic",
+  "role": "support",
+  "unique": false,
+  "legacy_v3": false,
+  "draftable": true,
+  "raw_cost": 17,
+  "draft_cost": 7,
+  "max_hp": 5,
+  "max_shield": 0,
+  "initial_charges": 3,
+  "max_charges": 5,
+  "strength_die": {
+    "count": 1,
+    "sides": 6
+  },
+  "arc_modifiers": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "weapon": {
+    "max_range": 1,
+    "range_penalty_per_hex": 0,
+    "long_range_arc": "front"
+  },
+  "engine": {
+    "move_cost": 1,
+    "pivot_cost": 1,
+    "boost": true
+  },
+  "hyperdrive": null,
+  "abilities": [
+    {
+      "id": "boarding_pods",
+      "enabled": true
+    },
+    {
+      "id": "repair_bay",
+      "enabled": true
+    }
+  ],
+  "cost_adjust": 0,
+  "balance_patch": {
+    "before": {
+      "arc_modifiers": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_hp": 6,
+      "max_shield": 0,
+      "draft_cost": 8
+    },
+    "delta": {
+      "F": -1,
+      "hp": -1
+    },
+    "source": "final.json: ML-оптимизация 2026-09-19: три эпохи, подстраивающийся бот за обе стороны, драфт «как у человека», новые способности кораблей"
+  }
+}

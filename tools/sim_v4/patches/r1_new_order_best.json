@@ -1,0 +1,49 @@
+{
+ "ships": {
+  "hounds_tooth": {
+   "F": -1
+  },
+  "millennium_falcon": {
+   "F": -2
+  },
+  "punishing_one": {
+   "F": -1
+  },
+  "raddus_cruiser": {
+   "F": -2,
+   "sides": -1
+  },
+  "resistance_transport": {
+   "F": 1
+  },
+  "resurgent_destroyer": {
+   "F": -2,
+   "sides": -2,
+   "shield": -1
+  },
+  "rz2_awing": {
+   "sides": 1
+  },
+  "slave_1": {
+   "F": -2
+  },
+  "tie_sf": {
+   "sides": -1
+  },
+  "tie_silencer": {
+   "F": -2,
+   "sides": -2,
+   "shield": -1
+  },
+  "upsilon_shuttle": {
+   "shield": -1
+  },
+  "xwing_t70": {
+   "F": -1,
+   "shield": -1
+  }
+ },
+ "heroes": {
+  "phasma": 5
+ }
+}

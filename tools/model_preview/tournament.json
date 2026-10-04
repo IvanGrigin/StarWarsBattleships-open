@@ -1,0 +1,306 @@
+{
+ "types": {
+  "arc170": {
+   "picks": {
+    "liked/arc-170__ARC-170_Fighter.glb|liked/arc-170__ARC-170_Starfighter.glb": "liked/arc-170__ARC-170_Starfighter.glb",
+    "liked/arc-170__ARC-170_Starfighter.glb|liked/arc-170__ARC_170_Starfighter_Pathfinder_Modification.glb": "liked/arc-170__ARC-170_Starfighter.glb"
+   },
+   "winner": "liked/arc-170__ARC-170_Starfighter.glb"
+  },
+  "awing_rz1": {
+   "picks": {
+    "liked/a-wing_interceptor__A-wing.glb|liked/t-85_x-wing__RZ-3_A-Wing.glb": "liked/a-wing_interceptor__A-wing.glb"
+   },
+   "winner": "liked/a-wing_interceptor__A-wing.glb"
+  },
+  "bwing": {
+   "picks": {
+    "liked/b-wing_starfighter__A_SF-01_B-wing_starfighter.glb|liked/b-wing_starfighter__B-Wing_W_I_P.glb": "liked/b-wing_starfighter__A_SF-01_B-wing_starfighter.glb"
+   },
+   "winner": "liked/b-wing_starfighter__A_SF-01_B-wing_starfighter.glb"
+  },
+  "death_star_1": {
+   "picks": {
+    "death_star_1_2k_opt.glb|liked/death_star_ii__Death_Star_-_Star_Wars.glb": "death_star_1_2k_opt.glb"
+   },
+   "winner": "death_star_1_2k_opt.glb"
+  },
+  "delta7_aethersprite": {
+   "picks": {
+    "liked/delta-7_aethersprite__Delta-7_Aethersprite-class_Light_Interceptor.glb|liked/delta-7b_aethersprite__Delta_7_jedi_interceptor.glb": "liked/delta-7_aethersprite__Delta-7_Aethersprite-class_Light_Interceptor.glb"
+   },
+   "winner": "liked/delta-7_aethersprite__Delta-7_Aethersprite-class_Light_Interceptor.glb"
+  },
+  "eta2_actis": {
+   "picks": {
+    "liked/delta-7_aethersprite__SWBF2_Custom_-_Anakin_s_Eta-2_Actis_Interceptor.glb|liked/eta-2_actis__Eta-2_Actis_Jedi_Starfighter_-_Star_Wars.glb": "liked/eta-2_actis__Eta-2_Actis_Jedi_Starfighter_-_Star_Wars.glb",
+    "liked/eta-2_actis__Eta-2_Actis-class_Light_Interceptor.glb|liked/eta-2_actis__Eta-2_Actis_Jedi_Starfighter_-_Star_Wars.glb": "liked/eta-2_actis__Eta-2_Actis_Jedi_Starfighter_-_Star_Wars.glb",
+    "liked/eta-2_actis__Eta-2_Actis-class_Light_Interceptor.glb|liked/eta-2_actis__Star_Wars_Galaxies_-_Eta-2_Actis_Interceptor.glb": "liked/eta-2_actis__Eta-2_Actis-class_Light_Interceptor.glb"
+   },
+   "winner": "liked/eta-2_actis__Eta-2_Actis_Jedi_Starfighter_-_Star_Wars.glb"
+  },
+  "executor": {
+   "picks": {
+    "liked/executor_super_star_destroyer__Executor_Class_Super_Star_Destroyer.glb|liked/executor_super_star_destroyer__Old_Executor.glb": "liked/executor_super_star_destroyer__Executor_Class_Super_Star_Destroyer.glb",
+    "liked/executor_super_star_destroyer__Executor_Class_Super_Star_Destroyer.glb|liked/executor_super_star_destroyer__Star_Wars_-_Executor_Super_Star_Destroyer.glb": "liked/executor_super_star_destroyer__Executor_Class_Super_Star_Destroyer.glb",
+    "liked/executor_super_star_destroyer__Old_Executor.glb|liked/executor_super_star_destroyer__Star_Wars_Executor_Class_Star_Destroyer.glb": "liked/executor_super_star_destroyer__Old_Executor.glb"
+   },
+   "winner": "liked/executor_super_star_destroyer__Executor_Class_Super_Star_Destroyer.glb"
+  },
+  "ghost": {
+   "picks": {},
+   "winner": "liked/ghost_vcx-100__Star_Wars_Rebels_Ghost_VCX-100_8K_Textures.glb"
+  },
+  "gr75_transport": {
+   "picks": {},
+   "winner": "liked/gr-75_transport__Star_Wars_GR-75_Medium_Transport.glb"
+  },
+  "hounds_tooth": {
+   "picks": {},
+   "winner": "liked/v4_hounds_tooth__Hound_s_Tooth_CT4012.glb"
+  },
+  "hyena_bomber": {
+   "picks": {},
+   "winner": "liked/hyena_bomber__Hyena_Bomber.glb"
+  },
+  "interdictor": {
+   "picks": {
+    "liked/v4_interdictor__Interdictor_Star_Destroyer_Immobilizer_418.glb|liked/v4_interdictor__Star_Wars_Immobilizer_418.glb": "liked/v4_interdictor__Star_Wars_Immobilizer_418.glb",
+    "liked/v4_interdictor__Star_Wars_Immobilizer_418.glb|liked/v4_interdictor__interdictor_class_star_destroyer_canon.glb": "liked/v4_interdictor__Star_Wars_Immobilizer_418.glb"
+   },
+   "winner": "liked/v4_interdictor__Star_Wars_Immobilizer_418.glb"
+  },
+  "laat_gunship": {
+   "picks": {
+    "liked/laat_gunship__LAAT_i_Gunship.glb|liked/laat_gunship__Star_Wars_LAAT_i_Gunship.glb": "liked/laat_gunship__LAAT_i_Gunship.glb"
+   },
+   "winner": "liked/laat_gunship__LAAT_i_Gunship.glb"
+  },
+  "lambda_shuttle": {
+   "picks": {
+    "liked/lambda_shuttle__3D_Imperial_Lambda_Shuttle_-_Star_Wars_model.glb|liked/lambda_shuttle__Lambda_T-A_Shuttle.glb": "liked/lambda_shuttle__3D_Imperial_Lambda_Shuttle_-_Star_Wars_model.glb",
+    "liked/lambda_shuttle__Lambda_T-A_Shuttle.glb|liked/lambda_shuttle__Star_Wars_Lambda_Shuttle.glb": "liked/lambda_shuttle__Lambda_T-A_Shuttle.glb"
+   },
+   "winner": "liked/lambda_shuttle__3D_Imperial_Lambda_Shuttle_-_Star_Wars_model.glb"
+  },
+  "mc80_home_one": {
+   "picks": {
+    "liked/mc80_liberty_cruiser__mc80_liberty_class_star_cruiser.glb|liked/mc80_mon_calamari_cruiser__Star_Wars_MC80_Home_One_Type_Star_Cruiser.glb": "liked/mc80_mon_calamari_cruiser__Star_Wars_MC80_Home_One_Type_Star_Cruiser.glb",
+    "liked/mc80_mon_calamari_cruiser__Mon_Calamari.glb|liked/mc80_mon_calamari_cruiser__Star_Wars_MC80_Home_One_Type_Star_Cruiser.glb": "liked/mc80_mon_calamari_cruiser__Star_Wars_MC80_Home_One_Type_Star_Cruiser.glb"
+   },
+   "winner": "liked/mc80_mon_calamari_cruiser__Star_Wars_MC80_Home_One_Type_Star_Cruiser.glb"
+  },
+  "millennium_falcon": {
+   "picks": {
+    "liked/millennium_falcon_yt-1300__Millennium_Falcon_-_Star_Wars.glb|millennium_falcon_stym/scene.gltf": "liked/millennium_falcon_yt-1300__Millennium_Falcon_-_Star_Wars.glb"
+   },
+   "winner": "liked/millennium_falcon_yt-1300__Millennium_Falcon_-_Star_Wars.glb"
+  },
+  "munificent": {
+   "picks": {
+    "liked/munificent_frigate__Fully_Armed_Munificent_Star_Frigate.glb|liked/munificent_frigate__Munificent-Class_Star_Frigate.glb": "liked/munificent_frigate__Munificent-Class_Star_Frigate.glb",
+    "liked/munificent_frigate__Munificent-Class_Star_Frigate.glb|liked/munificent_frigate__Star_Wars_The_Clone_Wars_Munificent_S5-7_Style.glb": "liked/munificent_frigate__Munificent-Class_Star_Frigate.glb",
+    "liked/munificent_frigate__Munificent_Class_Star_Frigate.glb|liked/munificent_frigate__Star_Wars_The_Clone_Wars_Munificent_S5-7_Style.glb": "liked/munificent_frigate__Star_Wars_The_Clone_Wars_Munificent_S5-7_Style.glb"
+   },
+   "winner": "liked/munificent_frigate__Munificent-Class_Star_Frigate.glb"
+  },
+  "naboo_n1": {
+   "picks": {
+    "liked/n-1_starfighter__Naboo_N-1_Starfighter_-_Star_Wars.glb|liked/n-1_starfighter__Naboo_N-4_Heavy_Starfighter.glb": "liked/n-1_starfighter__Naboo_N-1_Starfighter_-_Star_Wars.glb",
+    "liked/n-1_starfighter__Naboo_N-1_Starfighter_-_Star_Wars.glb|liked/naboo_royal_starship__Naboo_Starfighter_01.glb": "liked/n-1_starfighter__Naboo_N-1_Starfighter_-_Star_Wars.glb",
+    "liked/n-1_starfighter__Naboo_N1_Starfighter.glb|liked/n-1_starfighter__The_Mandalorian_-_LEGO_N_1_Starfighter.glb": "liked/n-1_starfighter__Naboo_N1_Starfighter.glb",
+    "liked/n-1_starfighter__Naboo_N1_Starfighter.glb|liked/naboo_royal_starship__Naboo_Starfighter_01.glb": "liked/naboo_royal_starship__Naboo_Starfighter_01.glb",
+    "liked/n-1_starfighter__The_Mandalorian_-_LEGO_N_1_Starfighter__s1.glb|liked/naboo_royal_starship__Naboo_Starfighter_01.glb": "liked/naboo_royal_starship__Naboo_Starfighter_01.glb"
+   },
+   "winner": "liked/n-1_starfighter__Naboo_N-1_Starfighter_-_Star_Wars.glb"
+  },
+  "naboo_royal_cruiser": {
+   "picks": {
+    "liked/h-type_nubian_yacht__H_Type_Nubian_Yacht.glb|liked/naboo_royal_starship__Naboo_Cruiser.glb": "liked/naboo_royal_starship__Naboo_Cruiser.glb",
+    "liked/naboo_royal_starship__Naboo_Cruiser.glb|liked/naboo_royal_starship__Naboo_Royal_Starship_J-type_327_Nubian.glb": "liked/naboo_royal_starship__Naboo_Royal_Starship_J-type_327_Nubian.glb",
+    "liked/naboo_royal_starship__Naboo_Royal_Starship_J-type_327_Nubian.glb|liked/naboo_royal_starship__Nubian_Royal_Starship.glb": "liked/naboo_royal_starship__Naboo_Royal_Starship_J-type_327_Nubian.glb"
+   },
+   "winner": "liked/naboo_royal_starship__Naboo_Royal_Starship_J-type_327_Nubian.glb"
+  },
+  "phantom": {
+   "picks": {},
+   "winner": "liked/ghost_vcx-100__Phantom.glb"
+  },
+  "pirate_corsair": {
+   "picks": {
+    "liked/v4_pirate_corsair__-_X_-_StarFreighter_-_OnE_-.glb|liked/v4_pirate_corsair__Aril_Freighter.glb": "liked/v4_pirate_corsair__Aril_Freighter.glb",
+    "liked/v4_pirate_corsair__Aril_Freighter.glb|liked/v4_pirate_corsair__Star_Wars_Lethisk-class_Armored_Freighter.glb": "liked/v4_pirate_corsair__Aril_Freighter.glb",
+    "liked/v4_pirate_corsair__Aril_Freighter.glb|liked/v4_pirate_corsair__YTS-27_light_freighter_The_Kowakian_Corsair.glb": "liked/v4_pirate_corsair__Aril_Freighter.glb",
+    "liked/v4_pirate_corsair__Merchant_Haul_7_LT-900-CXX_Freighter_Class.glb|liked/v4_pirate_corsair__YTS-27_light_freighter_The_Kowakian_Corsair.glb": "liked/v4_pirate_corsair__YTS-27_light_freighter_The_Kowakian_Corsair.glb",
+    "liked/v4_pirate_corsair__Star_Wars_BFF-1_Bulk_Freighter.glb|liked/v4_pirate_corsair__Star_Wars_Lethisk-class_Armored_Freighter.glb": "liked/v4_pirate_corsair__Star_Wars_Lethisk-class_Armored_Freighter.glb",
+    "liked/v4_pirate_corsair__Star_Wars_Lethisk-class_Armored_Freighter.glb|liked/yt-2400_freighter__Star_Wars_YT-2400_Light_Freighter.glb": "liked/v4_pirate_corsair__Star_Wars_Lethisk-class_Armored_Freighter.glb"
+   },
+   "winner": "liked/v4_pirate_corsair__Aril_Freighter.glb"
+  },
+  "pirate_marauder": {
+   "picks": {
+    "liked/v4_pirate_marauder__DP-20_Corellian_Gunship.glb|liked/v4_pirate_marauder__Star_Wars_Marauder-class_Corvette.glb": "liked/v4_pirate_marauder__Star_Wars_Marauder-class_Corvette.glb",
+    "liked/v4_pirate_marauder__Star_Wars_Corellian_Gunship.glb|liked/v4_pirate_marauder__Star_Wars_Marauder-class_Corvette.glb": "liked/v4_pirate_marauder__Star_Wars_Marauder-class_Corvette.glb"
+   },
+   "winner": "liked/v4_pirate_marauder__Star_Wars_Marauder-class_Corvette.glb"
+  },
+  "pirate_skiff": {
+   "picks": {},
+   "winner": "liked/v4_pirate_skiff__Sorosuub_Preybird_Heavy_Assault_Fighter.glb"
+  },
+  "providence": {
+   "picks": {},
+   "winner": "liked/v4_providence__providence-class-cruiser.glb"
+  },
+  "raddus_cruiser": {
+   "picks": {},
+   "winner": "liked/v4_raddus_cruiser__MC85.glb"
+  },
+  "resistance_transport": {
+   "picks": {},
+   "winner": "liked/u-55_orbital_loadlifter__U-55_Loadlifter_TLJ_Resistance_Transport.glb"
+  },
+  "resurgent_destroyer": {
+   "picks": {
+    "liked/resurgent_star_destroyer__Low_poly_Resurgent_Star_Destroyer.glb|liked/resurgent_star_destroyer__Resurgent-class-star-destroyer-low-poly.glb": "liked/resurgent_star_destroyer__Low_poly_Resurgent_Star_Destroyer.glb",
+    "liked/resurgent_star_destroyer__Resurgent-class-star-destroyer-low-poly.glb|liked/resurgent_star_destroyer__Resurgent_Star_Destroyer.glb": "liked/resurgent_star_destroyer__Resurgent-class-star-destroyer-low-poly.glb"
+   },
+   "winner": "liked/resurgent_star_destroyer__Low_poly_Resurgent_Star_Destroyer.glb"
+  },
+  "rz2_awing": {
+   "picks": {},
+   "winner": "liked/rz-2_a-wing__Resistance_RZ-2_A-_Wing_Fighter.glb"
+  },
+  "slave_1": {
+   "picks": {},
+   "winner": "liked/slave_1_firespray__Slave1.glb"
+  },
+  "soulless_one": {
+   "picks": {
+    "liked/soulless_one__Belbullab-22_Starfighter_Soulless_One.glb|liked/soulless_one__Star_Wars_Galaxies_-_Belbullab-22.glb": "liked/soulless_one__Belbullab-22_Starfighter_Soulless_One.glb"
+   },
+   "winner": "liked/soulless_one__Belbullab-22_Starfighter_Soulless_One.glb"
+  },
+  "star_destroyer": {
+   "picks": {
+    "liked/imperial_class_star_destroyer__Star_Wars_Imperial-Class_Star_Destroyer.glb|star_destroyer_opt.glb": "liked/imperial_class_star_destroyer__Star_Wars_Imperial-Class_Star_Destroyer.glb"
+   },
+   "winner": "liked/imperial_class_star_destroyer__Star_Wars_Imperial-Class_Star_Destroyer.glb"
+  },
+  "tie_advanced_x1": {
+   "picks": {
+    "liked/tie_advanced_x1__Darth_Vader_s_TIE_Advanced_x1.glb|liked/tie_advanced_x1__Star_Wars_TIE_x1_Advanced_x1.glb": "liked/tie_advanced_x1__Darth_Vader_s_TIE_Advanced_x1.glb",
+    "liked/tie_advanced_x1__Darth_Vader_s_TIE_Advanced_x1.glb|liked/tie_advanced_x1__TIE_Advanced_x1_Vader_s_TIE_-_Star_Wars.glb": "liked/tie_advanced_x1__TIE_Advanced_x1_Vader_s_TIE_-_Star_Wars.glb",
+    "liked/tie_advanced_x1__TIE_Advanced_x1_Vader_s_TIE_-_Star_Wars.glb|tie_advanced_x1_daniel_objaverse.glb": "liked/tie_advanced_x1__TIE_Advanced_x1_Vader_s_TIE_-_Star_Wars.glb"
+   },
+   "winner": "liked/tie_advanced_x1__TIE_Advanced_x1_Vader_s_TIE_-_Star_Wars.glb"
+  },
+  "tie_bomber": {
+   "picks": {
+    "liked/tie_bomber__Star_Wars_TIE_sa_Bomber.glb|liked/tie_bomber__TIE_bomber.glb": "liked/tie_bomber__TIE_bomber.glb",
+    "liked/tie_bomber__Star_Wars_Tie_Bomber.glb|liked/tie_bomber__TIE_bomber.glb": "liked/tie_bomber__TIE_bomber.glb"
+   },
+   "winner": "liked/tie_bomber__TIE_bomber.glb"
+  },
+  "tie_fighter": {
+   "picks": {
+    "liked/fang_fighter__Star_Wars_Tie_Fighter.glb|liked/tie_fighter_imperial__TIE_Fighter.glb": "liked/tie_fighter_imperial__TIE_Fighter.glb",
+    "liked/tie_fighter_imperial__3D_T.I.E_Fighter_-_Star_Wars_model.glb|liked/tie_fighter_imperial__TIE_Fighter.glb": "liked/tie_fighter_imperial__TIE_Fighter.glb",
+    "liked/tie_fighter_imperial__3D_T.I.E_Fighter_-_Star_Wars_model.glb|tie_fighter_opt.glb": "liked/tie_fighter_imperial__3D_T.I.E_Fighter_-_Star_Wars_model.glb",
+    "liked/tie_fighter_imperial__TIE.glb|liked/tie_fighter_imperial__TIE_Fighter.glb": "liked/tie_fighter_imperial__TIE_Fighter.glb"
+   },
+   "winner": "liked/tie_fighter_imperial__TIE_Fighter.glb"
+  },
+  "tie_fo": {
+   "picks": {
+    "liked/first_order_tie_fighter__First_Order_Tie_Fighter.glb|liked/first_order_tie_fighter__TIE_sgf_Starfighter_Ground_Force.glb": "liked/first_order_tie_fighter__First_Order_Tie_Fighter.glb"
+   },
+   "winner": "liked/first_order_tie_fighter__First_Order_Tie_Fighter.glb"
+  },
+  "tie_interceptor": {
+   "picks": {
+    "liked/tie_interceptor__Star_Wars_TIE_in_Interceptor.glb|liked/tie_interceptor__Tie-Interceptor_-_by_Tommaso_Incecchi.glb": "liked/tie_interceptor__Tie-Interceptor_-_by_Tommaso_Incecchi.glb",
+    "liked/tie_interceptor__Star_Wars_Tie_Interceptor.glb|liked/tie_interceptor__Tie-Interceptor_-_by_Tommaso_Incecchi.glb": "liked/tie_interceptor__Tie-Interceptor_-_by_Tommaso_Incecchi.glb"
+   },
+   "winner": "liked/tie_interceptor__Tie-Interceptor_-_by_Tommaso_Incecchi.glb"
+  },
+  "tie_sf": {
+   "picks": {
+    "liked/v4_tie_sf__Special_Forces_Tie_Fighter.glb|liked/v4_tie_sf__TIE_sf_space_superiority_fighter.glb": "liked/v4_tie_sf__Special_Forces_Tie_Fighter.glb"
+   },
+   "winner": "liked/v4_tie_sf__Special_Forces_Tie_Fighter.glb"
+  },
+  "tie_silencer": {
+   "picks": {
+    "liked/tie_silencer__TIE_Silencer_First_Order.glb|liked/tie_silencer__TIE_vn_Silencer.glb": "liked/tie_silencer__TIE_vn_Silencer.glb",
+    "liked/tie_silencer__TIE_vn_Silencer.glb|liked/tie_silencer__Tie_Silencer.glb": "liked/tie_silencer__TIE_vn_Silencer.glb"
+   },
+   "winner": "liked/tie_silencer__TIE_vn_Silencer.glb"
+  },
+  "tri_fighter": {
+   "picks": {
+    "liked/droid_tri-fighter__Droid_Tri_Fighter.glb|liked/droid_tri-fighter__Trade_Federation_Droid_Tri-Fighter.glb": "liked/droid_tri-fighter__Trade_Federation_Droid_Tri-Fighter.glb",
+    "liked/droid_tri-fighter__Trade_Federation_Droid_Tri-Fighter.glb|liked/droid_tri-fighter__tri_fighter_droid.glb": "liked/droid_tri-fighter__Trade_Federation_Droid_Tri-Fighter.glb"
+   },
+   "winner": "liked/droid_tri-fighter__Trade_Federation_Droid_Tri-Fighter.glb"
+  },
+  "upsilon_shuttle": {
+   "picks": {},
+   "winner": "liked/v4_upsilon_shuttle__Kylo_Ren_Command_Shuttle.glb"
+  },
+  "v19_torrent": {
+   "picks": {
+    "liked/v-19_torrent__Star_Wars_V-19_Torrent.glb|liked/v-wing_starfighter__V19_Torrent_Starfighter.glb": "liked/v-wing_starfighter__V19_Torrent_Starfighter.glb",
+    "liked/v-19_torrent__V-19_Torrent_-_Star_Wars_-_Clone_Wars.glb|liked/v-19_torrent__V-19_Torrent_Starfighter_-_Prototype_Variant.glb": "liked/v-19_torrent__V-19_Torrent_-_Star_Wars_-_Clone_Wars.glb",
+    "liked/v-19_torrent__V-19_Torrent_-_Star_Wars_-_Clone_Wars.glb|liked/v-wing_starfighter__V19_Torrent_Starfighter.glb": "liked/v-wing_starfighter__V19_Torrent_Starfighter.glb"
+   },
+   "winner": "liked/v-wing_starfighter__V19_Torrent_Starfighter.glb"
+  },
+  "venator": {
+   "picks": {
+    "liked/venator_star_destroyer__Republic_Venator_Star_Destroyer.glb|liked/venator_star_destroyer__Star_Wars_Republic_Venator_Star_Destroyer.glb": "liked/venator_star_destroyer__Republic_Venator_Star_Destroyer.glb",
+    "liked/venator_star_destroyer__Republic_Venator_Star_Destroyer.glb|liked/venator_star_destroyer__Venator_Class_Star_Destroyer.glb": "liked/venator_star_destroyer__Venator_Class_Star_Destroyer.glb"
+   },
+   "winner": "liked/venator_star_destroyer__Venator_Class_Star_Destroyer.glb"
+  },
+  "vulture_droid": {
+   "picks": {
+    "liked/vulture_droid_starfighter__Vulture_Droid.glb|liked/vulture_droid_starfighter__Vulture_droid_starfighter.glb": "liked/vulture_droid_starfighter__Vulture_Droid.glb"
+   },
+   "winner": "liked/vulture_droid_starfighter__Vulture_Droid.glb"
+  },
+  "xwing_t65": {
+   "picks": {
+    "liked/fang_fighter__High_Poly_X-Wing_Fighter.glb|xwing_t65_opt.glb": "xwing_t65_opt.glb",
+    "liked/x-wing_t-65_starfighter__Star_Wars_X-wing_Fighter.glb|liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars__s1.glb": "liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars__s1.glb",
+    "liked/x-wing_t-65_starfighter__T-65_X-wing_Starfighter_-_Star_Wars__s1.glb|xwing_t65_opt.glb": "xwing_t65_opt.glb",
+    "liked/x-wing_t-65_starfighter__X-Wing_T-65.glb|xwing_t65_heataker_objaverse.glb": "liked/x-wing_t-65_starfighter__X-Wing_T-65.glb",
+    "liked/x-wing_t-65_starfighter__X-Wing_T-65.glb|xwing_t65_opt.glb": "xwing_t65_opt.glb"
+   },
+   "winner": "xwing_t65_opt.glb"
+  },
+  "xwing_t70": {
+   "picks": {
+    "liked/t-70_x-wing__Incom_T-70_X-Wing_-_Wings_Closed.glb|liked/t-70_x-wing__Incom_T-70_X-Wing_-_Wings_Open.glb": "liked/t-70_x-wing__Incom_T-70_X-Wing_-_Wings_Open.glb",
+    "liked/t-70_x-wing__Incom_T-70_X-Wing_-_Wings_Open.glb|liked/t-70_x-wing__STAR_WARS_-_INCOM_T-70_X-WING_FIGHTER.glb": "liked/t-70_x-wing__STAR_WARS_-_INCOM_T-70_X-WING_FIGHTER.glb",
+    "liked/t-70_x-wing__STAR_WARS_-_INCOM_T-70_X-WING_FIGHTER.glb|liked/t-85_x-wing__Incom-FreiTek_T-70_X-wing_-_Black_One.glb": "liked/t-70_x-wing__STAR_WARS_-_INCOM_T-70_X-WING_FIGHTER.glb"
+   },
+   "winner": "liked/t-70_x-wing__STAR_WARS_-_INCOM_T-70_X-WING_FIGHTER.glb"
+  },
+  "ywing_btla4": {
+   "picks": {
+    "liked/b-wing_starfighter__BTL-B_Y-Wing.glb|liked/y-wing_starfighter__Y-wing_Starfighter_-_Star_Wars.glb": "liked/y-wing_starfighter__Y-wing_Starfighter_-_Star_Wars.glb",
+    "liked/y-wing_starfighter__Star_Wars_Y-wing_Fighter_Bomber.glb|liked/y-wing_starfighter__Y-wing_Starfighter_-_Star_Wars.glb": "liked/y-wing_starfighter__Y-wing_Starfighter_-_Star_Wars.glb",
+    "liked/y-wing_starfighter__Star_Wars_Y-wing_Fighter_Bomber.glb|liked/y-wing_starfighter__Y-wing_starfighter.glb": "liked/y-wing_starfighter__Star_Wars_Y-wing_Fighter_Bomber.glb"
+   },
+   "winner": "liked/y-wing_starfighter__Y-wing_Starfighter_-_Star_Wars.glb"
+  },
+  "z95_headhunter": {
+   "picks": {
+    "liked/z-95_headhunter__Incom_Z-95-AF4_Headhunter.glb|liked/z-95_headhunter__Star_Wars_Z-95_Headhunter.glb": "liked/z-95_headhunter__Star_Wars_Z-95_Headhunter.glb",
+    "liked/z-95_headhunter__Star_Wars_Z-95_Headhunter.glb|liked/z-95_headhunter__Z-95_Headhunter.glb": "liked/z-95_headhunter__Star_Wars_Z-95_Headhunter.glb"
+   },
+   "winner": "liked/z-95_headhunter__Star_Wars_Z-95_Headhunter.glb"
+  }
+ }
+}

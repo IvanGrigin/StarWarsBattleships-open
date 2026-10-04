@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "phasma",
+  "display_name": "Фазма",
+  "description": "Грозная воительница и командир штурмовиков Первого Ордена.",
+  "ability": {
+    "id": "accuracy",
+    "name": "Точность",
+    "text": "Все броски кубика, при атаке, увеличиваются на 1",
+    "kind": "passive",
+    "trigger": "passive_always",
+    "condition": [],
+    "target_filter": null,
+    "cost": { "charges_mode": "fixed", "charges": 0, "consumes_ship_attack": false },
+    "uses_per_match": 0,
+    "effect_sequence": [
+      {
+        "op": "apply_passive_bonus",
+        "params": { "bonus": 1, "scope": "attack_rolls_of_owner_ships" }
+      }
+    ],
+    "priority": 0,
+    "friendly_fire": false,
+    "expires_at": "match_end",
+    "events": [],
+    "test_plan": {
+      "positive": "C017+ (план): корабль владельца атакует с броском 3 и сектором F +1 — итоговая сила 5 (3 + 1 пассивка + 1 сектор); бонус отражён в StrengthCalculated.total и не расходует использований.",
+      "negative": "C017− (план): защитные броски кораблей владельца бонус не получают; броски кораблей сидов без Фазмы не изменяются; бонус не применяется в драфте и вне боя; state hash без боя не меняется."
+    },
+    "design_notes": "Область бонуса определена по рекомендации MASTER_PLAN_RU §4.9: +1 ко всем АТАКУЮЩИМ броскам всех кораблей владельца до конца матча; защитные броски не усиливаются. В формуле core-api §4.4 входит слагаемым «permanent passives» и применяется до всех реакций (priority: 0 — конвенция «меньше — раньше»). uses_per_match: 0 — конвенция «пассивная способность без расхода использований» (rules-v3 §9.6). Событий не создаёт: бонус проявляется только в StrengthCalculated.total; прежнее поле value: 1 перенесено в params.bonus.",
+    "proposal_v3": [
+      "область: только атакующие броски кораблей владельца, до конца матча",
+      "priority: 0 — пассивка применяется до всех реакций"
+    ]
+  }
+}

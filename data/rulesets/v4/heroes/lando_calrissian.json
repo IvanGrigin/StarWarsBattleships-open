@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "id": "lando_calrissian",
+  "display_name": "Лэндо Калриссиан",
+  "description": "Барон-администратор Облачного города, позже генерал Альянса.",
+  "faction": "rebels",
+  "era": "any",
+  "ability": {
+    "id": "cape_and_bluff",
+    "name": "Блеф",
+    "text": "1 раз в игру: объявите блеф до броска боя. Если вы выигрываете бросок, урон удваивается; если проигрываете — вы теряете дополнительно 1 HP.",
+    "kind": "active",
+    "trigger": "before_dice_rolled",
+    "condition": [],
+    "target_filter": null,
+    "cost": {
+      "charges_mode": "fixed",
+      "charges": 0,
+      "consumes_ship_attack": false
+    },
+    "uses_per_match": 1,
+    "effect_sequence": [
+      {
+        "op": "double_or_nothing",
+        "params": {
+          "win_multiplier": 2,
+          "lose_extra_damage": 1
+        }
+      }
+    ],
+    "priority": 20,
+    "friendly_fire": false,
+    "expires_at": "immediate",
+    "events": [
+      "AbilityUsed"
+    ]
+  },
+  "synergy": {
+    "id": "baron_administrator",
+    "name": "Барон-администратор",
+    "text": "Если во флоте есть корабль повстанцев, бюджет драфта увеличивается на 2 очка.",
+    "scope": "fleet",
+    "condition": {
+      "faction": "rebels",
+      "min_ships": 1
+    },
+    "effects": [
+      {
+        "op": "draft_budget_bonus",
+        "params": {
+          "value": 2
+        }
+      }
+    ]
+  },
+  "draft_cost": 5
+}

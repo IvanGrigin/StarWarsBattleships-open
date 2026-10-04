@@ -1,0 +1,588 @@
+<meta charset="utf-8">
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --ground:#0a1020; --panel:#0f1830; --panel2:#132042; --line:#22314f; --grid:#1a2742;
+  --text:#dbe4f5; --muted:#8394b5; --faint:#56668a;
+  --A:#f0a93b; --A-soft:rgba(240,169,59,.16); --B:#52c3f0; --B-soft:rgba(82,195,240,.16);
+  --hit:#ff6b6b; --shield:#8fb8ff; --good:#7be0a0; --mine:#e6d36a;
+  --display:"Russo One","Exo 2",system-ui,sans-serif; --body:"Exo 2",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--ground)}
+body{color:var(--text);font:15px/1.45 var(--body);padding-inline:16px;padding-block:14px 28px}
+.wrap{max-width:1320px;margin:0 auto;display:grid;gap:14px}
+header.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 18px}
+h1{font:400 clamp(20px,2.6vw,28px)/1.15 var(--display);letter-spacing:.02em;margin:0;text-wrap:balance}
+h1 .vs{color:var(--muted);font-size:.7em;margin-inline:.35em}
+h1 .a{color:var(--A)} h1 .b{color:var(--B)}
+.meta{color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.meta b{color:var(--text);font-weight:600}
+
+.stage{display:grid;grid-template-columns:minmax(230px,280px) minmax(0,1fr) minmax(230px,280px);gap:14px;align-items:start}
+@media (max-width:1060px){.stage{grid-template-columns:1fr 1fr}.board-col{grid-column:1/-1;order:-1}}
+@media (max-width:640px){.stage{grid-template-columns:1fr}}
+
+.side{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 12px 10px;display:grid;gap:10px}
+.side.A{border-top:3px solid var(--A)} .side.B{border-top:3px solid var(--B)}
+.side .who{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.tag{font:600 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.bot{font:600 12px/1 var(--mono);padding:4px 7px;border-radius:5px;background:var(--panel2);color:var(--text)}
+.side.A .bot{box-shadow:inset 0 0 0 1px var(--A)} .side.B .bot{box-shadow:inset 0 0 0 1px var(--B)}
+.hero-name{font:400 19px/1.1 var(--display);margin:0}
+.side.A .hero-name{color:var(--A)} .side.B .hero-name{color:var(--B)}
+.faction{color:var(--muted);font-size:12.5px}
+.abil{display:grid;gap:6px;font-size:12.5px;color:var(--muted)}
+.abil div b{color:var(--text);font-weight:600}
+.abil .used{color:var(--good);font:600 11px var(--mono);margin-left:4px}
+.fleet{display:grid;gap:8px}
+.ship{display:grid;grid-template-columns:30px 1fr;gap:4px 8px;align-items:center;padding:7px 8px;border-radius:8px;background:var(--panel2);transition:background .25s,opacity .25s}
+.ship.active{background:#1b2b55}
+.ship.dead{opacity:.38}
+.ship .code{grid-row:span 3;font:600 13px/1 var(--mono);text-align:center;padding:6px 0;border-radius:6px;color:#0a1020}
+.side.A .code{background:var(--A)} .side.B .code{background:var(--B)}
+.ship .nm{font-weight:600;font-size:13.5px;line-height:1.2}
+.ship .sub{font-size:11.5px;color:var(--muted)}
+.bars{display:flex;align-items:center;gap:8px;font:12px var(--mono);font-variant-numeric:tabular-nums}
+.hp{flex:1;height:7px;border-radius:4px;background:#0a1020;overflow:hidden;display:flex}
+.hp i{display:block;height:100%;background:var(--good);transition:width .35s}
+.hp i.sh{background:var(--shield)}
+.pips{display:flex;gap:3px}
+.pips i{width:7px;height:7px;border-radius:2px;background:#26365c}
+.pips i.on{background:#e7eefc}
+
+.board-col{display:grid;gap:10px}
+.board{background:radial-gradient(120% 90% at 50% 45%,#12203f 0%,var(--ground) 72%);border:1px solid var(--line);border-radius:12px;position:relative;overflow:hidden}
+.board svg{display:block;width:100%;height:auto;max-height:min(66vh,640px)}
+.caption{position:absolute;left:12px;right:12px;top:10px;display:flex;justify-content:space-between;gap:10px;pointer-events:none}
+.rnd{font:400 13px/1 var(--display);letter-spacing:.06em;color:var(--muted);background:rgba(10,16,32,.7);padding:6px 9px;border-radius:6px}
+.rnd b{color:var(--text);font-weight:400}
+.turn{font:600 12px/1 var(--body);padding:6px 9px;border-radius:6px;background:rgba(10,16,32,.7)}
+.now{min-height:44px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;display:flex;align-items:center;gap:10px}
+.now .dot{width:10px;height:10px;border-radius:50%;flex:none}
+.now .txt{flex:1}
+.dice{font:600 13px var(--mono);white-space:nowrap}
+.dice .d{display:inline-block;min-width:20px;padding:1px 4px;margin-right:2px;border-radius:4px;background:#e7eefc;color:#0a1020;text-align:center}
+.dice .dd{background:#2a3b63;color:var(--text)}
+
+.controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+button{font:600 13px/1 var(--body);color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:9px 12px;cursor:pointer;min-width:40px}
+button:hover{border-color:#3a5286}
+button:focus-visible,input:focus-visible,select:focus-visible,.chron li:focus-visible{outline:2px solid var(--B);outline-offset:2px}
+button.play{background:#1d3566;border-color:#35558f;min-width:92px}
+select{font:600 13px var(--body);color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:8px}
+.pos{font:12px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto}
+.timeline{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 10px 6px}
+.timeline .lab{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-bottom:2px}
+.timeline svg{display:block;width:100%;height:74px;cursor:pointer}
+input[type=range]{width:100%;accent-color:var(--B);margin:2px 0 0}
+
+.right-col{display:grid;gap:14px}
+.chron{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 6px 10px 10px}
+.chron h2,.draft h2{font:400 14px/1 var(--display);letter-spacing:.06em;margin:0 0 8px;color:var(--muted)}
+.chron ol{list-style:none;margin:0;padding:0 4px 0 0;max-height:430px;overflow:auto;display:grid;gap:4px}
+.chron li{font-size:12.5px;padding:6px 8px;border-radius:6px;cursor:pointer;border-left:3px solid transparent;background:transparent}
+.chron li:hover{background:var(--panel2)}
+.chron li.cur{background:#1b2b55}
+.chron li.A{border-left-color:var(--A)} .chron li.B{border-left-color:var(--B)}
+.chron li .r{font:11px var(--mono);color:var(--faint);margin-right:6px}
+.chron li.round{cursor:default;border:0;font:400 11px var(--display);letter-spacing:.1em;color:var(--faint);padding:8px 8px 2px;background:none}
+.chron li .k{color:var(--hit);font-weight:600}
+.draft{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.draft ol{margin:0;padding-left:20px;display:grid;gap:3px;font-size:12.5px}
+.draft li::marker{color:var(--faint);font:11px var(--mono)}
+.draft .A{color:var(--A)} .draft .B{color:var(--B)}
+.legend{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px}
+.winner{font:400 12px/1 var(--display);letter-spacing:.08em;padding:5px 8px;border-radius:5px;background:var(--good);color:#0a1020}
+@keyframes pulse{0%,100%{opacity:.9}50%{opacity:.35}}
+.pulse{animation:pulse 1.4s ease-in-out infinite}
+@keyframes rise{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-26px)}}
+.float{animation:rise 1.5s ease-out forwards}
+.tok{transition:transform .42s cubic-bezier(.3,.7,.2,1),opacity .4s}
+.hull{transition:transform .42s cubic-bezier(.3,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){.tok,.hull,.hp i{transition:none}.pulse,.float{animation:none}}
+.note{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--muted);border-radius:10px;padding:10px 14px;font-size:14px;line-height:1.55;max-width:none}
+.note.A{border-left-color:var(--A)} .note.B{border-left-color:var(--B)}
+.note .tag{display:block;margin-bottom:4px}
+.note b{color:#fff;font-weight:600}
+.cards{display:grid;gap:14px}
+.cards h2{font:400 14px/1 var(--display);letter-spacing:.06em;margin:0;color:var(--muted)}
+.cardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:linear-gradient(180deg,#15234a 0%,var(--panel) 38%);border:1px solid #2b3d66;border-radius:14px;padding:12px;display:grid;gap:9px;align-content:start;position:relative;scroll-margin-top:16px}
+.card.A{box-shadow:inset 0 3px 0 var(--A)} .card.B{box-shadow:inset 0 3px 0 var(--B)}
+.card .hd{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.card .ttl{font:400 16px/1.15 var(--display);margin:0;text-wrap:balance}
+.card.A .ttl{color:var(--A)} .card.B .ttl{color:var(--B)}
+.card .cost{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:400 15px var(--display);background:#e7eefc;color:#0a1020}
+.card .kind{font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+.card .badge{font:600 11px var(--mono);padding:2px 6px;border-radius:4px;color:#0a1020;margin-right:6px}
+.card.A .badge{background:var(--A)} .card.B .badge{background:var(--B)}
+.card .mid{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:center}
+.card .stats{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:12px}
+.card .stats dt{color:var(--muted)} .card .stats dd{margin:0;font:600 12px var(--mono);font-variant-numeric:tabular-nums}
+.card .txt{font-size:12.5px;line-height:1.45;color:#c6d1e8;display:grid;gap:6px;border-top:1px solid #243558;padding-top:8px}
+.card .txt b{color:var(--text)}
+.card .flav{font-style:italic;color:var(--muted);font-size:12px}
+footer{color:var(--faint);font-size:12px;max-width:80ch}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1 id="title"></h1>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="stage">
+    <section class="side A" id="sideA" aria-label="Сторона A"></section>
+
+    <div class="board-col">
+      <div class="board">
+        <svg id="board" role="img" aria-label="Поле боя"></svg>
+        <div class="caption"><span class="rnd" id="rnd"></span><span class="turn" id="turn"></span></div>
+      </div>
+      <div class="now" id="now"><span class="dot" id="nowdot"></span><span class="txt" id="nowtxt"></span></div>
+      <div class="note" id="note" aria-live="polite"></div>
+      <div class="controls">
+        <button id="first" title="В начало (Home)" aria-label="В начало">⏮</button>
+        <button id="prevAct" title="Предыдущая активация (Shift+←)" aria-label="Предыдущая активация">⏪</button>
+        <button id="prev" title="Шаг назад (←)" aria-label="Шаг назад">◀</button>
+        <button id="play" class="play" title="Пуск / пауза (пробел)">▶ Пуск</button>
+        <button id="next" title="Шаг вперёд (→)" aria-label="Шаг вперёд">▶</button>
+        <button id="nextAct" title="Следующая активация (Shift+→)" aria-label="Следующая активация">⏩</button>
+        <button id="last" title="В конец (End)" aria-label="В конец">⏭</button>
+        <label for="speed" class="tag" style="margin-left:6px">Скорость</label>
+        <select id="speed"><option value="0.5">×0.5</option><option value="1" selected>×1</option><option value="2">×2</option><option value="4">×4</option></select>
+        <span class="pos" id="pos"></span>
+      </div>
+      <div class="timeline">
+        <div class="lab"><span>Перевес сил по ходу партии: выше середины — сторона A, ниже — B</span><span id="shareNow"></span></div>
+        <svg id="spark" preserveAspectRatio="none" aria-label="График перевеса сил"></svg>
+        <input type="range" id="scrub" min="0" value="0" aria-label="Кадр партии">
+      </div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--good)"></i>корпус (HP)</span>
+        <span><i class="sw" style="background:var(--shield)"></i>щит</span>
+        <span><i class="sw" style="background:#e7eefc"></i>заряды</span>
+        <span>цифры вокруг активного корабля — бонус сектора F FR BR B BL FL</span>
+        <span><i class="sw" style="background:var(--mine)"></i>мина / бомба</span>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <section class="side B" id="sideB" aria-label="Сторона B"></section>
+    </div>
+  </div>
+
+  <div class="stage" style="grid-template-columns:minmax(0,2fr) minmax(0,1fr)">
+    <section class="chron"><h2>ХРОНИКА ПАРТИИ</h2><ol id="chron"></ol></section>
+    <section class="draft"><h2>ДРАФТ ИЗ ОБЩЕГО КАТАЛОГА</h2><ol id="draft"></ol>
+      <p class="faction" style="margin:10px 0 0">Фигурки берутся по очереди «змейкой» (A B B A A B B A): каждый ход — любой герой или корабль, взятая карточка у соперника уже не появится.</p>
+    </section>
+  </div>
+  <section class="cards"><h2>КАРТОЧКИ УЧАСТНИКОВ</h2><div class="cardgrid" id="cards"></div></section>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const R = /*REPLAY*/null;
+const F = R.frames;
+const SI = R.ship_info, HI = R.hero_info, FAC = R.factions || {};
+const BOTS = {tactical:"Тактический бот", neural:"Нейросеть", greedy:"Жадный бот", random:"Случайный бот"};
+const SEC = ["F","FR","BR","B","BL","FL"];
+const REL = ["вперёд","вперёд-вправо","назад-вправо","назад","назад-влево","вперёд-влево"];
+const DIRS = [[0,-1],[1,-1],[1,0],[0,1],[-1,1],[-1,0]];
+const ROLE = {fighter:"истребитель",interceptor:"перехватчик",bomber:"бомбардировщик",support:"поддержка",transport:"транспорт",freighter:"грузовик",corvette:"корвет",frigate:"фрегат",capital:"крупный корабль",station:"станция"};
+const REACT = {rey:"Рей перебрасывает кубик",luke:"Люк: «Точный выстрел»",obi:"Оби-Ван: «Мимо»",mace:"Мейс Винду: «Ваапад»"};
+const NS = "http://www.w3.org/2000/svg";
+const S = 34, SQ3 = Math.sqrt(3), RAD = 4;
+const seatOf = uid => uid < R.fleets[0].length ? 0 : 1;
+const codeOf = uid => (seatOf(uid) ? "B" : "A") + (seatOf(uid) ? uid - R.fleets[0].length + 1 : uid + 1);
+const sideCls = s => s ? "B" : "A";
+const shipName = (uid, f) => SI[(f || F[cur]).ships[uid][7]].display_name;
+
+// ---- геометрия: поле повёрнуто так, что направление N (0) смотрит вверх
+const raw = (q, r) => [SQ3 * (q + r / 2), 1.5 * r];
+const d0 = raw(0, -1), rot = -Math.PI / 2 - Math.atan2(d0[1], d0[0]);
+const cR = Math.cos(rot), sR = Math.sin(rot);
+function P(q, r){ const [x, y] = raw(q, r); return [S * (x * cR - y * sR), S * (x * sR + y * cR)]; }
+const dirAng = DIRS.map(([dq, dr]) => { const [x, y] = P(dq, dr); return Math.atan2(y, x) * 180 / Math.PI + 90; });
+const cells = [];
+for (let q = -RAD; q <= RAD; q++) for (let r = -RAD; r <= RAD; r++) if (Math.max(Math.abs(q), Math.abs(r), Math.abs(q + r)) <= RAD) cells.push([q, r]);
+
+function el(tag, attrs = {}, parent){ const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+function h(tag, cls, html){ const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+
+// ---- поле
+const svg = document.getElementById("board");
+let minX = 1e9, maxX = -1e9, minY = 1e9, maxY = -1e9;
+cells.forEach(([q, r]) => { const [x, y] = P(q, r); minX = Math.min(minX, x); maxX = Math.max(maxX, x); minY = Math.min(minY, y); maxY = Math.max(maxY, y); });
+const pad = S * 1.25;
+svg.setAttribute("viewBox", `${minX - pad} ${minY - pad - 14} ${maxX - minX + 2 * pad} ${maxY - minY + 2 * pad + 14}`);
+const gGrid = el("g", {}, svg), gMarks = el("g", {}, svg), gArcs = el("g", {}, svg), gShips = el("g", {}, svg), gFx = el("g", {}, svg);
+function hexPts(cx, cy, s){ const pts = []; for (let k = 0; k < 6; k++){ const a = rot + Math.PI / 180 * (60 * k + 30); pts.push((cx + s * Math.cos(a)).toFixed(1) + "," + (cy + s * Math.sin(a)).toFixed(1)); } return pts.join(" "); }
+cells.forEach(([q, r]) => { const [x, y] = P(q, r); el("polygon", {points: hexPts(x, y, S - 1.2), fill: "#0e1830", stroke: "#22314f", "stroke-width": 1}, gGrid); });
+// стартовые линии сторон
+[[0, "var(--A)"], [1, "var(--B)"]].forEach(([seat, col]) => {
+  const fr = F[0].ships.filter((_, i) => seatOf(i) === seat);
+  fr.forEach(s => { const [x, y] = P(s[0], s[1]); el("polygon", {points: hexPts(x, y, S - 5), fill: "none", stroke: col, "stroke-opacity": .28, "stroke-dasharray": "3 4"}, gGrid); });
+});
+
+// корабли: внешний g — позиция (+подписи), внутренний — поворот корпуса
+const tok = F[0].ships.map((s, uid) => {
+  const g = el("g", {class: "tok"}, gShips);
+  const col = seatOf(uid) ? "var(--B)" : "var(--A)";
+  const ring = el("circle", {r: S * .8, fill: "none", stroke: col, "stroke-width": 2, class: "pulse"}, g);
+  const hull = el("g", {class: "hull"}, g);
+  const cap = SI[s[7]].role === "capital";
+  const k = cap ? 1.25 : 1;
+  el("path", {d: `M0 ${-19 * k} L${13 * k} ${12 * k} L0 ${6 * k} L${-13 * k} ${12 * k} Z`, fill: col, stroke: "#0a1020", "stroke-width": 1.5}, hull);
+  el("circle", {cx: 0, cy: -19 * k, r: 2.6, fill: "#fff"}, hull);
+  const lbl = el("text", {y: S * .9 + 4, "text-anchor": "middle", "font-family": "JetBrains Mono, monospace", "font-size": 10.5, "font-weight": 600, fill: col}, g);
+  lbl.textContent = codeOf(uid);
+  const bar = el("g", {transform: `translate(${-S * .55},${-S * .95})`}, g);
+  const wreck = el("path", {d: "M-10 -10 L10 10 M10 -10 L-10 10", stroke: "#ff6b6b", "stroke-width": 3, opacity: 0, "stroke-linecap": "round"}, g);
+  return {g, ring, hull, bar, wreck, ang: dirAng[s[2]]};
+});
+
+function drawBar(t, s){
+  t.bar.innerHTML = "";
+  const w = S * 1.1, hp = s[3], mh = s[8], sh = s[4], ms = s[9], tot = Math.max(1, mh + ms);
+  el("rect", {width: w, height: 5, rx: 2, fill: "#0a1020"}, t.bar);
+  el("rect", {width: w * Math.max(0, hp) / tot, height: 5, rx: 2, fill: "var(--good)"}, t.bar);
+  if (sh > 0) el("rect", {x: w * Math.max(0, hp) / tot, width: w * sh / tot, height: 5, fill: "var(--shield)"}, t.bar);
+}
+
+// ---- стороны
+function sidePanel(seat){
+  const box = document.getElementById(seat ? "sideB" : "sideA");
+  const hid = R.heroes[seat], hi = HI[hid];
+  const fac = FAC[hi.faction] || {short: hi.faction};
+  box.innerHTML = `<div class="who"><span class="tag">Сторона ${seat ? "B" : "A"}</span><span class="bot">${BOTS[R.bots[seat]] || R.bots[seat]}</span></div>
+    <div><p class="hero-name">${hi.name}</p><div class="faction">${fac.short || fac.display_name || ""}</div></div>
+    <div class="abil"><div><b>${hi.ability.name}.</b> ${hi.ability.text}<span class="used" id="used${seat}"></span></div>
+    <div><b>${hi.synergy.name}.</b> ${hi.synergy.text}</div></div>
+    <div class="fleet" id="fleet${seat}"></div>`;
+  const fl = box.querySelector(".fleet");
+  F[0].ships.forEach((s, uid) => {
+    if (seatOf(uid) !== seat) return;
+    const info = SI[s[7]];
+    const row = h("div", "ship"); row.id = "row" + uid;
+    row.innerHTML = `<span class="code">${codeOf(uid)}</span><span class="nm" id="nm${uid}">${info.display_name}</span>
+      <span class="sub">${ROLE[info.role] || info.role} · ${info.draft_cost} оч. · дальность ${info.weapon.max_range}${info.abilities.length ? " · " + info.abilities.join(", ") : ""}</span>
+      <span class="bars"><span class="hp" id="hp${uid}"><i></i><i class="sh"></i></span><span id="hpn${uid}"></span><span class="pips" id="ch${uid}"></span></span>`;
+    fl.appendChild(row);
+  });
+}
+sidePanel(0); sidePanel(1);
+
+// ---- описание кадров
+function rollHtml(e, f){
+  const tot = e.a[0] + e.a[1] + e.off - e.d;
+  const sign = e.off >= 0 ? "+" : "−";
+  return `<span class="dice"><span class="d">${e.a[0]}</span><span class="d">${e.a[1]}</span> ${sign}${Math.abs(e.off)} против <span class="d dd">${e.d}</span> → ${Math.max(0, tot)}</span>`;
+}
+function describe(i){
+  const f = F[i], a = f.act, prev = F[Math.max(0, i - 1)];
+  if (a[0] === "start") return {txt: `Расстановка. Сторона A (${HI[R.heroes[0]].name}) внизу, сторона B (${HI[R.heroes[1]].name}) вверху. Первой ходит сторона A.`};
+  const uid = a[0] === "activate" ? a[1] : prev.active;
+  const who = uid != null ? `<b>${codeOf(uid)} ${shipName(uid, prev)}</b>` : "";
+  const facing = uid != null ? prev.ships[uid][2] : 0;
+  let txt = "", dice = "";
+  const rolls = f.ev.filter(e => e.t === "roll");
+  switch (a[0]) {
+    case "activate": txt = `${who} начинает активацию (зарядов: ${f.ships[uid][5]}).`; break;
+    case "move": txt = `${who}: шаг ${REL[(a[1] - facing + 6) % 6]}.`; break;
+    case "boost": txt = `${who}: форсаж — две клетки по курсу.`; break;
+    case "rot": txt = `${who}: поворот ${a[1] > 0 ? "вправо" : "влево"}.`; break;
+    case "end": txt = `${who} завершает активацию.`; break;
+    case "attack": txt = `${who} атакует <b>${codeOf(a[1])} ${shipName(a[1], prev)}</b>.`; break;
+    case "hero": {
+      const hid = R.heroes[f.seat];
+      txt = `${who}: способность героя — <b>«${HI[hid].ability.name}»</b>.`;
+      if (a[1] === "palpatine") txt += " Корабль получает заряды и лишнюю атаку.";
+      break;
+    }
+  }
+  const extra = [];
+  f.ev.forEach(e => {
+    if (e.t === "kill") extra.push(`<span class="k">${codeOf(e.uid)} ${shipName(e.uid, prev)} уничтожен.</span>`);
+    if (e.t === "react") extra.push(REACT[e.key] || "реакция героя");
+    if (e.t === "cancel") extra.push(`${HI[e.hero] ? HI[e.hero].ability.name : e.hero}: атака отменена.`);
+    if (e.t === "mine") extra.push(`${codeOf(e.uid)} подрывается на мине.`);
+    if (e.t === "bomb") extra.push(`Бомба попадает в ${codeOf(e.uid)}.`);
+  });
+  const dmg = dmgList(i).map(d => `${codeOf(d.uid)}: ${d.sh ? "−" + d.sh + " щит " : ""}${d.hp ? "−" + d.hp + " HP" : ""}`.trim());
+  if (dmg.length) extra.push("Урон — " + dmg.join(", ") + ".");
+  else if (rolls.length && a[0] !== "hero") extra.push("Промах: защита выдержала.");
+  if (rolls.length) dice = rolls.map(e => rollHtml(e, f)).join(" &nbsp; ");
+  return {txt: txt + (extra.length ? " " + extra.join(" ") : ""), dice};
+}
+function dmgList(i){
+  if (!i) return [];
+  const a = F[i - 1].ships, b = F[i].ships, out = [];
+  b.forEach((s, uid) => { const dh = a[uid][3] - Math.max(0, s[3]), ds = a[uid][4] - s[4]; if (dh > 0 || ds > 0) out.push({uid, hp: Math.max(0, dh), sh: Math.max(0, ds)}); });
+  return out;
+}
+
+// ---- хроника: одна строка на активацию
+const chron = document.getElementById("chron");
+const groups = [];
+let g = null, lastRound = 0;
+F.forEach((f, i) => {
+  if (f.act[0] === "activate") { g = {start: i, end: i, seat: f.seat, uid: f.act[1], round: F[i - 1] ? F[i - 1].round : 1, acts: []}; groups.push(g); }
+  if (!g) return;
+  g.end = i;
+  if (f.act[0] === "attack" || f.act[0] === "hero") {
+    const d = dmgList(i).filter(x => seatOf(x.uid) !== g.seat).reduce((s, x) => s + x.hp + x.sh, 0);
+    const kills = f.ev.filter(e => e.t === "kill").map(e => codeOf(e.uid));
+    const tgt = f.act[0] === "attack" ? `атака ${codeOf(f.act[1])}` : `«${HI[R.heroes[g.seat]].ability.name}»`;
+    g.acts.push(`${tgt}${d ? " → " + d + " урона" : " → мимо"}${kills.length ? ` <span class="k">✕ ${kills.join(", ")}</span>` : ""}`);
+  } else if (["move", "boost", "rot"].includes(f.act[0])) {
+    g.moves = (g.moves || 0) + 1;
+  }
+});
+groups.forEach((gr, k) => {
+  if (gr.round !== lastRound) { const li = h("li", "round", `РАУНД ${gr.round}`); chron.appendChild(li); lastRound = gr.round; }
+  const li = h("li", sideCls(gr.seat));
+  li.tabIndex = 0;
+  const mv = gr.moves ? `${gr.moves} ${gr.moves === 1 ? "манёвр" : gr.moves < 5 ? "манёвра" : "манёвров"}` : "без манёвров";
+  li.innerHTML = `<span class="r">${codeOf(gr.uid)}</span>${SI[F[gr.start].ships[gr.uid][7]].display_name}: ${[mv].concat(gr.acts).join(", ")}`;
+  li.onclick = () => { stop(); show(gr.start); };
+  li.onkeydown = e => { if (e.key === "Enter") li.onclick(); };
+  gr.li = li; chron.appendChild(li);
+});
+
+// ---- драфт
+const dr = document.getElementById("draft");
+(R.draft_order || []).forEach(([seat, kind, id]) => {
+  const name = kind === "hero" ? `герой ${HI[id] ? HI[id].name : id}` : (SI[id] ? SI[id].display_name : id);
+  dr.appendChild(h("li", "", `<span class="${sideCls(seat)}">${seat ? "B" : "A"}</span> — ${name}`));
+});
+
+// ---- график перевеса
+const spark = document.getElementById("spark");
+const W = 1000, H = 74;
+spark.setAttribute("viewBox", `0 0 ${W} ${H}`);
+const X = i => i / (F.length - 1) * W, Y = v => H - v * H;
+el("rect", {x: 0, y: 0, width: W, height: H / 2, fill: "rgba(240,169,59,.06)"}, spark);
+el("rect", {x: 0, y: H / 2, width: W, height: H / 2, fill: "rgba(82,195,240,.06)"}, spark);
+let rPrev = 1;
+F.forEach((f, i) => { if (f.round !== rPrev) { el("line", {x1: X(i), x2: X(i), y1: 0, y2: H, stroke: "#22314f", "stroke-width": 1, "vector-effect": "non-scaling-stroke"}, spark); rPrev = f.round; } });
+el("line", {x1: 0, x2: W, y1: H / 2, y2: H / 2, stroke: "#56668a", "stroke-dasharray": "4 4", "vector-effect": "non-scaling-stroke"}, spark);
+const pts = F.map((f, i) => `${X(i).toFixed(1)},${Y(f.share).toFixed(1)}`).join(" ");
+el("polyline", {points: pts, fill: "none", stroke: "#dbe4f5", "stroke-width": 2, "vector-effect": "non-scaling-stroke", "stroke-linejoin": "round"}, spark);
+F.forEach((f, i) => { if (f.ev.some(e => e.t === "kill")) el("circle", {cx: X(i), cy: Y(f.share), r: 4, fill: seatOf(f.ev.find(e => e.t === "kill").uid) ? "var(--A)" : "var(--B)", stroke: "#0a1020"}, spark); });
+const marker = el("line", {x1: 0, x2: 0, y1: 0, y2: H, stroke: "var(--B)", "stroke-width": 2, "vector-effect": "non-scaling-stroke"}, spark);
+spark.addEventListener("click", ev => { const b = spark.getBoundingClientRect(); stop(); show(Math.round((ev.clientX - b.left) / b.width * (F.length - 1))); });
+
+// ---- отрисовка кадра
+let cur = 0;
+const scrub = document.getElementById("scrub");
+scrub.max = F.length - 1;
+scrub.oninput = () => { stop(); show(+scrub.value); };
+
+function show(i){
+  i = Math.max(0, Math.min(F.length - 1, i));
+  const f = F[i], prev = F[Math.max(0, i - 1)];
+  const jump = Math.abs(i - cur) > 1;
+  cur = i;
+  // корабли
+  f.ships.forEach((s, uid) => {
+    const t = tok[uid];
+    const [x, y] = P(s[0], s[1]);
+    let target = dirAng[s[2]];
+    let diff = ((target - t.ang) % 360 + 540) % 360 - 180;
+    t.ang += diff;
+    t.g.style.transform = `translate(${x}px,${y}px)`;
+    t.hull.style.transform = `rotate(${t.ang}deg)`;
+    t.g.style.opacity = s[6] ? 1 : .3;
+    t.wreck.setAttribute("opacity", s[6] ? 0 : .9);
+    t.ring.style.display = f.active === uid && s[6] ? "" : "none";
+    drawBar(t, s);
+    // панель
+    const row = document.getElementById("row" + uid);
+    row.classList.toggle("active", f.active === uid);
+    row.classList.toggle("dead", !s[6]);
+    document.getElementById("nm" + uid).textContent = SI[s[7]].display_name + (s[6] ? "" : " — уничтожен");
+    const tot = Math.max(1, s[8] + s[9]);
+    const bars = document.getElementById("hp" + uid).children;
+    bars[0].style.width = (100 * Math.max(0, s[3]) / tot) + "%";
+    bars[1].style.width = (100 * s[4] / tot) + "%";
+    document.getElementById("hpn" + uid).textContent = `${Math.max(0, s[3])}/${s[8]}${s[9] ? " · щ" + s[4] : ""}`;
+    const mc = SI[s[7]].max_charges, ch = document.getElementById("ch" + uid);
+    ch.innerHTML = Array.from({length: mc}, (_, k) => `<i class="${k < s[5] ? "on" : ""}"></i>`).join("");
+  });
+  // сектора активного корабля
+  gArcs.innerHTML = "";
+  if (f.active != null && f.ships[f.active][6]) {
+    const s = f.ships[f.active], [x, y] = P(s[0], s[1]), arcs = SI[s[7]].arc_modifiers;
+    for (let k = 0; k < 6; k++) {
+      const dir = (s[2] + k) % 6, [dx, dy] = P(DIRS[dir][0], DIRS[dir][1]);
+      const tx = x + dx * .56, ty = y + dy * .56 + 4;
+      const v = arcs[k];
+      const t = el("text", {x: tx, y: ty, "text-anchor": "middle", "font-family": "JetBrains Mono, monospace", "font-size": 11, "font-weight": 600,
+        fill: v > 0 ? "#7be0a0" : v < 0 ? "#ff6b6b" : "#56668a"}, gArcs);
+      t.textContent = (v > 0 ? "+" : "") + v;
+    }
+    // дальность стрельбы — подсветка клеток
+    const rng = SI[s[7]].weapon.max_range;
+    cells.forEach(([q, r]) => { const dd = (Math.abs(q - s[0]) + Math.abs(r - s[1]) + Math.abs(q + r - s[0] - s[1])) / 2;
+      if (dd >= 1 && dd <= rng) { const [cx, cy] = P(q, r); el("polygon", {points: hexPts(cx, cy, S - 3), fill: seatOf(f.active) ? "rgba(82,195,240,.07)" : "rgba(240,169,59,.07)"}, gArcs); } });
+  }
+  // мины и бомбы
+  gMarks.innerHTML = "";
+  f.mines.forEach(([q, r]) => { const [x, y] = P(q, r); el("circle", {cx: x, cy: y, r: 7, fill: "none", stroke: "var(--mine)", "stroke-width": 2}, gMarks); el("circle", {cx: x, cy: y, r: 2.5, fill: "var(--mine)"}, gMarks); });
+  f.bombs.forEach(([q, r]) => { const [x, y] = P(q, r); el("rect", {x: x - 6, y: y - 6, width: 12, height: 12, fill: "var(--mine)", transform: `rotate(45 ${x} ${y})`}, gMarks); });
+  // эффекты: линии атак и числа урона (только при пошаговом просмотре)
+  gFx.innerHTML = "";
+  f.ev.filter(e => e.t === "roll").forEach(e => {
+    const A = f.ships[e.att] || prev.ships[e.att], B = prev.ships[e.dfn];
+    const [x1, y1] = P(A[0], A[1]), [x2, y2] = P(B[0], B[1]);
+    el("line", {x1, y1, x2, y2, stroke: seatOf(e.att) ? "var(--B)" : "var(--A)", "stroke-width": 3, "stroke-linecap": "round", "stroke-dasharray": "2 7", opacity: .95}, gFx);
+    el("circle", {cx: x2, cy: y2, r: S * .55, fill: "none", stroke: "var(--hit)", "stroke-width": 2, opacity: .8}, gFx);
+  });
+  if (!jump) dmgList(i).forEach(d => {
+    const s = f.ships[d.uid], [x, y] = P(s[0], s[1]);
+    const t = el("text", {x, y: y - S * .2, "text-anchor": "middle", "font-family": "Russo One, sans-serif", "font-size": 17, fill: d.hp ? "var(--hit)" : "var(--shield)", class: "float", stroke: "#0a1020", "stroke-width": 3, "paint-order": "stroke"}, gFx);
+    t.textContent = "−" + (d.hp + d.sh);
+  });
+  // подписи
+  const done = i === F.length - 1;
+  document.getElementById("rnd").innerHTML = `РАУНД <b>${f.round}</b>`;
+  const ts = f.seat != null ? f.seat : 0;
+  const turn = document.getElementById("turn");
+  turn.textContent = done ? `Победа стороны ${R.winner ? "B" : "A"}` : `Ходит сторона ${ts ? "B" : "A"}`;
+  turn.style.color = (done ? R.winner : ts) ? "var(--B)" : "var(--A)";
+  const d = describe(i);
+  document.getElementById("nowtxt").innerHTML = d.txt + (d.dice ? "<br>" + d.dice : "");
+  document.getElementById("nowdot").style.background = f.seat == null ? "var(--muted)" : f.seat ? "var(--B)" : "var(--A)";
+  document.getElementById("pos").textContent = `кадр ${i + 1} / ${F.length}`;
+  document.getElementById("shareNow").textContent = `A ${(f.share * 100).toFixed(0)}% · B ${(100 - f.share * 100).toFixed(0)}%`;
+  scrub.value = i;
+  showNote(i);
+  marker.setAttribute("x1", X(i)); marker.setAttribute("x2", X(i));
+  // использованные способности
+  [0, 1].forEach(seat => {
+    const n = F.slice(0, i + 1).filter(x => x.act[0] === "hero" && x.seat === seat).length
+      + F.slice(0, i + 1).reduce((s, x) => s + x.ev.filter(e => (e.t === "react" && e.seat === seat) || (e.t === "cancel" && seatOf(e.dfn) === seat)).length, 0);
+    document.getElementById("used" + seat).textContent = n ? ` применена: ${n}` : "";
+  });
+  // хроника
+  groups.forEach(gr => gr.li.classList.toggle("cur", i >= gr.start && i <= gr.end));
+  const cg = groups.find(gr => i >= gr.start && i <= gr.end);
+  if (cg) { const box = chron, li = cg.li; if (li.offsetTop < box.scrollTop || li.offsetTop + li.offsetHeight > box.scrollTop + box.clientHeight) box.scrollTop = li.offsetTop - box.clientHeight / 3; }
+  // победитель на панели
+  document.querySelectorAll(".winner").forEach(x => x.remove());
+  if (done) { const w = document.querySelector(`#side${R.winner ? "B" : "A"} .who`); w.insertBefore(h("span", "winner", "ПОБЕДА"), w.lastChild); }
+}
+
+// ---- воспроизведение
+let timer = null;
+const playBtn = document.getElementById("play");
+function delay(i){
+  const a = F[i] ? F[i].act[0] : "end";
+  const base = a === "attack" || a === "hero" ? 1500 : a === "activate" ? 550 : a === "end" ? 250 : 480;
+  return base / +document.getElementById("speed").value;
+}
+function tick(){ if (cur >= F.length - 1) { stop(); return; } show(cur + 1); timer = setTimeout(tick, delay(cur)); }
+function play(){ if (cur >= F.length - 1) show(0); playBtn.textContent = "❚❚ Пауза"; timer = setTimeout(tick, 250); }
+function stop(){ clearTimeout(timer); timer = null; playBtn.textContent = "▶ Пуск"; }
+playBtn.onclick = () => timer ? stop() : play();
+const actStarts = groups.map(g => g.start);
+document.getElementById("next").onclick = () => { stop(); show(cur + 1); };
+document.getElementById("prev").onclick = () => { stop(); show(cur - 1); };
+document.getElementById("first").onclick = () => { stop(); show(0); };
+document.getElementById("last").onclick = () => { stop(); show(F.length - 1); };
+document.getElementById("nextAct").onclick = () => { stop(); show(actStarts.find(s => s > cur) ?? F.length - 1); };
+document.getElementById("prevAct").onclick = () => { stop(); show([...actStarts].reverse().find(s => s < cur) ?? 0); };
+document.addEventListener("keydown", e => {
+  if (e.target.closest("select,input")) return;
+  if (e.key === "ArrowRight") { e.preventDefault(); document.getElementById(e.shiftKey ? "nextAct" : "next").click(); }
+  if (e.key === "ArrowLeft") { e.preventDefault(); document.getElementById(e.shiftKey ? "prevAct" : "prev").click(); }
+  if (e.key === " ") { e.preventDefault(); playBtn.click(); }
+  if (e.key === "Home") document.getElementById("first").click();
+  if (e.key === "End") document.getElementById("last").click();
+});
+
+
+// ---- разбор хода
+const NOTES = R.notes || {};
+function noteFor(i){
+  if (!Object.keys(NOTES).length) return null;
+  const gr = groups.filter(g => g.start <= i).pop();
+  if (!gr) return NOTES["0"] ? {txt: NOTES["0"], seat: null} : null;
+  if (i === F.length - 1 && NOTES[String(groups[groups.length - 1].start)]) return {txt: NOTES[String(groups[groups.length - 1].start)], seat: gr.seat};
+  return NOTES[String(gr.start)] ? {txt: NOTES[String(gr.start)], seat: gr.seat} : null;
+}
+const noteBox = document.getElementById("note");
+function showNote(i){
+  const n = noteFor(i);
+  noteBox.hidden = !n;
+  if (!n) return;
+  noteBox.className = "note " + (n.seat == null ? "" : sideCls(n.seat));
+  noteBox.innerHTML = `<span class="tag">Разбор</span>${n.txt}`;
+}
+
+// ---- карточки
+const ERA = {fall_of_republic: "Падение Республики", galactic_civil_war: "Галактическая гражданская война", new_order: "Новый порядок", any: "любая эпоха"};
+const LR = {front: "только из сектора F", front_flank: "из F, FR, FL", all: "из любого сектора"};
+function wheel(arcs, seat){
+  const col = seat ? "#52c3f0" : "#f0a93b";
+  let out = `<svg viewBox="-50 -50 100 100" width="96" height="96" aria-label="Бонусы секторов">`;
+  const pts = []; for (let k = 0; k < 6; k++){ const a = Math.PI / 180 * (60 * k); pts.push(`${(44 * Math.cos(a)).toFixed(1)},${(44 * Math.sin(a)).toFixed(1)}`); }
+  out += `<polygon points="${pts.join(" ")}" fill="#0b1428" stroke="#2b3d66"/>`;
+  for (let k = 0; k < 6; k++){ const a = Math.PI / 180 * (60 * k); out += `<line x1="0" y1="0" x2="${(44 * Math.cos(a)).toFixed(1)}" y2="${(44 * Math.sin(a)).toFixed(1)}" stroke="#1d2b4c"/>`; }
+  for (let k = 0; k < 6; k++){
+    const a = Math.PI / 180 * (-90 + 60 * k), x = 30 * Math.cos(a), y = 30 * Math.sin(a), v = arcs[k];
+    out += `<text x="${x.toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" font-weight="600" fill="${v > 0 ? "#7be0a0" : v < 0 ? "#ff6b6b" : "#8394b5"}">${v > 0 ? "+" : ""}${v}</text>`;
+    out += `<text x="${(42 * Math.cos(a)).toFixed(1)}" y="${(42 * Math.sin(a) + 2.5).toFixed(1)}" text-anchor="middle" font-family="Exo 2, sans-serif" font-size="6.5" fill="#56668a">${SEC[k]}</text>`;
+  }
+  out += `<path d="M0 -13 L9 8 L0 4 L-9 8 Z" fill="${col}"/></svg>`;
+  return out;
+}
+function heroCard(seat){
+  const hid = R.heroes[seat], hi = HI[hid], fac = FAC[hi.faction] || {};
+  const c = h("article", "card " + sideCls(seat));
+  c.innerHTML = `<div class="hd"><div><div class="kind"><span class="badge">${seat ? "B" : "A"}</span>ГЕРОЙ · ${fac.short || hi.faction}</div><p class="ttl">${hi.name}</p></div></div>
+    <div class="txt"><div><b>${hi.ability.name}.</b> ${hi.ability.text}</div><div><b>${hi.synergy.name}.</b> ${hi.synergy.text}</div>
+    ${fac.trait ? `<div><b>Черта фракции «${fac.trait.name}».</b> ${fac.trait.text}</div>` : ""}</div>`;
+  return c;
+}
+function shipCard(uid){
+  const s = F[0].ships[uid], si = SI[s[7]], seat = seatOf(uid), fac = FAC[si.faction] || {};
+  const e = si.engine, w = si.weapon, hd = si.hyperdrive;
+  const c = h("article", "card " + sideCls(seat)); c.id = "card" + uid;
+  const foreign = si.faction !== HI[R.heroes[seat]].faction && !(R.heroes[seat] === "emperor_palpatine" && ["empire", "separatists"].includes(si.faction));
+  c.innerHTML = `<div class="hd"><div><div class="kind"><span class="badge">${codeOf(uid)}</span>${(ROLE[si.role] || si.role).toUpperCase()} · ${fac.short || si.faction}${si.unique ? " · именной" : ""}</div><p class="ttl">${si.display_name}</p></div><span class="cost" title="Цена в драфте">${si.draft_cost}</span></div>
+    <div class="mid">${wheel(si.arc_modifiers, seat)}<dl class="stats">
+      <dt>Корпус</dt><dd>${si.max_hp} HP</dd><dt>Щит</dt><dd>${si.max_shield}</dd>
+      <dt>Заряды</dt><dd>${si.initial_charges} / ${si.max_charges}</dd>
+      <dt>Шаг</dt><dd>${e.move_cost == null ? "—" : e.move_cost + " зар."}</dd><dt>Поворот</dt><dd>${e.pivot_cost} зар.</dd>
+      <dt>Форсаж</dt><dd>${e.boost ? "есть" : "нет"}</dd>
+      <dt>Дальность</dt><dd>${w.max_range}${w.max_range > 1 ? ` (−${w.range_penalty_per_hex}/клетка)` : ""}</dd>
+      <dt>Гипердрайв</dt><dd>${hd ? "класс " + hd.class : "нет"}</dd></dl></div>
+    <div class="txt">${w.max_range > 1 ? `<div>Дальний огонь ${LR[w.long_range_arc] || w.long_range_arc}.</div>` : ""}
+      ${(si.ability_text || []).map(([n, t]) => `<div><b>${n}.</b> ${t}</div>`).join("")}
+      ${foreign ? `<div><b>Чужая фракция для героя:</b> не получает фракционную черту и синергии.</div>` : ""}
+      ${si.description ? `<div class="flav">${si.description}</div>` : ""}
+      <div class="flav">Эпоха: ${ERA[si.era] || si.era}</div></div>`;
+  return c;
+}
+const cardBox = document.getElementById("cards");
+[0, 1].forEach(seat => { cardBox.appendChild(heroCard(seat)); F[0].ships.forEach((_, uid) => { if (seatOf(uid) === seat) cardBox.appendChild(shipCard(uid)); }); });
+F[0].ships.forEach((_, uid) => { const row = document.getElementById("row" + uid); row.style.cursor = "pointer"; row.title = "Открыть карточку"; row.onclick = () => document.getElementById("card" + uid).scrollIntoView({behavior: "smooth", block: "start"}); });
+
+// ---- шапка
+const hA = HI[R.heroes[0]].name, hB = HI[R.heroes[1]].name;
+document.getElementById("title").innerHTML = `<span class="a">${hA}</span><span class="vs">против</span><span class="b">${hB}</span>`;
+document.getElementById("meta").innerHTML = `<span>Партия <b>№${R.seed}</b></span><span><b>${R.rounds}</b> раундов</span><span>лидер менялся <b>${R.lead_changes}</b> раза</span><span>победа: <b>сторона ${R.winner ? "B" : "A"}</b> (${BOTS[R.bots[R.winner]]})</span>`;
+document.getElementById("foot").textContent = "Запись партии симулятора v4 (tools/sim_v4/replay.py). Бой считает тот же движок, что и турниры баланса: атака 2d6 + сектор против 1d6 + 1 + сектор, урон сначала в щит. Боты не видят будущих бросков: способности они пробуют на копии партии со своими кубиками.";
+show(0);
+</script>

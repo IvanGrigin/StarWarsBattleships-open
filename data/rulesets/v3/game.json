@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "ruleset_id": "v3_5",
+  "initial_charges": 3,
+  "max_charges": 5,
+  "move_cost": 1,
+  "rotate_cost": 1,
+  "attack_cost": 0,
+  "attacks_per_activation": 1,
+  "fleet_size": 3,
+  "draft_budget": 17,
+  "max_group2_per_seat": 1,
+  "max_same_type_group1_per_seat": 2,
+  "round_limit": 60,
+  "activation_timeout_seconds": 60,
+  "ability_friendly_fire_default": true,
+  "combat_attacker_dice": 2,
+  "combat_defender_dice": 1,
+  "combat_defender_flat_bonus": 1,
+  "omnidirectional_movement": true,
+  "charge_round_reset": "half_up",
+  "charge_full_if_unused": true
+}
