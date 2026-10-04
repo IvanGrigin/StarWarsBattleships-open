@@ -61,6 +61,7 @@ browser-demo/dist/assets/**
 !browser-demo/dist/assets/**/
 !browser-demo/dist/assets/**/index.json
 !browser-demo/dist/assets/**/README.md
+browser-demo/dist/assets/models/meshes/
 concept-art/
 docs/design/**/*.png
 *.pdf
