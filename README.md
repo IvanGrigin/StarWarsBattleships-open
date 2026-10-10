@@ -35,7 +35,8 @@
    ассет — в архив у владельца и строкой в [docs/ASSETS.md](docs/ASSETS.md)
    (автор, источник, лицензия).
 
-Что читать первым: [AGENTS.md](AGENTS.md), [docs/V0.5_DESIGN.md](docs/V0.5_DESIGN.md)
+Что читать первым: [AGENTS.md](AGENTS.md), полное руководство
+[docs/AGENT_GUIDE.md](docs/AGENT_GUIDE.md), [docs/V0.5_DESIGN.md](docs/V0.5_DESIGN.md)
 (всё, что сделано в v0.5), [docs/BASELINE-v0.4.1.md](docs/BASELINE-v0.4.1.md).
 
 ## Правила

@@ -68,3 +68,11 @@ docs/design/**/*.png
 # Сборка ядра Rust в WebAssembly для старого демо v3.5 — артефакт; есть в data.zip, пересобирается из rust/game_core
 demo/pkg/*.wasm
 browser-demo/dist/pkg/*.wasm
+
+# Материалы владельца из полного комплекта (не для публикации): исходные схемы и звук, архив прошлых версий
+archive/
+assets_source/audio/
+assets_source/schematics/**
+!assets_source/schematics/AUTHORS.md
+!assets_source/schematics/CATALOG.md
+demo/assets/card_renders/
